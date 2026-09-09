@@ -26,11 +26,11 @@ function PhotoPlaceholder({ size, height }: { size: number; height: number }) {
 
 /** Official FPL player photo CDN. Falls back to a generic silhouette if it 404s. */
 export default function PlayerPhoto({
-  code,
+  photoId,
   name,
   size = 40,
 }: {
-  code: number;
+  photoId: string;
   name: string;
   size?: number;
 }) {
@@ -43,7 +43,7 @@ export default function PlayerPhoto({
   return (
     // eslint-disable-next-line @next/next/no-img-element -- third-party CDN, no build-time optimization needed
     <img
-      src={`https://resources.premierleague.com/premierleague/photos/players/250x250/p${code}.png`}
+      src={`https://resources.premierleague.com/premierleague/photos/players/250x250/p${photoId}.png`}
       alt={name}
       width={size}
       height={size}

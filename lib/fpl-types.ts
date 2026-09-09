@@ -4,6 +4,7 @@
 export interface FplRawElement {
   id: number;
   code: number;
+  photo: string; // e.g. "58723.jpg" - the id used by the photo CDN, not always equal to `code`
   first_name: string;
   second_name: string;
   web_name: string;
@@ -59,6 +60,7 @@ export type Position = "GKP" | "DEF" | "MID" | "FWD";
 export interface Player {
   id: number;
   code: number;
+  photoId: string; // for the CDN photo URL - from the raw `photo` field, not `code`
   name: string;
   fullName: string;
   team: string;

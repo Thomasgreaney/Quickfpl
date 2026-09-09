@@ -86,7 +86,7 @@ export default function PlayerPickerModal({
                         : "cursor-not-allowed opacity-50"
                     }`}
                   >
-                    <PlayerPhoto code={p.code} name={p.name} size={36} />
+                    <PlayerPhoto photoId={p.photoId} name={p.name} size={36} />
                     <div className="min-w-0 flex-1">
                       <div className="flex items-center justify-between gap-2">
                         <span className="truncate font-medium">{p.name}</span>

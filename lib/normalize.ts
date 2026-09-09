@@ -18,10 +18,16 @@ function toMillions(tenths: number): number {
   return Math.round(tenths) / 10;
 }
 
+function derivePhotoId(el: FplRawElement): string {
+  const match = el.photo?.match(/^(\d+)\./);
+  return match ? match[1] : String(el.code);
+}
+
 export function normalizeElement(el: FplRawElement, team: FplRawTeam): Player {
   return {
     id: el.id,
     code: el.code,
+    photoId: derivePhotoId(el),
     name: el.web_name,
     fullName: `${el.first_name} ${el.second_name}`.trim(),
     team: team.name,

@@ -91,7 +91,7 @@ export default function TopPlayers({ players }: { players: PlayerWithSparkline[]
             >
               <td className="whitespace-nowrap px-3 py-2 font-medium">
                 <span className="flex items-center gap-2">
-                  <PlayerPhoto code={p.code} name={p.name} size={28} />
+                  <PlayerPhoto photoId={p.photoId} name={p.name} size={28} />
                   {p.name}
                   {p.status !== "a" && (
                     <span

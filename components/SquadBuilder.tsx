@@ -189,7 +189,7 @@ export default function SquadBuilder({
                     <li key={slotKey(slot)}>
                       {player ? (
                         <div className="flex items-center gap-3 rounded-lg border border-black/10 bg-white p-2.5 dark:border-white/15 dark:bg-neutral-900">
-                          <PlayerPhoto code={player.code} name={player.name} size={36} />
+                          <PlayerPhoto photoId={player.photoId} name={player.name} size={36} />
                           <div className="min-w-0 flex-1">
                             <div className="flex items-baseline justify-between gap-2">
                               <span className="truncate font-medium">{player.name}</span>
@@ -265,7 +265,7 @@ function SquadSlot({
           title="Remove from squad"
           className="flex w-full flex-col items-center gap-0.5 rounded-md bg-white/95 p-1 text-center shadow hover:bg-white dark:bg-neutral-900/95"
         >
-          <PlayerPhoto code={player.code} name={player.name} size={36} />
+          <PlayerPhoto photoId={player.photoId} name={player.name} size={36} />
           <span className="w-full truncate text-[11px] font-semibold text-black dark:text-white">
             {player.name}
           </span>
