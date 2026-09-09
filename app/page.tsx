@@ -6,6 +6,8 @@ import RisersFallers from "@/components/RisersFallers";
 import TopPlayers from "@/components/TopPlayers";
 import PlayerLookup from "@/components/PlayerLookup";
 import SquadBuilder from "@/components/SquadBuilder";
+import ChipStrategy from "@/components/ChipStrategy";
+import PremiumGate from "@/components/PremiumGate";
 
 export const revalidate = 300;
 
@@ -87,13 +89,24 @@ export default async function Home() {
         <PlayerLookup players={snapshot.players} fixturesByTeam={fixturesByTeam} />
       </section>
 
-      <section>
+      <section className="mb-10">
         <h2 className="mb-3 text-xl font-bold">My team</h2>
         <p className="mb-3 text-sm text-black/60 dark:text-white/60">
           Build your squad — pick 2 keepers, 5 defenders, 5 midfielders, 3 forwards. Saved on this
           device only.
         </p>
         <SquadBuilder players={snapshot.players} fixturesByTeam={fixturesByTeam} />
+      </section>
+
+      <section>
+        <h2 className="mb-3 text-xl font-bold">Chip strategy</h2>
+        <p className="mb-3 text-sm text-black/60 dark:text-white/60">
+          When to play what you&apos;ve got left — worked out from real double and blank gameweeks,
+          not vibes.
+        </p>
+        <PremiumGate>
+          <ChipStrategy players={snapshot.players} fixtures={fixtures} teams={snapshot.teams} />
+        </PremiumGate>
       </section>
 
       <footer className="mt-12 border-t border-black/10 py-6 text-xs text-black/40 dark:border-white/10 dark:text-white/40">

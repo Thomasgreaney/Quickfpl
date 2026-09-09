@@ -2,11 +2,11 @@
 
 import { useEffect, useMemo, useState } from "react";
 import type { FixtureRun, Player, Position } from "@/lib/fpl-types";
+import { SQUAD_STORAGE_KEY, SQUAD_UPDATED_EVENT } from "@/lib/squad-storage";
 import PlayerAutocomplete from "./PlayerAutocomplete";
 import PlayerPhoto from "./PlayerPhoto";
 import FixtureChips from "./FixtureChips";
 
-const STORAGE_KEY = "quickfpl-squad";
 const BUDGET = 100; // £m, standard FPL squad budget
 
 const FORMATION: { position: Position; count: number }[] = [
@@ -53,7 +53,7 @@ export default function SquadBuilder({
   useEffect(() => {
     Promise.resolve().then(() => {
       try {
-        const raw = window.localStorage.getItem(STORAGE_KEY);
+        const raw = window.localStorage.getItem(SQUAD_STORAGE_KEY);
         if (raw) {
           const parsed = JSON.parse(raw) as Partial<Squad>;
           const merged = emptySquad();
@@ -75,7 +75,8 @@ export default function SquadBuilder({
   useEffect(() => {
     if (!loaded) return;
     try {
-      window.localStorage.setItem(STORAGE_KEY, JSON.stringify(squad));
+      window.localStorage.setItem(SQUAD_STORAGE_KEY, JSON.stringify(squad));
+      window.dispatchEvent(new Event(SQUAD_UPDATED_EVENT));
     } catch {
       // storage unavailable (private browsing etc.) - squad just won't persist
     }
