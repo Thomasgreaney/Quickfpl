@@ -42,3 +42,19 @@ export function diffLatestTwo(history: HistoryFile): {
   }
   return { from, to, moves };
 }
+
+export interface PricePoint {
+  fetchedAt: string;
+  price: number; // £m
+}
+
+/** Chronological price series for one player, from our own snapshot history. */
+export function getPriceSeries(history: HistoryFile, playerId: number): PricePoint[] {
+  const points: PricePoint[] = [];
+  for (const snap of history.snapshots) {
+    const tenths = snap.prices[playerId];
+    if (tenths === undefined) continue;
+    points.push({ fetchedAt: snap.fetchedAt, price: Math.round(tenths) / 10 });
+  }
+  return points;
+}

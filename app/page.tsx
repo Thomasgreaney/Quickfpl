@@ -1,9 +1,14 @@
 import { getLiveSnapshot } from "@/lib/live";
-import { readHistory, diffLatestTwo } from "@/lib/history";
-import PlayerTable from "@/components/PlayerTable";
+import { readHistory, diffLatestTwo, getPriceSeries } from "@/lib/history";
+import type { PlayerWithSparkline } from "@/lib/fpl-types";
 import RisersFallers from "@/components/RisersFallers";
+import TopPlayers from "@/components/TopPlayers";
+import PlayerLookup from "@/components/PlayerLookup";
+import MyTeam from "@/components/MyTeam";
 
 export const revalidate = 300;
+
+const TOP_N = 15;
 
 function timeAgo(iso: string): string {
   const diffMs = Date.now() - new Date(iso).getTime();
@@ -21,6 +26,14 @@ export default async function Home() {
   const history = await readHistory();
   const { moves } = diffLatestTwo(history);
 
+  const top15: PlayerWithSparkline[] = [...snapshot.players]
+    .sort((a, b) => b.ownership - a.ownership)
+    .slice(0, TOP_N)
+    .map((p) => ({
+      ...p,
+      sparkline: getPriceSeries(history, p.id).map((point) => point.price),
+    }));
+
   return (
     <main className="mx-auto w-full max-w-6xl flex-1 px-4 py-8 sm:px-6 lg:px-8">
       <header className="mb-8">
@@ -28,8 +41,8 @@ export default async function Home() {
           Quick<span className="text-purple-600">FPL</span>
         </h1>
         <p className="mt-2 max-w-2xl text-black/70 dark:text-white/70">
-          Every FPL player&apos;s price, ownership and this season&apos;s movement in one table.
-          No fluff, just the numbers — sort it, filter it, find your next transfer.
+          Every FPL player&apos;s price, ownership and this season&apos;s movement, tracked over
+          time. No fluff, just the numbers.
         </p>
         <p className="mt-3 text-xs text-black/40 dark:text-white/40">
           Data pulled straight from the official FPL API · updated {timeAgo(snapshot.fetchedAt)}
@@ -45,9 +58,29 @@ export default async function Home() {
         <RisersFallers players={snapshot.players} />
       </section>
 
+      <section className="mb-10">
+        <h2 className="mb-3 text-xl font-bold">Top 15</h2>
+        <p className="mb-3 text-sm text-black/60 dark:text-white/60">
+          The 15 most-owned players in the game, with each one&apos;s price trend. Tap a column to
+          sort.
+        </p>
+        <TopPlayers players={top15} />
+      </section>
+
+      <section className="mb-10">
+        <h2 className="mb-3 text-xl font-bold">Find a player</h2>
+        <p className="mb-3 text-sm text-black/60 dark:text-white/60">
+          Not in the top 15? Look anyone up.
+        </p>
+        <PlayerLookup players={snapshot.players} />
+      </section>
+
       <section>
-        <h2 className="mb-3 text-xl font-bold">All players</h2>
-        <PlayerTable players={snapshot.players} />
+        <h2 className="mb-3 text-xl font-bold">My team</h2>
+        <p className="mb-3 text-sm text-black/60 dark:text-white/60">
+          Build a watchlist of your own squad. Saved on this device only.
+        </p>
+        <MyTeam players={snapshot.players} />
       </section>
 
       <footer className="mt-12 border-t border-black/10 py-6 text-xs text-black/40 dark:border-white/10 dark:text-white/40">

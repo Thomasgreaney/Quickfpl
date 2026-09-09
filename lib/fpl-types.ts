@@ -65,6 +65,10 @@ export interface Player {
   transfersOutEvent: number;
 }
 
+export interface PlayerWithSparkline extends Player {
+  sparkline: number[]; // recent prices, £m, chronological, from our own history
+}
+
 export interface DataSnapshot {
   fetchedAt: string;
   currentEventId: number | null;
