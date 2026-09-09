@@ -61,6 +61,16 @@ export function recommendChips(
   const bestDouble = bestEventBy((a) => a.doubleTeamIds);
   const bestBlank = bestEventBy((a) => a.blankTeamIds);
 
+  const events = analysis.map((a) => a.event);
+  const scanRange =
+    events.length > 0
+      ? `GW${Math.min(...events)}–${Math.max(...events)}`
+      : "the fixtures published so far";
+  // Doubles/blanks come from cup replays and rescheduled fixtures, so they
+  // usually aren't in the schedule yet this early in a season - "none
+  // found" is a real result, not a gap in the data.
+  const noneYetSuffix = `Nothing in ${scanRange} yet — doubles and blanks usually only get confirmed once the season's underway. Check back later.`;
+
   const advice: ChipAdvice[] = [];
 
   for (const chip of chipsRemaining) {
@@ -77,7 +87,7 @@ export function recommendChips(
               chip,
               bestEvent: null,
               affectedCount: 0,
-              reason: "No double gameweeks in your squad's teams yet, from what we can see. Hold it until one shows up.",
+              reason: `No double gameweeks yet. ${noneYetSuffix}`,
             }
       );
     } else if (chip === "triplecaptain") {
@@ -93,7 +103,7 @@ export function recommendChips(
               chip,
               bestEvent: null,
               affectedCount: 0,
-              reason: "Nothing standing out yet. Save it for a double gameweek or a monster single fixture.",
+              reason: `Nothing standing out yet. ${noneYetSuffix}`,
             }
       );
     } else if (chip === "freehit") {
@@ -109,7 +119,7 @@ export function recommendChips(
               chip,
               bestEvent: null,
               affectedCount: 0,
-              reason: "No blank gameweeks hitting your squad yet. Sit on it.",
+              reason: `No blank gameweeks yet. ${noneYetSuffix}`,
             }
       );
     } else if (chip === "wildcard") {
@@ -128,7 +138,7 @@ export function recommendChips(
               chip,
               bestEvent: null,
               affectedCount: 0,
-              reason: "No obvious trigger yet. Use it when your squad's fixtures turn bad, not just because you're bored of it.",
+              reason: `No obvious trigger yet — use it when your squad's fixtures turn bad, not just because you're bored of it. ${noneYetSuffix}`,
             }
       );
     }
