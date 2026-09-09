@@ -1,5 +1,6 @@
 import type { Player } from "@/lib/fpl-types";
 import { getVerdict } from "@/lib/copy";
+import PlayerPhoto from "./PlayerPhoto";
 
 function fmtMoney(n: number): string {
   return `£${n.toFixed(1)}m`;
@@ -8,24 +9,27 @@ function fmtMoney(n: number): string {
 function MoverCard({ player, direction }: { player: Player; direction: "up" | "down" }) {
   const delta = direction === "up" ? player.priceChangeEvent : -player.priceChangeEvent;
   return (
-    <li className="rounded-lg border border-black/10 bg-white p-3 dark:border-white/15 dark:bg-neutral-900">
-      <div className="flex items-baseline justify-between gap-2">
-        <span className="font-semibold">{player.name}</span>
-        <span
-          className={`whitespace-nowrap font-mono text-sm ${
-            direction === "up" ? "text-green-600 dark:text-green-400" : "text-red-600 dark:text-red-400"
-          }`}
-        >
-          {direction === "up" ? "+" : "−"}
-          {fmtMoney(Math.abs(delta))}
-        </span>
+    <li className="flex gap-3 rounded-lg border border-black/10 bg-white p-3 dark:border-white/15 dark:bg-neutral-900">
+      <PlayerPhoto code={player.code} name={player.name} size={40} />
+      <div className="min-w-0 flex-1">
+        <div className="flex items-baseline justify-between gap-2">
+          <span className="font-semibold">{player.name}</span>
+          <span
+            className={`whitespace-nowrap font-mono text-sm ${
+              direction === "up" ? "text-green-600 dark:text-green-400" : "text-red-600 dark:text-red-400"
+            }`}
+          >
+            {direction === "up" ? "+" : "−"}
+            {fmtMoney(Math.abs(delta))}
+          </span>
+        </div>
+        <div className="mt-0.5 text-xs text-black/50 dark:text-white/50">
+          {player.teamShort} · {player.position} · {fmtMoney(player.price)} now · {player.ownership.toFixed(1)}% owned
+        </div>
+        <p className="mt-1.5 text-sm text-black/80 dark:text-white/80">
+          {getVerdict(player, direction)}
+        </p>
       </div>
-      <div className="mt-0.5 text-xs text-black/50 dark:text-white/50">
-        {player.teamShort} · {player.position} · {fmtMoney(player.price)} now · {player.ownership.toFixed(1)}% owned
-      </div>
-      <p className="mt-1.5 text-sm text-black/80 dark:text-white/80">
-        {getVerdict(player, direction)}
-      </p>
     </li>
   );
 }

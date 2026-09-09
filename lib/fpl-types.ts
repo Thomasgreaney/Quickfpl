@@ -43,6 +43,17 @@ export interface FplBootstrapStatic {
   events: { id: number; is_current: boolean; is_next: boolean; name: string }[];
 }
 
+export interface FplRawFixture {
+  id: number;
+  event: number | null;
+  team_h: number;
+  team_a: number;
+  team_h_difficulty: number;
+  team_a_difficulty: number;
+  finished: boolean;
+  kickoff_time: string | null;
+}
+
 export type Position = "GKP" | "DEF" | "MID" | "FWD";
 
 export interface Player {
@@ -52,6 +63,7 @@ export interface Player {
   fullName: string;
   team: string;
   teamShort: string;
+  teamId: number;
   position: Position;
   price: number; // in £m, e.g. 5.5
   priceChangeSeason: number; // £m change since season start
@@ -69,10 +81,23 @@ export interface PlayerWithSparkline extends Player {
   sparkline: number[]; // recent prices, £m, chronological, from our own history
 }
 
+export interface TeamRef {
+  id: number;
+  name: string;
+  short: string;
+}
+
 export interface DataSnapshot {
   fetchedAt: string;
   currentEventId: number | null;
   players: Player[];
+  teams: TeamRef[];
+}
+
+export interface FixtureRun {
+  opponentShort: string;
+  isHome: boolean;
+  difficulty: number; // 1 (easy) - 5 (hard), FPL's own FDR scale
 }
 
 export interface HistorySnapshot {

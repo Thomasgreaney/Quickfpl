@@ -1,30 +1,37 @@
 "use client";
 
 import { useMemo, useState } from "react";
-import type { Player } from "@/lib/fpl-types";
+import type { FixtureRun, Player, Position } from "@/lib/fpl-types";
+import FixtureChips from "./FixtureChips";
 
 export default function PlayerAutocomplete({
   players,
   placeholder = "Search a player...",
   onSelect,
   excludeIds,
+  positionFilter,
+  fixturesByTeam,
+  autoFocus,
 }: {
   players: Player[];
   placeholder?: string;
   onSelect: (player: Player) => void;
   excludeIds?: Set<number>;
+  positionFilter?: Position;
+  fixturesByTeam?: Record<number, FixtureRun[]>;
+  autoFocus?: boolean;
 }) {
   const [query, setQuery] = useState("");
   const [open, setOpen] = useState(false);
 
   const matches = useMemo(() => {
     const q = query.trim().toLowerCase();
-    if (!q) return [];
     return players
       .filter((p) => !excludeIds?.has(p.id))
-      .filter((p) => p.name.toLowerCase().includes(q) || p.fullName.toLowerCase().includes(q))
+      .filter((p) => !positionFilter || p.position === positionFilter)
+      .filter((p) => !q || p.name.toLowerCase().includes(q) || p.fullName.toLowerCase().includes(q))
       .slice(0, 8);
-  }, [players, query, excludeIds]);
+  }, [players, query, excludeIds, positionFilter]);
 
   function pick(player: Player) {
     onSelect(player);
@@ -38,6 +45,7 @@ export default function PlayerAutocomplete({
         type="text"
         value={query}
         placeholder={placeholder}
+        autoFocus={autoFocus}
         onChange={(e) => {
           setQuery(e.target.value);
           setOpen(true);
@@ -46,8 +54,8 @@ export default function PlayerAutocomplete({
         onBlur={() => setTimeout(() => setOpen(false), 150)}
         className="w-full rounded-md border border-black/10 bg-white px-3 py-2 text-sm shadow-sm outline-none focus:border-purple-500 dark:border-white/15 dark:bg-neutral-900"
       />
-      {open && query.trim() && (
-        <ul className="absolute z-10 mt-1 w-full overflow-hidden rounded-md border border-black/10 bg-white shadow-lg dark:border-white/15 dark:bg-neutral-900">
+      {open && (
+        <ul className="absolute z-20 mt-1 max-h-80 w-full min-w-[16rem] overflow-y-auto rounded-md border border-black/10 bg-white shadow-lg dark:border-white/15 dark:bg-neutral-900">
           {matches.length === 0 ? (
             <li className="px-3 py-2 text-sm text-black/40 dark:text-white/40">
               No one matches that.
@@ -58,12 +66,15 @@ export default function PlayerAutocomplete({
                 <button
                   type="button"
                   onMouseDown={() => pick(p)}
-                  className="flex w-full items-center justify-between px-3 py-2 text-left text-sm hover:bg-black/[.04] dark:hover:bg-white/[.06]"
+                  className="flex w-full flex-col gap-1 px-3 py-2 text-left text-sm hover:bg-black/[.04] dark:hover:bg-white/[.06]"
                 >
-                  <span className="font-medium">{p.name}</span>
-                  <span className="text-xs text-black/50 dark:text-white/50">
-                    {p.teamShort} · {p.position} · £{p.price.toFixed(1)}m
+                  <span className="flex items-center justify-between gap-2">
+                    <span className="font-medium">{p.name}</span>
+                    <span className="whitespace-nowrap text-xs text-black/50 dark:text-white/50">
+                      {p.teamShort} · {p.position} · £{p.price.toFixed(1)}m
+                    </span>
                   </span>
+                  {fixturesByTeam && <FixtureChips fixtures={fixturesByTeam[p.teamId]} />}
                 </button>
               </li>
             ))

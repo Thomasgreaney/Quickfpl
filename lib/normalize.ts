@@ -1,6 +1,7 @@
 import type {
   FplBootstrapStatic,
   FplRawElement,
+  FplRawTeam,
   Player,
   Position,
   DataSnapshot,
@@ -17,18 +18,15 @@ function toMillions(tenths: number): number {
   return Math.round(tenths) / 10;
 }
 
-export function normalizeElement(
-  el: FplRawElement,
-  teamName: string,
-  teamShort: string
-): Player {
+export function normalizeElement(el: FplRawElement, team: FplRawTeam): Player {
   return {
     id: el.id,
     code: el.code,
     name: el.web_name,
     fullName: `${el.first_name} ${el.second_name}`.trim(),
-    team: teamName,
-    teamShort,
+    team: team.name,
+    teamShort: team.short_name,
+    teamId: team.id,
     position: POSITION_MAP[el.element_type] ?? "MID",
     price: toMillions(el.now_cost),
     priceChangeSeason: toMillions(el.cost_change_start),
@@ -43,16 +41,16 @@ export function normalizeElement(
   };
 }
 
+const UNKNOWN_TEAM: FplRawTeam = { id: 0, name: "Unknown", short_name: "UNK" };
+
 export function buildSnapshot(raw: FplBootstrapStatic): DataSnapshot {
   const teamsById = new Map(raw.teams.map((t) => [t.id, t]));
-  const players = raw.elements.map((el) => {
-    const team = teamsById.get(el.team);
-    return normalizeElement(el, team?.name ?? "Unknown", team?.short_name ?? "UNK");
-  });
+  const players = raw.elements.map((el) => normalizeElement(el, teamsById.get(el.team) ?? UNKNOWN_TEAM));
   const currentEvent = raw.events.find((e) => e.is_current) ?? raw.events.find((e) => e.is_next);
   return {
     fetchedAt: new Date().toISOString(),
     currentEventId: currentEvent?.id ?? null,
     players,
+    teams: raw.teams.map((t) => ({ id: t.id, name: t.name, short: t.short_name })),
   };
 }

@@ -1,11 +1,17 @@
 "use client";
 
 import { useState } from "react";
-import type { Player } from "@/lib/fpl-types";
+import type { FixtureRun, Player } from "@/lib/fpl-types";
 import PlayerAutocomplete from "./PlayerAutocomplete";
 import PlayerDetailCard from "./PlayerDetailCard";
 
-export default function PlayerLookup({ players }: { players: Player[] }) {
+export default function PlayerLookup({
+  players,
+  fixturesByTeam,
+}: {
+  players: Player[];
+  fixturesByTeam: Record<number, FixtureRun[]>;
+}) {
   const [selected, setSelected] = useState<Player[]>([]);
 
   function add(player: Player) {
@@ -22,12 +28,17 @@ export default function PlayerLookup({ players }: { players: Player[] }) {
         players={players}
         placeholder="Not in the top 15? Search any player..."
         onSelect={add}
+        fixturesByTeam={fixturesByTeam}
       />
       {selected.length > 0 && (
         <ul className="mt-3 space-y-2">
           {selected.map((p) => (
             <li key={p.id}>
-              <PlayerDetailCard player={p} action={{ label: "Dismiss", onClick: () => remove(p.id) }} />
+              <PlayerDetailCard
+                player={p}
+                fixtures={fixturesByTeam[p.teamId]}
+                action={{ label: "Dismiss", onClick: () => remove(p.id) }}
+              />
             </li>
           ))}
         </ul>

@@ -5,21 +5,29 @@ ownership, and price movement in one sortable, filterable table — plus a
 risers/fallers section so you know who's actually worth transferring in
 before the price ticks up again.
 
-Data comes straight from the official FPL API
-(`https://fantasy.premierleague.com/api/bootstrap-static/`). No account, no
-API key needed — it's a public endpoint.
+Data comes straight from the official FPL API — `bootstrap-static` for
+players/teams and `fixtures` for upcoming fixture difficulty. No account, no
+API key needed — both are public endpoints. Player photos come from the
+official FPL image CDN (`resources.premierleague.com`); if a photo 404s the
+UI falls back to a plain initials avatar.
 
 ## Features
 
-- **All players table** — name, team, position, current price, this
-  season's price change, ownership %, form and total points. Sort any
-  column, filter by position/team, search by name.
+- **Top 15** — the 15 most-owned players, sortable, each with a price
+  sparkline built from our own snapshot history.
+- **Find a player** — autocomplete search across every player, for anyone
+  not in the top 15.
 - **Risers & Fallers** — players whose price moved in the last gameweek,
   with a one-line blunt verdict on whether it matters.
+- **My team** — a classic FPL-style squad builder (2 GKP / 5 DEF / 5 MID /
+  3 FWD). Pitch view or list view, player photos, prices, and each player's
+  next 3 fixtures colour-coded by difficulty. Saved to the browser's
+  localStorage — no account needed, but it won't follow you to another
+  device.
 - **Own price history** — a scheduled GitHub Actions job snapshots prices
   periodically and commits them to `data/history.json`, so the site can
-  report price moves it has actually witnessed, not just what the FPL API
-  itself reports.
+  report price moves it has actually witnessed (and power the sparklines),
+  not just what the FPL API itself reports.
 
 ## Tech stack
 
@@ -74,24 +82,34 @@ Snapshot history is capped at 240 entries (roughly a month at the default
    requests `contents: write` permission, which is enabled by default for
    most repos.
 
-No environment variables are required. `FPL_BOOTSTRAP_URL` can be set to
-override the FPL API URL (useful for testing against a mock endpoint).
+No environment variables are required. `FPL_BOOTSTRAP_URL` and
+`FPL_FIXTURES_URL` can be set to override the FPL API URLs (useful for
+testing against a mock endpoint).
 
 ## Project structure
 
 ```
 app/
-  page.tsx              Home page — fetches live data, renders the table
-  api/players/route.ts  JSON API exposing the same data
+  page.tsx                       Home page — fetches live data, renders everything
+  api/players/route.ts           JSON API exposing the same player data
+  api/player-history/[id]/route.ts  One player's price history (for sparklines)
 lib/
   fpl-types.ts           Shared types for the FPL API + our normalized data
   normalize.ts           Raw FPL payload -> normalized Player[]
-  live.ts                Live fetch from the FPL API (5 min cache)
+  live.ts                Live fetch from the FPL API (players + fixtures, 5 min cache)
+  fixtures.ts             Builds each team's next-3-fixtures difficulty run
   history.ts             Reads our own committed price-snapshot history
   copy.ts                Blunt one-liners for the risers/fallers cards
 components/
-  PlayerTable.tsx        Sortable/filterable client-side table
-  RisersFallers.tsx      Recent price movers
+  TopPlayers.tsx          Top 15 sortable table with sparklines
+  RisersFallers.tsx       Recent price movers
+  PlayerLookup.tsx        Search-any-player section
+  SquadBuilder.tsx         My team: pitch view / list view squad builder
+  PlayerAutocomplete.tsx  Shared search input used by the above
+  PlayerDetailCard.tsx    Shared player summary card (photo, price, sparkline)
+  PlayerPhoto.tsx         Player photo with initials fallback
+  FixtureChips.tsx         Small difficulty-coloured fixture chips
+  Sparkline.tsx           Inline SVG price sparkline
 scripts/
   fetch-snapshot.ts      Snapshot job run by the scheduled workflow
 data/

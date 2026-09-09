@@ -3,6 +3,7 @@
 import { useMemo, useState } from "react";
 import type { PlayerWithSparkline } from "@/lib/fpl-types";
 import Sparkline from "./Sparkline";
+import PlayerPhoto from "./PlayerPhoto";
 
 type SortKey =
   | "name"
@@ -89,13 +90,16 @@ export default function TopPlayers({ players }: { players: PlayerWithSparkline[]
               className="border-t border-black/5 hover:bg-black/[.02] dark:border-white/10 dark:hover:bg-white/[.04]"
             >
               <td className="whitespace-nowrap px-3 py-2 font-medium">
-                {p.name}
-                {p.status !== "a" && (
-                  <span
-                    title={p.news || "Availability doubt"}
-                    className="ml-1.5 inline-block h-2 w-2 rounded-full bg-red-500 align-middle"
-                  />
-                )}
+                <span className="flex items-center gap-2">
+                  <PlayerPhoto code={p.code} name={p.name} size={28} />
+                  {p.name}
+                  {p.status !== "a" && (
+                    <span
+                      title={p.news || "Availability doubt"}
+                      className="inline-block h-2 w-2 flex-shrink-0 rounded-full bg-red-500"
+                    />
+                  )}
+                </span>
               </td>
               <td className="whitespace-nowrap px-3 py-2 text-black/60 dark:text-white/60">
                 {p.teamShort}

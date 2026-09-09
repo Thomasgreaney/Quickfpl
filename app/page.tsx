@@ -1,10 +1,11 @@
-import { getLiveSnapshot } from "@/lib/live";
+import { getLiveSnapshot, getLiveFixtures } from "@/lib/live";
 import { readHistory, diffLatestTwo, getPriceSeries } from "@/lib/history";
+import { buildFixtureRuns } from "@/lib/fixtures";
 import type { PlayerWithSparkline } from "@/lib/fpl-types";
 import RisersFallers from "@/components/RisersFallers";
 import TopPlayers from "@/components/TopPlayers";
 import PlayerLookup from "@/components/PlayerLookup";
-import MyTeam from "@/components/MyTeam";
+import SquadBuilder from "@/components/SquadBuilder";
 
 export const revalidate = 300;
 
@@ -22,9 +23,10 @@ function timeAgo(iso: string): string {
 }
 
 export default async function Home() {
-  const snapshot = await getLiveSnapshot();
+  const [snapshot, fixtures] = await Promise.all([getLiveSnapshot(), getLiveFixtures()]);
   const history = await readHistory();
   const { moves } = diffLatestTwo(history);
+  const fixturesByTeam = buildFixtureRuns(fixtures, snapshot.teams);
 
   const top15: PlayerWithSparkline[] = [...snapshot.players]
     .sort((a, b) => b.ownership - a.ownership)
@@ -72,15 +74,16 @@ export default async function Home() {
         <p className="mb-3 text-sm text-black/60 dark:text-white/60">
           Not in the top 15? Look anyone up.
         </p>
-        <PlayerLookup players={snapshot.players} />
+        <PlayerLookup players={snapshot.players} fixturesByTeam={fixturesByTeam} />
       </section>
 
       <section>
         <h2 className="mb-3 text-xl font-bold">My team</h2>
         <p className="mb-3 text-sm text-black/60 dark:text-white/60">
-          Build a watchlist of your own squad. Saved on this device only.
+          Build your squad — pick 2 keepers, 5 defenders, 5 midfielders, 3 forwards. Saved on this
+          device only.
         </p>
-        <MyTeam players={snapshot.players} />
+        <SquadBuilder players={snapshot.players} fixturesByTeam={fixturesByTeam} />
       </section>
 
       <footer className="mt-12 border-t border-black/10 py-6 text-xs text-black/40 dark:border-white/10 dark:text-white/40">
