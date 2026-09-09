@@ -3,7 +3,7 @@
 import { useEffect, useMemo, useState } from "react";
 import type { FixtureRun, Player, Position } from "@/lib/fpl-types";
 import { SQUAD_STORAGE_KEY, SQUAD_UPDATED_EVENT } from "@/lib/squad-storage";
-import PlayerAutocomplete from "./PlayerAutocomplete";
+import PlayerPickerModal from "./PlayerPickerModal";
 import PlayerPhoto from "./PlayerPhoto";
 import FixtureChips from "./FixtureChips";
 
@@ -164,15 +164,8 @@ export default function SquadBuilder({
                       key={slotKey(slot)}
                       slot={slot}
                       player={player}
-                      isActive={activeSlot !== null && slotKey(activeSlot) === slotKey(slot)}
                       onOpen={() => setActiveSlot(slot)}
-                      onClose={() => setActiveSlot(null)}
                       onRemove={() => clearSlot(slot)}
-                      onPick={(p) => fillSlot(slot, p)}
-                      players={players}
-                      excludeIds={usedIds}
-                      fixturesByTeam={fixturesByTeam}
-                      maxPrice={remainingBudget}
                     />
                   );
                 })}
@@ -220,17 +213,13 @@ export default function SquadBuilder({
                           </button>
                         </div>
                       ) : (
-                        <div className="rounded-lg border border-dashed border-black/15 p-2.5 dark:border-white/20">
-                          <PlayerAutocomplete
-                            players={players}
-                            positionFilter={position}
-                            excludeIds={usedIds}
-                            fixturesByTeam={fixturesByTeam}
-                            maxPrice={remainingBudget}
-                            placeholder={`Add a ${position}...`}
-                            onSelect={(p) => fillSlot(slot, p)}
-                          />
-                        </div>
+                        <button
+                          type="button"
+                          onClick={() => setActiveSlot(slot)}
+                          className="flex w-full items-center justify-center gap-1.5 rounded-lg border border-dashed border-black/15 p-2.5 text-sm text-black/50 hover:bg-black/[.03] dark:border-white/20 dark:text-white/50 dark:hover:bg-white/[.04]"
+                        >
+                          <span className="text-base leading-none">+</span> Add a {position}
+                        </button>
                       )}
                     </li>
                   );
@@ -240,6 +229,18 @@ export default function SquadBuilder({
           ))}
         </div>
       )}
+
+      {activeSlot && (
+        <PlayerPickerModal
+          players={players}
+          positionFilter={activeSlot.position}
+          excludeIds={usedIds}
+          fixturesByTeam={fixturesByTeam}
+          maxPrice={remainingBudget}
+          onSelect={(p) => fillSlot(activeSlot, p)}
+          onClose={() => setActiveSlot(null)}
+        />
+      )}
     </div>
   );
 }
@@ -247,30 +248,16 @@ export default function SquadBuilder({
 function SquadSlot({
   slot,
   player,
-  isActive,
   onOpen,
-  onClose,
   onRemove,
-  onPick,
-  players,
-  excludeIds,
-  fixturesByTeam,
-  maxPrice,
 }: {
   slot: Slot;
   player: Player | undefined;
-  isActive: boolean;
   onOpen: () => void;
-  onClose: () => void;
   onRemove: () => void;
-  onPick: (p: Player) => void;
-  players: Player[];
-  excludeIds: Set<number>;
-  fixturesByTeam: Record<number, FixtureRun[]>;
-  maxPrice: number;
 }) {
   return (
-    <div className="relative w-16 sm:w-20">
+    <div className="w-16 sm:w-20">
       {player ? (
         <button
           type="button"
@@ -295,30 +282,6 @@ function SquadSlot({
           <span className="text-xl leading-none">+</span>
           <span className="text-[10px] font-bold uppercase tracking-wide">{slot.position}</span>
         </button>
-      )}
-
-      {isActive && (
-        <div className="absolute left-1/2 top-full z-20 mt-1 w-56 -translate-x-1/2">
-          <div className="rounded-md border border-black/10 bg-white p-2 shadow-xl dark:border-white/15 dark:bg-neutral-900">
-            <PlayerAutocomplete
-              players={players}
-              positionFilter={slot.position}
-              excludeIds={excludeIds}
-              fixturesByTeam={fixturesByTeam}
-              maxPrice={maxPrice}
-              placeholder={`Add a ${slot.position}...`}
-              onSelect={onPick}
-              autoFocus
-            />
-            <button
-              type="button"
-              onMouseDown={onClose}
-              className="mt-1 w-full rounded px-2 py-1 text-center text-xs text-black/40 hover:bg-black/[.04] dark:text-white/40 dark:hover:bg-white/[.06]"
-            >
-              Cancel
-            </button>
-          </div>
-        </div>
       )}
     </div>
   );

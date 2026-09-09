@@ -65,6 +65,26 @@ export default async function Home() {
       </header>
 
       <section className="mb-10">
+        <h2 className="mb-3 text-xl font-bold">My team</h2>
+        <p className="mb-3 text-sm text-black/60 dark:text-white/60">
+          Build your squad — pick 2 keepers, 5 defenders, 5 midfielders, 3 forwards. Saved on this
+          device only.
+        </p>
+        <SquadBuilder players={snapshot.players} fixturesByTeam={fixturesByTeam} />
+      </section>
+
+      <section className="mb-10">
+        <h2 className="mb-3 text-xl font-bold">Chip strategy</h2>
+        <p className="mb-3 text-sm text-black/60 dark:text-white/60">
+          When to play what you&apos;ve got left — worked out from real double and blank gameweeks,
+          not vibes.
+        </p>
+        <PremiumGate>
+          <ChipStrategy players={snapshot.players} fixtures={fixtures} teams={snapshot.teams} />
+        </PremiumGate>
+      </section>
+
+      <section className="mb-10">
         <h2 className="mb-3 text-xl font-bold">Risers &amp; Fallers</h2>
         <p className="mb-3 text-sm text-black/60 dark:text-white/60">
           Who moved this gameweek, and whether it&apos;s worth caring about.
@@ -81,32 +101,12 @@ export default async function Home() {
         <TopPlayers players={top15} />
       </section>
 
-      <section className="mb-10">
+      <section>
         <h2 className="mb-3 text-xl font-bold">Find a player</h2>
         <p className="mb-3 text-sm text-black/60 dark:text-white/60">
           Not in the top 15? Look anyone up.
         </p>
         <PlayerLookup players={snapshot.players} fixturesByTeam={fixturesByTeam} />
-      </section>
-
-      <section className="mb-10">
-        <h2 className="mb-3 text-xl font-bold">My team</h2>
-        <p className="mb-3 text-sm text-black/60 dark:text-white/60">
-          Build your squad — pick 2 keepers, 5 defenders, 5 midfielders, 3 forwards. Saved on this
-          device only.
-        </p>
-        <SquadBuilder players={snapshot.players} fixturesByTeam={fixturesByTeam} />
-      </section>
-
-      <section>
-        <h2 className="mb-3 text-xl font-bold">Chip strategy</h2>
-        <p className="mb-3 text-sm text-black/60 dark:text-white/60">
-          When to play what you&apos;ve got left — worked out from real double and blank gameweeks,
-          not vibes.
-        </p>
-        <PremiumGate>
-          <ChipStrategy players={snapshot.players} fixtures={fixtures} teams={snapshot.teams} />
-        </PremiumGate>
       </section>
 
       <footer className="mt-12 border-t border-black/10 py-6 text-xs text-black/40 dark:border-white/10 dark:text-white/40">
