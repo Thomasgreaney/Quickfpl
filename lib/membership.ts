@@ -30,12 +30,15 @@ export function isActiveMembership(data: BmcMembershipEventData): boolean {
   return data.status === "active" && !canceled && !paused;
 }
 
-// Only these tiers unlock gated content - Moyes is support-only.
-const GATED_TIERS = new Set(["pep", "fergie"]);
+// Only these tiers unlock gated content - Moyes is support-only. Matched
+// as a substring since BMC's stored level name may be the full heading
+// ("Pep - People are noticing you.") rather than just "Pep".
+const GATED_TIER_WORDS = ["pep", "fergie"];
 
 export function tierUnlocksPremium(levelName: string | null | undefined): boolean {
   if (!levelName) return false;
-  return GATED_TIERS.has(levelName.trim().toLowerCase());
+  const normalized = levelName.trim().toLowerCase();
+  return GATED_TIER_WORDS.some((word) => normalized.includes(word));
 }
 
 export interface MembershipRecord {
