@@ -12,10 +12,34 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+const SITE_URL = "https://quickfpl.com";
+const TITLE = "QuickFPL — FPL Price Tracker";
+const DESCRIPTION =
+  "Every Fantasy Premier League player's price, ownership and price changes in one sortable table. No fluff.";
+
 export const metadata: Metadata = {
-  title: "QuickFPL — FPL Price Tracker",
-  description:
-    "Every Fantasy Premier League player's price, ownership and price changes in one sortable table. No fluff.",
+  metadataBase: new URL(SITE_URL),
+  title: TITLE,
+  description: DESCRIPTION,
+  keywords: [
+    "FPL",
+    "Fantasy Premier League",
+    "FPL price tracker",
+    "FPL price changes",
+    "FPL transfers",
+  ],
+  openGraph: {
+    title: TITLE,
+    description: DESCRIPTION,
+    url: SITE_URL,
+    siteName: "QuickFPL",
+    type: "website",
+  },
+  twitter: {
+    card: "summary",
+    title: TITLE,
+    description: DESCRIPTION,
+  },
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
