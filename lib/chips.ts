@@ -67,6 +67,13 @@ export interface ChipAdvice {
 }
 
 const MAX_CANDIDATES = 3;
+const NEAR_TERM_TC_WINDOW = 6; // gameweeks scanned for single-fixture captain picks
+
+function difficultyLabel(d: number): string {
+  if (d <= 2) return "kind";
+  if (d >= 4) return "tough";
+  return "average";
+}
 
 /** Rule-based chip timing, ranked to the top 3 gameweeks per chip, using
  * real fixture data and (when available) the visitor's own saved squad. */
@@ -127,17 +134,51 @@ export function recommendChips(
       });
       advice.push({ chip, candidates, emptyReason: `No double gameweeks yet. ${noneYetSuffix}` });
     } else if (chip === "triplecaptain") {
-      const candidates: ChipCandidate[] = doubleRanked.map(({ event, doublers }) => {
-        const teamIds = doublers.map((d) => d.teamId);
-        const player = bestCaptainFor(teamIds);
-        const best = doublers[0];
+      // Triple Captain doesn't need a double gameweek - most weeks it's
+      // about who has the kindest single fixture. Rank doubles above
+      // singles, but always surface the best available option.
+      interface TcOption {
+        event: number;
+        teamId: number;
+        difficulty: number;
+        isDouble: boolean;
+        fixtures: TeamFixtureInEvent[];
+      }
+      const options: TcOption[] = [];
+      for (const a of analysis.slice(0, NEAR_TERM_TC_WINDOW)) {
+        for (const t of a.teams) {
+          if (!relevantTeamIds.includes(t.teamId)) continue;
+          options.push({
+            event: a.event,
+            teamId: t.teamId,
+            difficulty: Math.min(...t.fixtures.map((f) => f.difficulty)),
+            isDouble: t.fixtures.length >= 2,
+            fixtures: t.fixtures,
+          });
+        }
+      }
+      options.sort((a, b) => {
+        if (a.isDouble !== b.isDouble) return a.isDouble ? -1 : 1;
+        if (a.difficulty !== b.difficulty) return a.difficulty - b.difficulty;
+        return a.event - b.event;
+      });
+
+      const candidates: ChipCandidate[] = options.slice(0, MAX_CANDIDATES).map((opt) => {
+        const player = bestCaptainFor([opt.teamId]);
+        const fixtureText = opt.fixtures.map(fixtureLabel).join(", ");
         return {
-          event,
-          reason: `${shortById.get(best.teamId)} play twice — ${best.fixtures.map(fixtureLabel).join(", ")}.`,
+          event: opt.event,
+          reason: opt.isDouble
+            ? `${shortById.get(opt.teamId)} play twice — ${fixtureText}.`
+            : `${shortById.get(opt.teamId)}'s best fixture right now — ${fixtureText}, a ${difficultyLabel(opt.difficulty)} matchup.`,
           suggestedPlayerName: player?.name,
         };
       });
-      advice.push({ chip, candidates, emptyReason: `Nothing standing out yet. ${noneYetSuffix}` });
+      advice.push({
+        chip,
+        candidates,
+        emptyReason: `Nothing in the next ${NEAR_TERM_TC_WINDOW} gameweeks to go on yet. ${noneYetSuffix}`,
+      });
     } else if (chip === "freehit") {
       const candidates: ChipCandidate[] = blankRanked.map(({ event, blankers }) => ({
         event,
