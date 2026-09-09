@@ -8,7 +8,7 @@ function PhotoPlaceholder({ size, height }: { size: number; height: number }) {
     <div
       style={{ width: size, height }}
       title="No photo available"
-      className="flex flex-shrink-0 items-center justify-center rounded bg-black/10 dark:bg-white/10"
+      className="flex flex-shrink-0 items-center justify-center rounded-full bg-black/10 dark:bg-white/10"
     >
       <svg
         viewBox="0 0 24 24"
@@ -35,20 +35,19 @@ export default function PlayerPhoto({
   size?: number;
 }) {
   const [failed, setFailed] = useState(false);
-  const height = Math.round(size * (140 / 110));
 
   if (failed) {
-    return <PhotoPlaceholder size={size} height={height} />;
+    return <PhotoPlaceholder size={size} height={size} />;
   }
 
   return (
     // eslint-disable-next-line @next/next/no-img-element -- third-party CDN, no build-time optimization needed
     <img
-      src={`https://resources.premierleague.com/premierleague/photos/players/110x140/p${code}.png`}
+      src={`https://resources.premierleague.com/premierleague/photos/players/250x250/p${code}.png`}
       alt={name}
       width={size}
-      height={height}
-      className="flex-shrink-0 rounded bg-black/5 object-cover dark:bg-white/10"
+      height={size}
+      className="flex-shrink-0 rounded-full bg-black/5 object-cover dark:bg-white/10"
       onError={() => setFailed(true)}
     />
   );
