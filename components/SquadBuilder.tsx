@@ -7,6 +7,7 @@ import PlayerPhoto from "./PlayerPhoto";
 import FixtureChips from "./FixtureChips";
 
 const STORAGE_KEY = "quickfpl-squad";
+const BUDGET = 100; // £m, standard FPL squad budget
 
 const FORMATION: { position: Position; count: number }[] = [
   { position: "GKP", count: 2 },
@@ -92,6 +93,7 @@ export default function SquadBuilder({
 
   const filledCount = usedIds.size;
   const totalValue = [...usedIds].reduce((sum, id) => sum + (byId.get(id)?.price ?? 0), 0);
+  const remainingBudget = Math.max(0, BUDGET - totalValue);
 
   function fillSlot(slot: Slot, player: Player) {
     setSquad((prev) => {
@@ -138,7 +140,11 @@ export default function SquadBuilder({
           </button>
         </div>
         <p className="text-xs text-black/50 dark:text-white/50">
-          {filledCount}/15 players · squad value {fmtMoney(totalValue)}
+          {filledCount}/15 players · {fmtMoney(totalValue)} spent ·{" "}
+          <span className={remainingBudget <= 0 ? "font-semibold text-red-600 dark:text-red-400" : ""}>
+            {fmtMoney(remainingBudget)} left
+          </span>{" "}
+          of a {fmtMoney(BUDGET)} budget
         </p>
       </div>
 
@@ -165,6 +171,7 @@ export default function SquadBuilder({
                       players={players}
                       excludeIds={usedIds}
                       fixturesByTeam={fixturesByTeam}
+                      maxPrice={remainingBudget}
                     />
                   );
                 })}
@@ -218,6 +225,7 @@ export default function SquadBuilder({
                             positionFilter={position}
                             excludeIds={usedIds}
                             fixturesByTeam={fixturesByTeam}
+                            maxPrice={remainingBudget}
                             placeholder={`Add a ${position}...`}
                             onSelect={(p) => fillSlot(slot, p)}
                           />
@@ -246,6 +254,7 @@ function SquadSlot({
   players,
   excludeIds,
   fixturesByTeam,
+  maxPrice,
 }: {
   slot: Slot;
   player: Player | undefined;
@@ -257,6 +266,7 @@ function SquadSlot({
   players: Player[];
   excludeIds: Set<number>;
   fixturesByTeam: Record<number, FixtureRun[]>;
+  maxPrice: number;
 }) {
   return (
     <div className="relative w-16 sm:w-20">
@@ -294,6 +304,7 @@ function SquadSlot({
               positionFilter={slot.position}
               excludeIds={excludeIds}
               fixturesByTeam={fixturesByTeam}
+              maxPrice={maxPrice}
               placeholder={`Add a ${slot.position}...`}
               onSelect={onPick}
               autoFocus

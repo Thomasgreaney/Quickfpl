@@ -12,6 +12,7 @@ export default function PlayerAutocomplete({
   positionFilter,
   fixturesByTeam,
   autoFocus,
+  maxPrice,
 }: {
   players: Player[];
   placeholder?: string;
@@ -20,6 +21,8 @@ export default function PlayerAutocomplete({
   positionFilter?: Position;
   fixturesByTeam?: Record<number, FixtureRun[]>;
   autoFocus?: boolean;
+  /** If set, players costing more than this are shown but disabled. */
+  maxPrice?: number;
 }) {
   const [query, setQuery] = useState("");
   const [open, setOpen] = useState(false);
@@ -61,23 +64,36 @@ export default function PlayerAutocomplete({
               No one matches that.
             </li>
           ) : (
-            matches.map((p) => (
-              <li key={p.id}>
-                <button
-                  type="button"
-                  onMouseDown={() => pick(p)}
-                  className="flex w-full flex-col gap-1 px-3 py-2 text-left text-sm hover:bg-black/[.04] dark:hover:bg-white/[.06]"
-                >
-                  <span className="flex items-center justify-between gap-2">
-                    <span className="font-medium">{p.name}</span>
-                    <span className="whitespace-nowrap text-xs text-black/50 dark:text-white/50">
-                      {p.teamShort} · {p.position} · £{p.price.toFixed(1)}m
+            matches.map((p) => {
+              const affordable = maxPrice === undefined || p.price <= maxPrice + 1e-9;
+              return (
+                <li key={p.id}>
+                  <button
+                    type="button"
+                    disabled={!affordable}
+                    onMouseDown={() => affordable && pick(p)}
+                    className={`flex w-full flex-col gap-1 px-3 py-2 text-left text-sm ${
+                      affordable
+                        ? "hover:bg-black/[.04] dark:hover:bg-white/[.06]"
+                        : "cursor-not-allowed opacity-50"
+                    }`}
+                  >
+                    <span className="flex items-center justify-between gap-2">
+                      <span className="font-medium">{p.name}</span>
+                      <span className="whitespace-nowrap text-xs text-black/50 dark:text-white/50">
+                        {p.teamShort} · {p.position} · £{p.price.toFixed(1)}m
+                        {!affordable && (
+                          <span className="ml-1 font-semibold text-red-600 dark:text-red-400">
+                            over budget
+                          </span>
+                        )}
+                      </span>
                     </span>
-                  </span>
-                  {fixturesByTeam && <FixtureChips fixtures={fixturesByTeam[p.teamId]} />}
-                </button>
-              </li>
-            ))
+                    {fixturesByTeam && <FixtureChips fixtures={fixturesByTeam[p.teamId]} />}
+                  </button>
+                </li>
+              );
+            })
           )}
         </ul>
       )}
