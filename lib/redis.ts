@@ -1,6 +1,11 @@
 import { Redis } from "@upstash/redis";
 
-// Reads UPSTASH_REDIS_REST_URL / UPSTASH_REDIS_REST_TOKEN, set automatically
-// when a Redis database from the Vercel Marketplace is connected to this
-// project.
-export const redis = Redis.fromEnv();
+// This project's connected database is a "Vercel KV" style integration,
+// which exposes KV_REST_API_URL / KV_REST_API_TOKEN rather than the
+// UPSTASH_REDIS_REST_URL / UPSTASH_REDIS_REST_TOKEN names Redis.fromEnv()
+// looks for by default - it's the same underlying Upstash REST API either
+// way, just a different env var prefix.
+export const redis = new Redis({
+  url: process.env.KV_REST_API_URL!,
+  token: process.env.KV_REST_API_TOKEN!,
+});
