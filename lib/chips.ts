@@ -1,4 +1,4 @@
-import type { FplRawFixture, TeamRef } from "./fpl-types";
+import type { FplRawFixture, Player, TeamRef } from "./fpl-types";
 
 export type ChipType = "wildcard" | "freehit" | "benchboost" | "triplecaptain";
 
@@ -9,138 +9,163 @@ export const CHIP_LABELS: Record<ChipType, string> = {
   triplecaptain: "Triple Captain",
 };
 
-export interface GameweekAnalysis {
-  event: number;
-  doubleTeamIds: number[]; // teams with 2+ fixtures this gameweek
-  blankTeamIds: number[]; // teams with no fixture this gameweek
+interface TeamFixtureInEvent {
+  opponentShort: string;
+  isHome: boolean;
+  difficulty: number;
 }
 
-/** Scans upcoming fixtures and flags double/blank gameweeks per team. */
+interface EventTeamData {
+  teamId: number;
+  fixtures: TeamFixtureInEvent[];
+}
+
+export interface GameweekAnalysis {
+  event: number;
+  teams: EventTeamData[]; // only teams with at least one fixture this event
+}
+
+/** Scans upcoming fixtures into a per-gameweek, per-team fixture breakdown. */
 export function analyzeGameweeks(fixtures: FplRawFixture[], teams: TeamRef[]): GameweekAnalysis[] {
+  const shortById = new Map(teams.map((t) => [t.id, t.short]));
   const upcoming = fixtures.filter((f) => !f.finished && f.event !== null);
   const events = [...new Set(upcoming.map((f) => f.event as number))].sort((a, b) => a - b);
-  const allTeamIds = teams.map((t) => t.id);
 
   return events.map((event) => {
     const eventFixtures = upcoming.filter((f) => f.event === event);
-    const countByTeam = new Map<number, number>();
+    const byTeam = new Map<number, TeamFixtureInEvent[]>();
     for (const f of eventFixtures) {
-      countByTeam.set(f.team_h, (countByTeam.get(f.team_h) ?? 0) + 1);
-      countByTeam.set(f.team_a, (countByTeam.get(f.team_a) ?? 0) + 1);
+      const home = byTeam.get(f.team_h) ?? [];
+      home.push({ opponentShort: shortById.get(f.team_a) ?? "?", isHome: true, difficulty: f.team_h_difficulty });
+      byTeam.set(f.team_h, home);
+
+      const away = byTeam.get(f.team_a) ?? [];
+      away.push({ opponentShort: shortById.get(f.team_h) ?? "?", isHome: false, difficulty: f.team_a_difficulty });
+      byTeam.set(f.team_a, away);
     }
     return {
       event,
-      doubleTeamIds: allTeamIds.filter((id) => (countByTeam.get(id) ?? 0) >= 2),
-      blankTeamIds: allTeamIds.filter((id) => (countByTeam.get(id) ?? 0) === 0),
+      teams: [...byTeam.entries()].map(([teamId, fx]) => ({ teamId, fixtures: fx })),
     };
   });
 }
 
-export interface ChipAdvice {
-  chip: ChipType;
-  bestEvent: number | null;
-  affectedCount: number; // how many of the user's squad this gameweek involves
-  reason: string;
+function fixtureLabel(f: TeamFixtureInEvent): string {
+  return `${f.opponentShort} (${f.isHome ? "H" : "A"})`;
 }
 
-/** Rule-based chip timing advice from real fixture data and the user's own squad. */
+export interface ChipCandidate {
+  event: number;
+  reason: string;
+  suggestedPlayerName?: string;
+}
+
+export interface ChipAdvice {
+  chip: ChipType;
+  candidates: ChipCandidate[]; // ranked best-first, up to 3, empty if nothing found
+  emptyReason: string;
+}
+
+const MAX_CANDIDATES = 3;
+
+/** Rule-based chip timing, ranked to the top 3 gameweeks per chip, using
+ * real fixture data and (when available) the visitor's own saved squad. */
 export function recommendChips(
   chipsRemaining: ChipType[],
   analysis: GameweekAnalysis[],
-  squadTeamIds: number[]
+  teams: TeamRef[],
+  squadPlayers: Player[],
+  allPlayers: Player[]
 ): ChipAdvice[] {
-  function bestEventBy(pickTeamIds: (a: GameweekAnalysis) => number[]) {
-    let best: { event: number; count: number } | null = null;
-    for (const a of analysis) {
-      const count = squadTeamIds.filter((id) => pickTeamIds(a).includes(id)).length;
-      if (count > 0 && (!best || count > best.count)) best = { event: a.event, count };
-    }
-    return best;
-  }
-
-  const bestDouble = bestEventBy((a) => a.doubleTeamIds);
-  const bestBlank = bestEventBy((a) => a.blankTeamIds);
+  const shortById = new Map(teams.map((t) => [t.id, t.short]));
+  const allTeamIds = teams.map((t) => t.id);
+  const usingRealSquad = squadPlayers.length > 0;
+  // Without a saved squad, judge gameweeks league-wide instead of leaving
+  // every chip empty.
+  const relevantTeamIds = usingRealSquad ? [...new Set(squadPlayers.map((p) => p.teamId))] : allTeamIds;
 
   const events = analysis.map((a) => a.event);
   const scanRange =
-    events.length > 0
-      ? `GW${Math.min(...events)}–${Math.max(...events)}`
-      : "the fixtures published so far";
-  // Doubles/blanks come from cup replays and rescheduled fixtures, so they
-  // usually aren't in the schedule yet this early in a season - "none
-  // found" is a real result, not a gap in the data.
+    events.length > 0 ? `GW${Math.min(...events)}–${Math.max(...events)}` : "the fixtures published so far";
   const noneYetSuffix = `Nothing in ${scanRange} yet — doubles and blanks usually only get confirmed once the season's underway. Check back later.`;
+
+  const doubleRanked = analysis
+    .map((a) => ({
+      event: a.event,
+      doublers: a.teams.filter((t) => t.fixtures.length >= 2 && relevantTeamIds.includes(t.teamId)),
+    }))
+    .filter((x) => x.doublers.length > 0)
+    .sort((a, b) => b.doublers.length - a.doublers.length)
+    .slice(0, MAX_CANDIDATES);
+
+  const blankRanked = analysis
+    .map((a) => {
+      const present = new Set(a.teams.map((t) => t.teamId));
+      return { event: a.event, blankers: relevantTeamIds.filter((id) => !present.has(id)) };
+    })
+    .filter((x) => x.blankers.length > 0)
+    .sort((a, b) => b.blankers.length - a.blankers.length)
+    .slice(0, MAX_CANDIDATES);
+
+  function bestCaptainFor(teamIds: number[]): Player | undefined {
+    const pool = usingRealSquad ? squadPlayers : allPlayers;
+    return pool
+      .filter((p) => teamIds.includes(p.teamId) && (p.position === "MID" || p.position === "FWD"))
+      .sort((a, b) => b.form - a.form || b.totalPoints - a.totalPoints)[0];
+  }
 
   const advice: ChipAdvice[] = [];
 
   for (const chip of chipsRemaining) {
     if (chip === "benchboost") {
-      advice.push(
-        bestDouble
-          ? {
-              chip,
-              bestEvent: bestDouble.event,
-              affectedCount: bestDouble.count,
-              reason: `Gameweek ${bestDouble.event} has ${bestDouble.count} of your squad's teams playing twice. That's your bench boost window.`,
-            }
-          : {
-              chip,
-              bestEvent: null,
-              affectedCount: 0,
-              reason: `No double gameweeks yet. ${noneYetSuffix}`,
-            }
-      );
+      const candidates: ChipCandidate[] = doubleRanked.map(({ event, doublers }) => {
+        const sample = doublers
+          .slice(0, 2)
+          .map((d) => `${shortById.get(d.teamId)} (${d.fixtures.map(fixtureLabel).join(", ")})`)
+          .join("; ");
+        return { event, reason: `${doublers.length} of the relevant teams play twice — ${sample}.` };
+      });
+      advice.push({ chip, candidates, emptyReason: `No double gameweeks yet. ${noneYetSuffix}` });
     } else if (chip === "triplecaptain") {
-      advice.push(
-        bestDouble
-          ? {
-              chip,
-              bestEvent: bestDouble.event,
-              affectedCount: bestDouble.count,
-              reason: `Gameweek ${bestDouble.event} is your best double-fixture shout — check which of your players actually start twice before pulling the trigger.`,
-            }
-          : {
-              chip,
-              bestEvent: null,
-              affectedCount: 0,
-              reason: `Nothing standing out yet. ${noneYetSuffix}`,
-            }
-      );
+      const candidates: ChipCandidate[] = doubleRanked.map(({ event, doublers }) => {
+        const teamIds = doublers.map((d) => d.teamId);
+        const player = bestCaptainFor(teamIds);
+        const best = doublers[0];
+        return {
+          event,
+          reason: `${shortById.get(best.teamId)} play twice — ${best.fixtures.map(fixtureLabel).join(", ")}.`,
+          suggestedPlayerName: player?.name,
+        };
+      });
+      advice.push({ chip, candidates, emptyReason: `Nothing standing out yet. ${noneYetSuffix}` });
     } else if (chip === "freehit") {
-      advice.push(
-        bestBlank
-          ? {
-              chip,
-              bestEvent: bestBlank.event,
-              affectedCount: bestBlank.count,
-              reason: `Gameweek ${bestBlank.event} blanks for ${bestBlank.count} of your squad's teams. That's the one to Free Hit through.`,
-            }
-          : {
-              chip,
-              bestEvent: null,
-              affectedCount: 0,
-              reason: `No blank gameweeks yet. ${noneYetSuffix}`,
-            }
-      );
+      const candidates: ChipCandidate[] = blankRanked.map(({ event, blankers }) => ({
+        event,
+        reason: `${blankers.length} relevant team${blankers.length === 1 ? "" : "s"} won't play — ${blankers
+          .map((id) => shortById.get(id))
+          .join(", ")}.`,
+      }));
+      advice.push({ chip, candidates, emptyReason: `No blank gameweeks yet. ${noneYetSuffix}` });
     } else if (chip === "wildcard") {
-      const target = [bestBlank, bestDouble]
-        .filter((x): x is { event: number; count: number } => x !== null)
-        .sort((a, b) => a.event - b.event)[0];
-      advice.push(
-        target
-          ? {
-              chip,
-              bestEvent: Math.max(1, target.event - 1),
-              affectedCount: target.count,
-              reason: `Play it the gameweek before ${target.event} to get your squad shaped up for the double/blank coming then.`,
-            }
-          : {
-              chip,
-              bestEvent: null,
-              affectedCount: 0,
-              reason: `No obvious trigger yet — use it when your squad's fixtures turn bad, not just because you're bored of it. ${noneYetSuffix}`,
-            }
-      );
+      const combined = [
+        ...doubleRanked.map((x) => ({ event: x.event, count: x.doublers.length, kind: "double" as const })),
+        ...blankRanked.map((x) => ({ event: x.event, count: x.blankers.length, kind: "blank" as const })),
+      ]
+        .sort((a, b) => b.count - a.count)
+        .slice(0, MAX_CANDIDATES)
+        .sort((a, b) => a.event - b.event);
+      const candidates: ChipCandidate[] = combined.map((t) => ({
+        event: Math.max(1, t.event - 1),
+        reason:
+          t.kind === "double"
+            ? `Gets your squad ready before gameweek ${t.event}'s double.`
+            : `Gets your squad ready before gameweek ${t.event} blanks for part of it.`,
+      }));
+      advice.push({
+        chip,
+        candidates,
+        emptyReason: `No obvious trigger yet — use it when your squad's fixtures turn bad, not just because you're bored of it. ${noneYetSuffix}`,
+      });
     }
   }
 

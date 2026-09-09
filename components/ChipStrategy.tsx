@@ -46,19 +46,17 @@ export default function ChipStrategy({
   }
 
   const byId = new Map(players.map((p) => [p.id, p]));
-  const squadTeamIds = squadIds
-    .map((id) => byId.get(id)?.teamId)
-    .filter((id): id is number => id !== undefined);
+  const squadPlayers = squadIds.map((id) => byId.get(id)).filter((p): p is Player => Boolean(p));
 
   const analysis = analyzeGameweeks(fixtures, teams);
-  const advice = recommendChips([...remaining], analysis, squadTeamIds);
+  const advice = recommendChips([...remaining], analysis, teams, squadPlayers, players);
 
   return (
     <div>
       <p className="mb-3 text-sm text-black/60 dark:text-white/60">
-        Tick off the chips you&apos;ve already used. We&apos;ll work out when to play what&apos;s left,
-        from real fixture data
-        {squadIds.length > 0
+        Tick off the chips you&apos;ve already used. We&apos;ll rank the best upcoming gameweeks for
+        what&apos;s left, from real fixture data
+        {squadPlayers.length > 0
           ? " and your saved squad."
           : " — build your squad in the My Team section above for advice tailored to your actual team."}
       </p>
@@ -88,24 +86,38 @@ export default function ChipStrategy({
           Mark at least one chip as available to get advice.
         </p>
       ) : (
-        <ul className="space-y-2">
+        <div className="space-y-4">
           {advice.map((a) => (
-            <li
+            <div
               key={a.chip}
               className="rounded-lg border border-black/10 bg-white p-3 dark:border-white/15 dark:bg-neutral-900"
             >
-              <div className="flex items-baseline justify-between gap-2">
-                <span className="font-semibold">{CHIP_LABELS[a.chip]}</span>
-                {a.bestEvent !== null && (
-                  <span className="whitespace-nowrap rounded bg-purple-100 px-2 py-0.5 text-xs font-semibold text-purple-700 dark:bg-purple-900/40 dark:text-purple-300">
-                    Gameweek {a.bestEvent}
-                  </span>
-                )}
-              </div>
-              <p className="mt-1 text-sm text-black/70 dark:text-white/70">{a.reason}</p>
-            </li>
+              <h4 className="font-semibold">{CHIP_LABELS[a.chip]}</h4>
+
+              {a.candidates.length === 0 ? (
+                <p className="mt-1 text-sm text-black/60 dark:text-white/60">{a.emptyReason}</p>
+              ) : (
+                <ol className="mt-2 space-y-2">
+                  {a.candidates.map((c, i) => (
+                    <li key={i} className="rounded-md bg-black/[.03] p-2.5 dark:bg-white/[.05]">
+                      <div className="flex items-baseline justify-between gap-2">
+                        <span className="text-sm font-semibold">
+                          {i === 0 ? "Best" : `Option ${i + 1}`} · Gameweek {c.event}
+                        </span>
+                        {c.suggestedPlayerName && (
+                          <span className="whitespace-nowrap rounded bg-purple-100 px-1.5 py-0.5 text-xs font-semibold text-purple-700 dark:bg-purple-900/40 dark:text-purple-300">
+                            {c.suggestedPlayerName}
+                          </span>
+                        )}
+                      </div>
+                      <p className="mt-0.5 text-sm text-black/70 dark:text-white/70">{c.reason}</p>
+                    </li>
+                  ))}
+                </ol>
+              )}
+            </div>
           ))}
-        </ul>
+        </div>
       )}
     </div>
   );
