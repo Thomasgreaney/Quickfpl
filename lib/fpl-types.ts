@@ -1,0 +1,81 @@
+// Minimal shape of https://fantasy.premierleague.com/api/bootstrap-static/
+// Only the fields we actually use are typed.
+
+export interface FplRawElement {
+  id: number;
+  code: number;
+  first_name: string;
+  second_name: string;
+  web_name: string;
+  team: number;
+  element_type: number;
+  now_cost: number; // tenths of a million, e.g. 55 => £5.5m
+  cost_change_start: number; // tenths of a million change since season start
+  cost_change_start_fall: number;
+  cost_change_event: number; // tenths of a million change since last gameweek
+  cost_change_event_fall: number;
+  selected_by_percent: string;
+  form: string;
+  total_points: number;
+  status: string; // 'a' available, 'i' injured, 'd' doubtful, 's' suspended, 'u' unavailable
+  news: string;
+  chance_of_playing_next_round: number | null;
+  points_per_game: string;
+  transfers_in_event: number;
+  transfers_out_event: number;
+}
+
+export interface FplRawTeam {
+  id: number;
+  name: string;
+  short_name: string;
+}
+
+export interface FplRawElementType {
+  id: number;
+  singular_name_short: string; // GKP, DEF, MID, FWD
+}
+
+export interface FplBootstrapStatic {
+  elements: FplRawElement[];
+  teams: FplRawTeam[];
+  element_types: FplRawElementType[];
+  events: { id: number; is_current: boolean; is_next: boolean; name: string }[];
+}
+
+export type Position = "GKP" | "DEF" | "MID" | "FWD";
+
+export interface Player {
+  id: number;
+  code: number;
+  name: string;
+  fullName: string;
+  team: string;
+  teamShort: string;
+  position: Position;
+  price: number; // in £m, e.g. 5.5
+  priceChangeSeason: number; // £m change since season start
+  priceChangeEvent: number; // £m change since last gameweek
+  ownership: number; // percent
+  form: number;
+  totalPoints: number;
+  status: string;
+  news: string;
+  transfersInEvent: number;
+  transfersOutEvent: number;
+}
+
+export interface DataSnapshot {
+  fetchedAt: string;
+  currentEventId: number | null;
+  players: Player[];
+}
+
+export interface HistorySnapshot {
+  fetchedAt: string;
+  prices: Record<number, number>; // player id -> now_cost (tenths of £m)
+}
+
+export interface HistoryFile {
+  snapshots: HistorySnapshot[];
+}
