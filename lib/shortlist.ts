@@ -13,7 +13,7 @@ export interface ShortlistEntry {
   reason: string;
 }
 
-function averageDifficulty(fixtures: FixtureRun[] | undefined): number {
+export function averageDifficulty(fixtures: FixtureRun[] | undefined): number {
   if (!fixtures || fixtures.length === 0) return NEUTRAL_DIFFICULTY;
   return fixtures.reduce((sum, f) => sum + f.difficulty, 0) / fixtures.length;
 }

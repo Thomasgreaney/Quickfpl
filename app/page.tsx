@@ -8,6 +8,7 @@ import PlayerLookup from "@/components/PlayerLookup";
 import SquadBuilder from "@/components/SquadBuilder";
 import ChipStrategy from "@/components/ChipStrategy";
 import TransferShortlist from "@/components/TransferShortlist";
+import WeakLinks from "@/components/WeakLinks";
 import PremiumGate from "@/components/PremiumGate";
 
 export const revalidate = 300;
@@ -93,6 +94,17 @@ export default async function Home() {
         </p>
         <PremiumGate>
           <TransferShortlist players={snapshot.players} fixturesByTeam={fixturesByTeam} />
+        </PremiumGate>
+      </section>
+
+      <section className="mb-10">
+        <h2 className="mb-3 text-xl font-bold">Weak links</h2>
+        <p className="mb-3 text-sm text-black/60 dark:text-white/60">
+          Anyone in your saved squad who might be dragging you down — injuries, poor form or a rough
+          run of fixtures.
+        </p>
+        <PremiumGate>
+          <WeakLinks players={snapshot.players} fixturesByTeam={fixturesByTeam} />
         </PremiumGate>
       </section>
 
