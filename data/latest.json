@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-09-10T09:13:23.408Z",
+  "fetchedAt": "2026-09-10T12:17:00.291Z",
   "currentEventId": 3,
   "players": [
     {
@@ -20,8 +20,8 @@
       "totalPoints": 15,
       "status": "a",
       "news": "",
-      "transfersInEvent": 147846,
-      "transfersOutEvent": 122740
+      "transfersInEvent": 151324,
+      "transfersOutEvent": 126257
     },
     {
       "id": 2,
@@ -42,7 +42,7 @@
       "status": "a",
       "news": "",
       "transfersInEvent": 224,
-      "transfersOutEvent": 599
+      "transfersOutEvent": 607
     },
     {
       "id": 3,
@@ -63,7 +63,7 @@
       "status": "a",
       "news": "",
       "transfersInEvent": 83,
-      "transfersOutEvent": 217
+      "transfersOutEvent": 219
     },
     {
       "id": 4,
@@ -83,8 +83,8 @@
       "totalPoints": 15,
       "status": "a",
       "news": "",
-      "transfersInEvent": 34932,
-      "transfersOutEvent": 150375
+      "transfersInEvent": 35512,
+      "transfersOutEvent": 153462
     },
     {
       "id": 5,
@@ -104,8 +104,8 @@
       "totalPoints": 0,
       "status": "d",
       "news": "Groin injury - 25% chance of playing",
-      "transfersInEvent": 488,
-      "transfersOutEvent": 1027
+      "transfersInEvent": 499,
+      "transfersOutEvent": 1042
     },
     {
       "id": 6,
@@ -125,8 +125,8 @@
       "totalPoints": 0,
       "status": "i",
       "news": "Back injury - Unknown return date",
-      "transfersInEvent": 620,
-      "transfersOutEvent": 2630
+      "transfersInEvent": 622,
+      "transfersOutEvent": 2653
     },
     {
       "id": 7,
@@ -146,8 +146,8 @@
       "totalPoints": 8,
       "status": "a",
       "news": "",
-      "transfersInEvent": 4957,
-      "transfersOutEvent": 6816
+      "transfersInEvent": 5012,
+      "transfersOutEvent": 6944
     },
     {
       "id": 8,
@@ -167,8 +167,8 @@
       "totalPoints": 22,
       "status": "a",
       "news": "",
-      "transfersInEvent": 299925,
-      "transfersOutEvent": 54860
+      "transfersInEvent": 305718,
+      "transfersOutEvent": 56057
     },
     {
       "id": 9,
@@ -188,8 +188,8 @@
       "totalPoints": 2,
       "status": "a",
       "news": "",
-      "transfersInEvent": 2626,
-      "transfersOutEvent": 12903
+      "transfersInEvent": 2656,
+      "transfersOutEvent": 13047
     },
     {
       "id": 10,
@@ -209,8 +209,8 @@
       "totalPoints": 20,
       "status": "a",
       "news": "",
-      "transfersInEvent": 76602,
-      "transfersOutEvent": 70284
+      "transfersInEvent": 77891,
+      "transfersOutEvent": 71798
     },
     {
       "id": 11,
@@ -230,8 +230,8 @@
       "totalPoints": 12,
       "status": "d",
       "news": "Muscular injury - 75% chance of playing",
-      "transfersInEvent": 617,
-      "transfersOutEvent": 108636
+      "transfersInEvent": 623,
+      "transfersOutEvent": 110867
     },
     {
       "id": 12,
@@ -251,8 +251,8 @@
       "totalPoints": 22,
       "status": "a",
       "news": "",
-      "transfersInEvent": 126994,
-      "transfersOutEvent": 83534
+      "transfersInEvent": 129647,
+      "transfersOutEvent": 86401
     },
     {
       "id": 13,
@@ -272,8 +272,8 @@
       "totalPoints": 13,
       "status": "a",
       "news": "",
-      "transfersInEvent": 17497,
-      "transfersOutEvent": 90629
+      "transfersInEvent": 17750,
+      "transfersOutEvent": 92503
     },
     {
       "id": 14,
@@ -293,8 +293,8 @@
       "totalPoints": 2,
       "status": "a",
       "news": "",
-      "transfersInEvent": 2875,
-      "transfersOutEvent": 19818
+      "transfersInEvent": 2898,
+      "transfersOutEvent": 20087
     },
     {
       "id": 15,
@@ -309,13 +309,13 @@
       "price": 6.6,
       "priceChangeSeason": 0.1,
       "priceChangeEvent": 0,
-      "ownership": 14.6,
+      "ownership": 14.7,
       "form": 8,
       "totalPoints": 24,
       "status": "a",
       "news": "",
-      "transfersInEvent": 364735,
-      "transfersOutEvent": 67340
+      "transfersInEvent": 382238,
+      "transfersOutEvent": 69008
     },
     {
       "id": 16,
@@ -335,8 +335,8 @@
       "totalPoints": 2,
       "status": "a",
       "news": "",
-      "transfersInEvent": 1153,
-      "transfersOutEvent": 2984
+      "transfersInEvent": 1162,
+      "transfersOutEvent": 3016
     },
     {
       "id": 17,
@@ -356,8 +356,8 @@
       "totalPoints": 2,
       "status": "a",
       "news": "",
-      "transfersInEvent": 1408,
-      "transfersOutEvent": 7225
+      "transfersInEvent": 1421,
+      "transfersOutEvent": 7297
     },
     {
       "id": 18,
@@ -378,7 +378,7 @@
       "status": "u",
       "news": "Has joined Al Hilal permanently",
       "transfersInEvent": 0,
-      "transfersOutEvent": 5021
+      "transfersOutEvent": 5055
     },
     {
       "id": 19,
@@ -398,8 +398,8 @@
       "totalPoints": 3,
       "status": "a",
       "news": "",
-      "transfersInEvent": 1182,
-      "transfersOutEvent": 8175
+      "transfersInEvent": 1191,
+      "transfersOutEvent": 8313
     },
     {
       "id": 20,
@@ -419,8 +419,8 @@
       "totalPoints": 0,
       "status": "a",
       "news": "",
-      "transfersInEvent": 443,
-      "transfersOutEvent": 941
+      "transfersInEvent": 451,
+      "transfersOutEvent": 955
     },
     {
       "id": 22,
@@ -441,7 +441,7 @@
       "status": "u",
       "news": "Has joined Borussia Dortmund on loan for the rest of the season",
       "transfersInEvent": 0,
-      "transfersOutEvent": 267
+      "transfersOutEvent": 270
     },
     {
       "id": 23,
@@ -503,8 +503,8 @@
       "totalPoints": 1,
       "status": "a",
       "news": "",
-      "transfersInEvent": 4585,
-      "transfersOutEvent": 61195
+      "transfersInEvent": 4622,
+      "transfersOutEvent": 62147
     },
     {
       "id": 26,
@@ -524,8 +524,8 @@
       "totalPoints": 16,
       "status": "a",
       "news": "",
-      "transfersInEvent": 118955,
-      "transfersOutEvent": 46786
+      "transfersInEvent": 121034,
+      "transfersOutEvent": 47807
     },
     {
       "id": 27,
@@ -546,7 +546,7 @@
       "status": "u",
       "news": "Has joined FC Barcelona permanently",
       "transfersInEvent": 0,
-      "transfersOutEvent": 6329
+      "transfersOutEvent": 6362
     },
     {
       "id": 31,
@@ -561,13 +561,13 @@
       "price": 4.4,
       "priceChangeSeason": -0.1,
       "priceChangeEvent": 0,
-      "ownership": 13.8,
+      "ownership": 13.9,
       "form": 1.7,
       "totalPoints": 5,
       "status": "a",
       "news": "",
-      "transfersInEvent": 340260,
-      "transfersOutEvent": 61887
+      "transfersInEvent": 350724,
+      "transfersOutEvent": 63223
     },
     {
       "id": 452,
@@ -587,8 +587,8 @@
       "totalPoints": 1,
       "status": "a",
       "news": "",
-      "transfersInEvent": 1521,
-      "transfersOutEvent": 25149
+      "transfersInEvent": 1541,
+      "transfersOutEvent": 25555
     },
     {
       "id": 557,
@@ -608,8 +608,8 @@
       "totalPoints": 11,
       "status": "a",
       "news": "",
-      "transfersInEvent": 47874,
-      "transfersOutEvent": 242691
+      "transfersInEvent": 48916,
+      "transfersOutEvent": 248142
     },
     {
       "id": 29,
@@ -629,8 +629,8 @@
       "totalPoints": 1,
       "status": "a",
       "news": "",
-      "transfersInEvent": 673,
-      "transfersOutEvent": 1055
+      "transfersInEvent": 683,
+      "transfersOutEvent": 1069
     },
     {
       "id": 30,
@@ -651,7 +651,7 @@
       "status": "u",
       "news": "Has joined Paris Saint-Germain permanently",
       "transfersInEvent": 0,
-      "transfersOutEvent": 683
+      "transfersOutEvent": 690
     },
     {
       "id": 32,
@@ -671,8 +671,8 @@
       "totalPoints": 7,
       "status": "d",
       "news": "Muscular injury - 75% chance of playing",
-      "transfersInEvent": 17458,
-      "transfersOutEvent": 35808
+      "transfersInEvent": 17494,
+      "transfersOutEvent": 37567
     },
     {
       "id": 33,
@@ -692,8 +692,8 @@
       "totalPoints": 7,
       "status": "a",
       "news": "",
-      "transfersInEvent": 2255,
-      "transfersOutEvent": 1472
+      "transfersInEvent": 2328,
+      "transfersOutEvent": 1501
     },
     {
       "id": 34,
@@ -713,8 +713,8 @@
       "totalPoints": 2,
       "status": "a",
       "news": "",
-      "transfersInEvent": 1373,
-      "transfersOutEvent": 3506
+      "transfersInEvent": 1433,
+      "transfersOutEvent": 3544
     },
     {
       "id": 35,
@@ -734,8 +734,8 @@
       "totalPoints": 1,
       "status": "a",
       "news": "",
-      "transfersInEvent": 478,
-      "transfersOutEvent": 771
+      "transfersInEvent": 481,
+      "transfersOutEvent": 779
     },
     {
       "id": 36,
@@ -755,8 +755,8 @@
       "totalPoints": 8,
       "status": "a",
       "news": "",
-      "transfersInEvent": 6918,
-      "transfersOutEvent": 3744
+      "transfersInEvent": 7199,
+      "transfersOutEvent": 3834
     },
     {
       "id": 37,
@@ -776,8 +776,8 @@
       "totalPoints": 6,
       "status": "a",
       "news": "",
-      "transfersInEvent": 2093,
-      "transfersOutEvent": 1244
+      "transfersInEvent": 2157,
+      "transfersOutEvent": 1265
     },
     {
       "id": 38,
@@ -797,8 +797,8 @@
       "totalPoints": 0,
       "status": "a",
       "news": "",
-      "transfersInEvent": 8471,
-      "transfersOutEvent": 11330
+      "transfersInEvent": 8619,
+      "transfersOutEvent": 11491
     },
     {
       "id": 39,
@@ -819,7 +819,7 @@
       "status": "u",
       "news": "Has joined Rangers on loan for the rest of the season",
       "transfersInEvent": 0,
-      "transfersOutEvent": 1487
+      "transfersOutEvent": 1503
     },
     {
       "id": 41,
@@ -839,8 +839,8 @@
       "totalPoints": 7,
       "status": "a",
       "news": "",
-      "transfersInEvent": 6746,
-      "transfersOutEvent": 13322
+      "transfersInEvent": 6979,
+      "transfersOutEvent": 13569
     },
     {
       "id": 44,
@@ -861,7 +861,7 @@
       "status": "u",
       "news": "Has joined Olympiakos permanently",
       "transfersInEvent": 0,
-      "transfersOutEvent": 3559
+      "transfersOutEvent": 3588
     },
     {
       "id": 45,
@@ -881,8 +881,8 @@
       "totalPoints": 5,
       "status": "a",
       "news": "",
-      "transfersInEvent": 9454,
-      "transfersOutEvent": 20201
+      "transfersInEvent": 9757,
+      "transfersOutEvent": 20555
     },
     {
       "id": 46,
@@ -902,8 +902,8 @@
       "totalPoints": 7,
       "status": "a",
       "news": "",
-      "transfersInEvent": 3080,
-      "transfersOutEvent": 2233
+      "transfersInEvent": 3122,
+      "transfersOutEvent": 2266
     },
     {
       "id": 47,
@@ -923,8 +923,8 @@
       "totalPoints": 7,
       "status": "a",
       "news": "",
-      "transfersInEvent": 2410,
-      "transfersOutEvent": 3003
+      "transfersInEvent": 2448,
+      "transfersOutEvent": 3076
     },
     {
       "id": 48,
@@ -945,7 +945,7 @@
       "status": "i",
       "news": "Knee injury - Unknown return date",
       "transfersInEvent": 74,
-      "transfersOutEvent": 192
+      "transfersOutEvent": 194
     },
     {
       "id": 49,
@@ -986,8 +986,8 @@
       "totalPoints": 0,
       "status": "a",
       "news": "",
-      "transfersInEvent": 4917,
-      "transfersOutEvent": 5510
+      "transfersInEvent": 4986,
+      "transfersOutEvent": 5611
     },
     {
       "id": 51,
@@ -1007,8 +1007,8 @@
       "totalPoints": 7,
       "status": "a",
       "news": "",
-      "transfersInEvent": 30687,
-      "transfersOutEvent": 13072
+      "transfersInEvent": 31500,
+      "transfersOutEvent": 13483
     },
     {
       "id": 52,
@@ -1028,8 +1028,8 @@
       "totalPoints": 2,
       "status": "a",
       "news": "",
-      "transfersInEvent": 324,
-      "transfersOutEvent": 456
+      "transfersInEvent": 328,
+      "transfersOutEvent": 459
     },
     {
       "id": 53,
@@ -1050,7 +1050,7 @@
       "status": "i",
       "news": "Knee injury - Expected back 12 Sep",
       "transfersInEvent": 292,
-      "transfersOutEvent": 1322
+      "transfersOutEvent": 1343
     },
     {
       "id": 54,
@@ -1071,7 +1071,7 @@
       "status": "s",
       "news": "Suspended until 19 Sep",
       "transfersInEvent": 85,
-      "transfersOutEvent": 365
+      "transfersOutEvent": 370
     },
     {
       "id": 55,
@@ -1092,7 +1092,7 @@
       "status": "u",
       "news": "Has joined Al Hilal permanently",
       "transfersInEvent": 0,
-      "transfersOutEvent": 93190
+      "transfersOutEvent": 93928
     },
     {
       "id": 56,
@@ -1112,8 +1112,8 @@
       "totalPoints": 2,
       "status": "a",
       "news": "",
-      "transfersInEvent": 2892,
-      "transfersOutEvent": 1825
+      "transfersInEvent": 2940,
+      "transfersOutEvent": 1852
     },
     {
       "id": 160,
@@ -1133,8 +1133,8 @@
       "totalPoints": 3,
       "status": "a",
       "news": "",
-      "transfersInEvent": 1093,
-      "transfersOutEvent": 5785
+      "transfersInEvent": 1102,
+      "transfersOutEvent": 5861
     },
     {
       "id": 166,
@@ -1154,8 +1154,8 @@
       "totalPoints": 4,
       "status": "a",
       "news": "",
-      "transfersInEvent": 21347,
-      "transfersOutEvent": 11241
+      "transfersInEvent": 22017,
+      "transfersOutEvent": 11441
     },
     {
       "id": 582,
@@ -1175,8 +1175,8 @@
       "totalPoints": 0,
       "status": "i",
       "news": "Unspecified injury - Unknown return date",
-      "transfersInEvent": 264,
-      "transfersOutEvent": 3599
+      "transfersInEvent": 267,
+      "transfersOutEvent": 3666
     },
     {
       "id": 596,
@@ -1196,8 +1196,8 @@
       "totalPoints": 2,
       "status": "a",
       "news": "",
-      "transfersInEvent": 167,
-      "transfersOutEvent": 763
+      "transfersInEvent": 171,
+      "transfersOutEvent": 777
     },
     {
       "id": 597,
@@ -1217,8 +1217,8 @@
       "totalPoints": 12,
       "status": "a",
       "news": "",
-      "transfersInEvent": 46722,
-      "transfersOutEvent": 9824
+      "transfersInEvent": 47773,
+      "transfersOutEvent": 10139
     },
     {
       "id": 606,
@@ -1238,8 +1238,8 @@
       "totalPoints": 0,
       "status": "a",
       "news": "",
-      "transfersInEvent": 1962,
-      "transfersOutEvent": 1228
+      "transfersInEvent": 1985,
+      "transfersOutEvent": 1245
     },
     {
       "id": 607,
@@ -1260,7 +1260,7 @@
       "status": "u",
       "news": "Has joined Oxford United on loan until January",
       "transfersInEvent": 0,
-      "transfersOutEvent": 2362
+      "transfersOutEvent": 2386
     },
     {
       "id": 611,
@@ -1280,8 +1280,8 @@
       "totalPoints": 2,
       "status": "a",
       "news": "",
-      "transfersInEvent": 1957,
-      "transfersOutEvent": 1462
+      "transfersInEvent": 2004,
+      "transfersOutEvent": 1479
     },
     {
       "id": 618,
@@ -1302,7 +1302,7 @@
       "status": "i",
       "news": "Knee injury - Expected back 10 Oct",
       "transfersInEvent": 874,
-      "transfersOutEvent": 1280
+      "transfersOutEvent": 1304
     },
     {
       "id": 630,
@@ -1322,8 +1322,8 @@
       "totalPoints": 0,
       "status": "a",
       "news": "",
-      "transfersInEvent": 451,
-      "transfersOutEvent": 177
+      "transfersInEvent": 459,
+      "transfersOutEvent": 181
     },
     {
       "id": 631,
@@ -1343,8 +1343,8 @@
       "totalPoints": 0,
       "status": "a",
       "news": "",
-      "transfersInEvent": 2121,
-      "transfersOutEvent": 953
+      "transfersInEvent": 2139,
+      "transfersOutEvent": 973
     },
     {
       "id": 57,
@@ -1364,8 +1364,8 @@
       "totalPoints": 6,
       "status": "a",
       "news": "",
-      "transfersInEvent": 16746,
-      "transfersOutEvent": 21498
+      "transfersInEvent": 17117,
+      "transfersOutEvent": 21973
     },
     {
       "id": 58,
@@ -1385,8 +1385,8 @@
       "totalPoints": 0,
       "status": "a",
       "news": "",
-      "transfersInEvent": 21425,
-      "transfersOutEvent": 12069
+      "transfersInEvent": 21944,
+      "transfersOutEvent": 12387
     },
     {
       "id": 59,
@@ -1407,7 +1407,7 @@
       "status": "u",
       "news": "Has joined MK Dons permanently",
       "transfersInEvent": 0,
-      "transfersOutEvent": 1079
+      "transfersOutEvent": 1093
     },
     {
       "id": 60,
@@ -1427,8 +1427,8 @@
       "totalPoints": 6,
       "status": "a",
       "news": "",
-      "transfersInEvent": 4295,
-      "transfersOutEvent": 6390
+      "transfersInEvent": 4377,
+      "transfersOutEvent": 6499
     },
     {
       "id": 61,
@@ -1448,8 +1448,8 @@
       "totalPoints": 5,
       "status": "a",
       "news": "",
-      "transfersInEvent": 6510,
-      "transfersOutEvent": 29418
+      "transfersInEvent": 6641,
+      "transfersOutEvent": 29866
     },
     {
       "id": 62,
@@ -1469,8 +1469,8 @@
       "totalPoints": 0,
       "status": "a",
       "news": "",
-      "transfersInEvent": 843,
-      "transfersOutEvent": 1920
+      "transfersInEvent": 855,
+      "transfersOutEvent": 1935
     },
     {
       "id": 63,
@@ -1491,7 +1491,7 @@
       "status": "i",
       "news": "Unspecified injury - Unknown return date",
       "transfersInEvent": 49,
-      "transfersOutEvent": 117
+      "transfersOutEvent": 119
     },
     {
       "id": 64,
@@ -1511,8 +1511,8 @@
       "totalPoints": 2,
       "status": "a",
       "news": "",
-      "transfersInEvent": 786,
-      "transfersOutEvent": 1085
+      "transfersInEvent": 803,
+      "transfersOutEvent": 1100
     },
     {
       "id": 65,
@@ -1553,8 +1553,8 @@
       "totalPoints": 0,
       "status": "a",
       "news": "",
-      "transfersInEvent": 2634,
-      "transfersOutEvent": 1798
+      "transfersInEvent": 2670,
+      "transfersOutEvent": 1820
     },
     {
       "id": 67,
@@ -1574,8 +1574,8 @@
       "totalPoints": 6,
       "status": "a",
       "news": "",
-      "transfersInEvent": 4834,
-      "transfersOutEvent": 26693
+      "transfersInEvent": 4923,
+      "transfersOutEvent": 27125
     },
     {
       "id": 68,
@@ -1595,8 +1595,8 @@
       "totalPoints": 21,
       "status": "a",
       "news": "",
-      "transfersInEvent": 102198,
-      "transfersOutEvent": 27389
+      "transfersInEvent": 104130,
+      "transfersOutEvent": 28323
     },
     {
       "id": 69,
@@ -1616,8 +1616,8 @@
       "totalPoints": 24,
       "status": "a",
       "news": "",
-      "transfersInEvent": 234589,
-      "transfersOutEvent": 31673
+      "transfersInEvent": 239355,
+      "transfersOutEvent": 32696
     },
     {
       "id": 70,
@@ -1637,8 +1637,8 @@
       "totalPoints": 7,
       "status": "a",
       "news": "",
-      "transfersInEvent": 4972,
-      "transfersOutEvent": 12861
+      "transfersInEvent": 5044,
+      "transfersOutEvent": 13075
     },
     {
       "id": 71,
@@ -1658,8 +1658,8 @@
       "totalPoints": 7,
       "status": "a",
       "news": "",
-      "transfersInEvent": 1451,
-      "transfersOutEvent": 2229
+      "transfersInEvent": 1472,
+      "transfersOutEvent": 2257
     },
     {
       "id": 72,
@@ -1679,8 +1679,8 @@
       "totalPoints": 2,
       "status": "a",
       "news": "",
-      "transfersInEvent": 250,
-      "transfersOutEvent": 677
+      "transfersInEvent": 255,
+      "transfersOutEvent": 688
     },
     {
       "id": 73,
@@ -1700,8 +1700,8 @@
       "totalPoints": 6,
       "status": "a",
       "news": "",
-      "transfersInEvent": 3787,
-      "transfersOutEvent": 2355
+      "transfersInEvent": 3841,
+      "transfersOutEvent": 2393
     },
     {
       "id": 74,
@@ -1721,8 +1721,8 @@
       "totalPoints": 2,
       "status": "a",
       "news": "",
-      "transfersInEvent": 463,
-      "transfersOutEvent": 520
+      "transfersInEvent": 468,
+      "transfersOutEvent": 531
     },
     {
       "id": 75,
@@ -1742,8 +1742,8 @@
       "totalPoints": 2,
       "status": "a",
       "news": "",
-      "transfersInEvent": 596,
-      "transfersOutEvent": 353
+      "transfersInEvent": 612,
+      "transfersOutEvent": 356
     },
     {
       "id": 76,
@@ -1764,7 +1764,7 @@
       "status": "a",
       "news": "",
       "transfersInEvent": 53,
-      "transfersOutEvent": 141
+      "transfersOutEvent": 142
     },
     {
       "id": 77,
@@ -1784,8 +1784,8 @@
       "totalPoints": 0,
       "status": "i",
       "news": "Unspecified injury - Unknown return date",
-      "transfersInEvent": 38,
-      "transfersOutEvent": 219
+      "transfersInEvent": 39,
+      "transfersOutEvent": 223
     },
     {
       "id": 78,
@@ -1805,8 +1805,8 @@
       "totalPoints": 0,
       "status": "i",
       "news": "Foot injury - Unknown return date",
-      "transfersInEvent": 137,
-      "transfersOutEvent": 2403
+      "transfersInEvent": 138,
+      "transfersOutEvent": 2434
     },
     {
       "id": 79,
@@ -1826,8 +1826,8 @@
       "totalPoints": 11,
       "status": "a",
       "news": "",
-      "transfersInEvent": 29128,
-      "transfersOutEvent": 27894
+      "transfersInEvent": 29551,
+      "transfersOutEvent": 28344
     },
     {
       "id": 80,
@@ -1848,7 +1848,7 @@
       "status": "u",
       "news": "Has joined Getafe permanently",
       "transfersInEvent": 0,
-      "transfersOutEvent": 167
+      "transfersOutEvent": 170
     },
     {
       "id": 81,
@@ -1868,8 +1868,8 @@
       "totalPoints": 1,
       "status": "a",
       "news": "",
-      "transfersInEvent": 876,
-      "transfersOutEvent": 1151
+      "transfersInEvent": 882,
+      "transfersOutEvent": 1165
     },
     {
       "id": 566,
@@ -1889,8 +1889,8 @@
       "totalPoints": 7,
       "status": "a",
       "news": "",
-      "transfersInEvent": 2774,
-      "transfersOutEvent": 3551
+      "transfersInEvent": 2842,
+      "transfersOutEvent": 3635
     },
     {
       "id": 573,
@@ -1910,8 +1910,8 @@
       "totalPoints": 0,
       "status": "a",
       "news": "",
-      "transfersInEvent": 170,
-      "transfersOutEvent": 1028
+      "transfersInEvent": 172,
+      "transfersOutEvent": 1040
     },
     {
       "id": 608,
@@ -1931,8 +1931,8 @@
       "totalPoints": 2,
       "status": "a",
       "news": "",
-      "transfersInEvent": 2253,
-      "transfersOutEvent": 1205
+      "transfersInEvent": 2275,
+      "transfersOutEvent": 1223
     },
     {
       "id": 615,
@@ -1952,8 +1952,8 @@
       "totalPoints": 0,
       "status": "a",
       "news": "",
-      "transfersInEvent": 507,
-      "transfersOutEvent": 361
+      "transfersInEvent": 508,
+      "transfersOutEvent": 368
     },
     {
       "id": 82,
@@ -1973,8 +1973,8 @@
       "totalPoints": 11,
       "status": "a",
       "news": "",
-      "transfersInEvent": 21892,
-      "transfersOutEvent": 34574
+      "transfersInEvent": 22323,
+      "transfersOutEvent": 35249
     },
     {
       "id": 83,
@@ -1994,8 +1994,8 @@
       "totalPoints": 0,
       "status": "a",
       "news": "",
-      "transfersInEvent": 393,
-      "transfersOutEvent": 647
+      "transfersInEvent": 395,
+      "transfersOutEvent": 660
     },
     {
       "id": 84,
@@ -2015,8 +2015,8 @@
       "totalPoints": 10,
       "status": "d",
       "news": "Calf injury - 25% chance of playing",
-      "transfersInEvent": 1185,
-      "transfersOutEvent": 44922
+      "transfersInEvent": 1188,
+      "transfersOutEvent": 45608
     },
     {
       "id": 85,
@@ -2036,8 +2036,8 @@
       "totalPoints": 0,
       "status": "i",
       "news": "Groin injury - Unknown return date",
-      "transfersInEvent": 53,
-      "transfersOutEvent": 907
+      "transfersInEvent": 54,
+      "transfersOutEvent": 920
     },
     {
       "id": 86,
@@ -2057,8 +2057,8 @@
       "totalPoints": 18,
       "status": "a",
       "news": "",
-      "transfersInEvent": 17212,
-      "transfersOutEvent": 19259
+      "transfersInEvent": 17459,
+      "transfersOutEvent": 19611
     },
     {
       "id": 87,
@@ -2078,8 +2078,8 @@
       "totalPoints": 13,
       "status": "a",
       "news": "",
-      "transfersInEvent": 31521,
-      "transfersOutEvent": 56492
+      "transfersInEvent": 32247,
+      "transfersOutEvent": 58023
     },
     {
       "id": 88,
@@ -2099,8 +2099,8 @@
       "totalPoints": 16,
       "status": "a",
       "news": "",
-      "transfersInEvent": 30989,
-      "transfersOutEvent": 70799
+      "transfersInEvent": 31596,
+      "transfersOutEvent": 72045
     },
     {
       "id": 89,
@@ -2120,8 +2120,8 @@
       "totalPoints": 1,
       "status": "a",
       "news": "",
-      "transfersInEvent": 201,
-      "transfersOutEvent": 1244
+      "transfersInEvent": 205,
+      "transfersOutEvent": 1255
     },
     {
       "id": 90,
@@ -2141,8 +2141,8 @@
       "totalPoints": 3,
       "status": "a",
       "news": "",
-      "transfersInEvent": 202,
-      "transfersOutEvent": 470
+      "transfersInEvent": 204,
+      "transfersOutEvent": 473
     },
     {
       "id": 92,
@@ -2162,7 +2162,7 @@
       "totalPoints": 0,
       "status": "a",
       "news": "",
-      "transfersInEvent": 69,
+      "transfersInEvent": 71,
       "transfersOutEvent": 170
     },
     {
@@ -2183,8 +2183,8 @@
       "totalPoints": 4,
       "status": "a",
       "news": "",
-      "transfersInEvent": 278,
-      "transfersOutEvent": 421
+      "transfersInEvent": 288,
+      "transfersOutEvent": 422
     },
     {
       "id": 94,
@@ -2204,8 +2204,8 @@
       "totalPoints": 15,
       "status": "a",
       "news": "",
-      "transfersInEvent": 17488,
-      "transfersOutEvent": 48629
+      "transfersInEvent": 17751,
+      "transfersOutEvent": 49821
     },
     {
       "id": 95,
@@ -2225,8 +2225,8 @@
       "totalPoints": 5,
       "status": "a",
       "news": "",
-      "transfersInEvent": 818,
-      "transfersOutEvent": 13080
+      "transfersInEvent": 839,
+      "transfersOutEvent": 13317
     },
     {
       "id": 96,
@@ -2246,8 +2246,8 @@
       "totalPoints": 12,
       "status": "a",
       "news": "",
-      "transfersInEvent": 3418,
-      "transfersOutEvent": 2597
+      "transfersInEvent": 3475,
+      "transfersOutEvent": 2652
     },
     {
       "id": 97,
@@ -2267,8 +2267,8 @@
       "totalPoints": 6,
       "status": "i",
       "news": "Unspecified injury - Expected back 18 Sep",
-      "transfersInEvent": 19,
-      "transfersOutEvent": 2774
+      "transfersInEvent": 20,
+      "transfersOutEvent": 2810
     },
     {
       "id": 98,
@@ -2283,13 +2283,13 @@
       "price": 5,
       "priceChangeSeason": 0,
       "priceChangeEvent": 0,
-      "ownership": 1.7,
+      "ownership": 1.8,
       "form": 7,
       "totalPoints": 21,
       "status": "a",
       "news": "",
-      "transfersInEvent": 95966,
-      "transfersOutEvent": 19712
+      "transfersInEvent": 98153,
+      "transfersOutEvent": 20417
     },
     {
       "id": 99,
@@ -2330,8 +2330,8 @@
       "totalPoints": 0,
       "status": "a",
       "news": "",
-      "transfersInEvent": 255,
-      "transfersOutEvent": 236
+      "transfersInEvent": 258,
+      "transfersOutEvent": 237
     },
     {
       "id": 102,
@@ -2351,8 +2351,8 @@
       "totalPoints": 2,
       "status": "a",
       "news": "",
-      "transfersInEvent": 517,
-      "transfersOutEvent": 9634
+      "transfersInEvent": 523,
+      "transfersOutEvent": 9802
     },
     {
       "id": 103,
@@ -2373,7 +2373,7 @@
       "status": "i",
       "news": "Hamstring injury - Expected back 10 Oct",
       "transfersInEvent": 21,
-      "transfersOutEvent": 433
+      "transfersOutEvent": 439
     },
     {
       "id": 105,
@@ -2393,8 +2393,8 @@
       "totalPoints": 4,
       "status": "a",
       "news": "",
-      "transfersInEvent": 458,
-      "transfersOutEvent": 1605
+      "transfersInEvent": 463,
+      "transfersOutEvent": 1629
     },
     {
       "id": 106,
@@ -2409,13 +2409,13 @@
       "price": 7.9,
       "priceChangeSeason": -0.1,
       "priceChangeEvent": -0.1,
-      "ownership": 11.8,
+      "ownership": 11.7,
       "form": 1.3,
       "totalPoints": 4,
       "status": "a",
       "news": "",
-      "transfersInEvent": 14388,
-      "transfersOutEvent": 194335
+      "transfersInEvent": 14658,
+      "transfersOutEvent": 197272
     },
     {
       "id": 107,
@@ -2435,8 +2435,8 @@
       "totalPoints": 0,
       "status": "a",
       "news": "",
-      "transfersInEvent": 12928,
-      "transfersOutEvent": 9242
+      "transfersInEvent": 13109,
+      "transfersOutEvent": 9412
     },
     {
       "id": 108,
@@ -2456,8 +2456,8 @@
       "totalPoints": 3,
       "status": "a",
       "news": "",
-      "transfersInEvent": 1863,
-      "transfersOutEvent": 3847
+      "transfersInEvent": 1881,
+      "transfersOutEvent": 3896
     },
     {
       "id": 565,
@@ -2477,8 +2477,8 @@
       "totalPoints": 18,
       "status": "a",
       "news": "",
-      "transfersInEvent": 78167,
-      "transfersOutEvent": 188307
+      "transfersInEvent": 79217,
+      "transfersOutEvent": 192474
     },
     {
       "id": 620,
@@ -2498,8 +2498,8 @@
       "totalPoints": 0,
       "status": "a",
       "news": "",
-      "transfersInEvent": 1183,
-      "transfersOutEvent": 1408
+      "transfersInEvent": 1193,
+      "transfersOutEvent": 1422
     },
     {
       "id": 109,
@@ -2519,8 +2519,8 @@
       "totalPoints": 9,
       "status": "a",
       "news": "",
-      "transfersInEvent": 137305,
-      "transfersOutEvent": 104782
+      "transfersInEvent": 141190,
+      "transfersOutEvent": 108306
     },
     {
       "id": 111,
@@ -2540,8 +2540,8 @@
       "totalPoints": 0,
       "status": "a",
       "news": "",
-      "transfersInEvent": 27642,
-      "transfersOutEvent": 19906
+      "transfersInEvent": 28209,
+      "transfersOutEvent": 20467
     },
     {
       "id": 113,
@@ -2561,8 +2561,8 @@
       "totalPoints": 2,
       "status": "a",
       "news": "",
-      "transfersInEvent": 3674,
-      "transfersOutEvent": 14615
+      "transfersInEvent": 3752,
+      "transfersOutEvent": 14899
     },
     {
       "id": 114,
@@ -2582,8 +2582,8 @@
       "totalPoints": 7,
       "status": "a",
       "news": "",
-      "transfersInEvent": 1272,
-      "transfersOutEvent": 1678
+      "transfersInEvent": 1309,
+      "transfersOutEvent": 1716
     },
     {
       "id": 115,
@@ -2603,8 +2603,8 @@
       "totalPoints": 21,
       "status": "a",
       "news": "",
-      "transfersInEvent": 335260,
-      "transfersOutEvent": 71733
+      "transfersInEvent": 342713,
+      "transfersOutEvent": 73711
     },
     {
       "id": 116,
@@ -2624,8 +2624,8 @@
       "totalPoints": 10,
       "status": "a",
       "news": "",
-      "transfersInEvent": 9926,
-      "transfersOutEvent": 5556
+      "transfersInEvent": 10190,
+      "transfersOutEvent": 5683
     },
     {
       "id": 117,
@@ -2645,8 +2645,8 @@
       "totalPoints": 0,
       "status": "a",
       "news": "",
-      "transfersInEvent": 102,
-      "transfersOutEvent": 163
+      "transfersInEvent": 105,
+      "transfersOutEvent": 164
     },
     {
       "id": 118,
@@ -2667,7 +2667,7 @@
       "status": "u",
       "news": "Has joined Burnley permanently",
       "transfersInEvent": 0,
-      "transfersOutEvent": 1463
+      "transfersOutEvent": 1472
     },
     {
       "id": 119,
@@ -2687,8 +2687,8 @@
       "totalPoints": 2,
       "status": "a",
       "news": "",
-      "transfersInEvent": 126,
-      "transfersOutEvent": 196
+      "transfersInEvent": 128,
+      "transfersOutEvent": 200
     },
     {
       "id": 120,
@@ -2708,8 +2708,8 @@
       "totalPoints": 0,
       "status": "a",
       "news": "",
-      "transfersInEvent": 567,
-      "transfersOutEvent": 633
+      "transfersInEvent": 572,
+      "transfersOutEvent": 637
     },
     {
       "id": 121,
@@ -2728,9 +2728,9 @@
       "form": 0,
       "totalPoints": 0,
       "status": "i",
-      "news": "Hamstring injury - Unknown return date",
+      "news": "Hamstring injury - Expected back 10 Oct",
       "transfersInEvent": 54,
-      "transfersOutEvent": 343
+      "transfersOutEvent": 348
     },
     {
       "id": 122,
@@ -2751,7 +2751,7 @@
       "status": "i",
       "news": "Leg injury - Expected back 28 Nov",
       "transfersInEvent": 24,
-      "transfersOutEvent": 523
+      "transfersOutEvent": 531
     },
     {
       "id": 123,
@@ -2771,8 +2771,8 @@
       "totalPoints": 16,
       "status": "d",
       "news": "Unspecified injury - 50% chance of playing",
-      "transfersInEvent": 825,
-      "transfersOutEvent": 28056
+      "transfersInEvent": 833,
+      "transfersOutEvent": 28484
     },
     {
       "id": 124,
@@ -2792,8 +2792,8 @@
       "totalPoints": 16,
       "status": "a",
       "news": "",
-      "transfersInEvent": 174220,
-      "transfersOutEvent": 108565
+      "transfersInEvent": 177797,
+      "transfersOutEvent": 111805
     },
     {
       "id": 125,
@@ -2813,8 +2813,8 @@
       "totalPoints": 5,
       "status": "d",
       "news": "Unspecified injury - 75% chance of playing",
-      "transfersInEvent": 711,
-      "transfersOutEvent": 11308
+      "transfersInEvent": 717,
+      "transfersOutEvent": 11516
     },
     {
       "id": 126,
@@ -2834,8 +2834,8 @@
       "totalPoints": 0,
       "status": "a",
       "news": "",
-      "transfersInEvent": 636,
-      "transfersOutEvent": 956
+      "transfersInEvent": 643,
+      "transfersOutEvent": 971
     },
     {
       "id": 127,
@@ -2855,8 +2855,8 @@
       "totalPoints": 13,
       "status": "a",
       "news": "",
-      "transfersInEvent": 56710,
-      "transfersOutEvent": 56801
+      "transfersInEvent": 58120,
+      "transfersOutEvent": 58507
     },
     {
       "id": 128,
@@ -2897,8 +2897,8 @@
       "totalPoints": 4,
       "status": "a",
       "news": "",
-      "transfersInEvent": 1181,
-      "transfersOutEvent": 3850
+      "transfersInEvent": 1206,
+      "transfersOutEvent": 3910
     },
     {
       "id": 130,
@@ -2919,7 +2919,7 @@
       "status": "i",
       "news": "Knee injury - Unknown return date",
       "transfersInEvent": 52,
-      "transfersOutEvent": 13523
+      "transfersOutEvent": 13651
     },
     {
       "id": 132,
@@ -2940,7 +2940,7 @@
       "status": "u",
       "news": "Has joined Leicester City on loan for the rest of the season",
       "transfersInEvent": 0,
-      "transfersOutEvent": 412
+      "transfersOutEvent": 414
     },
     {
       "id": 133,
@@ -2981,8 +2981,8 @@
       "totalPoints": 0,
       "status": "a",
       "news": "",
-      "transfersInEvent": 1545,
-      "transfersOutEvent": 2074
+      "transfersInEvent": 1568,
+      "transfersOutEvent": 2114
     },
     {
       "id": 135,
@@ -3002,8 +3002,8 @@
       "totalPoints": 1,
       "status": "a",
       "news": "",
-      "transfersInEvent": 298,
-      "transfersOutEvent": 654
+      "transfersInEvent": 300,
+      "transfersOutEvent": 666
     },
     {
       "id": 137,
@@ -3044,8 +3044,8 @@
       "totalPoints": 8,
       "status": "a",
       "news": "",
-      "transfersInEvent": 9179,
-      "transfersOutEvent": 4690
+      "transfersInEvent": 9350,
+      "transfersOutEvent": 4811
     },
     {
       "id": 139,
@@ -3065,8 +3065,8 @@
       "totalPoints": 0,
       "status": "i",
       "news": "Ankle injury - Expected back 10 Oct",
-      "transfersInEvent": 267,
-      "transfersOutEvent": 376
+      "transfersInEvent": 268,
+      "transfersOutEvent": 377
     },
     {
       "id": 328,
@@ -3086,8 +3086,8 @@
       "totalPoints": 1,
       "status": "a",
       "news": "",
-      "transfersInEvent": 869,
-      "transfersOutEvent": 1543
+      "transfersInEvent": 885,
+      "transfersOutEvent": 1561
     },
     {
       "id": 504,
@@ -3107,8 +3107,8 @@
       "totalPoints": 18,
       "status": "a",
       "news": "",
-      "transfersInEvent": 70741,
-      "transfersOutEvent": 21123
+      "transfersInEvent": 73372,
+      "transfersOutEvent": 22026
     },
     {
       "id": 594,
@@ -3128,8 +3128,8 @@
       "totalPoints": 1,
       "status": "a",
       "news": "",
-      "transfersInEvent": 1901,
-      "transfersOutEvent": 3353
+      "transfersInEvent": 1915,
+      "transfersOutEvent": 3401
     },
     {
       "id": 600,
@@ -3149,8 +3149,8 @@
       "totalPoints": 2,
       "status": "a",
       "news": "",
-      "transfersInEvent": 98,
-      "transfersOutEvent": 191
+      "transfersInEvent": 101,
+      "transfersOutEvent": 193
     },
     {
       "id": 605,
@@ -3170,8 +3170,8 @@
       "totalPoints": 11,
       "status": "a",
       "news": "",
-      "transfersInEvent": 107909,
-      "transfersOutEvent": 33328
+      "transfersInEvent": 110395,
+      "transfersOutEvent": 34401
     },
     {
       "id": 614,
@@ -3191,8 +3191,8 @@
       "totalPoints": 0,
       "status": "a",
       "news": "",
-      "transfersInEvent": 274,
-      "transfersOutEvent": 410
+      "transfersInEvent": 278,
+      "transfersOutEvent": 416
     },
     {
       "id": 624,
@@ -3233,8 +3233,8 @@
       "totalPoints": 0,
       "status": "a",
       "news": "",
-      "transfersInEvent": 379,
-      "transfersOutEvent": 121
+      "transfersInEvent": 382,
+      "transfersOutEvent": 123
     },
     {
       "id": 652,
@@ -3252,10 +3252,10 @@
       "ownership": 0,
       "form": 0,
       "totalPoints": 0,
-      "status": "i",
-      "news": "Unspecified injury - Expected back 13 Sep",
-      "transfersInEvent": 87,
-      "transfersOutEvent": 35
+      "status": "d",
+      "news": "Hamstring injury - 50% chance of playing",
+      "transfersInEvent": 88,
+      "transfersOutEvent": 36
     },
     {
       "id": 28,
@@ -3275,8 +3275,8 @@
       "totalPoints": 5,
       "status": "a",
       "news": "",
-      "transfersInEvent": 73195,
-      "transfersOutEvent": 31227
+      "transfersInEvent": 74446,
+      "transfersOutEvent": 32026
     },
     {
       "id": 40,
@@ -3291,13 +3291,13 @@
       "price": 7.6,
       "priceChangeSeason": 0.1,
       "priceChangeEvent": 0.1,
-      "ownership": 29.4,
+      "ownership": 29.6,
       "form": 6.3,
       "totalPoints": 19,
       "status": "a",
       "news": "",
-      "transfersInEvent": 541498,
-      "transfersOutEvent": 81292
+      "transfersInEvent": 560723,
+      "transfersOutEvent": 83023
     },
     {
       "id": 101,
@@ -3317,8 +3317,8 @@
       "totalPoints": 0,
       "status": "d",
       "news": "Wrist injury - 75% chance of playing",
-      "transfersInEvent": 112,
-      "transfersOutEvent": 390
+      "transfersInEvent": 115,
+      "transfersOutEvent": 395
     },
     {
       "id": 136,
@@ -3338,8 +3338,8 @@
       "totalPoints": 1,
       "status": "a",
       "news": "",
-      "transfersInEvent": 4188,
-      "transfersOutEvent": 8908
+      "transfersInEvent": 4343,
+      "transfersOutEvent": 9035
     },
     {
       "id": 140,
@@ -3360,7 +3360,7 @@
       "status": "u",
       "news": "Has joined Como on loan for the rest of the season",
       "transfersInEvent": 0,
-      "transfersOutEvent": 30431
+      "transfersOutEvent": 30727
     },
     {
       "id": 141,
@@ -3401,8 +3401,8 @@
       "totalPoints": 2,
       "status": "a",
       "news": "",
-      "transfersInEvent": 31446,
-      "transfersOutEvent": 56479
+      "transfersInEvent": 32046,
+      "transfersOutEvent": 57509
     },
     {
       "id": 143,
@@ -3423,7 +3423,7 @@
       "status": "u",
       "news": "Has joined Como permanently",
       "transfersInEvent": 0,
-      "transfersOutEvent": 1011
+      "transfersOutEvent": 1018
     },
     {
       "id": 144,
@@ -3443,8 +3443,8 @@
       "totalPoints": 3,
       "status": "a",
       "news": "",
-      "transfersInEvent": 4962,
-      "transfersOutEvent": 9210
+      "transfersInEvent": 5018,
+      "transfersOutEvent": 9334
     },
     {
       "id": 145,
@@ -3464,8 +3464,8 @@
       "totalPoints": 3,
       "status": "a",
       "news": "",
-      "transfersInEvent": 5241,
-      "transfersOutEvent": 1245
+      "transfersInEvent": 5333,
+      "transfersOutEvent": 1268
     },
     {
       "id": 146,
@@ -3486,7 +3486,7 @@
       "status": "u",
       "news": "Has joined Napoli on loan for the rest of the season",
       "transfersInEvent": 0,
-      "transfersOutEvent": 178
+      "transfersOutEvent": 180
     },
     {
       "id": 148,
@@ -3506,8 +3506,8 @@
       "totalPoints": 8,
       "status": "a",
       "news": "",
-      "transfersInEvent": 30850,
-      "transfersOutEvent": 9275
+      "transfersInEvent": 31469,
+      "transfersOutEvent": 9523
     },
     {
       "id": 149,
@@ -3527,8 +3527,8 @@
       "totalPoints": 1,
       "status": "a",
       "news": "",
-      "transfersInEvent": 3394,
-      "transfersOutEvent": 13879
+      "transfersInEvent": 3432,
+      "transfersOutEvent": 14129
     },
     {
       "id": 150,
@@ -3549,7 +3549,7 @@
       "status": "u",
       "news": "Has joined Real Sociedad on loan for the rest of the season",
       "transfersInEvent": 0,
-      "transfersOutEvent": 731
+      "transfersOutEvent": 740
     },
     {
       "id": 151,
@@ -3569,8 +3569,8 @@
       "totalPoints": 5,
       "status": "a",
       "news": "",
-      "transfersInEvent": 3328,
-      "transfersOutEvent": 2744
+      "transfersInEvent": 3406,
+      "transfersOutEvent": 2804
     },
     {
       "id": 152,
@@ -3590,8 +3590,8 @@
       "totalPoints": 0,
       "status": "d",
       "news": "Unspecified injury - 75% chance of playing",
-      "transfersInEvent": 356,
-      "transfersOutEvent": 20758
+      "transfersInEvent": 357,
+      "transfersOutEvent": 21305
     },
     {
       "id": 154,
@@ -3606,13 +3606,13 @@
       "price": 9.6,
       "priceChangeSeason": 0.1,
       "priceChangeEvent": 0,
-      "ownership": 23,
+      "ownership": 23.2,
       "form": 7,
       "totalPoints": 21,
       "status": "a",
       "news": "",
-      "transfersInEvent": 433647,
-      "transfersOutEvent": 74572
+      "transfersInEvent": 449929,
+      "transfersOutEvent": 75546
     },
     {
       "id": 156,
@@ -3632,8 +3632,8 @@
       "totalPoints": 10,
       "status": "a",
       "news": "",
-      "transfersInEvent": 16029,
-      "transfersOutEvent": 10263
+      "transfersInEvent": 16409,
+      "transfersOutEvent": 10467
     },
     {
       "id": 157,
@@ -3653,8 +3653,8 @@
       "totalPoints": 2,
       "status": "a",
       "news": "",
-      "transfersInEvent": 2771,
-      "transfersOutEvent": 9464
+      "transfersInEvent": 2805,
+      "transfersOutEvent": 9583
     },
     {
       "id": 158,
@@ -3674,8 +3674,8 @@
       "totalPoints": 0,
       "status": "a",
       "news": "",
-      "transfersInEvent": 192,
-      "transfersOutEvent": 346
+      "transfersInEvent": 194,
+      "transfersOutEvent": 349
     },
     {
       "id": 159,
@@ -3695,8 +3695,8 @@
       "totalPoints": 1,
       "status": "d",
       "news": "Calf injury - 75% chance of playing",
-      "transfersInEvent": 1184,
-      "transfersOutEvent": 29187
+      "transfersInEvent": 1195,
+      "transfersOutEvent": 29670
     },
     {
       "id": 161,
@@ -3716,8 +3716,8 @@
       "totalPoints": 9,
       "status": "a",
       "news": "",
-      "transfersInEvent": 5064,
-      "transfersOutEvent": 2609
+      "transfersInEvent": 5121,
+      "transfersOutEvent": 2654
     },
     {
       "id": 163,
@@ -3738,7 +3738,7 @@
       "status": "u",
       "news": "Has joined RC Strasbourg on loan for the rest of the season",
       "transfersInEvent": 0,
-      "transfersOutEvent": 2993
+      "transfersOutEvent": 3024
     },
     {
       "id": 164,
@@ -3759,7 +3759,7 @@
       "status": "a",
       "news": "",
       "transfersInEvent": 124,
-      "transfersOutEvent": 425
+      "transfersOutEvent": 428
     },
     {
       "id": 165,
@@ -3774,13 +3774,13 @@
       "price": 7.7,
       "priceChangeSeason": 0.2,
       "priceChangeEvent": 0,
-      "ownership": 72.5,
+      "ownership": 72.6,
       "form": 7,
       "totalPoints": 21,
       "status": "a",
       "news": "",
-      "transfersInEvent": 230427,
-      "transfersOutEvent": 73968
+      "transfersInEvent": 234465,
+      "transfersOutEvent": 75100
     },
     {
       "id": 168,
@@ -3801,7 +3801,7 @@
       "status": "u",
       "news": "Has joined RB Leipzig permanently",
       "transfersInEvent": 0,
-      "transfersOutEvent": 6187
+      "transfersOutEvent": 6243
     },
     {
       "id": 169,
@@ -3821,8 +3821,8 @@
       "totalPoints": 0,
       "status": "a",
       "news": "",
-      "transfersInEvent": 5181,
-      "transfersOutEvent": 3842
+      "transfersInEvent": 5227,
+      "transfersOutEvent": 3899
     },
     {
       "id": 170,
@@ -3842,8 +3842,8 @@
       "totalPoints": 0,
       "status": "d",
       "news": "Hamstring injury - 75% chance of playing",
-      "transfersInEvent": 1679,
-      "transfersOutEvent": 1904
+      "transfersInEvent": 1683,
+      "transfersOutEvent": 1928
     },
     {
       "id": 200,
@@ -3863,8 +3863,8 @@
       "totalPoints": 9,
       "status": "a",
       "news": "",
-      "transfersInEvent": 35594,
-      "transfersOutEvent": 49344
+      "transfersInEvent": 36173,
+      "transfersOutEvent": 50332
     },
     {
       "id": 560,
@@ -3884,8 +3884,8 @@
       "totalPoints": 0,
       "status": "a",
       "news": "",
-      "transfersInEvent": 183,
-      "transfersOutEvent": 498
+      "transfersInEvent": 186,
+      "transfersOutEvent": 505
     },
     {
       "id": 561,
@@ -3905,8 +3905,8 @@
       "totalPoints": 0,
       "status": "a",
       "news": "",
-      "transfersInEvent": 142,
-      "transfersOutEvent": 134
+      "transfersInEvent": 146,
+      "transfersOutEvent": 137
     },
     {
       "id": 568,
@@ -3926,8 +3926,8 @@
       "totalPoints": 1,
       "status": "a",
       "news": "",
-      "transfersInEvent": 475,
-      "transfersOutEvent": 968
+      "transfersInEvent": 491,
+      "transfersOutEvent": 985
     },
     {
       "id": 583,
@@ -3947,8 +3947,8 @@
       "totalPoints": 3,
       "status": "a",
       "news": "",
-      "transfersInEvent": 390,
-      "transfersOutEvent": 1335
+      "transfersInEvent": 397,
+      "transfersOutEvent": 1368
     },
     {
       "id": 91,
@@ -3968,8 +3968,8 @@
       "totalPoints": 4,
       "status": "a",
       "news": "",
-      "transfersInEvent": 407,
-      "transfersOutEvent": 446
+      "transfersInEvent": 411,
+      "transfersOutEvent": 459
     },
     {
       "id": 104,
@@ -3989,8 +3989,8 @@
       "totalPoints": 4,
       "status": "a",
       "news": "",
-      "transfersInEvent": 362,
-      "transfersOutEvent": 924
+      "transfersInEvent": 365,
+      "transfersOutEvent": 947
     },
     {
       "id": 110,
@@ -4010,8 +4010,8 @@
       "totalPoints": 5,
       "status": "a",
       "news": "",
-      "transfersInEvent": 3011,
-      "transfersOutEvent": 9413
+      "transfersInEvent": 3074,
+      "transfersOutEvent": 9580
     },
     {
       "id": 171,
@@ -4032,7 +4032,7 @@
       "status": "u",
       "news": "Has joined Leyton Orient on loan for the rest of the season",
       "transfersInEvent": 0,
-      "transfersOutEvent": 11902
+      "transfersOutEvent": 12087
     },
     {
       "id": 172,
@@ -4052,8 +4052,8 @@
       "totalPoints": 0,
       "status": "a",
       "news": "",
-      "transfersInEvent": 158,
-      "transfersOutEvent": 1385
+      "transfersInEvent": 160,
+      "transfersOutEvent": 1411
     },
     {
       "id": 173,
@@ -4073,8 +4073,8 @@
       "totalPoints": 15,
       "status": "a",
       "news": "",
-      "transfersInEvent": 75757,
-      "transfersOutEvent": 48216
+      "transfersInEvent": 77901,
+      "transfersOutEvent": 49615
     },
     {
       "id": 174,
@@ -4095,7 +4095,7 @@
       "status": "u",
       "news": "Has joined Sheffield United on loan for the rest of the season",
       "transfersInEvent": 0,
-      "transfersOutEvent": 6924
+      "transfersOutEvent": 7001
     },
     {
       "id": 175,
@@ -4115,8 +4115,8 @@
       "totalPoints": 6,
       "status": "a",
       "news": "",
-      "transfersInEvent": 19472,
-      "transfersOutEvent": 82583
+      "transfersInEvent": 19825,
+      "transfersOutEvent": 84509
     },
     {
       "id": 176,
@@ -4136,8 +4136,8 @@
       "totalPoints": 5,
       "status": "a",
       "news": "",
-      "transfersInEvent": 1257,
-      "transfersOutEvent": 2706
+      "transfersInEvent": 1318,
+      "transfersOutEvent": 2765
     },
     {
       "id": 177,
@@ -4158,7 +4158,7 @@
       "status": "i",
       "news": "Hamstring injury - Unknown return date",
       "transfersInEvent": 77,
-      "transfersOutEvent": 425
+      "transfersOutEvent": 433
     },
     {
       "id": 178,
@@ -4178,8 +4178,8 @@
       "totalPoints": 0,
       "status": "a",
       "news": "",
-      "transfersInEvent": 424,
-      "transfersOutEvent": 499
+      "transfersInEvent": 431,
+      "transfersOutEvent": 507
     },
     {
       "id": 179,
@@ -4199,8 +4199,8 @@
       "totalPoints": 0,
       "status": "a",
       "news": "",
-      "transfersInEvent": 180,
-      "transfersOutEvent": 226
+      "transfersInEvent": 181,
+      "transfersOutEvent": 229
     },
     {
       "id": 180,
@@ -4220,8 +4220,8 @@
       "totalPoints": 0,
       "status": "i",
       "news": "Knee injury - Unknown return date",
-      "transfersInEvent": 231,
-      "transfersOutEvent": 1193
+      "transfersInEvent": 235,
+      "transfersOutEvent": 1210
     },
     {
       "id": 181,
@@ -4242,7 +4242,7 @@
       "status": "u",
       "news": "Has joined Academico de Viseu on loan for the rest of the season",
       "transfersInEvent": 0,
-      "transfersOutEvent": 280
+      "transfersOutEvent": 288
     },
     {
       "id": 182,
@@ -4262,8 +4262,8 @@
       "totalPoints": 4,
       "status": "a",
       "news": "",
-      "transfersInEvent": 2169,
-      "transfersOutEvent": 3477
+      "transfersInEvent": 2200,
+      "transfersOutEvent": 3528
     },
     {
       "id": 183,
@@ -4283,8 +4283,8 @@
       "totalPoints": 6,
       "status": "a",
       "news": "",
-      "transfersInEvent": 585,
-      "transfersOutEvent": 1041
+      "transfersInEvent": 595,
+      "transfersOutEvent": 1057
     },
     {
       "id": 184,
@@ -4304,8 +4304,8 @@
       "totalPoints": 6,
       "status": "a",
       "news": "",
-      "transfersInEvent": 335,
-      "transfersOutEvent": 1490
+      "transfersInEvent": 340,
+      "transfersOutEvent": 1526
     },
     {
       "id": 185,
@@ -4325,8 +4325,8 @@
       "totalPoints": 1,
       "status": "a",
       "news": "",
-      "transfersInEvent": 152,
-      "transfersOutEvent": 699
+      "transfersInEvent": 153,
+      "transfersOutEvent": 710
     },
     {
       "id": 186,
@@ -4347,7 +4347,7 @@
       "status": "a",
       "news": "",
       "transfersInEvent": 143,
-      "transfersOutEvent": 578
+      "transfersOutEvent": 590
     },
     {
       "id": 187,
@@ -4368,7 +4368,7 @@
       "status": "a",
       "news": "",
       "transfersInEvent": 60,
-      "transfersOutEvent": 175
+      "transfersOutEvent": 178
     },
     {
       "id": 188,
@@ -4388,8 +4388,8 @@
       "totalPoints": 2,
       "status": "a",
       "news": "",
-      "transfersInEvent": 42,
-      "transfersOutEvent": 905
+      "transfersInEvent": 43,
+      "transfersOutEvent": 931
     },
     {
       "id": 189,
@@ -4409,8 +4409,8 @@
       "totalPoints": 0,
       "status": "a",
       "news": "",
-      "transfersInEvent": 883,
-      "transfersOutEvent": 1757
+      "transfersInEvent": 895,
+      "transfersOutEvent": 1796
     },
     {
       "id": 190,
@@ -4430,8 +4430,8 @@
       "totalPoints": 4,
       "status": "a",
       "news": "",
-      "transfersInEvent": 136,
-      "transfersOutEvent": 849
+      "transfersInEvent": 138,
+      "transfersOutEvent": 871
     },
     {
       "id": 191,
@@ -4452,7 +4452,7 @@
       "status": "u",
       "news": "Has joined Burton Albion on loan for the rest of the season",
       "transfersInEvent": 0,
-      "transfersOutEvent": 2241
+      "transfersOutEvent": 2273
     },
     {
       "id": 192,
@@ -4473,7 +4473,7 @@
       "status": "u",
       "news": "Has joined Oxford United on loan for the rest of the season",
       "transfersInEvent": 0,
-      "transfersOutEvent": 4993
+      "transfersOutEvent": 5071
     },
     {
       "id": 193,
@@ -4494,7 +4494,7 @@
       "status": "i",
       "news": "Thigh injury - Unknown return date",
       "transfersInEvent": 97,
-      "transfersOutEvent": 1258
+      "transfersOutEvent": 1277
     },
     {
       "id": 194,
@@ -4514,8 +4514,8 @@
       "totalPoints": 4,
       "status": "a",
       "news": "",
-      "transfersInEvent": 7258,
-      "transfersOutEvent": 7758
+      "transfersInEvent": 7386,
+      "transfersOutEvent": 7882
     },
     {
       "id": 195,
@@ -4535,8 +4535,8 @@
       "totalPoints": 3,
       "status": "a",
       "news": "",
-      "transfersInEvent": 3547,
-      "transfersOutEvent": 8270
+      "transfersInEvent": 3612,
+      "transfersOutEvent": 8434
     },
     {
       "id": 196,
@@ -4557,7 +4557,7 @@
       "status": "u",
       "news": "Has joined Shabab Al-Ahli Dubai permanently",
       "transfersInEvent": 0,
-      "transfersOutEvent": 86
+      "transfersOutEvent": 87
     },
     {
       "id": 197,
@@ -4578,7 +4578,7 @@
       "status": "u",
       "news": "Has joined KVC Westerlo on loan for the rest of the season",
       "transfersInEvent": 0,
-      "transfersOutEvent": 269
+      "transfersOutEvent": 273
     },
     {
       "id": 492,
@@ -4598,8 +4598,8 @@
       "totalPoints": 5,
       "status": "a",
       "news": "",
-      "transfersInEvent": 4306,
-      "transfersOutEvent": 5666
+      "transfersInEvent": 4385,
+      "transfersOutEvent": 5787
     },
     {
       "id": 575,
@@ -4619,8 +4619,8 @@
       "totalPoints": 5,
       "status": "a",
       "news": "",
-      "transfersInEvent": 381,
-      "transfersOutEvent": 1942
+      "transfersInEvent": 386,
+      "transfersOutEvent": 1970
     },
     {
       "id": 584,
@@ -4641,7 +4641,7 @@
       "status": "a",
       "news": "",
       "transfersInEvent": 97,
-      "transfersOutEvent": 766
+      "transfersOutEvent": 782
     },
     {
       "id": 599,
@@ -4661,8 +4661,8 @@
       "totalPoints": 0,
       "status": "a",
       "news": "",
-      "transfersInEvent": 829,
-      "transfersOutEvent": 1009
+      "transfersInEvent": 839,
+      "transfersOutEvent": 1026
     },
     {
       "id": 623,
@@ -4682,8 +4682,8 @@
       "totalPoints": 0,
       "status": "a",
       "news": "",
-      "transfersInEvent": 18722,
-      "transfersOutEvent": 3934
+      "transfersInEvent": 19656,
+      "transfersOutEvent": 4145
     },
     {
       "id": 42,
@@ -4703,8 +4703,8 @@
       "totalPoints": 2,
       "status": "a",
       "news": "",
-      "transfersInEvent": 661,
-      "transfersOutEvent": 648
+      "transfersInEvent": 666,
+      "transfersOutEvent": 657
     },
     {
       "id": 153,
@@ -4724,8 +4724,8 @@
       "totalPoints": 4,
       "status": "a",
       "news": "",
-      "transfersInEvent": 3328,
-      "transfersOutEvent": 1348
+      "transfersInEvent": 3435,
+      "transfersOutEvent": 1400
     },
     {
       "id": 198,
@@ -4740,13 +4740,13 @@
       "price": 5,
       "priceChangeSeason": 0,
       "priceChangeEvent": 0,
-      "ownership": 1.9,
+      "ownership": 2,
       "form": 1.7,
       "totalPoints": 5,
       "status": "a",
       "news": "",
-      "transfersInEvent": 16343,
-      "transfersOutEvent": 10097
+      "transfersInEvent": 16724,
+      "transfersOutEvent": 10295
     },
     {
       "id": 199,
@@ -4766,8 +4766,8 @@
       "totalPoints": 0,
       "status": "a",
       "news": "",
-      "transfersInEvent": 343,
-      "transfersOutEvent": 611
+      "transfersInEvent": 348,
+      "transfersOutEvent": 621
     },
     {
       "id": 202,
@@ -4787,8 +4787,8 @@
       "totalPoints": 4,
       "status": "a",
       "news": "",
-      "transfersInEvent": 4751,
-      "transfersOutEvent": 5267
+      "transfersInEvent": 4847,
+      "transfersOutEvent": 5348
     },
     {
       "id": 203,
@@ -4808,8 +4808,8 @@
       "totalPoints": 2,
       "status": "a",
       "news": "",
-      "transfersInEvent": 1475,
-      "transfersOutEvent": 2551
+      "transfersInEvent": 1516,
+      "transfersOutEvent": 2595
     },
     {
       "id": 204,
@@ -4824,13 +4824,13 @@
       "price": 4.5,
       "priceChangeSeason": 0,
       "priceChangeEvent": 0,
-      "ownership": 5.8,
+      "ownership": 5.9,
       "form": 5.3,
       "totalPoints": 16,
       "status": "a",
       "news": "",
-      "transfersInEvent": 129859,
-      "transfersOutEvent": 24962
+      "transfersInEvent": 132823,
+      "transfersOutEvent": 25735
     },
     {
       "id": 205,
@@ -4851,7 +4851,7 @@
       "status": "u",
       "news": "Has joined FC Cologne on loan for the rest of the season",
       "transfersInEvent": 0,
-      "transfersOutEvent": 501
+      "transfersOutEvent": 510
     },
     {
       "id": 206,
@@ -4872,7 +4872,7 @@
       "status": "i",
       "news": "Knee injury - Unknown return date",
       "transfersInEvent": 33,
-      "transfersOutEvent": 428
+      "transfersOutEvent": 435
     },
     {
       "id": 207,
@@ -4892,8 +4892,8 @@
       "totalPoints": 2,
       "status": "a",
       "news": "",
-      "transfersInEvent": 380,
-      "transfersOutEvent": 590
+      "transfersInEvent": 389,
+      "transfersOutEvent": 599
     },
     {
       "id": 208,
@@ -4913,8 +4913,8 @@
       "totalPoints": 0,
       "status": "i",
       "news": "Groin injury - Unknown return date",
-      "transfersInEvent": 124,
-      "transfersOutEvent": 22300
+      "transfersInEvent": 126,
+      "transfersOutEvent": 22667
     },
     {
       "id": 210,
@@ -4934,8 +4934,8 @@
       "totalPoints": 8,
       "status": "a",
       "news": "",
-      "transfersInEvent": 5526,
-      "transfersOutEvent": 6523
+      "transfersInEvent": 5602,
+      "transfersOutEvent": 6632
     },
     {
       "id": 211,
@@ -4955,8 +4955,8 @@
       "totalPoints": 11,
       "status": "a",
       "news": "",
-      "transfersInEvent": 16226,
-      "transfersOutEvent": 4204
+      "transfersInEvent": 16641,
+      "transfersOutEvent": 4360
     },
     {
       "id": 212,
@@ -4976,8 +4976,8 @@
       "totalPoints": 1,
       "status": "a",
       "news": "",
-      "transfersInEvent": 17181,
-      "transfersOutEvent": 64619
+      "transfersInEvent": 17451,
+      "transfersOutEvent": 66099
     },
     {
       "id": 213,
@@ -4998,7 +4998,7 @@
       "status": "a",
       "news": "",
       "transfersInEvent": 208,
-      "transfersOutEvent": 675
+      "transfersOutEvent": 682
     },
     {
       "id": 214,
@@ -5018,8 +5018,8 @@
       "totalPoints": 10,
       "status": "a",
       "news": "",
-      "transfersInEvent": 8772,
-      "transfersOutEvent": 3240
+      "transfersInEvent": 9006,
+      "transfersOutEvent": 3335
     },
     {
       "id": 215,
@@ -5061,7 +5061,7 @@
       "status": "u",
       "news": "Has joined Millwall on loan for the rest of the season",
       "transfersInEvent": 0,
-      "transfersOutEvent": 742
+      "transfersOutEvent": 745
     },
     {
       "id": 217,
@@ -5082,7 +5082,7 @@
       "status": "a",
       "news": "",
       "transfersInEvent": 51,
-      "transfersOutEvent": 426
+      "transfersOutEvent": 437
     },
     {
       "id": 218,
@@ -5102,8 +5102,8 @@
       "totalPoints": 0,
       "status": "a",
       "news": "",
-      "transfersInEvent": 323,
-      "transfersOutEvent": 609
+      "transfersInEvent": 326,
+      "transfersOutEvent": 612
     },
     {
       "id": 219,
@@ -5121,10 +5121,10 @@
       "ownership": 0,
       "form": 0,
       "totalPoints": 0,
-      "status": "a",
-      "news": "",
+      "status": "u",
+      "news": "has joined  Kasimpasa on loan for the rest of the seaon.",
       "transfersInEvent": 55,
-      "transfersOutEvent": 68
+      "transfersOutEvent": 69
     },
     {
       "id": 220,
@@ -5165,8 +5165,8 @@
       "totalPoints": 0,
       "status": "a",
       "news": "",
-      "transfersInEvent": 621,
-      "transfersOutEvent": 678
+      "transfersInEvent": 624,
+      "transfersOutEvent": 687
     },
     {
       "id": 222,
@@ -5186,8 +5186,8 @@
       "totalPoints": 4,
       "status": "a",
       "news": "",
-      "transfersInEvent": 6261,
-      "transfersOutEvent": 5020
+      "transfersInEvent": 6510,
+      "transfersOutEvent": 5134
     },
     {
       "id": 223,
@@ -5207,8 +5207,8 @@
       "totalPoints": 2,
       "status": "i",
       "news": "Hamstring injury - Expected back 11 Oct",
-      "transfersInEvent": 224,
-      "transfersOutEvent": 46016
+      "transfersInEvent": 229,
+      "transfersOutEvent": 46578
     },
     {
       "id": 224,
@@ -5228,8 +5228,8 @@
       "totalPoints": 7,
       "status": "a",
       "news": "",
-      "transfersInEvent": 17053,
-      "transfersOutEvent": 5286
+      "transfersInEvent": 17342,
+      "transfersOutEvent": 5403
     },
     {
       "id": 225,
@@ -5270,8 +5270,8 @@
       "totalPoints": 3,
       "status": "a",
       "news": "",
-      "transfersInEvent": 299,
-      "transfersOutEvent": 1111
+      "transfersInEvent": 302,
+      "transfersOutEvent": 1124
     },
     {
       "id": 555,
@@ -5291,8 +5291,8 @@
       "totalPoints": 0,
       "status": "a",
       "news": "",
-      "transfersInEvent": 3117,
-      "transfersOutEvent": 4882
+      "transfersInEvent": 3177,
+      "transfersOutEvent": 4954
     },
     {
       "id": 577,
@@ -5312,8 +5312,8 @@
       "totalPoints": 2,
       "status": "a",
       "news": "",
-      "transfersInEvent": 377,
-      "transfersOutEvent": 2042
+      "transfersInEvent": 386,
+      "transfersOutEvent": 2073
     },
     {
       "id": 588,
@@ -5333,8 +5333,8 @@
       "totalPoints": 6,
       "status": "a",
       "news": "",
-      "transfersInEvent": 7500,
-      "transfersOutEvent": 2252
+      "transfersInEvent": 7773,
+      "transfersOutEvent": 2356
     },
     {
       "id": 595,
@@ -5354,8 +5354,8 @@
       "totalPoints": 1,
       "status": "a",
       "news": "",
-      "transfersInEvent": 76,
-      "transfersOutEvent": 115
+      "transfersInEvent": 77,
+      "transfersOutEvent": 117
     },
     {
       "id": 633,
@@ -5375,8 +5375,8 @@
       "totalPoints": 0,
       "status": "a",
       "news": "",
-      "transfersInEvent": 358,
-      "transfersOutEvent": 85
+      "transfersInEvent": 371,
+      "transfersOutEvent": 90
     },
     {
       "id": 643,
@@ -5396,8 +5396,8 @@
       "totalPoints": 7,
       "status": "a",
       "news": "",
-      "transfersInEvent": 19783,
-      "transfersOutEvent": 2788
+      "transfersInEvent": 20240,
+      "transfersOutEvent": 2886
     },
     {
       "id": 644,
@@ -5417,8 +5417,8 @@
       "totalPoints": 2,
       "status": "a",
       "news": "",
-      "transfersInEvent": 1144,
-      "transfersOutEvent": 278
+      "transfersInEvent": 1154,
+      "transfersOutEvent": 284
     },
     {
       "id": 647,
@@ -5438,7 +5438,7 @@
       "totalPoints": 1,
       "status": "a",
       "news": "",
-      "transfersInEvent": 298,
+      "transfersInEvent": 300,
       "transfersOutEvent": 76
     },
     {
@@ -5459,8 +5459,8 @@
       "totalPoints": 0,
       "status": "i",
       "news": "Groin injury - Unknown return date",
-      "transfersInEvent": 66,
-      "transfersOutEvent": 811
+      "transfersInEvent": 67,
+      "transfersOutEvent": 822
     },
     {
       "id": 209,
@@ -5480,8 +5480,8 @@
       "totalPoints": 3,
       "status": "a",
       "news": "",
-      "transfersInEvent": 762,
-      "transfersOutEvent": 1346
+      "transfersInEvent": 767,
+      "transfersOutEvent": 1371
     },
     {
       "id": 226,
@@ -5501,8 +5501,8 @@
       "totalPoints": 11,
       "status": "a",
       "news": "",
-      "transfersInEvent": 40619,
-      "transfersOutEvent": 42852
+      "transfersInEvent": 41617,
+      "transfersOutEvent": 43670
     },
     {
       "id": 227,
@@ -5522,8 +5522,8 @@
       "totalPoints": 0,
       "status": "a",
       "news": "",
-      "transfersInEvent": 253,
-      "transfersOutEvent": 275
+      "transfersInEvent": 257,
+      "transfersOutEvent": 278
     },
     {
       "id": 228,
@@ -5543,8 +5543,8 @@
       "totalPoints": 0,
       "status": "a",
       "news": "",
-      "transfersInEvent": 192,
-      "transfersOutEvent": 257
+      "transfersInEvent": 196,
+      "transfersOutEvent": 261
     },
     {
       "id": 229,
@@ -5564,8 +5564,8 @@
       "totalPoints": 21,
       "status": "a",
       "news": "",
-      "transfersInEvent": 102467,
-      "transfersOutEvent": 56102
+      "transfersInEvent": 104383,
+      "transfersOutEvent": 57334
     },
     {
       "id": 230,
@@ -5585,8 +5585,8 @@
       "totalPoints": 13,
       "status": "a",
       "news": "",
-      "transfersInEvent": 21281,
-      "transfersOutEvent": 12349
+      "transfersInEvent": 21765,
+      "transfersOutEvent": 12664
     },
     {
       "id": 231,
@@ -5606,8 +5606,8 @@
       "totalPoints": 0,
       "status": "a",
       "news": "",
-      "transfersInEvent": 807,
-      "transfersOutEvent": 9956
+      "transfersInEvent": 818,
+      "transfersOutEvent": 10132
     },
     {
       "id": 232,
@@ -5627,8 +5627,8 @@
       "totalPoints": 0,
       "status": "a",
       "news": "",
-      "transfersInEvent": 424,
-      "transfersOutEvent": 2709
+      "transfersInEvent": 429,
+      "transfersOutEvent": 2752
     },
     {
       "id": 233,
@@ -5648,8 +5648,8 @@
       "totalPoints": 11,
       "status": "a",
       "news": "",
-      "transfersInEvent": 37677,
-      "transfersOutEvent": 20706
+      "transfersInEvent": 38724,
+      "transfersOutEvent": 21264
     },
     {
       "id": 234,
@@ -5670,7 +5670,7 @@
       "status": "u",
       "news": "Has joined Torino permanently",
       "transfersInEvent": 0,
-      "transfersOutEvent": 536
+      "transfersOutEvent": 544
     },
     {
       "id": 235,
@@ -5691,7 +5691,7 @@
       "status": "u",
       "news": "Has joined Malaga on loan for the rest of the season",
       "transfersInEvent": 0,
-      "transfersOutEvent": 2168
+      "transfersOutEvent": 2187
     },
     {
       "id": 236,
@@ -5711,8 +5711,8 @@
       "totalPoints": 15,
       "status": "a",
       "news": "",
-      "transfersInEvent": 77076,
-      "transfersOutEvent": 56345
+      "transfersInEvent": 79129,
+      "transfersOutEvent": 57944
     },
     {
       "id": 238,
@@ -5732,8 +5732,8 @@
       "totalPoints": 2,
       "status": "a",
       "news": "",
-      "transfersInEvent": 10613,
-      "transfersOutEvent": 4034
+      "transfersInEvent": 10753,
+      "transfersOutEvent": 4111
     },
     {
       "id": 239,
@@ -5753,8 +5753,8 @@
       "totalPoints": 4,
       "status": "d",
       "news": "Unspecified injury - 75% chance of playing",
-      "transfersInEvent": 1726,
-      "transfersOutEvent": 2677
+      "transfersInEvent": 1733,
+      "transfersOutEvent": 2713
     },
     {
       "id": 242,
@@ -5774,8 +5774,8 @@
       "totalPoints": 15,
       "status": "a",
       "news": "",
-      "transfersInEvent": 26999,
-      "transfersOutEvent": 6725
+      "transfersInEvent": 27666,
+      "transfersOutEvent": 6995
     },
     {
       "id": 243,
@@ -5795,8 +5795,8 @@
       "totalPoints": 1,
       "status": "a",
       "news": "",
-      "transfersInEvent": 391,
-      "transfersOutEvent": 800
+      "transfersInEvent": 396,
+      "transfersOutEvent": 810
     },
     {
       "id": 244,
@@ -5816,8 +5816,8 @@
       "totalPoints": 11,
       "status": "a",
       "news": "",
-      "transfersInEvent": 8346,
-      "transfersOutEvent": 5650
+      "transfersInEvent": 8510,
+      "transfersOutEvent": 5769
     },
     {
       "id": 245,
@@ -5837,8 +5837,8 @@
       "totalPoints": 0,
       "status": "a",
       "news": "",
-      "transfersInEvent": 159,
-      "transfersOutEvent": 308
+      "transfersInEvent": 161,
+      "transfersOutEvent": 312
     },
     {
       "id": 246,
@@ -5858,8 +5858,8 @@
       "totalPoints": 6,
       "status": "a",
       "news": "",
-      "transfersInEvent": 377,
-      "transfersOutEvent": 613
+      "transfersInEvent": 380,
+      "transfersOutEvent": 628
     },
     {
       "id": 247,
@@ -5879,8 +5879,8 @@
       "totalPoints": 8,
       "status": "a",
       "news": "",
-      "transfersInEvent": 1037,
-      "transfersOutEvent": 1230
+      "transfersInEvent": 1051,
+      "transfersOutEvent": 1253
     },
     {
       "id": 248,
@@ -5901,7 +5901,7 @@
       "status": "u",
       "news": "Has joined Fiorentina permanently",
       "transfersInEvent": 0,
-      "transfersOutEvent": 43073
+      "transfersOutEvent": 43533
     },
     {
       "id": 249,
@@ -5921,8 +5921,8 @@
       "totalPoints": 12,
       "status": "a",
       "news": "",
-      "transfersInEvent": 154209,
-      "transfersOutEvent": 64501
+      "transfersInEvent": 158339,
+      "transfersOutEvent": 66302
     },
     {
       "id": 649,
@@ -5942,8 +5942,8 @@
       "totalPoints": 7,
       "status": "a",
       "news": "",
-      "transfersInEvent": 9491,
-      "transfersOutEvent": 1773
+      "transfersInEvent": 9801,
+      "transfersOutEvent": 1841
     },
     {
       "id": 654,
@@ -5963,8 +5963,8 @@
       "totalPoints": 0,
       "status": "a",
       "news": "",
-      "transfersInEvent": 5945,
-      "transfersOutEvent": 1118
+      "transfersInEvent": 6082,
+      "transfersOutEvent": 1164
     },
     {
       "id": 250,
@@ -5984,8 +5984,8 @@
       "totalPoints": 6,
       "status": "a",
       "news": "",
-      "transfersInEvent": 12518,
-      "transfersOutEvent": 19521
+      "transfersInEvent": 12774,
+      "transfersOutEvent": 19975
     },
     {
       "id": 251,
@@ -6005,8 +6005,8 @@
       "totalPoints": 0,
       "status": "a",
       "news": "",
-      "transfersInEvent": 5052,
-      "transfersOutEvent": 3963
+      "transfersInEvent": 5175,
+      "transfersOutEvent": 4095
     },
     {
       "id": 252,
@@ -6027,7 +6027,7 @@
       "status": "u",
       "news": "Has joined York City on loan for the rest of the season",
       "transfersInEvent": 0,
-      "transfersOutEvent": 1281
+      "transfersOutEvent": 1298
     },
     {
       "id": 253,
@@ -6047,8 +6047,8 @@
       "totalPoints": 2,
       "status": "a",
       "news": "",
-      "transfersInEvent": 1282,
-      "transfersOutEvent": 1723
+      "transfersInEvent": 1303,
+      "transfersOutEvent": 1747
     },
     {
       "id": 254,
@@ -6068,8 +6068,8 @@
       "totalPoints": 4,
       "status": "a",
       "news": "",
-      "transfersInEvent": 3106,
-      "transfersOutEvent": 15224
+      "transfersInEvent": 3153,
+      "transfersOutEvent": 15481
     },
     {
       "id": 255,
@@ -6089,8 +6089,8 @@
       "totalPoints": 3,
       "status": "a",
       "news": "",
-      "transfersInEvent": 63,
-      "transfersOutEvent": 359
+      "transfersInEvent": 65,
+      "transfersOutEvent": 364
     },
     {
       "id": 256,
@@ -6110,8 +6110,8 @@
       "totalPoints": 0,
       "status": "a",
       "news": "",
-      "transfersInEvent": 123,
-      "transfersOutEvent": 1417
+      "transfersInEvent": 125,
+      "transfersOutEvent": 1438
     },
     {
       "id": 257,
@@ -6131,8 +6131,8 @@
       "totalPoints": 3,
       "status": "a",
       "news": "",
-      "transfersInEvent": 1375,
-      "transfersOutEvent": 5729
+      "transfersInEvent": 1401,
+      "transfersOutEvent": 5832
     },
     {
       "id": 258,
@@ -6152,8 +6152,8 @@
       "totalPoints": 13,
       "status": "a",
       "news": "",
-      "transfersInEvent": 4187,
-      "transfersOutEvent": 9312
+      "transfersInEvent": 4242,
+      "transfersOutEvent": 9510
     },
     {
       "id": 261,
@@ -6173,8 +6173,8 @@
       "totalPoints": 6,
       "status": "a",
       "news": "",
-      "transfersInEvent": 1511,
-      "transfersOutEvent": 9234
+      "transfersInEvent": 1525,
+      "transfersOutEvent": 9410
     },
     {
       "id": 262,
@@ -6194,8 +6194,8 @@
       "totalPoints": 2,
       "status": "a",
       "news": "",
-      "transfersInEvent": 575,
-      "transfersOutEvent": 3027
+      "transfersInEvent": 581,
+      "transfersOutEvent": 3079
     },
     {
       "id": 263,
@@ -6215,8 +6215,8 @@
       "totalPoints": 2,
       "status": "a",
       "news": "",
-      "transfersInEvent": 173,
-      "transfersOutEvent": 688
+      "transfersInEvent": 175,
+      "transfersOutEvent": 705
     },
     {
       "id": 264,
@@ -6236,8 +6236,8 @@
       "totalPoints": 7,
       "status": "a",
       "news": "",
-      "transfersInEvent": 1536,
-      "transfersOutEvent": 3692
+      "transfersInEvent": 1551,
+      "transfersOutEvent": 3756
     },
     {
       "id": 265,
@@ -6257,8 +6257,8 @@
       "totalPoints": 5,
       "status": "a",
       "news": "",
-      "transfersInEvent": 455,
-      "transfersOutEvent": 2993
+      "transfersInEvent": 458,
+      "transfersOutEvent": 3045
     },
     {
       "id": 266,
@@ -6278,7 +6278,7 @@
       "totalPoints": 0,
       "status": "i",
       "news": "Knee injury - Expected back 10 Oct",
-      "transfersInEvent": 20,
+      "transfersInEvent": 21,
       "transfersOutEvent": 33
     },
     {
@@ -6299,8 +6299,8 @@
       "totalPoints": 19,
       "status": "a",
       "news": "",
-      "transfersInEvent": 52604,
-      "transfersOutEvent": 18399
+      "transfersInEvent": 53649,
+      "transfersOutEvent": 19055
     },
     {
       "id": 269,
@@ -6320,8 +6320,8 @@
       "totalPoints": 3,
       "status": "a",
       "news": "",
-      "transfersInEvent": 180,
-      "transfersOutEvent": 2536
+      "transfersInEvent": 184,
+      "transfersOutEvent": 2585
     },
     {
       "id": 270,
@@ -6341,8 +6341,8 @@
       "totalPoints": 0,
       "status": "a",
       "news": "",
-      "transfersInEvent": 2519,
-      "transfersOutEvent": 9488
+      "transfersInEvent": 2546,
+      "transfersOutEvent": 9653
     },
     {
       "id": 271,
@@ -6362,8 +6362,8 @@
       "totalPoints": 2,
       "status": "a",
       "news": "",
-      "transfersInEvent": 2149,
-      "transfersOutEvent": 4658
+      "transfersInEvent": 2185,
+      "transfersOutEvent": 4725
     },
     {
       "id": 272,
@@ -6383,8 +6383,8 @@
       "totalPoints": 0,
       "status": "a",
       "news": "",
-      "transfersInEvent": 23647,
-      "transfersOutEvent": 46908
+      "transfersInEvent": 24027,
+      "transfersOutEvent": 47889
     },
     {
       "id": 569,
@@ -6404,8 +6404,8 @@
       "totalPoints": 10,
       "status": "a",
       "news": "",
-      "transfersInEvent": 27173,
-      "transfersOutEvent": 62016
+      "transfersInEvent": 27633,
+      "transfersOutEvent": 63140
     },
     {
       "id": 570,
@@ -6425,8 +6425,8 @@
       "totalPoints": 11,
       "status": "a",
       "news": "",
-      "transfersInEvent": 1035,
-      "transfersOutEvent": 1194
+      "transfersInEvent": 1047,
+      "transfersOutEvent": 1216
     },
     {
       "id": 580,
@@ -6446,8 +6446,8 @@
       "totalPoints": 4,
       "status": "a",
       "news": "",
-      "transfersInEvent": 214,
-      "transfersOutEvent": 520
+      "transfersInEvent": 215,
+      "transfersOutEvent": 531
     },
     {
       "id": 610,
@@ -6467,8 +6467,8 @@
       "totalPoints": 0,
       "status": "d",
       "news": "Unspecified injury - 75% chance of playing",
-      "transfersInEvent": 431,
-      "transfersOutEvent": 882
+      "transfersInEvent": 434,
+      "transfersOutEvent": 887
     },
     {
       "id": 626,
@@ -6488,8 +6488,8 @@
       "totalPoints": 0,
       "status": "a",
       "news": "",
-      "transfersInEvent": 9110,
-      "transfersOutEvent": 4667
+      "transfersInEvent": 9195,
+      "transfersOutEvent": 4720
     },
     {
       "id": 635,
@@ -6509,8 +6509,8 @@
       "totalPoints": 1,
       "status": "a",
       "news": "",
-      "transfersInEvent": 179,
-      "transfersOutEvent": 49
+      "transfersInEvent": 183,
+      "transfersOutEvent": 50
     },
     {
       "id": 636,
@@ -6531,7 +6531,7 @@
       "status": "a",
       "news": "",
       "transfersInEvent": 102,
-      "transfersOutEvent": 41
+      "transfersOutEvent": 43
     },
     {
       "id": 650,
@@ -6551,8 +6551,8 @@
       "totalPoints": 0,
       "status": "a",
       "news": "",
-      "transfersInEvent": 187,
-      "transfersOutEvent": 63
+      "transfersInEvent": 192,
+      "transfersOutEvent": 65
     },
     {
       "id": 240,
@@ -6572,8 +6572,8 @@
       "totalPoints": 1,
       "status": "a",
       "news": "",
-      "transfersInEvent": 247,
-      "transfersOutEvent": 137
+      "transfersInEvent": 250,
+      "transfersOutEvent": 139
     },
     {
       "id": 273,
@@ -6593,8 +6593,8 @@
       "totalPoints": 0,
       "status": "a",
       "news": "",
-      "transfersInEvent": 5882,
-      "transfersOutEvent": 5891
+      "transfersInEvent": 5972,
+      "transfersOutEvent": 6026
     },
     {
       "id": 274,
@@ -6614,8 +6614,8 @@
       "totalPoints": 0,
       "status": "i",
       "news": "Arm injury - Unknown return date",
-      "transfersInEvent": 95,
-      "transfersOutEvent": 594
+      "transfersInEvent": 96,
+      "transfersOutEvent": 606
     },
     {
       "id": 275,
@@ -6636,7 +6636,7 @@
       "status": "u",
       "news": "Has joined Grimsby Town on loan for the rest of the season",
       "transfersInEvent": 0,
-      "transfersOutEvent": 45
+      "transfersOutEvent": 46
     },
     {
       "id": 276,
@@ -6657,7 +6657,7 @@
       "status": "u",
       "news": "Has joined Colchester United on loan for the rest of the season",
       "transfersInEvent": 0,
-      "transfersOutEvent": 134
+      "transfersOutEvent": 137
     },
     {
       "id": 277,
@@ -6677,8 +6677,8 @@
       "totalPoints": 23,
       "status": "a",
       "news": "",
-      "transfersInEvent": 165383,
-      "transfersOutEvent": 37680
+      "transfersInEvent": 167269,
+      "transfersOutEvent": 38975
     },
     {
       "id": 278,
@@ -6698,8 +6698,8 @@
       "totalPoints": 0,
       "status": "i",
       "news": "Groin injury - Unknown return date",
-      "transfersInEvent": 85,
-      "transfersOutEvent": 738
+      "transfersInEvent": 86,
+      "transfersOutEvent": 756
     },
     {
       "id": 279,
@@ -6714,13 +6714,13 @@
       "price": 4.1,
       "priceChangeSeason": 0.1,
       "priceChangeEvent": 0,
-      "ownership": 11.4,
+      "ownership": 11.5,
       "form": 8.3,
       "totalPoints": 25,
       "status": "a",
       "news": "",
-      "transfersInEvent": 210387,
-      "transfersOutEvent": 44816
+      "transfersInEvent": 213898,
+      "transfersOutEvent": 45956
     },
     {
       "id": 280,
@@ -6740,8 +6740,8 @@
       "totalPoints": 12,
       "status": "a",
       "news": "",
-      "transfersInEvent": 4240,
-      "transfersOutEvent": 2278
+      "transfersInEvent": 4346,
+      "transfersOutEvent": 2312
     },
     {
       "id": 281,
@@ -6762,7 +6762,7 @@
       "status": "u",
       "news": "Has joined Genoa permanently",
       "transfersInEvent": 0,
-      "transfersOutEvent": 1175
+      "transfersOutEvent": 1183
     },
     {
       "id": 282,
@@ -6782,8 +6782,8 @@
       "totalPoints": 20,
       "status": "a",
       "news": "",
-      "transfersInEvent": 29212,
-      "transfersOutEvent": 7714
+      "transfersInEvent": 29923,
+      "transfersOutEvent": 7955
     },
     {
       "id": 283,
@@ -6804,7 +6804,7 @@
       "status": "u",
       "news": "Has joined Newport County on loan until January",
       "transfersInEvent": 0,
-      "transfersOutEvent": 84
+      "transfersOutEvent": 88
     },
     {
       "id": 284,
@@ -6824,8 +6824,8 @@
       "totalPoints": 0,
       "status": "a",
       "news": "",
-      "transfersInEvent": 527,
-      "transfersOutEvent": 639
+      "transfersInEvent": 539,
+      "transfersOutEvent": 649
     },
     {
       "id": 285,
@@ -6845,8 +6845,8 @@
       "totalPoints": 1,
       "status": "d",
       "news": "Foot injury - 75% chance of playing",
-      "transfersInEvent": 310,
-      "transfersOutEvent": 782
+      "transfersInEvent": 311,
+      "transfersOutEvent": 793
     },
     {
       "id": 286,
@@ -6866,8 +6866,8 @@
       "totalPoints": 14,
       "status": "a",
       "news": "",
-      "transfersInEvent": 16554,
-      "transfersOutEvent": 6636
+      "transfersInEvent": 16805,
+      "transfersOutEvent": 6779
     },
     {
       "id": 287,
@@ -6888,7 +6888,7 @@
       "status": "u",
       "news": "Has joined Birmingham on loan for the rest of the season",
       "transfersInEvent": 0,
-      "transfersOutEvent": 1856
+      "transfersOutEvent": 1879
     },
     {
       "id": 288,
@@ -6908,8 +6908,8 @@
       "totalPoints": 0,
       "status": "a",
       "news": "",
-      "transfersInEvent": 2141,
-      "transfersOutEvent": 3048
+      "transfersInEvent": 2165,
+      "transfersOutEvent": 3103
     },
     {
       "id": 289,
@@ -6929,8 +6929,8 @@
       "totalPoints": 2,
       "status": "a",
       "news": "",
-      "transfersInEvent": 804,
-      "transfersOutEvent": 5917
+      "transfersInEvent": 840,
+      "transfersOutEvent": 6006
     },
     {
       "id": 290,
@@ -6950,8 +6950,8 @@
       "totalPoints": 11,
       "status": "a",
       "news": "",
-      "transfersInEvent": 92678,
-      "transfersOutEvent": 50059
+      "transfersInEvent": 94847,
+      "transfersOutEvent": 51612
     },
     {
       "id": 291,
@@ -6971,8 +6971,8 @@
       "totalPoints": 0,
       "status": "i",
       "news": "Knee injury - Unknown return date",
-      "transfersInEvent": 74,
-      "transfersOutEvent": 81
+      "transfersInEvent": 75,
+      "transfersOutEvent": 83
     },
     {
       "id": 292,
@@ -6993,7 +6993,7 @@
       "status": "a",
       "news": "",
       "transfersInEvent": 208,
-      "transfersOutEvent": 214
+      "transfersOutEvent": 215
     },
     {
       "id": 293,
@@ -7034,8 +7034,8 @@
       "totalPoints": 0,
       "status": "a",
       "news": "",
-      "transfersInEvent": 433,
-      "transfersOutEvent": 734
+      "transfersInEvent": 466,
+      "transfersOutEvent": 743
     },
     {
       "id": 295,
@@ -7055,8 +7055,8 @@
       "totalPoints": 8,
       "status": "a",
       "news": "",
-      "transfersInEvent": 14266,
-      "transfersOutEvent": 24767
+      "transfersInEvent": 14460,
+      "transfersOutEvent": 25162
     },
     {
       "id": 296,
@@ -7076,8 +7076,8 @@
       "totalPoints": 0,
       "status": "a",
       "news": "",
-      "transfersInEvent": 450,
-      "transfersOutEvent": 624
+      "transfersInEvent": 454,
+      "transfersOutEvent": 637
     },
     {
       "id": 297,
@@ -7119,7 +7119,7 @@
       "status": "u",
       "news": "Has joined Konyaspor permanently",
       "transfersInEvent": 0,
-      "transfersOutEvent": 2594
+      "transfersOutEvent": 2638
     },
     {
       "id": 299,
@@ -7140,7 +7140,7 @@
       "status": "u",
       "news": "Has joined Sheffield Wednesday on loan for the rest of the season",
       "transfersInEvent": 0,
-      "transfersOutEvent": 355
+      "transfersOutEvent": 357
     },
     {
       "id": 340,
@@ -7160,8 +7160,8 @@
       "totalPoints": 0,
       "status": "a",
       "news": "",
-      "transfersInEvent": 125,
-      "transfersOutEvent": 109
+      "transfersInEvent": 128,
+      "transfersOutEvent": 112
     },
     {
       "id": 556,
@@ -7181,8 +7181,8 @@
       "totalPoints": 1,
       "status": "a",
       "news": "",
-      "transfersInEvent": 2870,
-      "transfersOutEvent": 12067
+      "transfersInEvent": 2910,
+      "transfersOutEvent": 12288
     },
     {
       "id": 563,
@@ -7203,7 +7203,7 @@
       "status": "i",
       "news": "Calf injury - Expected back 11 Oct",
       "transfersInEvent": 114,
-      "transfersOutEvent": 259
+      "transfersOutEvent": 265
     },
     {
       "id": 572,
@@ -7218,13 +7218,13 @@
       "price": 4.6,
       "priceChangeSeason": 0.1,
       "priceChangeEvent": 0,
-      "ownership": 9.4,
+      "ownership": 9.5,
       "form": 8.7,
       "totalPoints": 26,
       "status": "a",
       "news": "",
-      "transfersInEvent": 158691,
-      "transfersOutEvent": 37489
+      "transfersInEvent": 161075,
+      "transfersOutEvent": 38434
     },
     {
       "id": 574,
@@ -7244,8 +7244,8 @@
       "totalPoints": 1,
       "status": "a",
       "news": "",
-      "transfersInEvent": 318,
-      "transfersOutEvent": 535
+      "transfersInEvent": 322,
+      "transfersOutEvent": 544
     },
     {
       "id": 576,
@@ -7265,8 +7265,8 @@
       "totalPoints": 6,
       "status": "a",
       "news": "",
-      "transfersInEvent": 392,
-      "transfersOutEvent": 622
+      "transfersInEvent": 397,
+      "transfersOutEvent": 634
     },
     {
       "id": 585,
@@ -7286,8 +7286,8 @@
       "totalPoints": 3,
       "status": "a",
       "news": "",
-      "transfersInEvent": 1168,
-      "transfersOutEvent": 2809
+      "transfersInEvent": 1189,
+      "transfersOutEvent": 2862
     },
     {
       "id": 586,
@@ -7307,8 +7307,8 @@
       "totalPoints": 24,
       "status": "a",
       "news": "",
-      "transfersInEvent": 204580,
-      "transfersOutEvent": 37368
+      "transfersInEvent": 210891,
+      "transfersOutEvent": 38500
     },
     {
       "id": 589,
@@ -7329,7 +7329,7 @@
       "status": "a",
       "news": "",
       "transfersInEvent": 117,
-      "transfersOutEvent": 175
+      "transfersOutEvent": 176
     },
     {
       "id": 617,
@@ -7349,7 +7349,7 @@
       "totalPoints": 2,
       "status": "a",
       "news": "",
-      "transfersInEvent": 247,
+      "transfersInEvent": 248,
       "transfersOutEvent": 129
     },
     {
@@ -7370,8 +7370,8 @@
       "totalPoints": 0,
       "status": "i",
       "news": "Back injury - Unknown return date",
-      "transfersInEvent": 2609,
-      "transfersOutEvent": 813
+      "transfersInEvent": 2610,
+      "transfersOutEvent": 832
     },
     {
       "id": 637,
@@ -7391,8 +7391,8 @@
       "totalPoints": 0,
       "status": "a",
       "news": "",
-      "transfersInEvent": 2083,
-      "transfersOutEvent": 495
+      "transfersInEvent": 2118,
+      "transfersOutEvent": 504
     },
     {
       "id": 638,
@@ -7412,8 +7412,8 @@
       "totalPoints": 1,
       "status": "a",
       "news": "",
-      "transfersInEvent": 10542,
-      "transfersOutEvent": 2281
+      "transfersInEvent": 10641,
+      "transfersOutEvent": 2313
     },
     {
       "id": 642,
@@ -7433,8 +7433,8 @@
       "totalPoints": 1,
       "status": "a",
       "news": "",
-      "transfersInEvent": 612,
-      "transfersOutEvent": 172
+      "transfersInEvent": 619,
+      "transfersOutEvent": 174
     },
     {
       "id": 645,
@@ -7454,8 +7454,8 @@
       "totalPoints": 0,
       "status": "a",
       "news": "",
-      "transfersInEvent": 198,
-      "transfersOutEvent": 59
+      "transfersInEvent": 203,
+      "transfersOutEvent": 60
     },
     {
       "id": 259,
@@ -7475,8 +7475,8 @@
       "totalPoints": 7,
       "status": "a",
       "news": "",
-      "transfersInEvent": 20777,
-      "transfersOutEvent": 82302
+      "transfersInEvent": 21220,
+      "transfersOutEvent": 84339
     },
     {
       "id": 267,
@@ -7496,8 +7496,8 @@
       "totalPoints": 8,
       "status": "a",
       "news": "",
-      "transfersInEvent": 447,
-      "transfersOutEvent": 821
+      "transfersInEvent": 455,
+      "transfersOutEvent": 842
     },
     {
       "id": 300,
@@ -7517,8 +7517,8 @@
       "totalPoints": 0,
       "status": "a",
       "news": "",
-      "transfersInEvent": 164,
-      "transfersOutEvent": 1676
+      "transfersInEvent": 166,
+      "transfersOutEvent": 1702
     },
     {
       "id": 301,
@@ -7538,8 +7538,8 @@
       "totalPoints": 0,
       "status": "a",
       "news": "",
-      "transfersInEvent": 14587,
-      "transfersOutEvent": 19277
+      "transfersInEvent": 14924,
+      "transfersOutEvent": 19765
     },
     {
       "id": 302,
@@ -7559,8 +7559,8 @@
       "totalPoints": 0,
       "status": "a",
       "news": "",
-      "transfersInEvent": 7685,
-      "transfersOutEvent": 2766
+      "transfersInEvent": 7859,
+      "transfersOutEvent": 2888
     },
     {
       "id": 303,
@@ -7580,8 +7580,8 @@
       "totalPoints": 0,
       "status": "a",
       "news": "",
-      "transfersInEvent": 348,
-      "transfersOutEvent": 2464
+      "transfersInEvent": 360,
+      "transfersOutEvent": 2497
     },
     {
       "id": 304,
@@ -7601,8 +7601,8 @@
       "totalPoints": 7,
       "status": "a",
       "news": "",
-      "transfersInEvent": 9058,
-      "transfersOutEvent": 22726
+      "transfersInEvent": 9278,
+      "transfersOutEvent": 23375
     },
     {
       "id": 305,
@@ -7622,8 +7622,8 @@
       "totalPoints": 9,
       "status": "a",
       "news": "",
-      "transfersInEvent": 25223,
-      "transfersOutEvent": 36420
+      "transfersInEvent": 25712,
+      "transfersOutEvent": 37396
     },
     {
       "id": 306,
@@ -7643,8 +7643,8 @@
       "totalPoints": 2,
       "status": "a",
       "news": "",
-      "transfersInEvent": 1114,
-      "transfersOutEvent": 4982
+      "transfersInEvent": 1130,
+      "transfersOutEvent": 5090
     },
     {
       "id": 307,
@@ -7665,7 +7665,7 @@
       "status": "u",
       "news": "Has joined Stoke City on loan for the rest of the season",
       "transfersInEvent": 0,
-      "transfersOutEvent": 1647
+      "transfersOutEvent": 1663
     },
     {
       "id": 308,
@@ -7685,8 +7685,8 @@
       "totalPoints": 1,
       "status": "a",
       "news": "",
-      "transfersInEvent": 229,
-      "transfersOutEvent": 2211
+      "transfersInEvent": 232,
+      "transfersOutEvent": 2258
     },
     {
       "id": 309,
@@ -7706,8 +7706,8 @@
       "totalPoints": 6,
       "status": "a",
       "news": "",
-      "transfersInEvent": 249,
-      "transfersOutEvent": 1212
+      "transfersInEvent": 253,
+      "transfersOutEvent": 1226
     },
     {
       "id": 310,
@@ -7769,8 +7769,8 @@
       "totalPoints": 0,
       "status": "i",
       "news": "Knee injury - Unknown return date",
-      "transfersInEvent": 112,
-      "transfersOutEvent": 312
+      "transfersInEvent": 113,
+      "transfersOutEvent": 317
     },
     {
       "id": 313,
@@ -7790,8 +7790,8 @@
       "totalPoints": 8,
       "status": "a",
       "news": "",
-      "transfersInEvent": 300,
-      "transfersOutEvent": 2196
+      "transfersInEvent": 302,
+      "transfersOutEvent": 2232
     },
     {
       "id": 314,
@@ -7812,7 +7812,7 @@
       "status": "u",
       "news": "Has joined Lincoln City on loan until January",
       "transfersInEvent": 0,
-      "transfersOutEvent": 221
+      "transfersOutEvent": 223
     },
     {
       "id": 315,
@@ -7832,8 +7832,8 @@
       "totalPoints": 8,
       "status": "a",
       "news": "",
-      "transfersInEvent": 1203,
-      "transfersOutEvent": 1470
+      "transfersInEvent": 1224,
+      "transfersOutEvent": 1495
     },
     {
       "id": 316,
@@ -7853,8 +7853,8 @@
       "totalPoints": 12,
       "status": "a",
       "news": "",
-      "transfersInEvent": 17121,
-      "transfersOutEvent": 16116
+      "transfersInEvent": 17333,
+      "transfersOutEvent": 16314
     },
     {
       "id": 317,
@@ -7875,7 +7875,7 @@
       "status": "u",
       "news": "Has joined Stoke City permanently",
       "transfersInEvent": 0,
-      "transfersOutEvent": 1291
+      "transfersOutEvent": 1315
     },
     {
       "id": 318,
@@ -7896,7 +7896,7 @@
       "status": "i",
       "news": "Ankle injury - Unknown return date",
       "transfersInEvent": 12,
-      "transfersOutEvent": 940
+      "transfersOutEvent": 953
     },
     {
       "id": 319,
@@ -7937,8 +7937,8 @@
       "totalPoints": 6,
       "status": "a",
       "news": "",
-      "transfersInEvent": 24078,
-      "transfersOutEvent": 12120
+      "transfersInEvent": 24436,
+      "transfersOutEvent": 12335
     },
     {
       "id": 321,
@@ -7958,8 +7958,8 @@
       "totalPoints": 1,
       "status": "a",
       "news": "",
-      "transfersInEvent": 52669,
-      "transfersOutEvent": 35186
+      "transfersInEvent": 53591,
+      "transfersOutEvent": 35953
     },
     {
       "id": 322,
@@ -7980,7 +7980,7 @@
       "status": "u",
       "news": "Has joined Sheffield Wednesday on loan for the rest of the season",
       "transfersInEvent": 0,
-      "transfersOutEvent": 1119
+      "transfersOutEvent": 1136
     },
     {
       "id": 323,
@@ -8000,8 +8000,8 @@
       "totalPoints": 3,
       "status": "a",
       "news": "",
-      "transfersInEvent": 4874,
-      "transfersOutEvent": 8420
+      "transfersInEvent": 4931,
+      "transfersOutEvent": 8577
     },
     {
       "id": 324,
@@ -8021,8 +8021,8 @@
       "totalPoints": 0,
       "status": "a",
       "news": "",
-      "transfersInEvent": 72,
-      "transfersOutEvent": 335
+      "transfersInEvent": 73,
+      "transfersOutEvent": 343
     },
     {
       "id": 554,
@@ -8043,7 +8043,7 @@
       "status": "u",
       "news": "Has joined Valencia on loan for the rest of the season",
       "transfersInEvent": 0,
-      "transfersOutEvent": 203
+      "transfersOutEvent": 207
     },
     {
       "id": 562,
@@ -8063,8 +8063,8 @@
       "totalPoints": 6,
       "status": "a",
       "news": "",
-      "transfersInEvent": 581,
-      "transfersOutEvent": 2614
+      "transfersInEvent": 587,
+      "transfersOutEvent": 2671
     },
     {
       "id": 564,
@@ -8084,8 +8084,8 @@
       "totalPoints": 6,
       "status": "a",
       "news": "",
-      "transfersInEvent": 3109,
-      "transfersOutEvent": 2916
+      "transfersInEvent": 3163,
+      "transfersOutEvent": 2966
     },
     {
       "id": 571,
@@ -8105,8 +8105,8 @@
       "totalPoints": 0,
       "status": "a",
       "news": "",
-      "transfersInEvent": 244,
-      "transfersOutEvent": 639
+      "transfersInEvent": 247,
+      "transfersOutEvent": 652
     },
     {
       "id": 591,
@@ -8126,8 +8126,8 @@
       "totalPoints": 11,
       "status": "a",
       "news": "",
-      "transfersInEvent": 15945,
-      "transfersOutEvent": 8927
+      "transfersInEvent": 16232,
+      "transfersOutEvent": 9117
     },
     {
       "id": 592,
@@ -8147,8 +8147,8 @@
       "totalPoints": 3,
       "status": "a",
       "news": "",
-      "transfersInEvent": 1736,
-      "transfersOutEvent": 3287
+      "transfersInEvent": 1755,
+      "transfersOutEvent": 3343
     },
     {
       "id": 602,
@@ -8169,7 +8169,7 @@
       "status": "u",
       "news": "Has joined Huddersfield Town on loan for the rest of the season",
       "transfersInEvent": 0,
-      "transfersOutEvent": 775
+      "transfersOutEvent": 781
     },
     {
       "id": 619,
@@ -8189,8 +8189,8 @@
       "totalPoints": 5,
       "status": "a",
       "news": "",
-      "transfersInEvent": 1649,
-      "transfersOutEvent": 604
+      "transfersInEvent": 1671,
+      "transfersOutEvent": 615
     },
     {
       "id": 640,
@@ -8210,8 +8210,8 @@
       "totalPoints": 1,
       "status": "a",
       "news": "",
-      "transfersInEvent": 1542,
-      "transfersOutEvent": 415
+      "transfersInEvent": 1573,
+      "transfersOutEvent": 423
     },
     {
       "id": 260,
@@ -8231,8 +8231,8 @@
       "totalPoints": 4,
       "status": "a",
       "news": "",
-      "transfersInEvent": 2063,
-      "transfersOutEvent": 76983
+      "transfersInEvent": 2091,
+      "transfersOutEvent": 78249
     },
     {
       "id": 326,
@@ -8253,7 +8253,7 @@
       "status": "u",
       "news": "Has joined Torino on loan for the rest of the season",
       "transfersInEvent": 0,
-      "transfersOutEvent": 4759
+      "transfersOutEvent": 4810
     },
     {
       "id": 327,
@@ -8273,8 +8273,8 @@
       "totalPoints": 12,
       "status": "a",
       "news": "",
-      "transfersInEvent": 2931,
-      "transfersOutEvent": 9458
+      "transfersInEvent": 2974,
+      "transfersOutEvent": 9575
     },
     {
       "id": 329,
@@ -8294,8 +8294,8 @@
       "totalPoints": 7,
       "status": "i",
       "news": "Hamstring injury - Expected back 21 Nov",
-      "transfersInEvent": 114,
-      "transfersOutEvent": 64950
+      "transfersInEvent": 115,
+      "transfersOutEvent": 66284
     },
     {
       "id": 330,
@@ -8315,8 +8315,8 @@
       "totalPoints": 22,
       "status": "a",
       "news": "",
-      "transfersInEvent": 67041,
-      "transfersOutEvent": 12228
+      "transfersInEvent": 68518,
+      "transfersOutEvent": 12672
     },
     {
       "id": 331,
@@ -8336,8 +8336,8 @@
       "totalPoints": 2,
       "status": "a",
       "news": "",
-      "transfersInEvent": 651,
-      "transfersOutEvent": 314
+      "transfersInEvent": 659,
+      "transfersOutEvent": 323
     },
     {
       "id": 332,
@@ -8357,8 +8357,8 @@
       "totalPoints": 16,
       "status": "a",
       "news": "",
-      "transfersInEvent": 13743,
-      "transfersOutEvent": 11661
+      "transfersInEvent": 14162,
+      "transfersOutEvent": 11979
     },
     {
       "id": 333,
@@ -8399,8 +8399,8 @@
       "totalPoints": 14,
       "status": "a",
       "news": "",
-      "transfersInEvent": 63583,
-      "transfersOutEvent": 34535
+      "transfersInEvent": 66501,
+      "transfersOutEvent": 35786
     },
     {
       "id": 335,
@@ -8420,8 +8420,8 @@
       "totalPoints": 19,
       "status": "a",
       "news": "",
-      "transfersInEvent": 17746,
-      "transfersOutEvent": 29769
+      "transfersInEvent": 18128,
+      "transfersOutEvent": 30302
     },
     {
       "id": 336,
@@ -8441,8 +8441,8 @@
       "totalPoints": 6,
       "status": "a",
       "news": "",
-      "transfersInEvent": 1214,
-      "transfersOutEvent": 3562
+      "transfersInEvent": 1245,
+      "transfersOutEvent": 3638
     },
     {
       "id": 337,
@@ -8462,8 +8462,8 @@
       "totalPoints": 5,
       "status": "a",
       "news": "",
-      "transfersInEvent": 674,
-      "transfersOutEvent": 6695
+      "transfersInEvent": 689,
+      "transfersOutEvent": 6806
     },
     {
       "id": 338,
@@ -8483,8 +8483,8 @@
       "totalPoints": 9,
       "status": "a",
       "news": "",
-      "transfersInEvent": 1639,
-      "transfersOutEvent": 9697
+      "transfersInEvent": 1657,
+      "transfersOutEvent": 9904
     },
     {
       "id": 339,
@@ -8504,8 +8504,8 @@
       "totalPoints": 1,
       "status": "a",
       "news": "",
-      "transfersInEvent": 449,
-      "transfersOutEvent": 1141
+      "transfersInEvent": 457,
+      "transfersOutEvent": 1162
     },
     {
       "id": 341,
@@ -8526,7 +8526,7 @@
       "status": "u",
       "news": "Has joined ACF Fiorentina on loan for the rest of the season",
       "transfersInEvent": 0,
-      "transfersOutEvent": 346
+      "transfersOutEvent": 350
     },
     {
       "id": 342,
@@ -8567,8 +8567,8 @@
       "totalPoints": 1,
       "status": "a",
       "news": "",
-      "transfersInEvent": 484,
-      "transfersOutEvent": 1229
+      "transfersInEvent": 490,
+      "transfersOutEvent": 1251
     },
     {
       "id": 344,
@@ -8609,8 +8609,8 @@
       "totalPoints": 6,
       "status": "a",
       "news": "",
-      "transfersInEvent": 3820,
-      "transfersOutEvent": 1881
+      "transfersInEvent": 3877,
+      "transfersOutEvent": 1906
     },
     {
       "id": 346,
@@ -8625,13 +8625,13 @@
       "price": 6,
       "priceChangeSeason": 0,
       "priceChangeEvent": 0,
-      "ownership": 23.6,
+      "ownership": 23.5,
       "form": 3.3,
       "totalPoints": 10,
       "status": "a",
       "news": "",
-      "transfersInEvent": 60440,
-      "transfersOutEvent": 268837
+      "transfersInEvent": 61548,
+      "transfersOutEvent": 274645
     },
     {
       "id": 347,
@@ -8651,8 +8651,8 @@
       "totalPoints": 5,
       "status": "a",
       "news": "",
-      "transfersInEvent": 3672,
-      "transfersOutEvent": 4515
+      "transfersInEvent": 3760,
+      "transfersOutEvent": 4603
     },
     {
       "id": 348,
@@ -8673,7 +8673,7 @@
       "status": "u",
       "news": "Has joined West Ham United on loan for the rest of the season",
       "transfersInEvent": 0,
-      "transfersOutEvent": 1081
+      "transfersOutEvent": 1091
     },
     {
       "id": 349,
@@ -8693,8 +8693,8 @@
       "totalPoints": 0,
       "status": "i",
       "news": "Knee injury - Unknown return date",
-      "transfersInEvent": 524,
-      "transfersOutEvent": 662
+      "transfersInEvent": 530,
+      "transfersOutEvent": 675
     },
     {
       "id": 385,
@@ -8714,8 +8714,8 @@
       "totalPoints": 15,
       "status": "a",
       "news": "",
-      "transfersInEvent": 39623,
-      "transfersOutEvent": 28968
+      "transfersInEvent": 40578,
+      "transfersOutEvent": 29698
     },
     {
       "id": 598,
@@ -8735,8 +8735,8 @@
       "totalPoints": 5,
       "status": "a",
       "news": "",
-      "transfersInEvent": 1294,
-      "transfersOutEvent": 655
+      "transfersInEvent": 1371,
+      "transfersOutEvent": 676
     },
     {
       "id": 603,
@@ -8756,8 +8756,8 @@
       "totalPoints": 0,
       "status": "a",
       "news": "",
-      "transfersInEvent": 879,
-      "transfersOutEvent": 729
+      "transfersInEvent": 894,
+      "transfersOutEvent": 738
     },
     {
       "id": 604,
@@ -8777,8 +8777,8 @@
       "totalPoints": 0,
       "status": "a",
       "news": "",
-      "transfersInEvent": 2413,
-      "transfersOutEvent": 1513
+      "transfersInEvent": 2442,
+      "transfersOutEvent": 1527
     },
     {
       "id": 625,
@@ -8798,8 +8798,8 @@
       "totalPoints": 0,
       "status": "a",
       "news": "",
-      "transfersInEvent": 4166,
-      "transfersOutEvent": 1398
+      "transfersInEvent": 4229,
+      "transfersOutEvent": 1426
     },
     {
       "id": 629,
@@ -8819,8 +8819,8 @@
       "totalPoints": 0,
       "status": "a",
       "news": "",
-      "transfersInEvent": 15438,
-      "transfersOutEvent": 3003
+      "transfersInEvent": 15691,
+      "transfersOutEvent": 3091
     },
     {
       "id": 641,
@@ -8840,8 +8840,8 @@
       "totalPoints": 0,
       "status": "a",
       "news": "",
-      "transfersInEvent": 196,
-      "transfersOutEvent": 65
+      "transfersInEvent": 200,
+      "transfersOutEvent": 67
     },
     {
       "id": 648,
@@ -8861,8 +8861,8 @@
       "totalPoints": 0,
       "status": "a",
       "news": "",
-      "transfersInEvent": 593,
-      "transfersOutEvent": 245
+      "transfersInEvent": 596,
+      "transfersOutEvent": 249
     },
     {
       "id": 350,
@@ -8882,8 +8882,8 @@
       "totalPoints": 10,
       "status": "a",
       "news": "",
-      "transfersInEvent": 23908,
-      "transfersOutEvent": 17970
+      "transfersInEvent": 24335,
+      "transfersOutEvent": 18291
     },
     {
       "id": 351,
@@ -8903,8 +8903,8 @@
       "totalPoints": 0,
       "status": "a",
       "news": "",
-      "transfersInEvent": 411,
-      "transfersOutEvent": 1397
+      "transfersInEvent": 417,
+      "transfersOutEvent": 1412
     },
     {
       "id": 352,
@@ -8924,8 +8924,8 @@
       "totalPoints": 0,
       "status": "a",
       "news": "",
-      "transfersInEvent": 2329,
-      "transfersOutEvent": 4727
+      "transfersInEvent": 2372,
+      "transfersOutEvent": 4795
     },
     {
       "id": 353,
@@ -8946,7 +8946,7 @@
       "status": "u",
       "news": "Has joined TSV Hartberg on loan for the rest of the season",
       "transfersInEvent": 0,
-      "transfersOutEvent": 131
+      "transfersOutEvent": 136
     },
     {
       "id": 354,
@@ -8966,8 +8966,8 @@
       "totalPoints": 0,
       "status": "i",
       "news": "Knee injury - Unknown return date",
-      "transfersInEvent": 379,
-      "transfersOutEvent": 233
+      "transfersInEvent": 384,
+      "transfersOutEvent": 240
     },
     {
       "id": 355,
@@ -8987,8 +8987,8 @@
       "totalPoints": 0,
       "status": "a",
       "news": "",
-      "transfersInEvent": 796,
-      "transfersOutEvent": 729
+      "transfersInEvent": 806,
+      "transfersOutEvent": 735
     },
     {
       "id": 356,
@@ -9008,8 +9008,8 @@
       "totalPoints": 9,
       "status": "a",
       "news": "",
-      "transfersInEvent": 51742,
-      "transfersOutEvent": 79167
+      "transfersInEvent": 52571,
+      "transfersOutEvent": 80625
     },
     {
       "id": 357,
@@ -9024,13 +9024,13 @@
       "price": 5.4,
       "priceChangeSeason": -0.1,
       "priceChangeEvent": -0.1,
-      "ownership": 2.5,
+      "ownership": 2.4,
       "form": 0.3,
       "totalPoints": 1,
       "status": "a",
       "news": "",
-      "transfersInEvent": 3030,
-      "transfersOutEvent": 57124
+      "transfersInEvent": 3076,
+      "transfersOutEvent": 57795
     },
     {
       "id": 358,
@@ -9050,8 +9050,8 @@
       "totalPoints": 6,
       "status": "a",
       "news": "",
-      "transfersInEvent": 7254,
-      "transfersOutEvent": 21007
+      "transfersInEvent": 7381,
+      "transfersOutEvent": 21396
     },
     {
       "id": 359,
@@ -9072,7 +9072,7 @@
       "status": "i",
       "news": "Muscular injury - Unknown return date",
       "transfersInEvent": 54,
-      "transfersOutEvent": 153
+      "transfersOutEvent": 155
     },
     {
       "id": 360,
@@ -9093,7 +9093,7 @@
       "status": "i",
       "news": "Knee injury - Unknown return date",
       "transfersInEvent": 56,
-      "transfersOutEvent": 124
+      "transfersOutEvent": 125
     },
     {
       "id": 361,
@@ -9113,8 +9113,8 @@
       "totalPoints": 0,
       "status": "a",
       "news": "",
-      "transfersInEvent": 560,
-      "transfersOutEvent": 1029
+      "transfersInEvent": 569,
+      "transfersOutEvent": 1044
     },
     {
       "id": 362,
@@ -9134,8 +9134,8 @@
       "totalPoints": 9,
       "status": "a",
       "news": "",
-      "transfersInEvent": 28075,
-      "transfersOutEvent": 20560
+      "transfersInEvent": 28681,
+      "transfersOutEvent": 20961
     },
     {
       "id": 363,
@@ -9155,7 +9155,7 @@
       "totalPoints": 0,
       "status": "i",
       "news": "Knee injury - Unknown return date",
-      "transfersInEvent": 115,
+      "transfersInEvent": 117,
       "transfersOutEvent": 312
     },
     {
@@ -9176,8 +9176,8 @@
       "totalPoints": 1,
       "status": "a",
       "news": "",
-      "transfersInEvent": 218,
-      "transfersOutEvent": 969
+      "transfersInEvent": 220,
+      "transfersOutEvent": 976
     },
     {
       "id": 365,
@@ -9198,7 +9198,7 @@
       "status": "u",
       "news": "Has joined St Mirren on loan for the rest of the season",
       "transfersInEvent": 0,
-      "transfersOutEvent": 1441
+      "transfersOutEvent": 1456
     },
     {
       "id": 366,
@@ -9218,8 +9218,8 @@
       "totalPoints": 9,
       "status": "a",
       "news": "",
-      "transfersInEvent": 10068,
-      "transfersOutEvent": 153217
+      "transfersInEvent": 10566,
+      "transfersOutEvent": 155583
     },
     {
       "id": 367,
@@ -9234,13 +9234,13 @@
       "price": 7.2,
       "priceChangeSeason": 0.2,
       "priceChangeEvent": 0.1,
-      "ownership": 14.2,
+      "ownership": 14.1,
       "form": 9.3,
       "totalPoints": 28,
       "status": "d",
       "news": "Thigh injury - 75% chance of playing",
-      "transfersInEvent": 592666,
-      "transfersOutEvent": 96931
+      "transfersInEvent": 595386,
+      "transfersOutEvent": 106301
     },
     {
       "id": 368,
@@ -9260,8 +9260,8 @@
       "totalPoints": 15,
       "status": "a",
       "news": "",
-      "transfersInEvent": 101606,
-      "transfersOutEvent": 355266
+      "transfersInEvent": 107564,
+      "transfersOutEvent": 360630
     },
     {
       "id": 369,
@@ -9281,8 +9281,8 @@
       "totalPoints": 3,
       "status": "a",
       "news": "",
-      "transfersInEvent": 1175,
-      "transfersOutEvent": 16691
+      "transfersInEvent": 1220,
+      "transfersOutEvent": 16857
     },
     {
       "id": 370,
@@ -9302,8 +9302,8 @@
       "totalPoints": 0,
       "status": "i",
       "news": "Back injury - Unknown return date",
-      "transfersInEvent": 12,
-      "transfersOutEvent": 991
+      "transfersInEvent": 13,
+      "transfersOutEvent": 1003
     },
     {
       "id": 371,
@@ -9323,8 +9323,8 @@
       "totalPoints": 7,
       "status": "a",
       "news": "",
-      "transfersInEvent": 3602,
-      "transfersOutEvent": 26617
+      "transfersInEvent": 3635,
+      "transfersOutEvent": 26904
     },
     {
       "id": 372,
@@ -9344,8 +9344,8 @@
       "totalPoints": 5,
       "status": "a",
       "news": "",
-      "transfersInEvent": 6145,
-      "transfersOutEvent": 14503
+      "transfersInEvent": 6349,
+      "transfersOutEvent": 14656
     },
     {
       "id": 373,
@@ -9386,8 +9386,8 @@
       "totalPoints": 0,
       "status": "a",
       "news": "",
-      "transfersInEvent": 392,
-      "transfersOutEvent": 816
+      "transfersInEvent": 397,
+      "transfersOutEvent": 819
     },
     {
       "id": 375,
@@ -9407,8 +9407,8 @@
       "totalPoints": 2,
       "status": "a",
       "news": "",
-      "transfersInEvent": 333,
-      "transfersOutEvent": 485
+      "transfersInEvent": 337,
+      "transfersOutEvent": 494
     },
     {
       "id": 376,
@@ -9449,8 +9449,8 @@
       "totalPoints": 13,
       "status": "a",
       "news": "",
-      "transfersInEvent": 11370,
-      "transfersOutEvent": 19432
+      "transfersInEvent": 11588,
+      "transfersOutEvent": 19747
     },
     {
       "id": 378,
@@ -9470,8 +9470,8 @@
       "totalPoints": 0,
       "status": "a",
       "news": "",
-      "transfersInEvent": 667,
-      "transfersOutEvent": 1799
+      "transfersInEvent": 672,
+      "transfersOutEvent": 1816
     },
     {
       "id": 379,
@@ -9486,13 +9486,13 @@
       "price": 9.1,
       "priceChangeSeason": 0.1,
       "priceChangeEvent": 0.1,
-      "ownership": 21.1,
+      "ownership": 21.2,
       "form": 7.7,
       "totalPoints": 23,
       "status": "a",
       "news": "",
-      "transfersInEvent": 438884,
-      "transfersOutEvent": 57678
+      "transfersInEvent": 446489,
+      "transfersOutEvent": 59655
     },
     {
       "id": 380,
@@ -9512,8 +9512,8 @@
       "totalPoints": 0,
       "status": "i",
       "news": "Achilles injury - Unknown return date",
-      "transfersInEvent": 371,
-      "transfersOutEvent": 1651
+      "transfersInEvent": 373,
+      "transfersOutEvent": 1663
     },
     {
       "id": 381,
@@ -9533,8 +9533,8 @@
       "totalPoints": 2,
       "status": "a",
       "news": "",
-      "transfersInEvent": 94,
-      "transfersOutEvent": 229
+      "transfersInEvent": 97,
+      "transfersOutEvent": 233
     },
     {
       "id": 382,
@@ -9554,8 +9554,8 @@
       "totalPoints": 0,
       "status": "a",
       "news": "",
-      "transfersInEvent": 4988,
-      "transfersOutEvent": 1631
+      "transfersInEvent": 5047,
+      "transfersOutEvent": 1658
     },
     {
       "id": 383,
@@ -9576,7 +9576,7 @@
       "status": "u",
       "news": "Has joined Valencia on loan for the rest of the season",
       "transfersInEvent": 0,
-      "transfersOutEvent": 1313
+      "transfersOutEvent": 1327
     },
     {
       "id": 579,
@@ -9591,13 +9591,13 @@
       "price": 5.4,
       "priceChangeSeason": -0.1,
       "priceChangeEvent": 0,
-      "ownership": 2.3,
+      "ownership": 2.4,
       "form": 3,
       "totalPoints": 9,
       "status": "a",
       "news": "",
-      "transfersInEvent": 25543,
-      "transfersOutEvent": 11587
+      "transfersInEvent": 26484,
+      "transfersOutEvent": 11777
     },
     {
       "id": 627,
@@ -9617,8 +9617,8 @@
       "totalPoints": 1,
       "status": "a",
       "news": "",
-      "transfersInEvent": 68370,
-      "transfersOutEvent": 27602
+      "transfersInEvent": 69692,
+      "transfersOutEvent": 28391
     },
     {
       "id": 155,
@@ -9638,8 +9638,8 @@
       "totalPoints": 4,
       "status": "a",
       "news": "",
-      "transfersInEvent": 23599,
-      "transfersOutEvent": 33210
+      "transfersInEvent": 24152,
+      "transfersOutEvent": 33741
     },
     {
       "id": 237,
@@ -9654,13 +9654,13 @@
       "price": 5.9,
       "priceChangeSeason": -0.1,
       "priceChangeEvent": -0.1,
-      "ownership": 9.9,
+      "ownership": 9.8,
       "form": 5.3,
       "totalPoints": 16,
       "status": "a",
       "news": "",
-      "transfersInEvent": 30553,
-      "transfersOutEvent": 200999
+      "transfersInEvent": 30944,
+      "transfersOutEvent": 204922
     },
     {
       "id": 384,
@@ -9680,8 +9680,8 @@
       "totalPoints": 10,
       "status": "a",
       "news": "",
-      "transfersInEvent": 21893,
-      "transfersOutEvent": 47557
+      "transfersInEvent": 22276,
+      "transfersOutEvent": 48371
     },
     {
       "id": 386,
@@ -9701,8 +9701,8 @@
       "totalPoints": 0,
       "status": "a",
       "news": "",
-      "transfersInEvent": 89,
-      "transfersOutEvent": 161
+      "transfersInEvent": 91,
+      "transfersOutEvent": 163
     },
     {
       "id": 387,
@@ -9717,13 +9717,13 @@
       "price": 6.5,
       "priceChangeSeason": 0,
       "priceChangeEvent": 0,
-      "ownership": 14.6,
+      "ownership": 14.5,
       "form": 1.3,
       "totalPoints": 4,
       "status": "d",
       "news": "Back injury - 75% chance of playing",
-      "transfersInEvent": 4362,
-      "transfersOutEvent": 383408
+      "transfersInEvent": 4381,
+      "transfersOutEvent": 389671
     },
     {
       "id": 388,
@@ -9743,8 +9743,8 @@
       "totalPoints": 20,
       "status": "a",
       "news": "",
-      "transfersInEvent": 64788,
-      "transfersOutEvent": 69239
+      "transfersInEvent": 65757,
+      "transfersOutEvent": 70479
     },
     {
       "id": 389,
@@ -9764,8 +9764,8 @@
       "totalPoints": 1,
       "status": "a",
       "news": "",
-      "transfersInEvent": 1643,
-      "transfersOutEvent": 7218
+      "transfersInEvent": 1669,
+      "transfersOutEvent": 7296
     },
     {
       "id": 390,
@@ -9785,8 +9785,8 @@
       "totalPoints": 10,
       "status": "a",
       "news": "",
-      "transfersInEvent": 7419,
-      "transfersOutEvent": 10847
+      "transfersInEvent": 7553,
+      "transfersOutEvent": 11027
     },
     {
       "id": 391,
@@ -9806,8 +9806,8 @@
       "totalPoints": 22,
       "status": "a",
       "news": "",
-      "transfersInEvent": 216919,
-      "transfersOutEvent": 86833
+      "transfersInEvent": 220412,
+      "transfersOutEvent": 89359
     },
     {
       "id": 392,
@@ -9827,8 +9827,8 @@
       "totalPoints": 0,
       "status": "a",
       "news": "",
-      "transfersInEvent": 831,
-      "transfersOutEvent": 7729
+      "transfersInEvent": 844,
+      "transfersOutEvent": 7802
     },
     {
       "id": 393,
@@ -9848,8 +9848,8 @@
       "totalPoints": 9,
       "status": "a",
       "news": "",
-      "transfersInEvent": 4380,
-      "transfersOutEvent": 8912
+      "transfersInEvent": 4417,
+      "transfersOutEvent": 9041
     },
     {
       "id": 394,
@@ -9890,8 +9890,8 @@
       "totalPoints": 1,
       "status": "a",
       "news": "",
-      "transfersInEvent": 666,
-      "transfersOutEvent": 2835
+      "transfersInEvent": 674,
+      "transfersOutEvent": 2866
     },
     {
       "id": 396,
@@ -9911,8 +9911,8 @@
       "totalPoints": 1,
       "status": "a",
       "news": "",
-      "transfersInEvent": 52,
-      "transfersOutEvent": 204
+      "transfersInEvent": 53,
+      "transfersOutEvent": 205
     },
     {
       "id": 397,
@@ -9927,13 +9927,13 @@
       "price": 8.4,
       "priceChangeSeason": -0.1,
       "priceChangeEvent": -0.1,
-      "ownership": 17.7,
+      "ownership": 17.6,
       "form": 4.3,
       "totalPoints": 13,
       "status": "a",
       "news": "",
-      "transfersInEvent": 25356,
-      "transfersOutEvent": 186436
+      "transfersInEvent": 25696,
+      "transfersOutEvent": 191120
     },
     {
       "id": 398,
@@ -9953,8 +9953,8 @@
       "totalPoints": 11,
       "status": "a",
       "news": "",
-      "transfersInEvent": 12469,
-      "transfersOutEvent": 122235
+      "transfersInEvent": 12646,
+      "transfersOutEvent": 124661
     },
     {
       "id": 399,
@@ -9969,13 +9969,13 @@
       "price": 7.8,
       "priceChangeSeason": 0.3,
       "priceChangeEvent": 0.1,
-      "ownership": 30.2,
+      "ownership": 30.1,
       "form": 8.3,
       "totalPoints": 25,
       "status": "a",
       "news": "",
-      "transfersInEvent": 213432,
-      "transfersOutEvent": 231285
+      "transfersInEvent": 216499,
+      "transfersOutEvent": 238049
     },
     {
       "id": 400,
@@ -9996,7 +9996,7 @@
       "status": "i",
       "news": "Calf injury - Expected back 13 Sep",
       "transfersInEvent": 193,
-      "transfersOutEvent": 9844
+      "transfersOutEvent": 9970
     },
     {
       "id": 402,
@@ -10038,7 +10038,7 @@
       "status": "u",
       "news": "Has joined Al Qadsiah permanently",
       "transfersInEvent": 0,
-      "transfersOutEvent": 413
+      "transfersOutEvent": 415
     },
     {
       "id": 406,
@@ -10058,8 +10058,8 @@
       "totalPoints": 2,
       "status": "a",
       "news": "",
-      "transfersInEvent": 331,
-      "transfersOutEvent": 968
+      "transfersInEvent": 336,
+      "transfersOutEvent": 984
     },
     {
       "id": 407,
@@ -10080,7 +10080,7 @@
       "status": "u",
       "news": "Has joined Benfica on loan for the rest of the season",
       "transfersInEvent": 0,
-      "transfersOutEvent": 285
+      "transfersOutEvent": 286
     },
     {
       "id": 408,
@@ -10101,7 +10101,7 @@
       "status": "u",
       "news": "Has joined Sheffield United on loan for the rest of the season",
       "transfersInEvent": 0,
-      "transfersOutEvent": 44
+      "transfersOutEvent": 46
     },
     {
       "id": 409,
@@ -10122,7 +10122,7 @@
       "status": "u",
       "news": "has joined West Ham on loan for the rest of the seaon.",
       "transfersInEvent": 0,
-      "transfersOutEvent": 2479
+      "transfersOutEvent": 2510
     },
     {
       "id": 410,
@@ -10143,7 +10143,7 @@
       "status": "u",
       "news": "Has joined Swansea City on loan for the rest of the season",
       "transfersInEvent": 0,
-      "transfersOutEvent": 283
+      "transfersOutEvent": 286
     },
     {
       "id": 411,
@@ -10163,8 +10163,8 @@
       "totalPoints": 24,
       "status": "a",
       "news": "",
-      "transfersInEvent": 108999,
-      "transfersOutEvent": 77593
+      "transfersInEvent": 111142,
+      "transfersOutEvent": 78823
     },
     {
       "id": 481,
@@ -10184,8 +10184,8 @@
       "totalPoints": 8,
       "status": "a",
       "news": "",
-      "transfersInEvent": 12177,
-      "transfersOutEvent": 55439
+      "transfersInEvent": 12314,
+      "transfersOutEvent": 56457
     },
     {
       "id": 587,
@@ -10206,7 +10206,7 @@
       "status": "a",
       "news": "",
       "transfersInEvent": 89,
-      "transfersOutEvent": 177
+      "transfersOutEvent": 180
     },
     {
       "id": 616,
@@ -10226,8 +10226,8 @@
       "totalPoints": 2,
       "status": "a",
       "news": "",
-      "transfersInEvent": 2868,
-      "transfersOutEvent": 2900
+      "transfersInEvent": 2947,
+      "transfersOutEvent": 2929
     },
     {
       "id": 621,
@@ -10247,8 +10247,8 @@
       "totalPoints": 2,
       "status": "a",
       "news": "",
-      "transfersInEvent": 2725,
-      "transfersOutEvent": 1689
+      "transfersInEvent": 2756,
+      "transfersOutEvent": 1705
     },
     {
       "id": 622,
@@ -10268,8 +10268,8 @@
       "totalPoints": 1,
       "status": "a",
       "news": "",
-      "transfersInEvent": 3404,
-      "transfersOutEvent": 2087
+      "transfersInEvent": 3445,
+      "transfersOutEvent": 2098
     },
     {
       "id": 628,
@@ -10289,8 +10289,8 @@
       "totalPoints": 0,
       "status": "a",
       "news": "",
-      "transfersInEvent": 234,
-      "transfersOutEvent": 137
+      "transfersInEvent": 237,
+      "transfersOutEvent": 139
     },
     {
       "id": 653,
@@ -10310,8 +10310,8 @@
       "totalPoints": 0,
       "status": "a",
       "news": "",
-      "transfersInEvent": 2274,
-      "transfersOutEvent": 572
+      "transfersInEvent": 2290,
+      "transfersOutEvent": 577
     },
     {
       "id": 43,
@@ -10331,8 +10331,8 @@
       "totalPoints": 8,
       "status": "a",
       "news": "",
-      "transfersInEvent": 5199,
-      "transfersOutEvent": 24185
+      "transfersInEvent": 5245,
+      "transfersOutEvent": 24561
     },
     {
       "id": 131,
@@ -10352,8 +10352,8 @@
       "totalPoints": 0,
       "status": "i",
       "news": "Ankle injury - Expected back 19 Sep",
-      "transfersInEvent": 640,
-      "transfersOutEvent": 1726
+      "transfersInEvent": 646,
+      "transfersOutEvent": 1746
     },
     {
       "id": 162,
@@ -10373,8 +10373,8 @@
       "totalPoints": 4,
       "status": "a",
       "news": "",
-      "transfersInEvent": 2750,
-      "transfersOutEvent": 10845
+      "transfersInEvent": 2781,
+      "transfersOutEvent": 10994
     },
     {
       "id": 325,
@@ -10395,7 +10395,7 @@
       "status": "a",
       "news": "",
       "transfersInEvent": 171,
-      "transfersOutEvent": 260
+      "transfersOutEvent": 262
     },
     {
       "id": 412,
@@ -10410,13 +10410,13 @@
       "price": 5,
       "priceChangeSeason": 0,
       "priceChangeEvent": 0,
-      "ownership": 12.2,
+      "ownership": 12.1,
       "form": 1.7,
       "totalPoints": 5,
       "status": "a",
       "news": "",
-      "transfersInEvent": 7933,
-      "transfersOutEvent": 140661
+      "transfersInEvent": 8017,
+      "transfersOutEvent": 143404
     },
     {
       "id": 413,
@@ -10457,8 +10457,8 @@
       "totalPoints": 0,
       "status": "i",
       "news": "Hamstring injury - Unknown return date",
-      "transfersInEvent": 465,
-      "transfersOutEvent": 559
+      "transfersInEvent": 468,
+      "transfersOutEvent": 564
     },
     {
       "id": 415,
@@ -10478,8 +10478,8 @@
       "totalPoints": 2,
       "status": "a",
       "news": "",
-      "transfersInEvent": 1066,
-      "transfersOutEvent": 12512
+      "transfersInEvent": 1079,
+      "transfersOutEvent": 12672
     },
     {
       "id": 416,
@@ -10499,8 +10499,8 @@
       "totalPoints": 0,
       "status": "i",
       "news": "Back injury - Unknown return date",
-      "transfersInEvent": 74,
-      "transfersOutEvent": 220
+      "transfersInEvent": 75,
+      "transfersOutEvent": 221
     },
     {
       "id": 417,
@@ -10520,8 +10520,8 @@
       "totalPoints": 4,
       "status": "a",
       "news": "",
-      "transfersInEvent": 2746,
-      "transfersOutEvent": 20741
+      "transfersInEvent": 2774,
+      "transfersOutEvent": 21098
     },
     {
       "id": 418,
@@ -10541,8 +10541,8 @@
       "totalPoints": 7,
       "status": "a",
       "news": "",
-      "transfersInEvent": 12114,
-      "transfersOutEvent": 204236
+      "transfersInEvent": 12245,
+      "transfersOutEvent": 208676
     },
     {
       "id": 419,
@@ -10562,8 +10562,8 @@
       "totalPoints": 4,
       "status": "a",
       "news": "",
-      "transfersInEvent": 3864,
-      "transfersOutEvent": 8225
+      "transfersInEvent": 3902,
+      "transfersOutEvent": 8357
     },
     {
       "id": 420,
@@ -10583,8 +10583,8 @@
       "totalPoints": 2,
       "status": "a",
       "news": "",
-      "transfersInEvent": 631,
-      "transfersOutEvent": 4683
+      "transfersInEvent": 634,
+      "transfersOutEvent": 4737
     },
     {
       "id": 421,
@@ -10604,8 +10604,8 @@
       "totalPoints": 1,
       "status": "a",
       "news": "",
-      "transfersInEvent": 587,
-      "transfersOutEvent": 3795
+      "transfersInEvent": 595,
+      "transfersOutEvent": 3847
     },
     {
       "id": 422,
@@ -10625,8 +10625,8 @@
       "totalPoints": 3,
       "status": "a",
       "news": "",
-      "transfersInEvent": 957,
-      "transfersOutEvent": 7244
+      "transfersInEvent": 963,
+      "transfersOutEvent": 7330
     },
     {
       "id": 423,
@@ -10641,13 +10641,13 @@
       "price": 4.4,
       "priceChangeSeason": -0.1,
       "priceChangeEvent": -0.1,
-      "ownership": 13.7,
+      "ownership": 13.6,
       "form": 2.3,
       "totalPoints": 7,
       "status": "a",
       "news": "",
-      "transfersInEvent": 15913,
-      "transfersOutEvent": 201701
+      "transfersInEvent": 16327,
+      "transfersOutEvent": 205704
     },
     {
       "id": 424,
@@ -10667,8 +10667,8 @@
       "totalPoints": 0,
       "status": "a",
       "news": "",
-      "transfersInEvent": 1074,
-      "transfersOutEvent": 1327
+      "transfersInEvent": 1088,
+      "transfersOutEvent": 1338
     },
     {
       "id": 425,
@@ -10689,7 +10689,7 @@
       "status": "u",
       "news": "Has joined Lausanne-Sport permanently",
       "transfersInEvent": 0,
-      "transfersOutEvent": 116
+      "transfersOutEvent": 117
     },
     {
       "id": 426,
@@ -10704,13 +10704,13 @@
       "price": 12,
       "priceChangeSeason": 0,
       "priceChangeEvent": 0,
-      "ownership": 45.6,
+      "ownership": 45.5,
       "form": 9,
       "totalPoints": 27,
       "status": "a",
       "news": "",
-      "transfersInEvent": 81486,
-      "transfersOutEvent": 349481
+      "transfersInEvent": 82663,
+      "transfersOutEvent": 361329
     },
     {
       "id": 427,
@@ -10730,8 +10730,8 @@
       "totalPoints": 21,
       "status": "a",
       "news": "",
-      "transfersInEvent": 93521,
-      "transfersOutEvent": 264073
+      "transfersInEvent": 95671,
+      "transfersOutEvent": 271154
     },
     {
       "id": 428,
@@ -10751,8 +10751,8 @@
       "totalPoints": 14,
       "status": "a",
       "news": "",
-      "transfersInEvent": 6398,
-      "transfersOutEvent": 91527
+      "transfersInEvent": 6479,
+      "transfersOutEvent": 93192
     },
     {
       "id": 429,
@@ -10772,8 +10772,8 @@
       "totalPoints": 6,
       "status": "a",
       "news": "",
-      "transfersInEvent": 14842,
-      "transfersOutEvent": 17603
+      "transfersInEvent": 15126,
+      "transfersOutEvent": 17892
     },
     {
       "id": 430,
@@ -10793,7 +10793,7 @@
       "totalPoints": 0,
       "status": "a",
       "news": "",
-      "transfersInEvent": 185,
+      "transfersInEvent": 186,
       "transfersOutEvent": 174
     },
     {
@@ -10814,8 +10814,8 @@
       "totalPoints": 0,
       "status": "i",
       "news": "Unspecified injury - Unknown return date",
-      "transfersInEvent": 122,
-      "transfersOutEvent": 8157
+      "transfersInEvent": 123,
+      "transfersOutEvent": 8276
     },
     {
       "id": 432,
@@ -10835,8 +10835,8 @@
       "totalPoints": 14,
       "status": "a",
       "news": "",
-      "transfersInEvent": 19035,
-      "transfersOutEvent": 7401
+      "transfersInEvent": 19320,
+      "transfersOutEvent": 7534
     },
     {
       "id": 433,
@@ -10898,8 +10898,8 @@
       "totalPoints": 1,
       "status": "a",
       "news": "",
-      "transfersInEvent": 135,
-      "transfersOutEvent": 541
+      "transfersInEvent": 136,
+      "transfersOutEvent": 546
     },
     {
       "id": 436,
@@ -10920,7 +10920,7 @@
       "status": "u",
       "news": "Has joined West Brom permanently",
       "transfersInEvent": 0,
-      "transfersOutEvent": 206
+      "transfersOutEvent": 207
     },
     {
       "id": 437,
@@ -10940,8 +10940,8 @@
       "totalPoints": 0,
       "status": "a",
       "news": "",
-      "transfersInEvent": 1024,
-      "transfersOutEvent": 1416
+      "transfersInEvent": 1031,
+      "transfersOutEvent": 1429
     },
     {
       "id": 438,
@@ -10961,8 +10961,8 @@
       "totalPoints": 0,
       "status": "a",
       "news": "",
-      "transfersInEvent": 993,
-      "transfersOutEvent": 2135
+      "transfersInEvent": 1001,
+      "transfersOutEvent": 2170
     },
     {
       "id": 439,
@@ -10982,8 +10982,8 @@
       "totalPoints": 7,
       "status": "a",
       "news": "",
-      "transfersInEvent": 14962,
-      "transfersOutEvent": 16031
+      "transfersInEvent": 15157,
+      "transfersOutEvent": 16229
     },
     {
       "id": 440,
@@ -11003,8 +11003,8 @@
       "totalPoints": 0,
       "status": "a",
       "news": "",
-      "transfersInEvent": 2709,
-      "transfersOutEvent": 5798
+      "transfersInEvent": 2733,
+      "transfersOutEvent": 5877
     },
     {
       "id": 441,
@@ -11024,8 +11024,8 @@
       "totalPoints": 0,
       "status": "a",
       "news": "",
-      "transfersInEvent": 10936,
-      "transfersOutEvent": 9674
+      "transfersInEvent": 11076,
+      "transfersOutEvent": 9811
     },
     {
       "id": 405,
@@ -11045,8 +11045,8 @@
       "totalPoints": 4,
       "status": "a",
       "news": "",
-      "transfersInEvent": 2663,
-      "transfersOutEvent": 2317
+      "transfersInEvent": 2692,
+      "transfersOutEvent": 2354
     },
     {
       "id": 442,
@@ -11066,8 +11066,8 @@
       "totalPoints": 0,
       "status": "a",
       "news": "",
-      "transfersInEvent": 2114,
-      "transfersOutEvent": 8267
+      "transfersInEvent": 2143,
+      "transfersOutEvent": 8375
     },
     {
       "id": 443,
@@ -11088,7 +11088,7 @@
       "status": "a",
       "news": "",
       "transfersInEvent": 98,
-      "transfersOutEvent": 195
+      "transfersOutEvent": 198
     },
     {
       "id": 444,
@@ -11108,8 +11108,8 @@
       "totalPoints": 0,
       "status": "a",
       "news": "",
-      "transfersInEvent": 86,
-      "transfersOutEvent": 203
+      "transfersInEvent": 88,
+      "transfersOutEvent": 204
     },
     {
       "id": 445,
@@ -11129,8 +11129,8 @@
       "totalPoints": 8,
       "status": "a",
       "news": "",
-      "transfersInEvent": 26980,
-      "transfersOutEvent": 27513
+      "transfersInEvent": 27695,
+      "transfersOutEvent": 28203
     },
     {
       "id": 446,
@@ -11150,8 +11150,8 @@
       "totalPoints": 1,
       "status": "a",
       "news": "",
-      "transfersInEvent": 802,
-      "transfersOutEvent": 2565
+      "transfersInEvent": 815,
+      "transfersOutEvent": 2589
     },
     {
       "id": 447,
@@ -11171,8 +11171,8 @@
       "totalPoints": 9,
       "status": "a",
       "news": "",
-      "transfersInEvent": 5199,
-      "transfersOutEvent": 5444
+      "transfersInEvent": 5301,
+      "transfersOutEvent": 5538
     },
     {
       "id": 448,
@@ -11192,8 +11192,8 @@
       "totalPoints": 0,
       "status": "i",
       "news": "Ankle injury - Expected back 14 Sep",
-      "transfersInEvent": 186,
-      "transfersOutEvent": 13836
+      "transfersInEvent": 192,
+      "transfersOutEvent": 14000
     },
     {
       "id": 449,
@@ -11208,13 +11208,13 @@
       "price": 5.1,
       "priceChangeSeason": 0.1,
       "priceChangeEvent": 0,
-      "ownership": 12.1,
+      "ownership": 12.2,
       "form": 6,
       "totalPoints": 18,
       "status": "a",
       "news": "",
-      "transfersInEvent": 306771,
-      "transfersOutEvent": 61889
+      "transfersInEvent": 314077,
+      "transfersOutEvent": 64094
     },
     {
       "id": 450,
@@ -11234,8 +11234,8 @@
       "totalPoints": 1,
       "status": "a",
       "news": "",
-      "transfersInEvent": 1845,
-      "transfersOutEvent": 487
+      "transfersInEvent": 1899,
+      "transfersOutEvent": 508
     },
     {
       "id": 451,
@@ -11256,7 +11256,7 @@
       "status": "u",
       "news": "Has joined FC Kaiserslautern on loan for the rest of the season",
       "transfersInEvent": 0,
-      "transfersOutEvent": 701
+      "transfersOutEvent": 709
     },
     {
       "id": 453,
@@ -11271,13 +11271,13 @@
       "price": 6,
       "priceChangeSeason": 0,
       "priceChangeEvent": 0,
-      "ownership": 2,
+      "ownership": 2.1,
       "form": 5.7,
       "totalPoints": 17,
       "status": "a",
       "news": "",
-      "transfersInEvent": 115229,
-      "transfersOutEvent": 29242
+      "transfersInEvent": 117805,
+      "transfersOutEvent": 30440
     },
     {
       "id": 454,
@@ -11297,8 +11297,8 @@
       "totalPoints": 18,
       "status": "a",
       "news": "",
-      "transfersInEvent": 207037,
-      "transfersOutEvent": 117277
+      "transfersInEvent": 210426,
+      "transfersOutEvent": 119680
     },
     {
       "id": 456,
@@ -11313,13 +11313,13 @@
       "price": 4.9,
       "priceChangeSeason": -0.1,
       "priceChangeEvent": -0.1,
-      "ownership": 0.3,
+      "ownership": 0.4,
       "form": 2.3,
       "totalPoints": 7,
       "status": "a",
       "news": "",
-      "transfersInEvent": 7535,
-      "transfersOutEvent": 2927
+      "transfersInEvent": 7664,
+      "transfersOutEvent": 2988
     },
     {
       "id": 457,
@@ -11339,8 +11339,8 @@
       "totalPoints": 2,
       "status": "a",
       "news": "",
-      "transfersInEvent": 692,
-      "transfersOutEvent": 1352
+      "transfersInEvent": 698,
+      "transfersOutEvent": 1364
     },
     {
       "id": 458,
@@ -11361,7 +11361,7 @@
       "status": "i",
       "news": "Unspecified injury - Unknown return date",
       "transfersInEvent": 25,
-      "transfersOutEvent": 201
+      "transfersOutEvent": 202
     },
     {
       "id": 459,
@@ -11381,8 +11381,8 @@
       "totalPoints": 8,
       "status": "a",
       "news": "",
-      "transfersInEvent": 683,
-      "transfersOutEvent": 917
+      "transfersInEvent": 690,
+      "transfersOutEvent": 928
     },
     {
       "id": 460,
@@ -11402,8 +11402,8 @@
       "totalPoints": 11,
       "status": "a",
       "news": "",
-      "transfersInEvent": 9910,
-      "transfersOutEvent": 5789
+      "transfersInEvent": 10125,
+      "transfersOutEvent": 5920
     },
     {
       "id": 461,
@@ -11423,8 +11423,8 @@
       "totalPoints": 1,
       "status": "a",
       "news": "",
-      "transfersInEvent": 236,
-      "transfersOutEvent": 2218
+      "transfersInEvent": 240,
+      "transfersOutEvent": 2253
     },
     {
       "id": 462,
@@ -11444,8 +11444,8 @@
       "totalPoints": 3,
       "status": "a",
       "news": "",
-      "transfersInEvent": 276,
-      "transfersOutEvent": 954
+      "transfersInEvent": 279,
+      "transfersOutEvent": 977
     },
     {
       "id": 463,
@@ -11466,7 +11466,7 @@
       "status": "u",
       "news": "Has joined Juventus on loan for the rest of the season",
       "transfersInEvent": 0,
-      "transfersOutEvent": 30998
+      "transfersOutEvent": 31224
     },
     {
       "id": 464,
@@ -11486,8 +11486,8 @@
       "totalPoints": 13,
       "status": "a",
       "news": "",
-      "transfersInEvent": 358553,
-      "transfersOutEvent": 142590
+      "transfersInEvent": 364820,
+      "transfersOutEvent": 146318
     },
     {
       "id": 465,
@@ -11507,8 +11507,8 @@
       "totalPoints": 4,
       "status": "i",
       "news": "Foot injury - Unknown return date",
-      "transfersInEvent": 177,
-      "transfersOutEvent": 8764
+      "transfersInEvent": 178,
+      "transfersOutEvent": 8871
     },
     {
       "id": 466,
@@ -11529,7 +11529,7 @@
       "status": "u",
       "news": "Has joined Wolves on loan for the rest of the season",
       "transfersInEvent": 0,
-      "transfersOutEvent": 13125
+      "transfersOutEvent": 13249
     },
     {
       "id": 559,
@@ -11549,8 +11549,8 @@
       "totalPoints": 1,
       "status": "a",
       "news": "",
-      "transfersInEvent": 398,
-      "transfersOutEvent": 1098
+      "transfersInEvent": 402,
+      "transfersOutEvent": 1124
     },
     {
       "id": 567,
@@ -11570,8 +11570,8 @@
       "totalPoints": 10,
       "status": "a",
       "news": "",
-      "transfersInEvent": 32151,
-      "transfersOutEvent": 15169
+      "transfersInEvent": 33011,
+      "transfersOutEvent": 15629
     },
     {
       "id": 593,
@@ -11591,8 +11591,8 @@
       "totalPoints": 13,
       "status": "d",
       "news": "Hamstring injury - 75% chance of playing",
-      "transfersInEvent": 94576,
-      "transfersOutEvent": 60337
+      "transfersInEvent": 95054,
+      "transfersOutEvent": 63051
     },
     {
       "id": 609,
@@ -11612,8 +11612,8 @@
       "totalPoints": 0,
       "status": "a",
       "news": "",
-      "transfersInEvent": 2845,
-      "transfersOutEvent": 2296
+      "transfersInEvent": 2879,
+      "transfersOutEvent": 2327
     },
     {
       "id": 634,
@@ -11633,8 +11633,8 @@
       "totalPoints": 1,
       "status": "a",
       "news": "",
-      "transfersInEvent": 4425,
-      "transfersOutEvent": 1174
+      "transfersInEvent": 4485,
+      "transfersOutEvent": 1204
     },
     {
       "id": 167,
@@ -11654,8 +11654,8 @@
       "totalPoints": 3,
       "status": "a",
       "news": "",
-      "transfersInEvent": 12962,
-      "transfersOutEvent": 7934
+      "transfersInEvent": 13167,
+      "transfersOutEvent": 8081
     },
     {
       "id": 201,
@@ -11675,8 +11675,8 @@
       "totalPoints": 1,
       "status": "a",
       "news": "",
-      "transfersInEvent": 7426,
-      "transfersOutEvent": 56764
+      "transfersInEvent": 7532,
+      "transfersOutEvent": 57667
     },
     {
       "id": 467,
@@ -11696,8 +11696,8 @@
       "totalPoints": 9,
       "status": "a",
       "news": "",
-      "transfersInEvent": 8053,
-      "transfersOutEvent": 7101
+      "transfersInEvent": 8250,
+      "transfersOutEvent": 7296
     },
     {
       "id": 468,
@@ -11717,8 +11717,8 @@
       "totalPoints": 0,
       "status": "a",
       "news": "",
-      "transfersInEvent": 118,
-      "transfersOutEvent": 274
+      "transfersInEvent": 119,
+      "transfersOutEvent": 280
     },
     {
       "id": 469,
@@ -11738,8 +11738,8 @@
       "totalPoints": 15,
       "status": "a",
       "news": "",
-      "transfersInEvent": 54366,
-      "transfersOutEvent": 45088
+      "transfersInEvent": 55587,
+      "transfersOutEvent": 46539
     },
     {
       "id": 470,
@@ -11760,7 +11760,7 @@
       "status": "u",
       "news": "Has joined West Ham on loan for the rest of the season",
       "transfersInEvent": 0,
-      "transfersOutEvent": 808
+      "transfersOutEvent": 814
     },
     {
       "id": 471,
@@ -11780,8 +11780,8 @@
       "totalPoints": 12,
       "status": "a",
       "news": "",
-      "transfersInEvent": 5270,
-      "transfersOutEvent": 5435
+      "transfersInEvent": 5378,
+      "transfersOutEvent": 5549
     },
     {
       "id": 472,
@@ -11801,8 +11801,8 @@
       "totalPoints": 13,
       "status": "a",
       "news": "",
-      "transfersInEvent": 8817,
-      "transfersOutEvent": 5568
+      "transfersInEvent": 8979,
+      "transfersOutEvent": 5674
     },
     {
       "id": 473,
@@ -11822,8 +11822,8 @@
       "totalPoints": 6,
       "status": "a",
       "news": "",
-      "transfersInEvent": 4867,
-      "transfersOutEvent": 29631
+      "transfersInEvent": 4965,
+      "transfersOutEvent": 30213
     },
     {
       "id": 474,
@@ -11843,8 +11843,8 @@
       "totalPoints": 10,
       "status": "a",
       "news": "",
-      "transfersInEvent": 3840,
-      "transfersOutEvent": 2060
+      "transfersInEvent": 3954,
+      "transfersOutEvent": 2136
     },
     {
       "id": 475,
@@ -11864,7 +11864,7 @@
       "totalPoints": 0,
       "status": "i",
       "news": "Knee injury - Unknown return date",
-      "transfersInEvent": 36,
+      "transfersInEvent": 37,
       "transfersOutEvent": 20
     },
     {
@@ -11885,8 +11885,8 @@
       "totalPoints": 0,
       "status": "a",
       "news": "",
-      "transfersInEvent": 601,
-      "transfersOutEvent": 1118
+      "transfersInEvent": 607,
+      "transfersOutEvent": 1137
     },
     {
       "id": 477,
@@ -11907,7 +11907,7 @@
       "status": "u",
       "news": "Has joined Southampton on loan for the rest of the season",
       "transfersInEvent": 0,
-      "transfersOutEvent": 2995
+      "transfersOutEvent": 3022
     },
     {
       "id": 478,
@@ -11928,7 +11928,7 @@
       "status": "a",
       "news": "",
       "transfersInEvent": 75,
-      "transfersOutEvent": 245
+      "transfersOutEvent": 247
     },
     {
       "id": 479,
@@ -11949,7 +11949,7 @@
       "status": "u",
       "news": "Has joined Charlton Athletic on loan for the rest of the season",
       "transfersInEvent": 0,
-      "transfersOutEvent": 1632
+      "transfersOutEvent": 1657
     },
     {
       "id": 480,
@@ -11969,8 +11969,8 @@
       "totalPoints": 18,
       "status": "a",
       "news": "",
-      "transfersInEvent": 92691,
-      "transfersOutEvent": 79503
+      "transfersInEvent": 95597,
+      "transfersOutEvent": 81885
     },
     {
       "id": 482,
@@ -11990,8 +11990,8 @@
       "totalPoints": 1,
       "status": "a",
       "news": "",
-      "transfersInEvent": 545,
-      "transfersOutEvent": 2064
+      "transfersInEvent": 548,
+      "transfersOutEvent": 2086
     },
     {
       "id": 483,
@@ -12011,8 +12011,8 @@
       "totalPoints": 13,
       "status": "a",
       "news": "",
-      "transfersInEvent": 6182,
-      "transfersOutEvent": 7801
+      "transfersInEvent": 6278,
+      "transfersOutEvent": 7970
     },
     {
       "id": 484,
@@ -12033,7 +12033,7 @@
       "status": "u",
       "news": "Has joined AC Milan on loan for the rest of the season",
       "transfersInEvent": 0,
-      "transfersOutEvent": 1816
+      "transfersOutEvent": 1830
     },
     {
       "id": 485,
@@ -12054,7 +12054,7 @@
       "status": "u",
       "news": "Has joined Lille on loan for the rest of the season",
       "transfersInEvent": 0,
-      "transfersOutEvent": 98
+      "transfersOutEvent": 101
     },
     {
       "id": 486,
@@ -12074,8 +12074,8 @@
       "totalPoints": 7,
       "status": "a",
       "news": "",
-      "transfersInEvent": 1199,
-      "transfersOutEvent": 816
+      "transfersInEvent": 1222,
+      "transfersOutEvent": 837
     },
     {
       "id": 487,
@@ -12095,8 +12095,8 @@
       "totalPoints": 1,
       "status": "a",
       "news": "",
-      "transfersInEvent": 229,
-      "transfersOutEvent": 562
+      "transfersInEvent": 231,
+      "transfersOutEvent": 568
     },
     {
       "id": 488,
@@ -12116,8 +12116,8 @@
       "totalPoints": 2,
       "status": "a",
       "news": "",
-      "transfersInEvent": 1779,
-      "transfersOutEvent": 5839
+      "transfersInEvent": 1804,
+      "transfersOutEvent": 6025
     },
     {
       "id": 489,
@@ -12137,8 +12137,8 @@
       "totalPoints": 0,
       "status": "a",
       "news": "",
-      "transfersInEvent": 5547,
-      "transfersOutEvent": 10871
+      "transfersInEvent": 5598,
+      "transfersOutEvent": 11034
     },
     {
       "id": 490,
@@ -12158,8 +12158,8 @@
       "totalPoints": 2,
       "status": "a",
       "news": "",
-      "transfersInEvent": 3384,
-      "transfersOutEvent": 13480
+      "transfersInEvent": 3413,
+      "transfersOutEvent": 13665
     },
     {
       "id": 491,
@@ -12179,8 +12179,8 @@
       "totalPoints": 4,
       "status": "a",
       "news": "",
-      "transfersInEvent": 8468,
-      "transfersOutEvent": 42746
+      "transfersInEvent": 8576,
+      "transfersOutEvent": 43461
     },
     {
       "id": 493,
@@ -12200,8 +12200,8 @@
       "totalPoints": 1,
       "status": "a",
       "news": "",
-      "transfersInEvent": 976,
-      "transfersOutEvent": 613
+      "transfersInEvent": 980,
+      "transfersOutEvent": 619
     },
     {
       "id": 558,
@@ -12221,8 +12221,8 @@
       "totalPoints": 8,
       "status": "a",
       "news": "",
-      "transfersInEvent": 603,
-      "transfersOutEvent": 744
+      "transfersInEvent": 618,
+      "transfersOutEvent": 758
     },
     {
       "id": 581,
@@ -12242,8 +12242,8 @@
       "totalPoints": 1,
       "status": "a",
       "news": "",
-      "transfersInEvent": 1069,
-      "transfersOutEvent": 5231
+      "transfersInEvent": 1082,
+      "transfersOutEvent": 5290
     },
     {
       "id": 590,
@@ -12263,8 +12263,8 @@
       "totalPoints": 0,
       "status": "a",
       "news": "",
-      "transfersInEvent": 359,
-      "transfersOutEvent": 401
+      "transfersInEvent": 361,
+      "transfersOutEvent": 407
     },
     {
       "id": 112,
@@ -12284,8 +12284,8 @@
       "totalPoints": 10,
       "status": "a",
       "news": "",
-      "transfersInEvent": 20676,
-      "transfersOutEvent": 47403
+      "transfersInEvent": 21123,
+      "transfersOutEvent": 48636
     },
     {
       "id": 147,
@@ -12305,8 +12305,8 @@
       "totalPoints": 0,
       "status": "a",
       "news": "",
-      "transfersInEvent": 429,
-      "transfersOutEvent": 1052
+      "transfersInEvent": 435,
+      "transfersOutEvent": 1062
     },
     {
       "id": 401,
@@ -12326,8 +12326,8 @@
       "totalPoints": 4,
       "status": "a",
       "news": "",
-      "transfersInEvent": 28077,
-      "transfersOutEvent": 27376
+      "transfersInEvent": 28472,
+      "transfersOutEvent": 27739
     },
     {
       "id": 403,
@@ -12347,8 +12347,8 @@
       "totalPoints": 3,
       "status": "a",
       "news": "",
-      "transfersInEvent": 7057,
-      "transfersOutEvent": 7943
+      "transfersInEvent": 7176,
+      "transfersOutEvent": 8109
     },
     {
       "id": 455,
@@ -12363,13 +12363,13 @@
       "price": 5.4,
       "priceChangeSeason": -0.1,
       "priceChangeEvent": 0,
-      "ownership": 2.7,
+      "ownership": 2.6,
       "form": 3,
       "totalPoints": 9,
       "status": "a",
       "news": "",
-      "transfersInEvent": 8522,
-      "transfersOutEvent": 24983
+      "transfersInEvent": 8636,
+      "transfersOutEvent": 25513
     },
     {
       "id": 494,
@@ -12390,7 +12390,7 @@
       "status": "u",
       "news": "Has joined Juventus on loan for the rest of the season",
       "transfersInEvent": 0,
-      "transfersOutEvent": 1789
+      "transfersOutEvent": 1807
     },
     {
       "id": 495,
@@ -12410,8 +12410,8 @@
       "totalPoints": 0,
       "status": "a",
       "news": "",
-      "transfersInEvent": 5529,
-      "transfersOutEvent": 3476
+      "transfersInEvent": 5624,
+      "transfersOutEvent": 3547
     },
     {
       "id": 496,
@@ -12431,8 +12431,8 @@
       "totalPoints": 9,
       "status": "a",
       "news": "",
-      "transfersInEvent": 70078,
-      "transfersOutEvent": 134975
+      "transfersInEvent": 73088,
+      "transfersOutEvent": 138327
     },
     {
       "id": 497,
@@ -12452,8 +12452,8 @@
       "totalPoints": 0,
       "status": "a",
       "news": "",
-      "transfersInEvent": 76151,
-      "transfersOutEvent": 72429
+      "transfersInEvent": 78383,
+      "transfersOutEvent": 74254
     },
     {
       "id": 498,
@@ -12473,8 +12473,8 @@
       "totalPoints": 3,
       "status": "a",
       "news": "",
-      "transfersInEvent": 2691,
-      "transfersOutEvent": 68153
+      "transfersInEvent": 2721,
+      "transfersOutEvent": 69056
     },
     {
       "id": 499,
@@ -12494,8 +12494,8 @@
       "totalPoints": 8,
       "status": "a",
       "news": "",
-      "transfersInEvent": 37314,
-      "transfersOutEvent": 44849
+      "transfersInEvent": 37896,
+      "transfersOutEvent": 45821
     },
     {
       "id": 500,
@@ -12516,7 +12516,7 @@
       "status": "u",
       "news": "Has joined Atletico Madrid permanently",
       "transfersInEvent": 0,
-      "transfersOutEvent": 1024
+      "transfersOutEvent": 1032
     },
     {
       "id": 502,
@@ -12536,8 +12536,8 @@
       "totalPoints": 6,
       "status": "a",
       "news": "",
-      "transfersInEvent": 2688,
-      "transfersOutEvent": 36600
+      "transfersInEvent": 2731,
+      "transfersOutEvent": 37249
     },
     {
       "id": 503,
@@ -12557,8 +12557,8 @@
       "totalPoints": 9,
       "status": "a",
       "news": "",
-      "transfersInEvent": 21587,
-      "transfersOutEvent": 14480
+      "transfersInEvent": 21856,
+      "transfersOutEvent": 14774
     },
     {
       "id": 505,
@@ -12579,7 +12579,7 @@
       "status": "u",
       "news": "Has joined Internazionale permanently",
       "transfersInEvent": 0,
-      "transfersOutEvent": 3967
+      "transfersOutEvent": 4012
     },
     {
       "id": 506,
@@ -12599,8 +12599,8 @@
       "totalPoints": 7,
       "status": "a",
       "news": "",
-      "transfersInEvent": 1062,
-      "transfersOutEvent": 1996
+      "transfersInEvent": 1093,
+      "transfersOutEvent": 2043
     },
     {
       "id": 507,
@@ -12641,8 +12641,8 @@
       "totalPoints": 0,
       "status": "a",
       "news": "",
-      "transfersInEvent": 1550,
-      "transfersOutEvent": 5588
+      "transfersInEvent": 1575,
+      "transfersOutEvent": 5666
     },
     {
       "id": 509,
@@ -12662,8 +12662,8 @@
       "totalPoints": 0,
       "status": "a",
       "news": "",
-      "transfersInEvent": 373,
-      "transfersOutEvent": 384
+      "transfersInEvent": 375,
+      "transfersOutEvent": 393
     },
     {
       "id": 510,
@@ -12683,8 +12683,8 @@
       "totalPoints": 0,
       "status": "a",
       "news": "",
-      "transfersInEvent": 474,
-      "transfersOutEvent": 502
+      "transfersInEvent": 481,
+      "transfersOutEvent": 512
     },
     {
       "id": 511,
@@ -12705,7 +12705,7 @@
       "status": "u",
       "news": "Has joined FC Porto on loan for the rest of the season",
       "transfersInEvent": 0,
-      "transfersOutEvent": 3435
+      "transfersOutEvent": 3471
     },
     {
       "id": 512,
@@ -12725,8 +12725,8 @@
       "totalPoints": 2,
       "status": "a",
       "news": "",
-      "transfersInEvent": 1918,
-      "transfersOutEvent": 1716
+      "transfersInEvent": 1949,
+      "transfersOutEvent": 1732
     },
     {
       "id": 513,
@@ -12747,7 +12747,7 @@
       "status": "i",
       "news": "Knee injury - Unknown return date",
       "transfersInEvent": 58,
-      "transfersOutEvent": 144
+      "transfersOutEvent": 145
     },
     {
       "id": 514,
@@ -12767,8 +12767,8 @@
       "totalPoints": 7,
       "status": "a",
       "news": "",
-      "transfersInEvent": 889,
-      "transfersOutEvent": 4696
+      "transfersInEvent": 910,
+      "transfersOutEvent": 4767
     },
     {
       "id": 515,
@@ -12788,8 +12788,8 @@
       "totalPoints": 1,
       "status": "d",
       "news": "Shoulder injury - 75% chance of playing",
-      "transfersInEvent": 113,
-      "transfersOutEvent": 9519
+      "transfersInEvent": 114,
+      "transfersOutEvent": 9644
     },
     {
       "id": 516,
@@ -12809,8 +12809,8 @@
       "totalPoints": 8,
       "status": "a",
       "news": "",
-      "transfersInEvent": 825,
-      "transfersOutEvent": 839
+      "transfersInEvent": 833,
+      "transfersOutEvent": 849
     },
     {
       "id": 517,
@@ -12852,7 +12852,7 @@
       "status": "u",
       "news": "Has joined Juventus on loan for the rest of the season",
       "transfersInEvent": 0,
-      "transfersOutEvent": 3328
+      "transfersOutEvent": 3361
     },
     {
       "id": 519,
@@ -12872,8 +12872,8 @@
       "totalPoints": 3,
       "status": "a",
       "news": "",
-      "transfersInEvent": 539,
-      "transfersOutEvent": 1482
+      "transfersInEvent": 544,
+      "transfersOutEvent": 1501
     },
     {
       "id": 520,
@@ -12893,8 +12893,8 @@
       "totalPoints": 1,
       "status": "a",
       "news": "",
-      "transfersInEvent": 228,
-      "transfersOutEvent": 1271
+      "transfersInEvent": 229,
+      "transfersOutEvent": 1291
     },
     {
       "id": 521,
@@ -12915,7 +12915,7 @@
       "status": "i",
       "news": "Knee injury - Unknown return date",
       "transfersInEvent": 58,
-      "transfersOutEvent": 114
+      "transfersOutEvent": 115
     },
     {
       "id": 522,
@@ -12935,8 +12935,8 @@
       "totalPoints": 4,
       "status": "a",
       "news": "",
-      "transfersInEvent": 624,
-      "transfersOutEvent": 2212
+      "transfersInEvent": 632,
+      "transfersOutEvent": 2240
     },
     {
       "id": 523,
@@ -12957,7 +12957,7 @@
       "status": "u",
       "news": "Has joined FC Köln on loan for the rest of the season",
       "transfersInEvent": 0,
-      "transfersOutEvent": 3711
+      "transfersOutEvent": 3748
     },
     {
       "id": 524,
@@ -12977,8 +12977,8 @@
       "totalPoints": 0,
       "status": "a",
       "news": "",
-      "transfersInEvent": 751,
-      "transfersOutEvent": 4412
+      "transfersInEvent": 758,
+      "transfersOutEvent": 4472
     },
     {
       "id": 525,
@@ -12998,8 +12998,8 @@
       "totalPoints": 3,
       "status": "a",
       "news": "",
-      "transfersInEvent": 1145,
-      "transfersOutEvent": 19465
+      "transfersInEvent": 1166,
+      "transfersOutEvent": 19744
     },
     {
       "id": 526,
@@ -13019,8 +13019,8 @@
       "totalPoints": 3,
       "status": "a",
       "news": "",
-      "transfersInEvent": 4083,
-      "transfersOutEvent": 12197
+      "transfersInEvent": 4123,
+      "transfersOutEvent": 12382
     },
     {
       "id": 527,
@@ -13041,7 +13041,7 @@
       "status": "u",
       "news": "not included in squad.",
       "transfersInEvent": 0,
-      "transfersOutEvent": 45809
+      "transfersOutEvent": 46346
     },
     {
       "id": 528,
@@ -13062,7 +13062,7 @@
       "status": "u",
       "news": "Has joined Leyton Orient permanently",
       "transfersInEvent": 0,
-      "transfersOutEvent": 22517
+      "transfersOutEvent": 22738
     },
     {
       "id": 578,
@@ -13082,8 +13082,8 @@
       "totalPoints": 1,
       "status": "a",
       "news": "",
-      "transfersInEvent": 1483,
-      "transfersOutEvent": 1180
+      "transfersInEvent": 1490,
+      "transfersOutEvent": 1206
     },
     {
       "id": 601,
@@ -13103,8 +13103,8 @@
       "totalPoints": 0,
       "status": "a",
       "news": "",
-      "transfersInEvent": 1765,
-      "transfersOutEvent": 1361
+      "transfersInEvent": 1780,
+      "transfersOutEvent": 1384
     },
     {
       "id": 501,
@@ -13124,8 +13124,8 @@
       "totalPoints": 2,
       "status": "a",
       "news": "",
-      "transfersInEvent": 1098,
-      "transfersOutEvent": 1077
+      "transfersInEvent": 1111,
+      "transfersOutEvent": 1088
     },
     {
       "id": 529,
@@ -13145,8 +13145,8 @@
       "totalPoints": 9,
       "status": "a",
       "news": "",
-      "transfersInEvent": 1504,
-      "transfersOutEvent": 28258
+      "transfersInEvent": 1528,
+      "transfersOutEvent": 28816
     },
     {
       "id": 530,
@@ -13167,7 +13167,7 @@
       "status": "u",
       "news": "Has joined Wrexham permanently",
       "transfersInEvent": 0,
-      "transfersOutEvent": 733
+      "transfersOutEvent": 738
     },
     {
       "id": 531,
@@ -13187,8 +13187,8 @@
       "totalPoints": 0,
       "status": "a",
       "news": "",
-      "transfersInEvent": 157,
-      "transfersOutEvent": 449
+      "transfersInEvent": 159,
+      "transfersOutEvent": 454
     },
     {
       "id": 532,
@@ -13208,8 +13208,8 @@
       "totalPoints": 12,
       "status": "a",
       "news": "",
-      "transfersInEvent": 4819,
-      "transfersOutEvent": 57701
+      "transfersInEvent": 4898,
+      "transfersOutEvent": 58887
     },
     {
       "id": 533,
@@ -13229,8 +13229,8 @@
       "totalPoints": 13,
       "status": "a",
       "news": "",
-      "transfersInEvent": 4663,
-      "transfersOutEvent": 14673
+      "transfersInEvent": 4724,
+      "transfersOutEvent": 14968
     },
     {
       "id": 534,
@@ -13250,8 +13250,8 @@
       "totalPoints": 9,
       "status": "a",
       "news": "",
-      "transfersInEvent": 1950,
-      "transfersOutEvent": 88123
+      "transfersInEvent": 1986,
+      "transfersOutEvent": 90171
     },
     {
       "id": 535,
@@ -13271,8 +13271,8 @@
       "totalPoints": 1,
       "status": "a",
       "news": "",
-      "transfersInEvent": 266,
-      "transfersOutEvent": 4010
+      "transfersInEvent": 268,
+      "transfersOutEvent": 4070
     },
     {
       "id": 536,
@@ -13292,8 +13292,8 @@
       "totalPoints": 9,
       "status": "a",
       "news": "",
-      "transfersInEvent": 502,
-      "transfersOutEvent": 2791
+      "transfersInEvent": 509,
+      "transfersOutEvent": 2843
     },
     {
       "id": 537,
@@ -13314,7 +13314,7 @@
       "status": "u",
       "news": "Has joined Swansea City on loan for the rest of the season",
       "transfersInEvent": 0,
-      "transfersOutEvent": 67
+      "transfersOutEvent": 68
     },
     {
       "id": 538,
@@ -13355,8 +13355,8 @@
       "totalPoints": 1,
       "status": "a",
       "news": "",
-      "transfersInEvent": 1343,
-      "transfersOutEvent": 20299
+      "transfersInEvent": 1364,
+      "transfersOutEvent": 20654
     },
     {
       "id": 540,
@@ -13377,7 +13377,7 @@
       "status": "u",
       "news": "Has joined Konyaspor permanently",
       "transfersInEvent": 0,
-      "transfersOutEvent": 1263
+      "transfersOutEvent": 1271
     },
     {
       "id": 541,
@@ -13397,8 +13397,8 @@
       "totalPoints": 9,
       "status": "a",
       "news": "",
-      "transfersInEvent": 473,
-      "transfersOutEvent": 1421
+      "transfersInEvent": 483,
+      "transfersOutEvent": 1451
     },
     {
       "id": 542,
@@ -13418,8 +13418,8 @@
       "totalPoints": 13,
       "status": "a",
       "news": "",
-      "transfersInEvent": 6614,
-      "transfersOutEvent": 77742
+      "transfersInEvent": 6691,
+      "transfersOutEvent": 79593
     },
     {
       "id": 543,
@@ -13440,7 +13440,7 @@
       "status": "i",
       "news": "Hamstring injury - Unknown return date",
       "transfersInEvent": 19,
-      "transfersOutEvent": 1026
+      "transfersOutEvent": 1039
     },
     {
       "id": 544,
@@ -13460,8 +13460,8 @@
       "totalPoints": 18,
       "status": "a",
       "news": "",
-      "transfersInEvent": 16431,
-      "transfersOutEvent": 34851
+      "transfersInEvent": 16657,
+      "transfersOutEvent": 35592
     },
     {
       "id": 545,
@@ -13481,8 +13481,8 @@
       "totalPoints": 6,
       "status": "a",
       "news": "",
-      "transfersInEvent": 525,
-      "transfersOutEvent": 2904
+      "transfersInEvent": 539,
+      "transfersOutEvent": 2957
     },
     {
       "id": 546,
@@ -13503,7 +13503,7 @@
       "status": "u",
       "news": "Has joined Ajax on loan for the rest of the season",
       "transfersInEvent": 0,
-      "transfersOutEvent": 709
+      "transfersOutEvent": 716
     },
     {
       "id": 547,
@@ -13524,7 +13524,7 @@
       "status": "i",
       "news": "Knee injury - Unknown return date",
       "transfersInEvent": 47,
-      "transfersOutEvent": 101
+      "transfersOutEvent": 106
     },
     {
       "id": 548,
@@ -13545,7 +13545,7 @@
       "status": "a",
       "news": "",
       "transfersInEvent": 89,
-      "transfersOutEvent": 392
+      "transfersOutEvent": 399
     },
     {
       "id": 549,
@@ -13565,8 +13565,8 @@
       "totalPoints": 1,
       "status": "a",
       "news": "",
-      "transfersInEvent": 131,
-      "transfersOutEvent": 1596
+      "transfersInEvent": 134,
+      "transfersOutEvent": 1618
     },
     {
       "id": 550,
@@ -13586,8 +13586,8 @@
       "totalPoints": 0,
       "status": "a",
       "news": "",
-      "transfersInEvent": 46,
-      "transfersOutEvent": 52
+      "transfersInEvent": 47,
+      "transfersOutEvent": 53
     },
     {
       "id": 551,
@@ -13607,8 +13607,8 @@
       "totalPoints": 10,
       "status": "a",
       "news": "",
-      "transfersInEvent": 1008,
-      "transfersOutEvent": 1828
+      "transfersInEvent": 1020,
+      "transfersOutEvent": 1863
     },
     {
       "id": 552,
@@ -13628,8 +13628,8 @@
       "totalPoints": 6,
       "status": "a",
       "news": "",
-      "transfersInEvent": 10459,
-      "transfersOutEvent": 149854
+      "transfersInEvent": 10550,
+      "transfersOutEvent": 152599
     },
     {
       "id": 553,
@@ -13649,8 +13649,8 @@
       "totalPoints": 13,
       "status": "a",
       "news": "",
-      "transfersInEvent": 31587,
-      "transfersOutEvent": 12422
+      "transfersInEvent": 32043,
+      "transfersOutEvent": 12657
     },
     {
       "id": 612,
@@ -13670,8 +13670,8 @@
       "totalPoints": 0,
       "status": "a",
       "news": "",
-      "transfersInEvent": 105,
-      "transfersOutEvent": 128
+      "transfersInEvent": 107,
+      "transfersOutEvent": 132
     },
     {
       "id": 613,
@@ -13691,8 +13691,8 @@
       "totalPoints": 0,
       "status": "a",
       "news": "",
-      "transfersInEvent": 4912,
-      "transfersOutEvent": 2989
+      "transfersInEvent": 4976,
+      "transfersOutEvent": 3030
     },
     {
       "id": 646,
@@ -13712,8 +13712,8 @@
       "totalPoints": 1,
       "status": "a",
       "news": "",
-      "transfersInEvent": 959,
-      "transfersOutEvent": 329
+      "transfersInEvent": 968,
+      "transfersOutEvent": 336
     },
     {
       "id": 651,
@@ -13733,8 +13733,8 @@
       "totalPoints": 0,
       "status": "a",
       "news": "",
-      "transfersInEvent": 22335,
-      "transfersOutEvent": 5710
+      "transfersInEvent": 22633,
+      "transfersOutEvent": 5850
     }
   ],
   "teams": [
