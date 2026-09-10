@@ -9,8 +9,10 @@ import SquadBuilder from "@/components/SquadBuilder";
 import ChipStrategy from "@/components/ChipStrategy";
 import TransferShortlist from "@/components/TransferShortlist";
 import WeakLinks from "@/components/WeakLinks";
+import TransferPlanner from "@/components/TransferPlanner";
 import PriceHistoryExplorer from "@/components/PriceHistoryExplorer";
 import PricePredictor from "@/components/PricePredictor";
+import PlayerComparison from "@/components/PlayerComparison";
 import PremiumGate from "@/components/PremiumGate";
 
 export const revalidate = 300;
@@ -22,10 +24,12 @@ const NAV_ITEMS = [
   { href: "#chip-strategy", label: "Chip strategy" },
   { href: "#transfer-shortlist", label: "Shortlist" },
   { href: "#weak-links", label: "Weak links" },
+  { href: "#transfer-planner", label: "Planner" },
   { href: "#price-history", label: "Price history" },
   { href: "#price-watch", label: "Price watch" },
   { href: "#risers-fallers", label: "Movers" },
   { href: "#top-15", label: "Top 15" },
+  { href: "#compare", label: "Compare" },
   { href: "#find-a-player", label: "Search" },
 ];
 
@@ -137,6 +141,17 @@ export default async function Home() {
         </PremiumGate>
       </section>
 
+      <section id="transfer-planner" className="mb-10 scroll-mt-16">
+        <h2 className="mb-3 text-xl font-bold">Transfer planner</h2>
+        <p className="mb-3 text-sm text-black/60 dark:text-white/60">
+          Your saved squad&apos;s next 5 gameweeks at a glance — who&apos;s got a rough patch coming,
+          and any real chip windows worth planning around.
+        </p>
+        <PremiumGate>
+          <TransferPlanner players={snapshot.players} fixtures={fixtures} teams={snapshot.teams} />
+        </PremiumGate>
+      </section>
+
       <section id="price-history" className="mb-10 scroll-mt-16">
         <h2 className="mb-3 text-xl font-bold">Price history</h2>
         <p className="mb-3 text-sm text-black/60 dark:text-white/60">
@@ -175,6 +190,15 @@ export default async function Home() {
           sort.
         </p>
         <TopPlayers players={top15} />
+      </section>
+
+      <section id="compare" className="mb-10 scroll-mt-16">
+        <h2 className="mb-3 text-xl font-bold">Compare players</h2>
+        <p className="mb-3 text-sm text-black/60 dark:text-white/60">
+          Pick any two and see price, form, points, ownership and fixtures side by side. No verdict —
+          make your own mind up.
+        </p>
+        <PlayerComparison players={snapshot.players} fixturesByTeam={fixturesByTeam} />
       </section>
 
       <section id="find-a-player" className="scroll-mt-16">
