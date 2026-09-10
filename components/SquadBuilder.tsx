@@ -3,11 +3,14 @@
 import { useEffect, useMemo, useState } from "react";
 import type { FixtureRun, Player, Position } from "@/lib/fpl-types";
 import { SQUAD_STORAGE_KEY, SQUAD_UPDATED_EVENT } from "@/lib/squad-storage";
+import { suggestBench } from "@/lib/bench";
 import PlayerPickerModal from "./PlayerPickerModal";
 import PlayerPhoto from "./PlayerPhoto";
 import FixtureChips from "./FixtureChips";
 
 const BUDGET = 100; // £m, standard FPL squad budget
+const SQUAD_SIZE = 15;
+const BENCH_SIZE = 4;
 
 const FORMATION: { position: Position; count: number }[] = [
   { position: "GKP", count: 2 },
@@ -44,6 +47,7 @@ export default function SquadBuilder({
   fixturesByTeam: Record<number, FixtureRun[]>;
 }) {
   const [squad, setSquad] = useState<Squad>(emptySquad);
+  const [bench, setBench] = useState<Set<number>>(new Set());
   const [loaded, setLoaded] = useState(false);
   const [view, setView] = useState<"pitch" | "list">("pitch");
   const [activeSlot, setActiveSlot] = useState<Slot | null>(null);
@@ -55,7 +59,7 @@ export default function SquadBuilder({
       try {
         const raw = window.localStorage.getItem(SQUAD_STORAGE_KEY);
         if (raw) {
-          const parsed = JSON.parse(raw) as Partial<Squad>;
+          const parsed = JSON.parse(raw) as Partial<Squad> & { bench?: number[] };
           const merged = emptySquad();
           for (const { position, count } of FORMATION) {
             const saved = parsed[position];
@@ -64,6 +68,9 @@ export default function SquadBuilder({
             }
           }
           setSquad(merged);
+          if (Array.isArray(parsed.bench)) {
+            setBench(new Set(parsed.bench.filter((id): id is number => typeof id === "number")));
+          }
         }
       } catch {
         // ignore corrupt/unavailable storage
@@ -75,12 +82,12 @@ export default function SquadBuilder({
   useEffect(() => {
     if (!loaded) return;
     try {
-      window.localStorage.setItem(SQUAD_STORAGE_KEY, JSON.stringify(squad));
+      window.localStorage.setItem(SQUAD_STORAGE_KEY, JSON.stringify({ ...squad, bench: [...bench] }));
       window.dispatchEvent(new Event(SQUAD_UPDATED_EVENT));
     } catch {
       // storage unavailable (private browsing etc.) - squad just won't persist
     }
-  }, [squad, loaded]);
+  }, [squad, bench, loaded]);
 
   const byId = useMemo(() => new Map(players.map((p) => [p.id, p])), [players]);
 
@@ -106,11 +113,46 @@ export default function SquadBuilder({
   }
 
   function clearSlot(slot: Slot) {
+    const removedId = squad[slot.position][slot.index];
     setSquad((prev) => {
       const next = { ...prev, [slot.position]: [...prev[slot.position]] };
       next[slot.position][slot.index] = null;
       return next;
     });
+    if (removedId !== null) {
+      setBench((prev) => {
+        if (!prev.has(removedId)) return prev;
+        const next = new Set(prev);
+        next.delete(removedId);
+        return next;
+      });
+    }
+  }
+
+  function toggleBench(playerId: number, position: Position) {
+    setBench((prev) => {
+      if (prev.has(playerId)) {
+        const next = new Set(prev);
+        next.delete(playerId);
+        return next;
+      }
+      if (prev.size >= BENCH_SIZE) return prev;
+      if (position === "GKP") {
+        // Never let both keepers be benched at once - there'd be no one
+        // left in goal.
+        const otherGkpId = squad.GKP.find((id) => id !== null && id !== playerId);
+        if (otherGkpId !== null && otherGkpId !== undefined && prev.has(otherGkpId)) return prev;
+      }
+      const next = new Set(prev);
+      next.add(playerId);
+      return next;
+    });
+  }
+
+  function autoPickBench() {
+    const squadPlayers = [...usedIds].map((id) => byId.get(id)).filter((p): p is Player => Boolean(p));
+    const suggested = suggestBench(squadPlayers);
+    if (suggested.length === BENCH_SIZE) setBench(new Set(suggested));
   }
 
   return (
@@ -141,12 +183,28 @@ export default function SquadBuilder({
           </button>
         </div>
         <p className="text-xs text-black/50 dark:text-white/50">
-          {filledCount}/15 players · {fmtMoney(totalValue)} spent ·{" "}
+          {filledCount}/{SQUAD_SIZE} players · {fmtMoney(totalValue)} spent ·{" "}
           <span className={remainingBudget <= 0 ? "font-semibold text-red-600 dark:text-red-400" : ""}>
             {fmtMoney(remainingBudget)} left
           </span>{" "}
           of a {fmtMoney(BUDGET)} budget
         </p>
+      </div>
+
+      <div className="mb-3 flex flex-wrap items-center justify-between gap-2 rounded-lg border border-black/10 bg-black/[.02] px-3 py-2 dark:border-white/15 dark:bg-white/[.03]">
+        <p className="text-xs text-black/60 dark:text-white/60">
+          {bench.size}/{BENCH_SIZE} on the bench
+          {filledCount === SQUAD_SIZE ? "" : " — fill your squad first"}. Tap the bench icon on a player
+          to sub them, or let us pick.
+        </p>
+        <button
+          type="button"
+          onClick={autoPickBench}
+          disabled={filledCount !== SQUAD_SIZE}
+          className="whitespace-nowrap rounded-md border border-purple-600 px-2.5 py-1 text-xs font-semibold text-purple-700 hover:bg-purple-50 disabled:cursor-not-allowed disabled:border-black/10 disabled:text-black/30 dark:text-purple-400 dark:hover:bg-purple-950/40 dark:disabled:border-white/10 dark:disabled:text-white/20"
+        >
+          Auto-pick bench
+        </button>
       </div>
 
       {view === "pitch" ? (
@@ -164,8 +222,10 @@ export default function SquadBuilder({
                       key={slotKey(slot)}
                       slot={slot}
                       player={player}
+                      benched={playerId !== null && bench.has(playerId)}
                       onOpen={() => setActiveSlot(slot)}
                       onRemove={() => clearSlot(slot)}
+                      onToggleBench={() => playerId !== null && toggleBench(playerId, position)}
                     />
                   );
                 })}
@@ -185,14 +245,30 @@ export default function SquadBuilder({
                   const slot: Slot = { position, index };
                   const playerId = squad[position][index];
                   const player = playerId !== null ? byId.get(playerId) : undefined;
+                  const isBenched = playerId !== null && bench.has(playerId);
                   return (
                     <li key={slotKey(slot)}>
                       {player ? (
-                        <div className="flex items-center gap-3 rounded-lg border border-black/10 bg-white p-2.5 dark:border-white/15 dark:bg-neutral-900">
+                        <div
+                          className={`flex items-center gap-3 rounded-lg border p-2.5 ${
+                            isBenched
+                              ? "border-black/10 bg-black/[.03] dark:border-white/10 dark:bg-white/[.03]"
+                              : "border-black/10 bg-white dark:border-white/15 dark:bg-neutral-900"
+                          }`}
+                        >
                           <PlayerPhoto photoId={player.photoId} name={player.name} size={36} />
                           <div className="min-w-0 flex-1">
                             <div className="flex items-baseline justify-between gap-2">
-                              <span className="truncate font-medium">{player.name}</span>
+                              <span
+                                className={`truncate font-medium ${isBenched ? "text-black/50 dark:text-white/50" : ""}`}
+                              >
+                                {player.name}
+                                {isBenched && (
+                                  <span className="ml-1.5 rounded bg-black/10 px-1.5 py-0.5 text-[10px] font-bold uppercase tracking-wide text-black/50 dark:bg-white/10 dark:text-white/50">
+                                    Sub
+                                  </span>
+                                )}
+                              </span>
                               <span className="whitespace-nowrap text-sm tabular-nums">
                                 {fmtMoney(player.price)}
                               </span>
@@ -204,6 +280,13 @@ export default function SquadBuilder({
                               <FixtureChips fixtures={fixturesByTeam[player.teamId]} />
                             </div>
                           </div>
+                          <button
+                            type="button"
+                            onClick={() => toggleBench(player.id, position)}
+                            className="whitespace-nowrap rounded-md border border-black/10 px-2 py-1 text-xs font-medium hover:bg-black/[.04] dark:border-white/15 dark:hover:bg-white/[.06]"
+                          >
+                            {isBenched ? "Start" : "Bench"}
+                          </button>
                           <button
                             type="button"
                             onClick={() => clearSlot(slot)}
@@ -248,31 +331,58 @@ export default function SquadBuilder({
 function SquadSlot({
   slot,
   player,
+  benched,
   onOpen,
   onRemove,
+  onToggleBench,
 }: {
   slot: Slot;
   player: Player | undefined;
+  benched: boolean;
   onOpen: () => void;
   onRemove: () => void;
+  onToggleBench: () => void;
 }) {
   return (
-    <div className="w-16 sm:w-20">
+    <div className="relative w-16 sm:w-20">
       {player ? (
-        <button
-          type="button"
-          onClick={onRemove}
-          title="Remove from squad"
-          className="flex w-full flex-col items-center gap-0.5 rounded-md bg-white/95 p-1 text-center shadow hover:bg-white dark:bg-neutral-900/95"
-        >
-          <PlayerPhoto photoId={player.photoId} name={player.name} size={36} />
-          <span className="w-full truncate text-[11px] font-semibold text-black dark:text-white">
-            {player.name}
-          </span>
-          <span className="text-[10px] font-medium text-black/60 dark:text-white/60">
-            {fmtMoney(player.price)}
-          </span>
-        </button>
+        <>
+          <button
+            type="button"
+            onClick={onRemove}
+            title="Remove from squad"
+            className={`flex w-full flex-col items-center gap-0.5 rounded-md p-1 text-center shadow hover:opacity-90 ${
+              benched ? "bg-white/60 dark:bg-neutral-900/60" : "bg-white/95 dark:bg-neutral-900/95"
+            }`}
+          >
+            <PlayerPhoto photoId={player.photoId} name={player.name} size={36} />
+            <span
+              className={`w-full truncate text-[11px] font-semibold ${
+                benched ? "text-black/50 dark:text-white/50" : "text-black dark:text-white"
+              }`}
+            >
+              {player.name}
+            </span>
+            <span className="text-[10px] font-medium text-black/60 dark:text-white/60">
+              {fmtMoney(player.price)}
+            </span>
+          </button>
+          <button
+            type="button"
+            onClick={(e) => {
+              e.stopPropagation();
+              onToggleBench();
+            }}
+            title={benched ? "Move to starting XI" : "Move to bench"}
+            className={`absolute -right-1 -top-1 flex h-5 w-5 items-center justify-center rounded-full text-[10px] font-bold shadow ${
+              benched
+                ? "bg-amber-500 text-white"
+                : "bg-white text-black/40 hover:text-black/70 dark:bg-neutral-800 dark:text-white/40 dark:hover:text-white/70"
+            }`}
+          >
+            {benched ? "S" : "B"}
+          </button>
+        </>
       ) : (
         <button
           type="button"

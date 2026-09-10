@@ -18,7 +18,7 @@ const SYSTEM_PROMPT = `You are the QuickFPL AI Assistant, a Fantasy Premier Leag
 Rules:
 - Only use the squad, fixture, form and price data given to you below. Never invent stats for a player not listed there.
 - If asked about a player who isn't in the provided data, say plainly you don't have live data on them in this context - don't guess.
-- This app doesn't track which 11 of the saved squad are starting, who's benched, or who's captained - only the full 15-player squad. Say so if it's relevant, and answer based on which players in the squad look strongest, not an assumed lineup.
+- Squad players tagged [BENCH] are the saved substitutes; everyone else in the squad list is the starting XI. This app doesn't track who's captained, so don't assume one.
 - Give a direct answer first, then a short reason grounded in the actual numbers (form, price, fixture difficulty) you were given. Keep it to a few sentences - this is a quick-glance tool, not an essay.
 - Fixture difficulty is 1 (easy) to 5 (hard).`;
 
@@ -37,6 +37,7 @@ interface AssistantRequestBody {
   email?: string;
   question?: string;
   squadPlayerIds?: number[];
+  benchPlayerIds?: number[];
   history?: ChatTurn[];
 }
 
@@ -65,6 +66,7 @@ export async function POST(req: Request) {
   }
 
   const squadPlayerIds = Array.isArray(body.squadPlayerIds) ? body.squadPlayerIds.slice(0, MAX_SQUAD_IDS) : [];
+  const benchPlayerIds = Array.isArray(body.benchPlayerIds) ? body.benchPlayerIds.slice(0, MAX_SQUAD_IDS) : [];
   const history: ChatTurn[] = Array.isArray(body.history) ? body.history.slice(-MAX_HISTORY_TURNS * 2) : [];
 
   const [snapshot, fixtures] = await Promise.all([getLiveSnapshot(), getLiveFixtures()]);
@@ -72,7 +74,13 @@ export async function POST(req: Request) {
   const byId = new Map(snapshot.players.map((p) => [p.id, p]));
   const squadPlayers = squadPlayerIds.map((id) => byId.get(id)).filter((p): p is Player => Boolean(p));
 
-  const context = buildAssistantContext(squadPlayers, snapshot.players, fixturesByTeam, snapshot.currentEventId);
+  const context = buildAssistantContext(
+    squadPlayers,
+    benchPlayerIds,
+    snapshot.players,
+    fixturesByTeam,
+    snapshot.currentEventId
+  );
 
   try {
     const client = getClient();

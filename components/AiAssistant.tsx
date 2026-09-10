@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import { SQUAD_UPDATED_EVENT, readSquadPlayerIds } from "@/lib/squad-storage";
+import { SQUAD_UPDATED_EVENT, readSquadPlayerIds, readBenchPlayerIds } from "@/lib/squad-storage";
 import { MEMBER_EMAIL_STORAGE_KEY } from "@/lib/member-storage";
 
 interface ChatTurn {
@@ -13,6 +13,7 @@ const SUGGESTED_QUESTIONS = ["Who should I captain?", "Who should I transfer out
 
 export default function AiAssistant() {
   const [squadIds, setSquadIds] = useState<number[]>([]);
+  const [benchIds, setBenchIds] = useState<number[]>([]);
   const [email, setEmail] = useState<string | null>(null);
   const [messages, setMessages] = useState<ChatTurn[]>([]);
   const [input, setInput] = useState("");
@@ -23,6 +24,7 @@ export default function AiAssistant() {
   useEffect(() => {
     function reload() {
       setSquadIds(readSquadPlayerIds());
+      setBenchIds(readBenchPlayerIds());
     }
     Promise.resolve().then(() => {
       reload();
@@ -58,6 +60,7 @@ export default function AiAssistant() {
           email,
           question: trimmed,
           squadPlayerIds: squadIds,
+          benchPlayerIds: benchIds,
           history: messages,
         }),
       });
