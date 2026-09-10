@@ -7,6 +7,7 @@ import TopPlayers from "@/components/TopPlayers";
 import PlayerLookup from "@/components/PlayerLookup";
 import SquadBuilder from "@/components/SquadBuilder";
 import ChipStrategy from "@/components/ChipStrategy";
+import TransferShortlist from "@/components/TransferShortlist";
 import PremiumGate from "@/components/PremiumGate";
 
 export const revalidate = 300;
@@ -81,6 +82,17 @@ export default async function Home() {
         </p>
         <PremiumGate>
           <ChipStrategy players={snapshot.players} fixtures={fixtures} teams={snapshot.teams} />
+        </PremiumGate>
+      </section>
+
+      <section className="mb-10">
+        <h2 className="mb-3 text-xl font-bold">Transfer shortlist</h2>
+        <p className="mb-3 text-sm text-black/60 dark:text-white/60">
+          Who&apos;s worth considering this week, and why — ranked by form and how kind their
+          fixtures are, not who&apos;s trending on social media.
+        </p>
+        <PremiumGate>
+          <TransferShortlist players={snapshot.players} fixturesByTeam={fixturesByTeam} />
         </PremiumGate>
       </section>
 
