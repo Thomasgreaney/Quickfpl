@@ -41,6 +41,15 @@ export function tierUnlocksPremium(levelName: string | null | undefined): boolea
   return GATED_TIER_WORDS.some((word) => normalized.includes(word));
 }
 
+// Fergie-only features - the top tier's exclusive extras.
+const TOP_TIER_WORDS = ["fergie"];
+
+export function tierUnlocksTopTier(levelName: string | null | undefined): boolean {
+  if (!levelName) return false;
+  const normalized = levelName.trim().toLowerCase();
+  return TOP_TIER_WORDS.some((word) => normalized.includes(word));
+}
+
 export interface MembershipRecord {
   active: boolean;
   levelName: string | null;

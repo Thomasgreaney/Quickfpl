@@ -9,6 +9,7 @@ import SquadBuilder from "@/components/SquadBuilder";
 import ChipStrategy from "@/components/ChipStrategy";
 import TransferShortlist from "@/components/TransferShortlist";
 import WeakLinks from "@/components/WeakLinks";
+import PriceHistoryExplorer from "@/components/PriceHistoryExplorer";
 import PremiumGate from "@/components/PremiumGate";
 
 export const revalidate = 300;
@@ -20,6 +21,7 @@ const NAV_ITEMS = [
   { href: "#chip-strategy", label: "Chip strategy" },
   { href: "#transfer-shortlist", label: "Shortlist" },
   { href: "#weak-links", label: "Weak links" },
+  { href: "#price-history", label: "Price history" },
   { href: "#risers-fallers", label: "Movers" },
   { href: "#top-15", label: "Top 15" },
   { href: "#find-a-player", label: "Search" },
@@ -130,6 +132,17 @@ export default async function Home() {
         </p>
         <PremiumGate>
           <WeakLinks players={snapshot.players} fixturesByTeam={fixturesByTeam} />
+        </PremiumGate>
+      </section>
+
+      <section id="price-history" className="mb-10 scroll-mt-16">
+        <h2 className="mb-3 text-xl font-bold">Price history</h2>
+        <p className="mb-3 text-sm text-black/60 dark:text-white/60">
+          Every snapshot we&apos;ve recorded for any player, not just a glance sparkline — the full
+          chart, every price change dated, and the season total.
+        </p>
+        <PremiumGate requireTier="fergie">
+          <PriceHistoryExplorer players={snapshot.players} />
         </PremiumGate>
       </section>
 

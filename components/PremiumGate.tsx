@@ -1,6 +1,7 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
+import { tierUnlocksTopTier } from "@/lib/membership";
 
 const STORAGE_KEY = "quickfpl-member-email";
 
@@ -8,13 +9,40 @@ type Status = "idle" | "checking" | "unlocked" | "locked" | "error";
 
 export default function PremiumGate({
   tier = "Pep",
+  requireTier = "pep",
   children,
 }: {
   tier?: string;
+  /** "fergie" restricts this gate to the top tier only, not Pep too. */
+  requireTier?: "pep" | "fergie";
   children: React.ReactNode;
 }) {
   const [email, setEmail] = useState("");
   const [status, setStatus] = useState<Status>("idle");
+
+  const check = useCallback(
+    async (candidateEmail: string) => {
+      setStatus("checking");
+      try {
+        const res = await fetch(`/api/membership?email=${encodeURIComponent(candidateEmail)}`);
+        const data: { unlocked: boolean; levelName: string | null } = await res.json();
+        const passes = requireTier === "fergie" ? tierUnlocksTopTier(data.levelName) : data.unlocked;
+        if (passes) {
+          setStatus("unlocked");
+          try {
+            window.localStorage.setItem(STORAGE_KEY, candidateEmail);
+          } catch {
+            // storage unavailable - they'll just need to re-enter next visit
+          }
+        } else {
+          setStatus("locked");
+        }
+      } catch {
+        setStatus("error");
+      }
+    },
+    [requireTier]
+  );
 
   useEffect(() => {
     Promise.resolve().then(() => {
@@ -28,35 +56,19 @@ export default function PremiumGate({
         // ignore corrupt/unavailable storage
       }
     });
-  }, []);
-
-  async function check(candidateEmail: string) {
-    setStatus("checking");
-    try {
-      const res = await fetch(`/api/membership?email=${encodeURIComponent(candidateEmail)}`);
-      const data: { unlocked: boolean } = await res.json();
-      if (data.unlocked) {
-        setStatus("unlocked");
-        try {
-          window.localStorage.setItem(STORAGE_KEY, candidateEmail);
-        } catch {
-          // storage unavailable - they'll just need to re-enter next visit
-        }
-      } else {
-        setStatus("locked");
-      }
-    } catch {
-      setStatus("error");
-    }
-  }
+  }, [check]);
 
   if (status === "unlocked") return <>{children}</>;
 
+  const displayTier = requireTier === "fergie" ? "Fergie" : tier;
+
   return (
     <div className="rounded-lg border border-dashed border-black/15 bg-black/[.02] p-6 text-center dark:border-white/20 dark:bg-white/[.03]">
-      <p className="font-semibold">🔒 {tier} members only</p>
+      <p className="font-semibold">🔒 {displayTier} members only</p>
       <p className="mt-1 text-sm text-black/60 dark:text-white/60">
-        Already a Pep or Fergie member? Enter the email you used on Buy Me a Coffee.
+        {requireTier === "fergie"
+          ? "Already a Fergie member? Enter the email you used on Buy Me a Coffee."
+          : "Already a Pep or Fergie member? Enter the email you used on Buy Me a Coffee."}
       </p>
       <form
         onSubmit={(e) => {
@@ -83,7 +95,9 @@ export default function PremiumGate({
       </form>
       {status === "locked" && (
         <p className="mt-2 text-sm text-red-600 dark:text-red-400">
-          No active Pep/Fergie membership found for that email.
+          {requireTier === "fergie"
+            ? "No active Fergie membership found for that email."
+            : "No active Pep/Fergie membership found for that email."}
         </p>
       )}
       {status === "error" && (
