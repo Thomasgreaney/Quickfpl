@@ -1,6 +1,8 @@
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
+import { DndContext, useDraggable, useDroppable, PointerSensor, useSensor, useSensors } from "@dnd-kit/core";
+import type { DragEndEvent } from "@dnd-kit/core";
 import type { FixtureRun, Player, Position } from "@/lib/fpl-types";
 import { SQUAD_STORAGE_KEY, SQUAD_UPDATED_EVENT } from "@/lib/squad-storage";
 import { suggestBench } from "@/lib/bench";
@@ -155,6 +157,45 @@ export default function SquadBuilder({
     if (suggested.length === BENCH_SIZE) setBench(new Set(suggested));
   }
 
+  // Dragging one player onto another (same position only - a midfielder
+  // can't take a defender's spot) swaps which of the two is benched. The
+  // total number benched never changes, so this can't exceed BENCH_SIZE
+  // or bench both keepers - whichever of the pair was benched before is
+  // still the only one of the pair benched after.
+  function swapBenchStatus(idA: number, idB: number) {
+    setBench((prev) => {
+      const aBenched = prev.has(idA);
+      const bBenched = prev.has(idB);
+      if (aBenched === bBenched) return prev; // both starting or both benched - nothing to swap
+      const next = new Set(prev);
+      if (aBenched) {
+        next.delete(idA);
+        next.add(idB);
+      } else {
+        next.delete(idB);
+        next.add(idA);
+      }
+      return next;
+    });
+  }
+
+  const dragSensors = useSensors(
+    useSensor(PointerSensor, {
+      // Requires deliberate movement before a drag starts, so a plain tap
+      // still reaches the slot's own click handlers (remove / bench toggle).
+      activationConstraint: { distance: 8 },
+    })
+  );
+
+  function handleDragEnd(event: DragEndEvent) {
+    const { active, over } = event;
+    if (!over || active.id === over.id) return;
+    const activePosition = active.data.current?.position as Position | undefined;
+    const overPosition = over.data.current?.position as Position | undefined;
+    if (!activePosition || !overPosition || activePosition !== overPosition) return;
+    swapBenchStatus(Number(active.id), Number(over.id));
+  }
+
   function slotsForPosition(position: Position): { slot: Slot; player: Player }[] {
     return squad[position]
       .map((id, index): { slot: Slot; player: Player | undefined } => ({
@@ -220,57 +261,62 @@ export default function SquadBuilder({
 
       {view === "pitch" ? (
         isFull ? (
-          <div className="rounded-xl bg-gradient-to-b from-green-600 to-green-700 p-4 sm:p-6">
-            <div className="relative flex flex-col gap-4 rounded-lg border-2 border-white/40 py-6">
-              <div className="pointer-events-none absolute left-1/2 top-1/2 h-24 w-24 -translate-x-1/2 -translate-y-1/2 rounded-full border-2 border-white/20" />
-              {FORMATION.map(({ position }) => {
-                const starting = slotsForPosition(position).filter(({ player }) => !bench.has(player.id));
-                if (starting.length === 0) return null;
-                return (
-                  <div key={position} className="relative z-10 flex justify-center gap-2 px-2 sm:gap-4">
-                    {starting.map(({ slot, player }) => (
-                      <SquadSlot
+          <DndContext sensors={dragSensors} onDragEnd={handleDragEnd}>
+            <div className="rounded-xl bg-gradient-to-b from-green-600 to-green-700 p-4 sm:p-6">
+              <div className="relative flex flex-col gap-4 rounded-lg border-2 border-white/40 py-6">
+                <div className="pointer-events-none absolute left-1/2 top-1/2 h-24 w-24 -translate-x-1/2 -translate-y-1/2 rounded-full border-2 border-white/20" />
+                {FORMATION.map(({ position }) => {
+                  const starting = slotsForPosition(position).filter(({ player }) => !bench.has(player.id));
+                  if (starting.length === 0) return null;
+                  return (
+                    <div key={position} className="relative z-10 flex justify-center gap-2 px-2 sm:gap-4">
+                      {starting.map(({ slot, player }) => (
+                        <DraggableSquadSlot
+                          key={slotKey(slot)}
+                          slot={slot}
+                          player={player}
+                          benched={false}
+                          onOpen={() => setActiveSlot(slot)}
+                          onRemove={() => clearSlot(slot)}
+                          onToggleBench={() => toggleBench(player.id, position)}
+                        />
+                      ))}
+                    </div>
+                  );
+                })}
+              </div>
+
+              <div className="mt-4 rounded-lg bg-black/25 p-3">
+                <p className="mb-2 text-center text-[10px] font-bold uppercase tracking-wide text-white/70">
+                  Substitutes {bench.size < BENCH_SIZE && `(${bench.size}/${BENCH_SIZE})`}
+                </p>
+                {bench.size === 0 ? (
+                  <p className="text-center text-xs text-white/60">
+                    Nobody&apos;s benched yet — tap the badge on a player above, or use Auto-pick bench.
+                  </p>
+                ) : (
+                  <div className="flex flex-wrap justify-center gap-2 sm:gap-4">
+                    {FORMATION.flatMap(({ position }) =>
+                      slotsForPosition(position).filter(({ player }) => bench.has(player.id))
+                    ).map(({ slot, player }) => (
+                      <DraggableSquadSlot
                         key={slotKey(slot)}
                         slot={slot}
                         player={player}
-                        benched={false}
+                        benched={true}
                         onOpen={() => setActiveSlot(slot)}
                         onRemove={() => clearSlot(slot)}
-                        onToggleBench={() => toggleBench(player.id, position)}
+                        onToggleBench={() => toggleBench(player.id, slot.position)}
                       />
                     ))}
                   </div>
-                );
-              })}
-            </div>
-
-            <div className="mt-4 rounded-lg bg-black/25 p-3">
-              <p className="mb-2 text-center text-[10px] font-bold uppercase tracking-wide text-white/70">
-                Substitutes {bench.size < BENCH_SIZE && `(${bench.size}/${BENCH_SIZE})`}
-              </p>
-              {bench.size === 0 ? (
-                <p className="text-center text-xs text-white/60">
-                  Nobody&apos;s benched yet — tap the badge on a player above, or use Auto-pick bench.
+                )}
+                <p className="mt-2 text-center text-[10px] text-white/50">
+                  Drag a player onto one in the other group to swap them in.
                 </p>
-              ) : (
-                <div className="flex flex-wrap justify-center gap-2 sm:gap-4">
-                  {FORMATION.flatMap(({ position }) =>
-                    slotsForPosition(position).filter(({ player }) => bench.has(player.id))
-                  ).map(({ slot, player }) => (
-                    <SquadSlot
-                      key={slotKey(slot)}
-                      slot={slot}
-                      player={player}
-                      benched={true}
-                      onOpen={() => setActiveSlot(slot)}
-                      onRemove={() => clearSlot(slot)}
-                      onToggleBench={() => toggleBench(player.id, slot.position)}
-                    />
-                  ))}
-                </div>
-              )}
+              </div>
             </div>
-          </div>
+          </DndContext>
         ) : (
           <div className="rounded-xl bg-gradient-to-b from-green-600 to-green-700 p-4 sm:p-6">
             <div className="relative flex flex-col gap-4 rounded-lg border-2 border-white/40 py-6">
@@ -458,6 +504,51 @@ function SquadSlot({
           <span className="text-[10px] font-bold uppercase tracking-wide">{slot.position}</span>
         </button>
       )}
+    </div>
+  );
+}
+
+/** Wraps a filled SquadSlot as both a drag source and drop target (dnd-kit,
+ * split into a starting XI + substitutes view). Dropping one player on
+ * another swaps their bench status. A short drag threshold keeps the
+ * slot's own tap handlers (remove / toggle bench) working for a plain
+ * click. */
+function DraggableSquadSlot(props: {
+  slot: Slot;
+  player: Player;
+  benched: boolean;
+  onOpen: () => void;
+  onRemove: () => void;
+  onToggleBench: () => void;
+}) {
+  const { slot, player } = props;
+  const draggable = useDraggable({ id: player.id, data: { position: slot.position } });
+  const droppable = useDroppable({ id: player.id, data: { position: slot.position } });
+
+  const style: React.CSSProperties = {
+    transform: draggable.transform
+      ? `translate3d(${draggable.transform.x}px, ${draggable.transform.y}px, 0)`
+      : undefined,
+    opacity: draggable.isDragging ? 0.4 : 1,
+    zIndex: draggable.isDragging ? 20 : undefined,
+    touchAction: "none",
+    position: "relative",
+  };
+
+  return (
+    <div
+      ref={(node) => {
+        draggable.setNodeRef(node);
+        droppable.setNodeRef(node);
+      }}
+      style={style}
+      className={
+        droppable.isOver && !draggable.isDragging ? "rounded-md ring-2 ring-amber-400" : undefined
+      }
+      {...draggable.listeners}
+      {...draggable.attributes}
+    >
+      <SquadSlot {...props} />
     </div>
   );
 }
