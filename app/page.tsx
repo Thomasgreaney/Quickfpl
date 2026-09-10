@@ -10,6 +10,7 @@ import ChipStrategy from "@/components/ChipStrategy";
 import TransferShortlist from "@/components/TransferShortlist";
 import WeakLinks from "@/components/WeakLinks";
 import PriceHistoryExplorer from "@/components/PriceHistoryExplorer";
+import PricePredictor from "@/components/PricePredictor";
 import PremiumGate from "@/components/PremiumGate";
 
 export const revalidate = 300;
@@ -22,6 +23,7 @@ const NAV_ITEMS = [
   { href: "#transfer-shortlist", label: "Shortlist" },
   { href: "#weak-links", label: "Weak links" },
   { href: "#price-history", label: "Price history" },
+  { href: "#price-watch", label: "Price watch" },
   { href: "#risers-fallers", label: "Movers" },
   { href: "#top-15", label: "Top 15" },
   { href: "#find-a-player", label: "Search" },
@@ -143,6 +145,18 @@ export default async function Home() {
         </p>
         <PremiumGate requireTier="fergie">
           <PriceHistoryExplorer players={snapshot.players} />
+        </PremiumGate>
+      </section>
+
+      <section id="price-watch" className="mb-10 scroll-mt-16">
+        <h2 className="mb-3 text-xl font-bold">Price watch</h2>
+        <p className="mb-3 text-sm text-black/60 dark:text-white/60">
+          Who&apos;s closest to a price change before it happens — estimated from today&apos;s
+          transfer momentum. FPL doesn&apos;t publish its exact threshold, so treat this as a strong
+          signal, not a guarantee.
+        </p>
+        <PremiumGate>
+          <PricePredictor players={snapshot.players} />
         </PremiumGate>
       </section>
 
