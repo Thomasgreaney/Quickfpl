@@ -2,29 +2,53 @@
 
 import { useState } from "react";
 
-/** Generic silhouette shown when a player has no real photo available. */
-function PhotoPlaceholder({ size, height }: { size: number; height: number }) {
+// Try the crisp cutout size first; fall back to the smaller thumbnail size,
+// which the CDN sometimes has even when the larger crop is missing (new
+// signings, loanees, etc. can lag behind on the studio shot).
+const SIZES = ["250x250", "40x40"];
+
+const PALETTE = [
+  "bg-purple-600",
+  "bg-blue-600",
+  "bg-emerald-600",
+  "bg-amber-600",
+  "bg-rose-600",
+  "bg-cyan-600",
+  "bg-indigo-600",
+];
+
+function initials(name: string): string {
+  const letters = name
+    .trim()
+    .split(/\s+/)
+    .slice(0, 2)
+    .map((part) => part[0]?.toUpperCase() ?? "");
+  return letters.join("") || "?";
+}
+
+function colourFor(name: string): string {
+  let hash = 0;
+  for (let i = 0; i < name.length; i++) hash = (hash * 31 + name.charCodeAt(i)) >>> 0;
+  return PALETTE[hash % PALETTE.length];
+}
+
+/** Shown when no CDN photo is available for a player - initials on a
+ * deterministic colour so it's at least visually distinct, not a generic
+ * "no photo" icon repeated for every unphotographed player. */
+function PhotoPlaceholder({ size, name }: { size: number; name: string }) {
   return (
     <div
-      style={{ width: size, height }}
-      title="No photo available"
-      className="flex flex-shrink-0 items-center justify-center rounded-full bg-black/10 dark:bg-white/10"
+      style={{ width: size, height: size, fontSize: Math.max(10, Math.round(size * 0.36)) }}
+      title={name}
+      className={`flex flex-shrink-0 items-center justify-center rounded-full font-bold text-white ${colourFor(name)}`}
     >
-      <svg
-        viewBox="0 0 24 24"
-        width={Math.round(size * 0.6)}
-        height={Math.round(size * 0.6)}
-        fill="currentColor"
-        className="text-black/25 dark:text-white/25"
-        aria-hidden="true"
-      >
-        <path d="M12 12c2.7 0 4.9-2.2 4.9-4.9S14.7 2.2 12 2.2 7.1 4.4 7.1 7.1 9.3 12 12 12Zm0 2.4c-3.3 0-9.8 1.6-9.8 4.9v2.5h19.6v-2.5c0-3.3-6.5-4.9-9.8-4.9Z" />
-      </svg>
+      {initials(name)}
     </div>
   );
 }
 
-/** Official FPL player photo CDN. Falls back to a generic silhouette if it 404s. */
+/** Official FPL player photo CDN. Tries a couple of known sizes before
+ * falling back to an initials placeholder. */
 export default function PlayerPhoto({
   photoId,
   name,
@@ -34,21 +58,22 @@ export default function PlayerPhoto({
   name: string;
   size?: number;
 }) {
-  const [failed, setFailed] = useState(false);
+  const [attempt, setAttempt] = useState(0);
 
-  if (failed) {
-    return <PhotoPlaceholder size={size} height={size} />;
+  if (attempt >= SIZES.length) {
+    return <PhotoPlaceholder size={size} name={name} />;
   }
 
   return (
     // eslint-disable-next-line @next/next/no-img-element -- third-party CDN, no build-time optimization needed
     <img
-      src={`https://resources.premierleague.com/premierleague/photos/players/250x250/p${photoId}.png`}
+      key={SIZES[attempt]}
+      src={`https://resources.premierleague.com/premierleague/photos/players/${SIZES[attempt]}/p${photoId}.png`}
       alt={name}
       width={size}
       height={size}
       className="flex-shrink-0 rounded-full bg-black/5 object-cover dark:bg-white/10"
-      onError={() => setFailed(true)}
+      onError={() => setAttempt((a) => a + 1)}
     />
   );
 }

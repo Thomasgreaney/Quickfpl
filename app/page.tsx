@@ -15,6 +15,16 @@ export const revalidate = 300;
 
 const TOP_N = 15;
 
+const NAV_ITEMS = [
+  { href: "#my-team", label: "My team" },
+  { href: "#chip-strategy", label: "Chip strategy" },
+  { href: "#transfer-shortlist", label: "Shortlist" },
+  { href: "#weak-links", label: "Weak links" },
+  { href: "#risers-fallers", label: "Movers" },
+  { href: "#top-15", label: "Top 15" },
+  { href: "#find-a-player", label: "Search" },
+];
+
 function timeAgo(iso: string): string {
   const diffMs = Date.now() - new Date(iso).getTime();
   const mins = Math.round(diffMs / 60000);
@@ -66,7 +76,22 @@ export default async function Home() {
         </p>
       </header>
 
-      <section className="mb-10">
+      <nav
+        aria-label="Jump to section"
+        className="sticky top-0 z-20 -mx-4 mb-8 flex gap-2 overflow-x-auto border-b border-black/10 bg-white/90 px-4 py-2.5 backdrop-blur [scrollbar-width:none] sm:-mx-6 sm:px-6 lg:-mx-8 lg:px-8 dark:border-white/10 dark:bg-black/85 [&::-webkit-scrollbar]:hidden"
+      >
+        {NAV_ITEMS.map((item) => (
+          <a
+            key={item.href}
+            href={item.href}
+            className="whitespace-nowrap rounded-full bg-black/5 px-3 py-1.5 text-sm font-medium text-black/70 hover:bg-black/10 dark:bg-white/10 dark:text-white/70 dark:hover:bg-white/15"
+          >
+            {item.label}
+          </a>
+        ))}
+      </nav>
+
+      <section id="my-team" className="mb-10 scroll-mt-16">
         <h2 className="mb-3 text-xl font-bold">My team</h2>
         <p className="mb-3 text-sm text-black/60 dark:text-white/60">
           Build your squad — pick 2 keepers, 5 defenders, 5 midfielders, 3 forwards. Saved on this
@@ -75,7 +100,7 @@ export default async function Home() {
         <SquadBuilder players={snapshot.players} fixturesByTeam={fixturesByTeam} />
       </section>
 
-      <section className="mb-10">
+      <section id="chip-strategy" className="mb-10 scroll-mt-16">
         <h2 className="mb-3 text-xl font-bold">Chip strategy</h2>
         <p className="mb-3 text-sm text-black/60 dark:text-white/60">
           When to play what you&apos;ve got left — worked out from real double and blank gameweeks,
@@ -86,7 +111,7 @@ export default async function Home() {
         </PremiumGate>
       </section>
 
-      <section className="mb-10">
+      <section id="transfer-shortlist" className="mb-10 scroll-mt-16">
         <h2 className="mb-3 text-xl font-bold">Transfer shortlist</h2>
         <p className="mb-3 text-sm text-black/60 dark:text-white/60">
           Who&apos;s worth considering this week, and why — ranked by form and how kind their
@@ -97,7 +122,7 @@ export default async function Home() {
         </PremiumGate>
       </section>
 
-      <section className="mb-10">
+      <section id="weak-links" className="mb-10 scroll-mt-16">
         <h2 className="mb-3 text-xl font-bold">Weak links</h2>
         <p className="mb-3 text-sm text-black/60 dark:text-white/60">
           Anyone in your saved squad who might be dragging you down — injuries, poor form or a rough
@@ -108,7 +133,7 @@ export default async function Home() {
         </PremiumGate>
       </section>
 
-      <section className="mb-10">
+      <section id="risers-fallers" className="mb-10 scroll-mt-16">
         <h2 className="mb-3 text-xl font-bold">Risers &amp; Fallers</h2>
         <p className="mb-3 text-sm text-black/60 dark:text-white/60">
           Who moved this gameweek, and whether it&apos;s worth caring about.
@@ -116,7 +141,7 @@ export default async function Home() {
         <RisersFallers players={snapshot.players} />
       </section>
 
-      <section className="mb-10">
+      <section id="top-15" className="mb-10 scroll-mt-16">
         <h2 className="mb-3 text-xl font-bold">Top 15</h2>
         <p className="mb-3 text-sm text-black/60 dark:text-white/60">
           The 15 most-owned players in the game, with each one&apos;s price trend. Tap a column to
@@ -125,7 +150,7 @@ export default async function Home() {
         <TopPlayers players={top15} />
       </section>
 
-      <section>
+      <section id="find-a-player" className="scroll-mt-16">
         <h2 className="mb-3 text-xl font-bold">Find a player</h2>
         <p className="mb-3 text-sm text-black/60 dark:text-white/60">
           Not in the top 15? Look anyone up.
