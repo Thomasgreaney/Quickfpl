@@ -11,6 +11,7 @@ import ChipStrategy from "@/components/ChipStrategy";
 import TransferShortlist from "@/components/TransferShortlist";
 import WeakLinks from "@/components/WeakLinks";
 import TransferPlanner from "@/components/TransferPlanner";
+import LeagueSimulator from "@/components/LeagueSimulator";
 import PriceHistoryExplorer from "@/components/PriceHistoryExplorer";
 import PricePredictor from "@/components/PricePredictor";
 import PlayerComparison from "@/components/PlayerComparison";
@@ -27,6 +28,7 @@ const NAV_ITEMS = [
   { href: "#transfer-shortlist", label: "Shortlist" },
   { href: "#weak-links", label: "Weak links" },
   { href: "#transfer-planner", label: "Planner" },
+  { href: "#league-simulator", label: "Mini-league" },
   { href: "#price-history", label: "Price history" },
   { href: "#price-watch", label: "Price watch" },
   { href: "#risers-fallers", label: "Movers" },
@@ -162,6 +164,19 @@ export default async function Home() {
         </p>
         <PremiumGate>
           <TransferPlanner players={snapshot.players} fixtures={fixtures} teams={snapshot.teams} />
+        </PremiumGate>
+      </section>
+
+      <section id="league-simulator" className="mb-10 scroll-mt-16">
+        <h2 className="mb-3 text-xl font-bold">Mini-league simulator</h2>
+        <p className="mb-3 text-sm text-black/60 dark:text-white/60">
+          Enter your mini-league ID and we&apos;ll project the rest of the season — win chance, top-3
+          chance, average final position. This runs off each manager&apos;s season-so-far scoring
+          average and a typical week-to-week spread, not a squad-by-squad simulation of everyone&apos;s
+          actual team, so treat it as a rough steer, not a forecast.
+        </p>
+        <PremiumGate>
+          <LeagueSimulator />
         </PremiumGate>
       </section>
 

@@ -110,3 +110,20 @@ export interface HistorySnapshot {
 export interface HistoryFile {
   snapshots: HistorySnapshot[];
 }
+
+// Minimal shape of https://fantasy.premierleague.com/api/leagues-classic/{id}/standings/
+export interface FplLeagueStandingsEntry {
+  entry: number; // manager's FPL team id
+  entry_name: string;
+  player_name: string;
+  rank: number;
+  total: number;
+}
+
+export interface FplLeagueStandings {
+  league: { id: number; name: string };
+  standings: {
+    has_next: boolean;
+    results: FplLeagueStandingsEntry[];
+  };
+}
