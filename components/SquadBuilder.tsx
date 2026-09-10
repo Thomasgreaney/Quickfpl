@@ -155,6 +155,17 @@ export default function SquadBuilder({
     if (suggested.length === BENCH_SIZE) setBench(new Set(suggested));
   }
 
+  function slotsForPosition(position: Position): { slot: Slot; player: Player }[] {
+    return squad[position]
+      .map((id, index): { slot: Slot; player: Player | undefined } => ({
+        slot: { position, index },
+        player: id !== null ? byId.get(id) : undefined,
+      }))
+      .filter((x): x is { slot: Slot; player: Player } => Boolean(x.player));
+  }
+
+  const isFull = filledCount === SQUAD_SIZE;
+
   return (
     <div>
       <div className="mb-3 flex flex-wrap items-center justify-between gap-2">
@@ -208,31 +219,85 @@ export default function SquadBuilder({
       </div>
 
       {view === "pitch" ? (
-        <div className="rounded-xl bg-gradient-to-b from-green-600 to-green-700 p-4 sm:p-6">
-          <div className="relative flex flex-col gap-4 rounded-lg border-2 border-white/40 py-6">
-            <div className="pointer-events-none absolute left-1/2 top-1/2 h-24 w-24 -translate-x-1/2 -translate-y-1/2 rounded-full border-2 border-white/20" />
-            {FORMATION.map(({ position, count }) => (
-              <div key={position} className="relative z-10 flex justify-center gap-2 px-2 sm:gap-4">
-                {Array.from({ length: count }).map((_, index) => {
-                  const slot: Slot = { position, index };
-                  const playerId = squad[position][index];
-                  const player = playerId !== null ? byId.get(playerId) : undefined;
-                  return (
+        isFull ? (
+          <div className="rounded-xl bg-gradient-to-b from-green-600 to-green-700 p-4 sm:p-6">
+            <div className="relative flex flex-col gap-4 rounded-lg border-2 border-white/40 py-6">
+              <div className="pointer-events-none absolute left-1/2 top-1/2 h-24 w-24 -translate-x-1/2 -translate-y-1/2 rounded-full border-2 border-white/20" />
+              {FORMATION.map(({ position }) => {
+                const starting = slotsForPosition(position).filter(({ player }) => !bench.has(player.id));
+                if (starting.length === 0) return null;
+                return (
+                  <div key={position} className="relative z-10 flex justify-center gap-2 px-2 sm:gap-4">
+                    {starting.map(({ slot, player }) => (
+                      <SquadSlot
+                        key={slotKey(slot)}
+                        slot={slot}
+                        player={player}
+                        benched={false}
+                        onOpen={() => setActiveSlot(slot)}
+                        onRemove={() => clearSlot(slot)}
+                        onToggleBench={() => toggleBench(player.id, position)}
+                      />
+                    ))}
+                  </div>
+                );
+              })}
+            </div>
+
+            <div className="mt-4 rounded-lg bg-black/25 p-3">
+              <p className="mb-2 text-center text-[10px] font-bold uppercase tracking-wide text-white/70">
+                Substitutes {bench.size < BENCH_SIZE && `(${bench.size}/${BENCH_SIZE})`}
+              </p>
+              {bench.size === 0 ? (
+                <p className="text-center text-xs text-white/60">
+                  Nobody&apos;s benched yet — tap the badge on a player above, or use Auto-pick bench.
+                </p>
+              ) : (
+                <div className="flex flex-wrap justify-center gap-2 sm:gap-4">
+                  {FORMATION.flatMap(({ position }) =>
+                    slotsForPosition(position).filter(({ player }) => bench.has(player.id))
+                  ).map(({ slot, player }) => (
                     <SquadSlot
                       key={slotKey(slot)}
                       slot={slot}
                       player={player}
-                      benched={playerId !== null && bench.has(playerId)}
+                      benched={true}
                       onOpen={() => setActiveSlot(slot)}
                       onRemove={() => clearSlot(slot)}
-                      onToggleBench={() => playerId !== null && toggleBench(playerId, position)}
+                      onToggleBench={() => toggleBench(player.id, slot.position)}
                     />
-                  );
-                })}
-              </div>
-            ))}
+                  ))}
+                </div>
+              )}
+            </div>
           </div>
-        </div>
+        ) : (
+          <div className="rounded-xl bg-gradient-to-b from-green-600 to-green-700 p-4 sm:p-6">
+            <div className="relative flex flex-col gap-4 rounded-lg border-2 border-white/40 py-6">
+              <div className="pointer-events-none absolute left-1/2 top-1/2 h-24 w-24 -translate-x-1/2 -translate-y-1/2 rounded-full border-2 border-white/20" />
+              {FORMATION.map(({ position, count }) => (
+                <div key={position} className="relative z-10 flex justify-center gap-2 px-2 sm:gap-4">
+                  {Array.from({ length: count }).map((_, index) => {
+                    const slot: Slot = { position, index };
+                    const playerId = squad[position][index];
+                    const player = playerId !== null ? byId.get(playerId) : undefined;
+                    return (
+                      <SquadSlot
+                        key={slotKey(slot)}
+                        slot={slot}
+                        player={player}
+                        benched={false}
+                        onOpen={() => setActiveSlot(slot)}
+                        onRemove={() => clearSlot(slot)}
+                        onToggleBench={() => playerId !== null && toggleBench(playerId, position)}
+                      />
+                    );
+                  })}
+                </div>
+              ))}
+            </div>
+          </div>
+        )
       ) : (
         <div className="space-y-4">
           {FORMATION.map(({ position, count }) => (
