@@ -6,6 +6,7 @@ import RisersFallers from "@/components/RisersFallers";
 import TopPlayers from "@/components/TopPlayers";
 import PlayerLookup from "@/components/PlayerLookup";
 import SquadBuilder from "@/components/SquadBuilder";
+import AiAssistant from "@/components/AiAssistant";
 import ChipStrategy from "@/components/ChipStrategy";
 import TransferShortlist from "@/components/TransferShortlist";
 import WeakLinks from "@/components/WeakLinks";
@@ -21,6 +22,7 @@ const TOP_N = 15;
 
 const NAV_ITEMS = [
   { href: "#my-team", label: "My team" },
+  { href: "#ai-assistant", label: "AI Assistant" },
   { href: "#chip-strategy", label: "Chip strategy" },
   { href: "#transfer-shortlist", label: "Shortlist" },
   { href: "#weak-links", label: "Weak links" },
@@ -106,6 +108,17 @@ export default async function Home() {
           device only.
         </p>
         <SquadBuilder players={snapshot.players} fixturesByTeam={fixturesByTeam} />
+      </section>
+
+      <section id="ai-assistant" className="mb-10 scroll-mt-16">
+        <h2 className="mb-3 text-xl font-bold">AI Assistant</h2>
+        <p className="mb-3 text-sm text-black/60 dark:text-white/60">
+          Ask it anything about your saved squad — grounded in real price, form and fixture data,
+          not a canned answer.
+        </p>
+        <PremiumGate requireTier="fergie">
+          <AiAssistant />
+        </PremiumGate>
       </section>
 
       <section id="chip-strategy" className="mb-10 scroll-mt-16">

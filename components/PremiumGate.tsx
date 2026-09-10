@@ -2,8 +2,7 @@
 
 import { useCallback, useEffect, useState } from "react";
 import { tierUnlocksTopTier } from "@/lib/membership";
-
-const STORAGE_KEY = "quickfpl-member-email";
+import { MEMBER_EMAIL_STORAGE_KEY as STORAGE_KEY } from "@/lib/member-storage";
 
 type Status = "idle" | "checking" | "unlocked" | "locked" | "error";
 
