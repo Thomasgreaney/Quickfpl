@@ -22,7 +22,14 @@ const FIXTURES_URL =
 const DATA_DIR = path.join(process.cwd(), "data");
 const OUTPUT_PATH = path.join(DATA_DIR, "gameweek-preview.json");
 const MODEL = "claude-opus-5";
-const MAX_OUTPUT_TOKENS = 900;
+// Opus 5 runs adaptive thinking by default, and thinking tokens count
+// against max_tokens - so this needs real headroom above the ~300-400
+// words of visible output, even though the write-up itself is short.
+// output_config.effort caps how much of that headroom thinking actually
+// uses, since this is a short, well-specified writing task, not deep
+// reasoning.
+const MAX_OUTPUT_TOKENS = 2000;
+const THINKING_EFFORT = "medium";
 const IN_FORM_POOL_SIZE = 25;
 
 // Generate once the deadline is within this window. Wide enough that a
@@ -133,9 +140,16 @@ ${inFormPlayers.join("\n")}`;
   const response = await client.messages.create({
     model: MODEL,
     max_tokens: MAX_OUTPUT_TOKENS,
+    output_config: { effort: THINKING_EFFORT },
     system: SYSTEM_PROMPT,
     messages: [{ role: "user", content: context }],
   });
+
+  if (response.stop_reason === "max_tokens") {
+    throw new Error(
+      "Claude's response hit the max_tokens limit before finishing - the stored preview would be truncated mid-sentence, so treating this as a failure rather than writing a broken file."
+    );
+  }
 
   const textBlock = response.content.find((b): b is Anthropic.TextBlock => b.type === "text");
   if (!textBlock?.text) {
