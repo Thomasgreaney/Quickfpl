@@ -1,5 +1,6 @@
 "use client";
 
+import { useEffect, useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
@@ -11,16 +12,56 @@ const NAV_ITEMS = [
   { href: "/assistant", label: "AI", icon: "🤖" },
 ];
 
+// Same links as the pill/tab nav, plus Pricing - which otherwise has no
+// spot in either of those (they're both capped at 5 items).
+const DRAWER_ITEMS = [...NAV_ITEMS, { href: "/pricing", label: "Pricing", icon: "🏷️" }];
+
 function isActive(pathname: string, href: string): boolean {
   if (href === "/") return pathname === "/";
   return pathname === href || pathname.startsWith(`${href}/`);
 }
 
-/** Site-wide navigation: a brand bar (logo + Buy Me a Coffee) on every
- * viewport, a horizontal pill nav on desktop, and a fixed bottom tab bar
- * on mobile. Keeps the same minimal styling as the old single-page nav. */
+function HamburgerIcon() {
+  return (
+    <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" className="h-5 w-5">
+      <path d="M3 5.5h14M3 10h14M3 14.5h14" />
+    </svg>
+  );
+}
+
+function CloseIcon() {
+  return (
+    <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" className="h-5 w-5">
+      <path d="M5 5l10 10M15 5l-10 10" />
+    </svg>
+  );
+}
+
+/** Site-wide navigation: a brand bar (logo + hamburger + Buy Me a Coffee)
+ * on every viewport, a horizontal pill nav on desktop, a fixed bottom tab
+ * bar on mobile, and a slide-out side drawer (behind the hamburger) that
+ * carries the same links plus Pricing, which doesn't fit in either the
+ * pills or the tab bar. */
 export default function SiteNav() {
   const pathname = usePathname();
+  const [drawerOpen, setDrawerOpen] = useState(false);
+
+  // Close on Escape and lock page scroll while open. Closing on link click
+  // is handled per-link below rather than by watching pathname, so the
+  // drawer dismisses immediately instead of waiting for navigation.
+  useEffect(() => {
+    if (!drawerOpen) return;
+    function onKeyDown(e: KeyboardEvent) {
+      if (e.key === "Escape") setDrawerOpen(false);
+    }
+    document.addEventListener("keydown", onKeyDown);
+    const previousOverflow = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+    return () => {
+      document.removeEventListener("keydown", onKeyDown);
+      document.body.style.overflow = previousOverflow;
+    };
+  }, [drawerOpen]);
 
   return (
     <>
@@ -55,6 +96,17 @@ export default function SiteNav() {
             >
               ☕ <span className="hidden sm:inline">Buy me a coffee</span>
             </a>
+
+            <button
+              type="button"
+              onClick={() => setDrawerOpen(true)}
+              aria-label="Open menu"
+              aria-expanded={drawerOpen}
+              aria-controls="site-drawer"
+              className="rounded-md p-1.5 text-black/70 hover:bg-black/5 dark:text-white/70 dark:hover:bg-white/10"
+            >
+              <HamburgerIcon />
+            </button>
           </div>
         </div>
       </div>
@@ -82,6 +134,63 @@ export default function SiteNav() {
           );
         })}
       </nav>
+
+      {/* Backdrop */}
+      <div
+        aria-hidden="true"
+        onClick={() => setDrawerOpen(false)}
+        className={`fixed inset-0 z-40 bg-black/40 transition-opacity ${
+          drawerOpen ? "pointer-events-auto opacity-100" : "pointer-events-none opacity-0"
+        }`}
+      />
+
+      {/* Side drawer */}
+      <div
+        id="site-drawer"
+        role="dialog"
+        aria-modal="true"
+        aria-label="Site menu"
+        className={`fixed inset-y-0 right-0 z-50 w-72 max-w-[85vw] border-l border-black/10 bg-white p-4 shadow-xl transition-transform dark:border-white/15 dark:bg-neutral-950 ${
+          drawerOpen ? "translate-x-0" : "translate-x-full"
+        }`}
+      >
+        <div className="mb-4 flex items-center justify-between">
+          <span className="text-lg font-black tracking-tight">
+            Quick<span className="text-purple-600">FPL</span>
+          </span>
+          <button
+            type="button"
+            onClick={() => setDrawerOpen(false)}
+            aria-label="Close menu"
+            className="rounded-md p-1.5 text-black/70 hover:bg-black/5 dark:text-white/70 dark:hover:bg-white/10"
+          >
+            <CloseIcon />
+          </button>
+        </div>
+
+        <nav aria-label="Site menu links" className="flex flex-col gap-1">
+          {DRAWER_ITEMS.map((item) => {
+            const active = isActive(pathname, item.href);
+            return (
+              <Link
+                key={item.href}
+                href={item.href}
+                onClick={() => setDrawerOpen(false)}
+                className={`flex items-center gap-3 rounded-md px-3 py-2 text-sm font-medium ${
+                  active
+                    ? "bg-purple-600 text-white"
+                    : "text-black/70 hover:bg-black/5 dark:text-white/70 dark:hover:bg-white/10"
+                }`}
+              >
+                <span aria-hidden="true" className="text-lg leading-none">
+                  {item.icon}
+                </span>
+                {item.label}
+              </Link>
+            );
+          })}
+        </nav>
+      </div>
     </>
   );
 }
