@@ -38,13 +38,17 @@ jobs:
 
       - name: Commit and push if a new preview was generated
         run: |
-          if git diff --quiet -- data/gameweek-preview.json; then
+          if [ ! -f data/gameweek-preview.json ]; then
+            echo "No new preview generated."
+            exit 0
+          fi
+          git add data/gameweek-preview.json
+          if git diff --cached --quiet -- data/gameweek-preview.json; then
             echo "No new preview generated."
             exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/gameweek-preview.json
           git commit -m "chore: generate gameweek preview"
           git pull --rebase origin "${GITHUB_REF_NAME}"
           git push origin "HEAD:${GITHUB_REF_NAME}"
