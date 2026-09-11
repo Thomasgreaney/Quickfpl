@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import type { FplRawFixture, Player, TeamRef } from "@/lib/fpl-types";
 import { analyzeGameweeks } from "@/lib/chips";
-import { buildPlanner, findChipWindows, type WeekOutlook } from "@/lib/transfer-planner";
+import { buildPlanner, buildPlannerSummary, findChipWindows, type WeekOutlook } from "@/lib/transfer-planner";
 import { SQUAD_UPDATED_EVENT, readSquadPlayerIds } from "@/lib/squad-storage";
 import PlayerPhoto from "./PlayerPhoto";
 
@@ -95,6 +95,10 @@ export default function TransferPlanner({
 
   return (
     <div>
+      <p className="mb-4 rounded-md bg-purple-50 px-3 py-2 text-sm font-semibold text-purple-800 dark:bg-purple-950/40 dark:text-purple-300">
+        {buildPlannerSummary(rows)}
+      </p>
+
       {chipWindows.length > 0 && (
         <ul className="mb-4 space-y-1.5">
           {chipWindows.map((flag, i) => (

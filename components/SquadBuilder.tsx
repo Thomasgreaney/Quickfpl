@@ -1,11 +1,12 @@
 "use client";
 
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { DndContext, useDraggable, useDroppable, PointerSensor, useSensor, useSensors } from "@dnd-kit/core";
 import type { DragEndEvent } from "@dnd-kit/core";
 import type { FixtureRun, Player, Position } from "@/lib/fpl-types";
 import { SQUAD_STORAGE_KEY, SQUAD_UPDATED_EVENT } from "@/lib/squad-storage";
 import { suggestBench } from "@/lib/bench";
+import { buildDemoSquad } from "@/lib/demo-squad";
 import PlayerPickerModal from "./PlayerPickerModal";
 import PlayerPhoto from "./PlayerPhoto";
 import FixtureChips from "./FixtureChips";
@@ -51,11 +52,20 @@ export default function SquadBuilder({
   const [squad, setSquad] = useState<Squad>(emptySquad);
   const [bench, setBench] = useState<Set<number>>(new Set());
   const [loaded, setLoaded] = useState(false);
+  const [isDemo, setIsDemo] = useState(false);
   const [view, setView] = useState<"pitch" | "list">("pitch");
   const [activeSlot, setActiveSlot] = useState<Slot | null>(null);
 
+  // Captured once - the mount-only load effect below intentionally always
+  // uses the players list as it was on first render, not a live prop.
+  const initialPlayers = useRef(players);
+
   // Load from localStorage after mount only, so server and first client
-  // render match (localStorage doesn't exist on the server).
+  // render match (localStorage doesn't exist on the server). A first-time
+  // visitor with nothing saved gets a realistic demo squad instead of an
+  // empty pitch - built here, not persisted, so it never leaks into other
+  // squad-aware tools (AI Assistant, Planner, etc.) as if it were real
+  // until the visitor actually touches it.
   useEffect(() => {
     Promise.resolve().then(() => {
       try {
@@ -73,6 +83,17 @@ export default function SquadBuilder({
           if (Array.isArray(parsed.bench)) {
             setBench(new Set(parsed.bench.filter((id): id is number => typeof id === "number")));
           }
+        } else {
+          const demo = buildDemoSquad(initialPlayers.current);
+          if (demo) {
+            const demoSquad = emptySquad();
+            for (const { position } of FORMATION) demoSquad[position] = [...demo[position]];
+            setSquad(demoSquad);
+            const demoIds = new Set(FORMATION.flatMap(({ position }) => demo[position]));
+            const demoPlayers = initialPlayers.current.filter((p) => demoIds.has(p.id));
+            setBench(new Set(suggestBench(demoPlayers)));
+            setIsDemo(true);
+          }
         }
       } catch {
         // ignore corrupt/unavailable storage
@@ -82,14 +103,20 @@ export default function SquadBuilder({
   }, []);
 
   useEffect(() => {
-    if (!loaded) return;
+    if (!loaded || isDemo) return;
     try {
       window.localStorage.setItem(SQUAD_STORAGE_KEY, JSON.stringify({ ...squad, bench: [...bench] }));
       window.dispatchEvent(new Event(SQUAD_UPDATED_EVENT));
     } catch {
       // storage unavailable (private browsing etc.) - squad just won't persist
     }
-  }, [squad, bench, loaded]);
+  }, [squad, bench, loaded, isDemo]);
+
+  function startOwnSquad() {
+    setSquad(emptySquad());
+    setBench(new Set());
+    setIsDemo(false);
+  }
 
   const byId = useMemo(() => new Map(players.map((p) => [p.id, p])), [players]);
 
@@ -106,6 +133,7 @@ export default function SquadBuilder({
   const remainingBudget = Math.max(0, BUDGET - totalValue);
 
   function fillSlot(slot: Slot, player: Player) {
+    setIsDemo(false);
     setSquad((prev) => {
       const next = { ...prev, [slot.position]: [...prev[slot.position]] };
       next[slot.position][slot.index] = player.id;
@@ -115,6 +143,7 @@ export default function SquadBuilder({
   }
 
   function clearSlot(slot: Slot) {
+    setIsDemo(false);
     const removedId = squad[slot.position][slot.index];
     setSquad((prev) => {
       const next = { ...prev, [slot.position]: [...prev[slot.position]] };
@@ -132,6 +161,7 @@ export default function SquadBuilder({
   }
 
   function toggleBench(playerId: number, position: Position) {
+    setIsDemo(false);
     setBench((prev) => {
       if (prev.has(playerId)) {
         const next = new Set(prev);
@@ -152,6 +182,7 @@ export default function SquadBuilder({
   }
 
   function autoPickBench() {
+    setIsDemo(false);
     const squadPlayers = [...usedIds].map((id) => byId.get(id)).filter((p): p is Player => Boolean(p));
     const suggested = suggestBench(squadPlayers);
     if (suggested.length === BENCH_SIZE) setBench(new Set(suggested));
@@ -163,6 +194,7 @@ export default function SquadBuilder({
   // or bench both keepers - whichever of the pair was benched before is
   // still the only one of the pair benched after.
   function swapBenchStatus(idA: number, idB: number) {
+    setIsDemo(false);
     setBench((prev) => {
       const aBenched = prev.has(idA);
       const bBenched = prev.has(idB);
@@ -209,6 +241,22 @@ export default function SquadBuilder({
 
   return (
     <div>
+      {isDemo && (
+        <div className="mb-3 flex flex-wrap items-center justify-between gap-3 rounded-lg border border-purple-600/30 bg-purple-50 px-3 py-2.5 dark:border-purple-400/30 dark:bg-purple-950/30">
+          <p className="text-sm text-purple-900 dark:text-purple-200">
+            <span className="font-semibold">This is a demo squad</span> — build your own below, or start from
+            scratch.
+          </p>
+          <button
+            type="button"
+            onClick={startOwnSquad}
+            className="whitespace-nowrap rounded-md border border-purple-600 px-3 py-1.5 text-sm font-semibold text-purple-700 hover:bg-purple-100 dark:text-purple-300 dark:hover:bg-purple-900/40"
+          >
+            Start my own squad
+          </button>
+        </div>
+      )}
+
       <div className="mb-3 flex flex-wrap items-center justify-between gap-2">
         <div className="inline-flex rounded-md border border-black/10 p-0.5 dark:border-white/15">
           <button

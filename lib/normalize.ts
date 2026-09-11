@@ -42,6 +42,7 @@ export function normalizeElement(el: FplRawElement, team: FplRawTeam): Player {
     totalPoints: el.total_points,
     status: el.status,
     news: el.news,
+    chanceOfPlayingNextRound: el.chance_of_playing_next_round,
     transfersInEvent: el.transfers_in_event,
     transfersOutEvent: el.transfers_out_event,
   };

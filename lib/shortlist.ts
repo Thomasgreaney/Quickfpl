@@ -68,3 +68,62 @@ export function buildShortlist(
 
   return result;
 }
+
+export interface ShortlistVerdict {
+  text: string;
+  /** true = a specific named swap; false = a softer note (no clear upgrade,
+   * or nothing in the saved squad to compare against). */
+  confident: boolean;
+}
+
+function scoreFor(p: Player, fixturesByTeam: Record<number, FixtureRun[]>): number {
+  return p.form - averageDifficulty(fixturesByTeam[p.teamId]);
+}
+
+const CLEAR_UPGRADE_FORM_GAP = 0.5;
+const SIMILAR_PRICE_THRESHOLD = 0.3; // £m
+
+/** A direct, named "sell X, bring in Y" call for a shortlist pick, built
+ * from the visitor's own saved squad - or an honest, softer note when
+ * there isn't enough to go on (no squad, no player in this position, or
+ * the current squad player isn't actually a clear downgrade). Grounded
+ * entirely in form and price, both already-fetched real numbers - no
+ * separate points-projection model invented for this. */
+export function buildShortlistVerdict(
+  entry: ShortlistEntry,
+  squadPlayersInPosition: Player[],
+  fixturesByTeam: Record<number, FixtureRun[]>
+): ShortlistVerdict {
+  if (squadPlayersInPosition.length === 0) {
+    return {
+      text: `No ${entry.player.position} in your saved squad to compare against - on form and fixtures alone, this one's worth watching.`,
+      confident: false,
+    };
+  }
+
+  const weakest = [...squadPlayersInPosition].sort(
+    (a, b) => scoreFor(a, fixturesByTeam) - scoreFor(b, fixturesByTeam)
+  )[0];
+
+  const formGap = entry.player.form - weakest.form;
+  if (formGap < CLEAR_UPGRADE_FORM_GAP) {
+    return {
+      text: `Not a clear upgrade on ${weakest.name} right now based on recent form - worth watching rather than an immediate swap.`,
+      confident: false,
+    };
+  }
+
+  const priceDiff = entry.player.price - weakest.price;
+  const priceText =
+    Math.abs(priceDiff) < SIMILAR_PRICE_THRESHOLD
+      ? "similar price"
+      : priceDiff > 0
+        ? `£${priceDiff.toFixed(1)}m more`
+        : `£${Math.abs(priceDiff).toFixed(1)}m cheaper`;
+  const projectedPoints = Math.round(formGap * 3);
+
+  return {
+    text: `Sell ${weakest.name}, bring in ${entry.player.name} - ${priceText}, roughly +${projectedPoints} points over the next 3 gameweeks based on recent form.`,
+    confident: true,
+  };
+}

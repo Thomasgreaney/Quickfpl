@@ -60,7 +60,7 @@ export default function WeakLinks({
 
   return (
     <ul className="space-y-2">
-      {weakLinks.map(({ player, isInjuryConcern, reason }) => (
+      {weakLinks.map(({ player, isInjuryConcern, reason, action }) => (
         <li
           key={player.id}
           className="flex gap-3 rounded-lg border border-black/10 bg-white p-3 dark:border-white/15 dark:bg-neutral-900"
@@ -85,6 +85,7 @@ export default function WeakLinks({
               <FixtureChips fixtures={fixturesByTeam[player.teamId]} />
             </div>
             <p className="mt-1 text-sm text-black/80 dark:text-white/80">{reason}</p>
+            <p className="mt-1.5 text-sm font-semibold text-purple-700 dark:text-purple-400">→ {action}</p>
           </div>
         </li>
       ))}

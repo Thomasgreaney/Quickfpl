@@ -47,6 +47,23 @@ function findRoughPatch(weeks: WeekOutlook[]): PlannerRow["roughPatch"] {
   return null;
 }
 
+/** A one-line, direct call on when to make your move - built from the
+ * single worst-affected squad player's own rough patch (already computed
+ * for the row list below), rather than leaving the whole table for the
+ * visitor to scan themselves. Says so plainly when there's nothing
+ * urgent, rather than forcing a confident-sounding deadline out of a
+ * squad with no real red flags in the window. */
+export function buildPlannerSummary(rows: PlannerRow[]): string {
+  const worst = rows[0];
+  if (!worst || !worst.roughPatch) {
+    return `No real red flags in the next ${WINDOW} gameweeks for your saved squad - nothing urgent to plan a transfer around right now.`;
+  }
+  const { fromEvent, toEvent } = worst.roughPatch;
+  const moveByEvent = Math.max(1, fromEvent - 1);
+  const patchText = fromEvent === toEvent ? `GW${fromEvent}` : `GW${fromEvent}–${toEvent}`;
+  return `Best window to make your move: Gameweek ${moveByEvent}, before ${worst.player.name}'s fixtures turn (${patchText}).`;
+}
+
 /** For a saved squad, a week-by-week fixture outlook over the next few
  * gameweeks, ranked worst-first so the players most worth planning a
  * transfer around surface at the top. */

@@ -75,6 +75,7 @@ export interface Player {
   totalPoints: number;
   status: string;
   news: string;
+  chanceOfPlayingNextRound: number | null; // FPL's own published percent, when they've set one
   transfersInEvent: number;
   transfersOutEvent: number;
 }
