@@ -5,6 +5,9 @@ import { buildFixtureRuns } from "@/lib/fixtures";
 import type { PlayerWithSparkline } from "@/lib/fpl-types";
 import GameweekPreview from "@/components/GameweekPreview";
 import CollapsibleSection from "@/components/CollapsibleSection";
+import LocalTime from "@/components/LocalTime";
+import DeadlineCountdown from "@/components/DeadlineCountdown";
+import MembershipComparison from "@/components/MembershipComparison";
 import RisersFallers from "@/components/RisersFallers";
 import TopPlayers from "@/components/TopPlayers";
 import PlayerLookup from "@/components/PlayerLookup";
@@ -40,17 +43,6 @@ const NAV_ITEMS = [
   { href: "#find-a-player", label: "Search" },
 ];
 
-function timeAgo(iso: string): string {
-  const diffMs = Date.now() - new Date(iso).getTime();
-  const mins = Math.round(diffMs / 60000);
-  if (mins < 1) return "just now";
-  if (mins < 60) return `${mins} min${mins === 1 ? "" : "s"} ago`;
-  const hours = Math.round(mins / 60);
-  if (hours < 24) return `${hours} hour${hours === 1 ? "" : "s"} ago`;
-  const days = Math.round(hours / 24);
-  return `${days} day${days === 1 ? "" : "s"} ago`;
-}
-
 export default async function Home() {
   const [snapshot, fixtures] = await Promise.all([getLiveSnapshot(), getLiveFixtures()]);
   const history = await readHistory();
@@ -69,6 +61,11 @@ export default async function Home() {
   return (
     <main className="mx-auto w-full max-w-6xl flex-1 px-4 py-8 sm:px-6 lg:px-8">
       <header className="mb-8">
+        {snapshot.nextDeadlineTime && snapshot.nextEventName && (
+          <div className="mb-3">
+            <DeadlineCountdown deadline={snapshot.nextDeadlineTime} eventName={snapshot.nextEventName} />
+          </div>
+        )}
         <div className="flex flex-wrap items-start justify-between gap-3">
           <h1 className="text-3xl font-black tracking-tight sm:text-4xl">
             Quick<span className="text-purple-600">FPL</span>
@@ -87,7 +84,7 @@ export default async function Home() {
           time. No fluff, just the numbers.
         </p>
         <p className="mt-3 text-xs text-black/40 dark:text-white/40">
-          Data pulled straight from the official FPL API · updated {timeAgo(snapshot.fetchedAt)}
+          Data pulled straight from the official FPL API · Updated <LocalTime iso={snapshot.fetchedAt} />
           {moves.length > 0 && ` · ${moves.length} price move${moves.length === 1 ? "" : "s"} since our last check`}
         </p>
       </header>
@@ -113,8 +110,13 @@ export default async function Home() {
         </section>
       )}
 
+      <section className="mb-10">
+        <MembershipComparison />
+      </section>
+
       <CollapsibleSection
         id="my-team"
+        icon="👕"
         title="My team"
         defaultOpen
         description="Build your squad — pick 2 keepers, 5 defenders, 5 midfielders, 3 forwards. Saved on this device only."
@@ -124,6 +126,7 @@ export default async function Home() {
 
       <CollapsibleSection
         id="ai-assistant"
+        icon="🤖"
         title="AI Assistant"
         description="Ask it anything about your saved squad — grounded in real price, form and fixture data, not a canned answer."
       >
@@ -134,6 +137,7 @@ export default async function Home() {
 
       <CollapsibleSection
         id="chip-strategy"
+        icon="🃏"
         title="Chip strategy"
         description="When to play what you've got left — worked out from real double and blank gameweeks, not vibes."
       >
@@ -144,6 +148,7 @@ export default async function Home() {
 
       <CollapsibleSection
         id="transfer-shortlist"
+        icon="🔄"
         title="Transfer shortlist"
         description="Who's worth considering this week, and why — ranked by form and how kind their fixtures are, not who's trending on social media."
       >
@@ -154,6 +159,7 @@ export default async function Home() {
 
       <CollapsibleSection
         id="weak-links"
+        icon="⚠️"
         title="Weak links"
         description="Anyone in your saved squad who might be dragging you down — injuries, poor form or a rough run of fixtures."
       >
@@ -164,6 +170,7 @@ export default async function Home() {
 
       <CollapsibleSection
         id="transfer-planner"
+        icon="🗓️"
         title="Transfer planner"
         description="Your saved squad's next 5 gameweeks at a glance — who's got a rough patch coming, and any real chip windows worth planning around."
       >
@@ -174,6 +181,7 @@ export default async function Home() {
 
       <CollapsibleSection
         id="league-simulator"
+        icon="🏆"
         title="Mini-league simulator"
         description="Enter your mini-league ID and we'll project the rest of the season — win chance, top-3 chance, average final position. This runs off each manager's season-so-far scoring average and a typical week-to-week spread, not a squad-by-squad simulation of everyone's actual team, so treat it as a rough steer, not a forecast."
       >
@@ -184,6 +192,7 @@ export default async function Home() {
 
       <CollapsibleSection
         id="price-history"
+        icon="📈"
         title="Price history"
         description="Every snapshot we've recorded for any player, not just a glance sparkline — the full chart, every price change dated, and the season total."
       >
@@ -194,6 +203,7 @@ export default async function Home() {
 
       <CollapsibleSection
         id="price-watch"
+        icon="👀"
         title="Price watch"
         description="Who's closest to a price change before it happens — estimated from today's transfer momentum. FPL doesn't publish its exact threshold, so treat this as a strong signal, not a guarantee."
       >
@@ -204,6 +214,7 @@ export default async function Home() {
 
       <CollapsibleSection
         id="risers-fallers"
+        icon="📊"
         title="Risers & Fallers"
         defaultOpen
         description="Who moved this gameweek, and whether it's worth caring about."
@@ -213,6 +224,7 @@ export default async function Home() {
 
       <CollapsibleSection
         id="top-15"
+        icon="⭐"
         title="Top 15"
         defaultOpen
         description="The 15 most-owned players in the game, with each one's price trend. Tap a column to sort."
@@ -222,6 +234,7 @@ export default async function Home() {
 
       <CollapsibleSection
         id="compare"
+        icon="⚖️"
         title="Compare players"
         description="Pick any two and see price, form, points, ownership and fixtures side by side. No verdict — make your own mind up."
       >
@@ -230,6 +243,7 @@ export default async function Home() {
 
       <CollapsibleSection
         id="find-a-player"
+        icon="🔍"
         title="Find a player"
         defaultOpen
         description="Not in the top 15? Look anyone up."

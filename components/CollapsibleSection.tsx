@@ -4,21 +4,30 @@
  * whether it's open or not. */
 export default function CollapsibleSection({
   id,
+  icon,
   title,
   description,
   defaultOpen = false,
   children,
 }: {
   id: string;
+  icon: string;
   title: string;
   description?: React.ReactNode;
   defaultOpen?: boolean;
   children: React.ReactNode;
 }) {
   return (
-    <details id={id} className="group scroll-mt-16" open={defaultOpen}>
+    <details
+      id={id}
+      className="group mb-6 scroll-mt-16 border-t border-black/10 pt-6 dark:border-white/10"
+      open={defaultOpen}
+    >
       <summary className="flex cursor-pointer list-none items-center justify-between gap-3 py-1 [&::-webkit-details-marker]:hidden">
-        <h2 className="text-xl font-bold">{title}</h2>
+        <h2 className="flex items-center gap-2 text-xl font-bold">
+          <span aria-hidden="true">{icon}</span>
+          {title}
+        </h2>
         <svg
           viewBox="0 0 20 20"
           fill="currentColor"

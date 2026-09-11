@@ -92,6 +92,9 @@ export interface TeamRef {
 export interface DataSnapshot {
   fetchedAt: string;
   currentEventId: number | null;
+  nextEventId: number | null;
+  nextEventName: string | null;
+  nextDeadlineTime: string | null;
   players: Player[];
   teams: TeamRef[];
 }

@@ -53,9 +53,13 @@ export function buildSnapshot(raw: FplBootstrapStatic): DataSnapshot {
   const teamsById = new Map(raw.teams.map((t) => [t.id, t]));
   const players = raw.elements.map((el) => normalizeElement(el, teamsById.get(el.team) ?? UNKNOWN_TEAM));
   const currentEvent = raw.events.find((e) => e.is_current) ?? raw.events.find((e) => e.is_next);
+  const nextEvent = raw.events.find((e) => e.is_next) ?? raw.events.find((e) => !e.finished) ?? null;
   return {
     fetchedAt: new Date().toISOString(),
     currentEventId: currentEvent?.id ?? null,
+    nextEventId: nextEvent?.id ?? null,
+    nextEventName: nextEvent?.name ?? null,
+    nextDeadlineTime: nextEvent?.deadline_time ?? null,
     players,
     teams: raw.teams.map((t) => ({ id: t.id, name: t.name, short: t.short_name })),
   };
