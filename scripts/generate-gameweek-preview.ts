@@ -22,7 +22,7 @@ const FIXTURES_URL =
 const DATA_DIR = path.join(process.cwd(), "data");
 const OUTPUT_PATH = path.join(DATA_DIR, "gameweek-preview.json");
 const MODEL = "claude-opus-5";
-const MAX_OUTPUT_TOKENS = 2000;
+const MAX_OUTPUT_TOKENS = 900;
 const IN_FORM_POOL_SIZE = 25;
 
 // Generate once the deadline is within this window. Wide enough that a
@@ -57,15 +57,17 @@ function difficultyLabel(d: number): string {
 
 const SYSTEM_PROMPT = `You write the QuickFPL gameweek preview - a short article published about 2 days before each gameweek's deadline. Match QuickFPL's voice: blunt, no fluff, straight-talking, confident but not hyperbolic.
 
-Ground everything in the fixture and form data you're given - the fixture difficulty ratings are FPL's own, not your guess, and "in form" is drawn from real recent scoring. Don't invent stats for a player or team not in the data. Never use markdown - no asterisks, no bold/italic markers, no headers, no bullet points. Write in plain paragraphs.
+Ground everything in the fixture and form data you're given - the fixture difficulty ratings are FPL's own, not your guess, and "in form" is drawn from real recent scoring. Don't invent stats for a player or team not in the data.
+
+Keep it short and simple - readers should be able to skim it in a few seconds. Write in plain paragraphs - no headers, no bullet points. The only markup allowed is wrapping the handful of things that actually matter in double asterisks, e.g. **Haaland** or **tough fixture run** - use it sparingly (a handful of times total across the whole piece), only on player names, team names and standout stats, never on whole sentences.
 
 Respond in exactly this format, with both section labels on their own line:
 
 TEASER:
-2-3 sentences that hook the reader into the gameweek without giving away the specific predictions - this part is shown to every visitor, including non-members.
+1-2 short sentences that hook the reader into the gameweek without giving away the specific predictions - this part is shown to every visitor, including non-members.
 
 FULL:
-The complete preview, for paying members only. Cover: which teams look set for a good gameweek based on their fixture difficulty and which face a tough one; a handful of named players in good form with kind fixtures who look set to return well; and a differential or two worth a punt (lower-owned, good form, kind fixture). Ground every claim in the numbers you were given. Aim for 4-6 short paragraphs.`;
+The complete preview, for paying members only. Cover, briefly: which teams have kind fixtures this gameweek and which face a tough one; 2-3 named players in good form with kind fixtures who look set to return well; and one differential worth a punt (lower-owned, good form, kind fixture). Ground every claim in the numbers you were given. 2-3 short paragraphs, no padding - every sentence should earn its place.`;
 
 async function main() {
   const raw = await fetchFplJson<FplBootstrapStatic>(BOOTSTRAP_URL);

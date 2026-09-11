@@ -1,6 +1,25 @@
 import type { GameweekPreview as GameweekPreviewData } from "@/lib/gameweek-preview";
 import PremiumGate from "./PremiumGate";
 
+/** Splits on **double-asterisk** spans and renders them as highlights -
+ * the model is asked to wrap the handful of things worth a reader's
+ * attention (a player, a team, a standout stat) in these. Any stray or
+ * unmatched asterisks just pass through as plain text. */
+function withHighlights(text: string): React.ReactNode[] {
+  return text.split(/(\*\*[^*]+\*\*)/g).map((part, i) => {
+    const match = part.match(/^\*\*([^*]+)\*\*$/);
+    if (!match) return part;
+    return (
+      <mark
+        key={i}
+        className="rounded bg-purple-100 px-1 font-semibold text-purple-900 dark:bg-purple-900/50 dark:text-purple-200"
+      >
+        {match[1]}
+      </mark>
+    );
+  });
+}
+
 function Paragraphs({ text }: { text: string }) {
   return (
     <>
@@ -9,7 +28,7 @@ function Paragraphs({ text }: { text: string }) {
         .filter(Boolean)
         .map((p, i) => (
           <p key={i} className="mb-3 text-black/80 last:mb-0 dark:text-white/80">
-            {p}
+            {withHighlights(p)}
           </p>
         ))}
     </>
