@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
+import SiteNav from "@/components/SiteNav";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -50,7 +51,8 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
-        {children}
+        <SiteNav />
+        <div className="flex flex-1 flex-col pb-16 md:pb-0">{children}</div>
         <Analytics />
       </body>
     </html>

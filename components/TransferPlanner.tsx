@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Link from "next/link";
 import type { FplRawFixture, Player, TeamRef } from "@/lib/fpl-types";
 import { analyzeGameweeks } from "@/lib/chips";
 import { buildPlanner, findChipWindows, type WeekOutlook } from "@/lib/transfer-planner";
@@ -67,7 +68,11 @@ export default function TransferPlanner({
   if (squadIds.length === 0) {
     return (
       <p className="text-sm text-black/50 dark:text-white/50">
-        Save a squad in &quot;My team&quot; above and we&apos;ll map out your next few gameweeks.
+        Save a squad on the{" "}
+        <Link href="/squad" className="underline underline-offset-2 hover:text-purple-600 dark:hover:text-purple-400">
+          Squad
+        </Link>{" "}
+        page and we&apos;ll map out your next few gameweeks.
       </p>
     );
   }

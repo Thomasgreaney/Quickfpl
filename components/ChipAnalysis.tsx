@@ -1,13 +1,17 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Link from "next/link";
 import type { FplRawFixture, Player, TeamRef } from "@/lib/fpl-types";
 import { analyzeGameweeks, recommendChips, CHIP_LABELS, type ChipType } from "@/lib/chips";
 import { SQUAD_UPDATED_EVENT, readSquadPlayerIds } from "@/lib/squad-storage";
+import { CHIPS_USED_UPDATED_EVENT, readUsedChips } from "@/lib/chip-tracker-storage";
 
 const ALL_CHIPS: ChipType[] = ["wildcard", "freehit", "benchboost", "triplecaptain"];
 
-export default function ChipStrategy({
+/** Pep-tier chip-timing analysis. Reads which chips are left from the free
+ * tracker on /squad (ChipTracker) rather than owning that state itself. */
+export default function ChipAnalysis({
   players,
   fixtures,
   teams,
@@ -21,29 +25,27 @@ export default function ChipStrategy({
   const [loaded, setLoaded] = useState(false);
 
   useEffect(() => {
-    function reload() {
+    function reloadSquad() {
       setSquadIds(readSquadPlayerIds());
+    }
+    function reloadChips() {
+      const used = readUsedChips();
+      setRemaining(new Set(ALL_CHIPS.filter((c) => !used.has(c))));
     }
     // Initial read, deferred so server and first client render match
     // (localStorage doesn't exist on the server).
     Promise.resolve().then(() => {
-      reload();
+      reloadSquad();
+      reloadChips();
       setLoaded(true);
     });
-    // The squad builder lives in a separate component; listen for its
-    // updates so this panel stays in sync without a page reload.
-    window.addEventListener(SQUAD_UPDATED_EVENT, reload);
-    return () => window.removeEventListener(SQUAD_UPDATED_EVENT, reload);
+    window.addEventListener(SQUAD_UPDATED_EVENT, reloadSquad);
+    window.addEventListener(CHIPS_USED_UPDATED_EVENT, reloadChips);
+    return () => {
+      window.removeEventListener(SQUAD_UPDATED_EVENT, reloadSquad);
+      window.removeEventListener(CHIPS_USED_UPDATED_EVENT, reloadChips);
+    };
   }, []);
-
-  function toggle(chip: ChipType) {
-    setRemaining((prev) => {
-      const next = new Set(prev);
-      if (next.has(chip)) next.delete(chip);
-      else next.add(chip);
-      return next;
-    });
-  }
 
   const byId = new Map(players.map((p) => [p.id, p]));
   const squadPlayers = squadIds.map((id) => byId.get(id)).filter((p): p is Player => Boolean(p));
@@ -53,37 +55,18 @@ export default function ChipStrategy({
 
   return (
     <div>
-      <p className="mb-3 text-sm text-black/60 dark:text-white/60">
-        Tick off the chips you&apos;ve already used. We&apos;ll rank the best upcoming gameweeks for
-        what&apos;s left, from real fixture data
-        {squadPlayers.length > 0
-          ? " and your saved squad."
-          : " — build your squad in the My Team section above for advice tailored to your actual team."}
-      </p>
-
-      <div className="mb-2 flex flex-wrap gap-2">
-        {ALL_CHIPS.map((chip) => (
-          <button
-            key={chip}
-            type="button"
-            onClick={() => toggle(chip)}
-            className={`rounded-md border px-3 py-1.5 text-sm font-medium ${
-              remaining.has(chip)
-                ? "border-purple-600 bg-purple-600 text-white"
-                : "border-black/10 bg-black/[.03] text-black/40 line-through dark:border-white/15 dark:bg-white/[.05] dark:text-white/40"
-            }`}
-          >
-            {CHIP_LABELS[chip]}
-          </button>
-        ))}
-      </div>
-      <p className="mb-4 text-xs text-black/40 dark:text-white/40">
-        Highlighted = still available. Tap one to mark it as used.
+      <p className="mb-4 text-sm text-black/60 dark:text-white/60">
+        Ranked from real fixture data{squadPlayers.length > 0 ? " and your saved squad" : ""} — tick
+        off which chips you&apos;ve used on the{" "}
+        <Link href="/squad" className="underline underline-offset-2 hover:text-purple-600 dark:hover:text-purple-400">
+          Squad
+        </Link>{" "}
+        page and this updates to match.
       </p>
 
       {!loaded ? null : advice.length === 0 ? (
         <p className="text-sm text-black/50 dark:text-white/50">
-          Mark at least one chip as available to get advice.
+          Mark at least one chip as available on the Squad page to get advice.
         </p>
       ) : (
         <div className="space-y-4">

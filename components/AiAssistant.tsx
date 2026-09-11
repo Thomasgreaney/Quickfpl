@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import Link from "next/link";
 import { SQUAD_UPDATED_EVENT, readSquadPlayerIds, readBenchPlayerIds } from "@/lib/squad-storage";
 import { MEMBER_EMAIL_STORAGE_KEY } from "@/lib/member-storage";
 
@@ -85,8 +86,11 @@ export default function AiAssistant() {
     <div>
       {squadIds.length === 0 && (
         <p className="mb-3 text-sm text-black/50 dark:text-white/50">
-          Save a squad in &quot;My team&quot; above for advice tailored to your actual team - you can
-          still ask general questions without one.
+          Save a squad on the{" "}
+          <Link href="/squad" className="underline underline-offset-2 hover:text-purple-600 dark:hover:text-purple-400">
+            Squad
+          </Link>{" "}
+          page for advice tailored to your actual team - you can still ask general questions without one.
         </p>
       )}
 

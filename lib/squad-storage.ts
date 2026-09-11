@@ -1,5 +1,5 @@
 // Shared localStorage key + change event so independent client components
-// (SquadBuilder, ChipStrategy) stay in sync without lifting state up.
+// (SquadBuilder, ChipAnalysis) stay in sync without lifting state up.
 export const SQUAD_STORAGE_KEY = "quickfpl-squad";
 export const SQUAD_UPDATED_EVENT = "quickfpl-squad-updated";
 

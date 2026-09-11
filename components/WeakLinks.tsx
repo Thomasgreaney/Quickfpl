@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Link from "next/link";
 import type { FixtureRun, Player } from "@/lib/fpl-types";
 import { buildWeakLinks } from "@/lib/weaklinks";
 import { SQUAD_UPDATED_EVENT, readSquadPlayerIds } from "@/lib/squad-storage";
@@ -38,7 +39,11 @@ export default function WeakLinks({
   if (squadIds.length === 0) {
     return (
       <p className="text-sm text-black/50 dark:text-white/50">
-        Save a squad in &quot;My team&quot; above and we&apos;ll flag anyone worth worrying about.
+        Save a squad on the{" "}
+        <Link href="/squad" className="underline underline-offset-2 hover:text-purple-600 dark:hover:text-purple-400">
+          Squad
+        </Link>{" "}
+        page and we&apos;ll flag anyone worth worrying about.
       </p>
     );
   }
