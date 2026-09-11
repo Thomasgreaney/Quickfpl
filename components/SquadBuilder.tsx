@@ -118,6 +118,15 @@ export default function SquadBuilder({
     setIsDemo(false);
   }
 
+  function clearSquad() {
+    if (typeof window !== "undefined" && !window.confirm("Clear your whole squad? This can't be undone.")) {
+      return;
+    }
+    setIsDemo(false);
+    setSquad(emptySquad());
+    setBench(new Set());
+  }
+
   const byId = useMemo(() => new Map(players.map((p) => [p.id, p])), [players]);
 
   const usedIds = useMemo(() => {
@@ -282,13 +291,25 @@ export default function SquadBuilder({
             List
           </button>
         </div>
-        <p className="text-xs text-black/50 dark:text-white/50">
-          {filledCount}/{SQUAD_SIZE} players · {fmtMoney(totalValue)} spent ·{" "}
-          <span className={remainingBudget <= 0 ? "font-semibold text-red-600 dark:text-red-400" : ""}>
-            {fmtMoney(remainingBudget)} left
-          </span>{" "}
-          of a {fmtMoney(BUDGET)} budget
-        </p>
+
+        <div className="flex flex-wrap items-center gap-3">
+          {filledCount > 0 && (
+            <button
+              type="button"
+              onClick={clearSquad}
+              className="whitespace-nowrap rounded-md border border-black/10 px-2.5 py-1 text-xs font-medium text-black/60 hover:bg-black/[.04] dark:border-white/15 dark:text-white/60 dark:hover:bg-white/[.06]"
+            >
+              Clear squad
+            </button>
+          )}
+          <p className="text-xs text-black/50 dark:text-white/50">
+            {filledCount}/{SQUAD_SIZE} players · {fmtMoney(totalValue)} spent ·{" "}
+            <span className={remainingBudget <= 0 ? "font-semibold text-red-600 dark:text-red-400" : ""}>
+              {fmtMoney(remainingBudget)} left
+            </span>{" "}
+            of a {fmtMoney(BUDGET)} budget
+          </p>
+        </div>
       </div>
 
       <div className="mb-3 flex flex-wrap items-center justify-between gap-2 rounded-lg border border-black/10 bg-black/[.02] px-3 py-2 dark:border-white/15 dark:bg-white/[.03]">

@@ -4,6 +4,8 @@ import { buildFixtureRuns } from "@/lib/fixtures";
 import CollapsibleSection from "@/components/CollapsibleSection";
 import SquadBuilder from "@/components/SquadBuilder";
 import ChipTracker from "@/components/ChipTracker";
+import PremiumGate from "@/components/PremiumGate";
+import TransferShortlist from "@/components/TransferShortlist";
 
 export const revalidate = 300;
 
@@ -33,6 +35,17 @@ export default async function SquadPage() {
         description="Build your squad — pick 2 keepers, 5 defenders, 5 midfielders, 3 forwards. Saved on this device only."
       >
         <SquadBuilder players={snapshot.players} fixturesByTeam={fixturesByTeam} />
+      </CollapsibleSection>
+
+      <CollapsibleSection
+        id="ai-transfer-recommendations"
+        icon="🤖"
+        title="AI transfer recommendations"
+        description="Who's worth bringing in this week, and why — ranked by form and fixtures, with a direct sell/buy call against your saved squad."
+      >
+        <PremiumGate>
+          <TransferShortlist players={snapshot.players} fixturesByTeam={fixturesByTeam} />
+        </PremiumGate>
       </CollapsibleSection>
 
       <CollapsibleSection
