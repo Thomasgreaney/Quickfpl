@@ -64,10 +64,27 @@ export interface ChipAdvice {
   chip: ChipType;
   candidates: ChipCandidate[]; // ranked best-first, up to 3, empty if nothing found
   emptyReason: string;
+  /** General, evergreen chip-timing strategy - not tied to this exact
+   * season or scraped from anywhere we can't verify, just the established
+   * FPL mechanic (chips reset at the Gameweek 19 deadline) and the
+   * well-known classic tradeoff for that chip. Shown alongside the real
+   * fixture-based pick above, not instead of it. */
+  strategyNote: string;
 }
 
 const MAX_CANDIDATES = 3;
 const NEAR_TERM_TC_WINDOW = 6; // gameweeks scanned for single-fixture captain picks
+
+const STRATEGY_NOTES: Record<ChipType, string> = {
+  wildcard:
+    "General strategy: many managers wildcard early (GW4–8) to fix squad-building mistakes and early injuries once real match data's in; others hold out for a clearer fixture swing. There's no single right week - it depends on your own squad's health, not the calendar.",
+  freehit:
+    "General strategy: classically saved for a genuine blank gameweek, when several of your players don't play at all - it lets you field a full-strength XI for one week without touching your real squad.",
+  benchboost:
+    "General strategy: classically saved for a double gameweek, when your whole squad gets two matches in the same week. Worth weighing against the Gameweek 19 deadline, when this chip set expires whether you've used it or not.",
+  triplecaptain:
+    "General strategy: classically saved for a double gameweek, when one player gets two matches for a bigger multiplier payoff. Using it on a strong single fixture instead is a real trade-off - and worth weighing against the Gameweek 19 deadline, when this chip set expires either way.",
+};
 
 function difficultyLabel(d: number): string {
   if (d <= 2) return "kind";
@@ -132,7 +149,12 @@ export function recommendChips(
           .join("; ");
         return { event, reason: `${doublers.length} of the relevant teams play twice — ${sample}.` };
       });
-      advice.push({ chip, candidates, emptyReason: `No double gameweeks yet. ${noneYetSuffix}` });
+      advice.push({
+        chip,
+        candidates,
+        emptyReason: `No double gameweeks yet. ${noneYetSuffix}`,
+        strategyNote: STRATEGY_NOTES.benchboost,
+      });
     } else if (chip === "triplecaptain") {
       // Triple Captain doesn't need a double gameweek - most weeks it's
       // about who has the kindest single fixture. Rank doubles above
@@ -174,10 +196,14 @@ export function recommendChips(
           suggestedPlayerName: player?.name,
         };
       });
+      const topIsDouble = options[0]?.isDouble ?? false;
       advice.push({
         chip,
         candidates,
         emptyReason: `Nothing in the next ${NEAR_TERM_TC_WINDOW} gameweeks to go on yet. ${noneYetSuffix}`,
+        strategyNote: topIsDouble
+          ? "This is exactly the kind of moment Triple Captain is usually saved for - a player with two matches in the gameweek, not just a kind single fixture."
+          : STRATEGY_NOTES.triplecaptain,
       });
     } else if (chip === "freehit") {
       const candidates: ChipCandidate[] = blankRanked.map(({ event, blankers }) => ({
@@ -186,7 +212,12 @@ export function recommendChips(
           .map((id) => shortById.get(id))
           .join(", ")}.`,
       }));
-      advice.push({ chip, candidates, emptyReason: `No blank gameweeks yet. ${noneYetSuffix}` });
+      advice.push({
+        chip,
+        candidates,
+        emptyReason: `No blank gameweeks yet. ${noneYetSuffix}`,
+        strategyNote: STRATEGY_NOTES.freehit,
+      });
     } else if (chip === "wildcard") {
       const combined = [
         ...doubleRanked.map((x) => ({ event: x.event, count: x.doublers.length, kind: "double" as const })),
@@ -206,6 +237,7 @@ export function recommendChips(
         chip,
         candidates,
         emptyReason: `No obvious trigger yet — use it when your squad's fixtures turn bad, not just because you're bored of it. ${noneYetSuffix}`,
+        strategyNote: STRATEGY_NOTES.wildcard,
       });
     }
   }

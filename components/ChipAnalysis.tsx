@@ -55,13 +55,18 @@ export default function ChipAnalysis({
 
   return (
     <div>
-      <p className="mb-4 text-sm text-black/60 dark:text-white/60">
+      <p className="mb-2 text-sm text-black/60 dark:text-white/60">
         Ranked from real fixture data{squadPlayers.length > 0 ? " and your saved squad" : ""} — tick
         off which chips you&apos;ve used on the{" "}
         <Link href="/squad" className="underline underline-offset-2 hover:text-purple-600 dark:hover:text-purple-400">
           Squad
         </Link>{" "}
         page and this updates to match.
+      </p>
+      <p className="mb-4 text-xs text-black/50 dark:text-white/50">
+        Reminder: this half&apos;s chips expire at the Gameweek 19 deadline (New Year) — a fresh set
+        unlocks for the second half of the season. That&apos;s real deadline pressure worth weighing
+        against waiting for the &quot;perfect&quot; gameweek.
       </p>
 
       {!loaded ? null : advice.length === 0 ? (
@@ -98,6 +103,10 @@ export default function ChipAnalysis({
                   ))}
                 </ol>
               )}
+
+              <p className="mt-2.5 border-t border-black/10 pt-2.5 text-xs text-black/50 dark:border-white/10 dark:text-white/50">
+                {a.strategyNote}
+              </p>
             </div>
           ))}
         </div>
