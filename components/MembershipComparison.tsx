@@ -3,12 +3,10 @@
 import { useState } from "react";
 import { MEMBER_EMAIL_STORAGE_KEY } from "@/lib/member-storage";
 
-// Fill in real £/month figures here once confirmed - shown as a link to
-// Buy Me a Coffee in the meantime rather than a guessed number.
 const PRICES: Record<"moyes" | "pep" | "fergie", string | null> = {
-  moyes: null,
-  pep: null,
-  fergie: null,
+  moyes: "£2/mo",
+  pep: "£5/mo",
+  fergie: "£7/mo",
 };
 
 const TIERS: {
