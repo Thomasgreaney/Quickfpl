@@ -4,6 +4,7 @@ import { readGameweekPreview } from "@/lib/gameweek-preview";
 import { buildFixtureRuns } from "@/lib/fixtures";
 import type { PlayerWithSparkline } from "@/lib/fpl-types";
 import GameweekPreview from "@/components/GameweekPreview";
+import CollapsibleSection from "@/components/CollapsibleSection";
 import RisersFallers from "@/components/RisersFallers";
 import TopPlayers from "@/components/TopPlayers";
 import PlayerLookup from "@/components/PlayerLookup";
@@ -112,139 +113,129 @@ export default async function Home() {
         </section>
       )}
 
-      <section id="my-team" className="mb-10 scroll-mt-16">
-        <h2 className="mb-3 text-xl font-bold">My team</h2>
-        <p className="mb-3 text-sm text-black/60 dark:text-white/60">
-          Build your squad — pick 2 keepers, 5 defenders, 5 midfielders, 3 forwards. Saved on this
-          device only.
-        </p>
+      <CollapsibleSection
+        id="my-team"
+        title="My team"
+        defaultOpen
+        description="Build your squad — pick 2 keepers, 5 defenders, 5 midfielders, 3 forwards. Saved on this device only."
+      >
         <SquadBuilder players={snapshot.players} fixturesByTeam={fixturesByTeam} />
-      </section>
+      </CollapsibleSection>
 
-      <section id="ai-assistant" className="mb-10 scroll-mt-16">
-        <h2 className="mb-3 text-xl font-bold">AI Assistant</h2>
-        <p className="mb-3 text-sm text-black/60 dark:text-white/60">
-          Ask it anything about your saved squad — grounded in real price, form and fixture data,
-          not a canned answer.
-        </p>
+      <CollapsibleSection
+        id="ai-assistant"
+        title="AI Assistant"
+        description="Ask it anything about your saved squad — grounded in real price, form and fixture data, not a canned answer."
+      >
         <PremiumGate requireTier="fergie">
           <AiAssistant />
         </PremiumGate>
-      </section>
+      </CollapsibleSection>
 
-      <section id="chip-strategy" className="mb-10 scroll-mt-16">
-        <h2 className="mb-3 text-xl font-bold">Chip strategy</h2>
-        <p className="mb-3 text-sm text-black/60 dark:text-white/60">
-          When to play what you&apos;ve got left — worked out from real double and blank gameweeks,
-          not vibes.
-        </p>
+      <CollapsibleSection
+        id="chip-strategy"
+        title="Chip strategy"
+        description="When to play what you've got left — worked out from real double and blank gameweeks, not vibes."
+      >
         <PremiumGate>
           <ChipStrategy players={snapshot.players} fixtures={fixtures} teams={snapshot.teams} />
         </PremiumGate>
-      </section>
+      </CollapsibleSection>
 
-      <section id="transfer-shortlist" className="mb-10 scroll-mt-16">
-        <h2 className="mb-3 text-xl font-bold">Transfer shortlist</h2>
-        <p className="mb-3 text-sm text-black/60 dark:text-white/60">
-          Who&apos;s worth considering this week, and why — ranked by form and how kind their
-          fixtures are, not who&apos;s trending on social media.
-        </p>
+      <CollapsibleSection
+        id="transfer-shortlist"
+        title="Transfer shortlist"
+        description="Who's worth considering this week, and why — ranked by form and how kind their fixtures are, not who's trending on social media."
+      >
         <PremiumGate>
           <TransferShortlist players={snapshot.players} fixturesByTeam={fixturesByTeam} />
         </PremiumGate>
-      </section>
+      </CollapsibleSection>
 
-      <section id="weak-links" className="mb-10 scroll-mt-16">
-        <h2 className="mb-3 text-xl font-bold">Weak links</h2>
-        <p className="mb-3 text-sm text-black/60 dark:text-white/60">
-          Anyone in your saved squad who might be dragging you down — injuries, poor form or a rough
-          run of fixtures.
-        </p>
+      <CollapsibleSection
+        id="weak-links"
+        title="Weak links"
+        description="Anyone in your saved squad who might be dragging you down — injuries, poor form or a rough run of fixtures."
+      >
         <PremiumGate>
           <WeakLinks players={snapshot.players} fixturesByTeam={fixturesByTeam} />
         </PremiumGate>
-      </section>
+      </CollapsibleSection>
 
-      <section id="transfer-planner" className="mb-10 scroll-mt-16">
-        <h2 className="mb-3 text-xl font-bold">Transfer planner</h2>
-        <p className="mb-3 text-sm text-black/60 dark:text-white/60">
-          Your saved squad&apos;s next 5 gameweeks at a glance — who&apos;s got a rough patch coming,
-          and any real chip windows worth planning around.
-        </p>
+      <CollapsibleSection
+        id="transfer-planner"
+        title="Transfer planner"
+        description="Your saved squad's next 5 gameweeks at a glance — who's got a rough patch coming, and any real chip windows worth planning around."
+      >
         <PremiumGate>
           <TransferPlanner players={snapshot.players} fixtures={fixtures} teams={snapshot.teams} />
         </PremiumGate>
-      </section>
+      </CollapsibleSection>
 
-      <section id="league-simulator" className="mb-10 scroll-mt-16">
-        <h2 className="mb-3 text-xl font-bold">Mini-league simulator</h2>
-        <p className="mb-3 text-sm text-black/60 dark:text-white/60">
-          Enter your mini-league ID and we&apos;ll project the rest of the season — win chance, top-3
-          chance, average final position. This runs off each manager&apos;s season-so-far scoring
-          average and a typical week-to-week spread, not a squad-by-squad simulation of everyone&apos;s
-          actual team, so treat it as a rough steer, not a forecast.
-        </p>
+      <CollapsibleSection
+        id="league-simulator"
+        title="Mini-league simulator"
+        description="Enter your mini-league ID and we'll project the rest of the season — win chance, top-3 chance, average final position. This runs off each manager's season-so-far scoring average and a typical week-to-week spread, not a squad-by-squad simulation of everyone's actual team, so treat it as a rough steer, not a forecast."
+      >
         <PremiumGate>
           <LeagueSimulator />
         </PremiumGate>
-      </section>
+      </CollapsibleSection>
 
-      <section id="price-history" className="mb-10 scroll-mt-16">
-        <h2 className="mb-3 text-xl font-bold">Price history</h2>
-        <p className="mb-3 text-sm text-black/60 dark:text-white/60">
-          Every snapshot we&apos;ve recorded for any player, not just a glance sparkline — the full
-          chart, every price change dated, and the season total.
-        </p>
+      <CollapsibleSection
+        id="price-history"
+        title="Price history"
+        description="Every snapshot we've recorded for any player, not just a glance sparkline — the full chart, every price change dated, and the season total."
+      >
         <PremiumGate requireTier="fergie">
           <PriceHistoryExplorer players={snapshot.players} />
         </PremiumGate>
-      </section>
+      </CollapsibleSection>
 
-      <section id="price-watch" className="mb-10 scroll-mt-16">
-        <h2 className="mb-3 text-xl font-bold">Price watch</h2>
-        <p className="mb-3 text-sm text-black/60 dark:text-white/60">
-          Who&apos;s closest to a price change before it happens — estimated from today&apos;s
-          transfer momentum. FPL doesn&apos;t publish its exact threshold, so treat this as a strong
-          signal, not a guarantee.
-        </p>
+      <CollapsibleSection
+        id="price-watch"
+        title="Price watch"
+        description="Who's closest to a price change before it happens — estimated from today's transfer momentum. FPL doesn't publish its exact threshold, so treat this as a strong signal, not a guarantee."
+      >
         <PremiumGate>
           <PricePredictor players={snapshot.players} />
         </PremiumGate>
-      </section>
+      </CollapsibleSection>
 
-      <section id="risers-fallers" className="mb-10 scroll-mt-16">
-        <h2 className="mb-3 text-xl font-bold">Risers &amp; Fallers</h2>
-        <p className="mb-3 text-sm text-black/60 dark:text-white/60">
-          Who moved this gameweek, and whether it&apos;s worth caring about.
-        </p>
+      <CollapsibleSection
+        id="risers-fallers"
+        title="Risers & Fallers"
+        defaultOpen
+        description="Who moved this gameweek, and whether it's worth caring about."
+      >
         <RisersFallers players={snapshot.players} />
-      </section>
+      </CollapsibleSection>
 
-      <section id="top-15" className="mb-10 scroll-mt-16">
-        <h2 className="mb-3 text-xl font-bold">Top 15</h2>
-        <p className="mb-3 text-sm text-black/60 dark:text-white/60">
-          The 15 most-owned players in the game, with each one&apos;s price trend. Tap a column to
-          sort.
-        </p>
+      <CollapsibleSection
+        id="top-15"
+        title="Top 15"
+        defaultOpen
+        description="The 15 most-owned players in the game, with each one's price trend. Tap a column to sort."
+      >
         <TopPlayers players={top15} />
-      </section>
+      </CollapsibleSection>
 
-      <section id="compare" className="mb-10 scroll-mt-16">
-        <h2 className="mb-3 text-xl font-bold">Compare players</h2>
-        <p className="mb-3 text-sm text-black/60 dark:text-white/60">
-          Pick any two and see price, form, points, ownership and fixtures side by side. No verdict —
-          make your own mind up.
-        </p>
+      <CollapsibleSection
+        id="compare"
+        title="Compare players"
+        description="Pick any two and see price, form, points, ownership and fixtures side by side. No verdict — make your own mind up."
+      >
         <PlayerComparison players={snapshot.players} fixturesByTeam={fixturesByTeam} />
-      </section>
+      </CollapsibleSection>
 
-      <section id="find-a-player" className="scroll-mt-16">
-        <h2 className="mb-3 text-xl font-bold">Find a player</h2>
-        <p className="mb-3 text-sm text-black/60 dark:text-white/60">
-          Not in the top 15? Look anyone up.
-        </p>
+      <CollapsibleSection
+        id="find-a-player"
+        title="Find a player"
+        defaultOpen
+        description="Not in the top 15? Look anyone up."
+      >
         <PlayerLookup players={snapshot.players} fixturesByTeam={fixturesByTeam} />
-      </section>
+      </CollapsibleSection>
 
       <footer className="mt-12 border-t border-black/10 py-6 text-xs text-black/40 dark:border-white/10 dark:text-white/40">
         Not affiliated with the Premier League or Fantasy Premier League. Prices update automatically —
