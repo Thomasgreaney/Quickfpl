@@ -1,0 +1,50 @@
+name: Generate gameweek preview
+
+on:
+  schedule:
+    # Once a day is plenty - the script itself only actually calls Claude
+    # once we're within ~2.5 days of the next deadline and no preview has
+    # been generated for that gameweek yet, so most runs are a no-op.
+    - cron: "0 8 * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: gameweek-preview
+  cancel-in-progress: false
+
+jobs:
+  preview:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Generate preview if within the window
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: npm run preview
+
+      - name: Commit and push if a new preview was generated
+        run: |
+          if git diff --quiet -- data/gameweek-preview.json; then
+            echo "No new preview generated."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/gameweek-preview.json
+          git commit -m "chore: generate gameweek preview"
+          git pull --rebase origin "${GITHUB_REF_NAME}"
+          git push origin "HEAD:${GITHUB_REF_NAME}"

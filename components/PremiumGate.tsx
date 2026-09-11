@@ -1,7 +1,7 @@
 "use client";
 
 import { useCallback, useEffect, useState } from "react";
-import { tierUnlocksTopTier } from "@/lib/membership";
+import { tierUnlocksTopTier, tierUnlocksAnyMembership } from "@/lib/membership";
 import { MEMBER_EMAIL_STORAGE_KEY as STORAGE_KEY } from "@/lib/member-storage";
 
 type Status = "idle" | "checking" | "unlocked" | "locked" | "error";
@@ -12,8 +12,9 @@ export default function PremiumGate({
   children,
 }: {
   tier?: string;
-  /** "fergie" restricts this gate to the top tier only, not Pep too. */
-  requireTier?: "pep" | "fergie";
+  /** "fergie" restricts this gate to the top tier only; "moyes" accepts
+   * any active membership (Moyes included), not just Pep/Fergie. */
+  requireTier?: "moyes" | "pep" | "fergie";
   children: React.ReactNode;
 }) {
   const [email, setEmail] = useState("");
@@ -25,7 +26,12 @@ export default function PremiumGate({
       try {
         const res = await fetch(`/api/membership?email=${encodeURIComponent(candidateEmail)}`);
         const data: { unlocked: boolean; levelName: string | null } = await res.json();
-        const passes = requireTier === "fergie" ? tierUnlocksTopTier(data.levelName) : data.unlocked;
+        const passes =
+          requireTier === "fergie"
+            ? tierUnlocksTopTier(data.levelName)
+            : requireTier === "moyes"
+              ? tierUnlocksAnyMembership(data.levelName)
+              : data.unlocked;
         if (passes) {
           setStatus("unlocked");
           try {
@@ -59,7 +65,7 @@ export default function PremiumGate({
 
   if (status === "unlocked") return <>{children}</>;
 
-  const displayTier = requireTier === "fergie" ? "Fergie" : tier;
+  const displayTier = requireTier === "fergie" ? "Fergie" : requireTier === "moyes" ? "Moyes+" : tier;
 
   return (
     <div className="rounded-lg border border-dashed border-black/15 bg-black/[.02] p-6 text-center dark:border-white/20 dark:bg-white/[.03]">
@@ -67,7 +73,9 @@ export default function PremiumGate({
       <p className="mt-1 text-sm text-black/60 dark:text-white/60">
         {requireTier === "fergie"
           ? "Already a Fergie member? Enter the email you used on Buy Me a Coffee."
-          : "Already a Pep or Fergie member? Enter the email you used on Buy Me a Coffee."}
+          : requireTier === "moyes"
+            ? "Already a member? Enter the email you used on Buy Me a Coffee."
+            : "Already a Pep or Fergie member? Enter the email you used on Buy Me a Coffee."}
       </p>
       <form
         onSubmit={(e) => {
@@ -96,7 +104,9 @@ export default function PremiumGate({
         <p className="mt-2 text-sm text-red-600 dark:text-red-400">
           {requireTier === "fergie"
             ? "No active Fergie membership found for that email."
-            : "No active Pep/Fergie membership found for that email."}
+            : requireTier === "moyes"
+              ? "No active membership found for that email."
+              : "No active Pep/Fergie membership found for that email."}
         </p>
       )}
       {status === "error" && (

@@ -41,7 +41,7 @@ export interface FplBootstrapStatic {
   elements: FplRawElement[];
   teams: FplRawTeam[];
   element_types: FplRawElementType[];
-  events: { id: number; is_current: boolean; is_next: boolean; name: string }[];
+  events: { id: number; is_current: boolean; is_next: boolean; name: string; deadline_time: string; finished: boolean }[];
 }
 
 export interface FplRawFixture {

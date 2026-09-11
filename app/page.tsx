@@ -1,7 +1,9 @@
 import { getLiveSnapshot, getLiveFixtures } from "@/lib/live";
 import { readHistory, diffLatestTwo, getPriceSeries } from "@/lib/history";
+import { readGameweekPreview } from "@/lib/gameweek-preview";
 import { buildFixtureRuns } from "@/lib/fixtures";
 import type { PlayerWithSparkline } from "@/lib/fpl-types";
+import GameweekPreview from "@/components/GameweekPreview";
 import RisersFallers from "@/components/RisersFallers";
 import TopPlayers from "@/components/TopPlayers";
 import PlayerLookup from "@/components/PlayerLookup";
@@ -51,6 +53,7 @@ function timeAgo(iso: string): string {
 export default async function Home() {
   const [snapshot, fixtures] = await Promise.all([getLiveSnapshot(), getLiveFixtures()]);
   const history = await readHistory();
+  const gameweekPreview = await readGameweekPreview();
   const { moves } = diffLatestTwo(history);
   const fixturesByTeam = buildFixtureRuns(fixtures, snapshot.teams);
 
@@ -102,6 +105,12 @@ export default async function Home() {
           </a>
         ))}
       </nav>
+
+      {gameweekPreview && (
+        <section className="mb-10">
+          <GameweekPreview preview={gameweekPreview} />
+        </section>
+      )}
 
       <section id="my-team" className="mb-10 scroll-mt-16">
         <h2 className="mb-3 text-xl font-bold">My team</h2>

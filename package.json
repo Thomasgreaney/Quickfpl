@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "refresh": "tsx scripts/fetch-snapshot.ts"
+    "refresh": "tsx scripts/fetch-snapshot.ts",
+    "preview": "tsx scripts/generate-gameweek-preview.ts"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.124.0",
