@@ -110,10 +110,6 @@ export default async function Home() {
         </section>
       )}
 
-      <section className="mb-10">
-        <MembershipComparison />
-      </section>
-
       <CollapsibleSection
         id="my-team"
         icon="👕"
@@ -123,6 +119,10 @@ export default async function Home() {
       >
         <SquadBuilder players={snapshot.players} fixturesByTeam={fixturesByTeam} />
       </CollapsibleSection>
+
+      <section className="mb-10">
+        <MembershipComparison />
+      </section>
 
       <CollapsibleSection
         id="ai-assistant"
