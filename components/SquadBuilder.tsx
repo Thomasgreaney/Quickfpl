@@ -7,6 +7,7 @@ import type { FixtureRun, Player, Position } from "@/lib/fpl-types";
 import { SQUAD_STORAGE_KEY, SQUAD_UPDATED_EVENT } from "@/lib/squad-storage";
 import { suggestBench } from "@/lib/bench";
 import { buildDemoSquad } from "@/lib/demo-squad";
+import ImportTeamForm from "./ImportTeamForm";
 import PlayerPickerModal from "./PlayerPickerModal";
 import PlayerPhoto from "./PlayerPhoto";
 import FixtureChips from "./FixtureChips";
@@ -125,6 +126,17 @@ export default function SquadBuilder({
     setIsDemo(false);
     setSquad(emptySquad());
     setBench(new Set());
+  }
+
+  function importTeam(imported: Record<Position, number[]>, importedBench: number[]) {
+    setIsDemo(false);
+    const next = emptySquad();
+    for (const { position, count } of FORMATION) {
+      const ids = imported[position] ?? [];
+      for (let i = 0; i < count; i++) next[position][i] = ids[i] ?? null;
+    }
+    setSquad(next);
+    setBench(new Set(importedBench));
   }
 
   const byId = useMemo(() => new Map(players.map((p) => [p.id, p])), [players]);
@@ -250,6 +262,8 @@ export default function SquadBuilder({
 
   return (
     <div>
+      <ImportTeamForm onImported={importTeam} />
+
       {isDemo && (
         <div className="mb-3 flex flex-wrap items-center justify-between gap-3 rounded-lg border border-purple-600/30 bg-purple-50 px-3 py-2.5 dark:border-purple-400/30 dark:bg-purple-950/30">
           <p className="text-sm text-purple-900 dark:text-purple-200">
