@@ -15,9 +15,9 @@ const geistMono = Geist_Mono({
 });
 
 const SITE_URL = "https://quickfpl.com";
-const TITLE = "QuickFPL — FPL Price Tracker";
+const TITLE = "QuickFPL — FPL Price Tracker & AI Fantasy Premier League Tools";
 const DESCRIPTION =
-  "Every Fantasy Premier League player's price, ownership and price changes in one sortable table. No fluff.";
+  "Every Fantasy Premier League player's price, ownership and price changes in one sortable table, plus an AI assistant and FPL tools for transfers, chips and mini-leagues. No fluff.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
@@ -29,6 +29,8 @@ export const metadata: Metadata = {
     "FPL price tracker",
     "FPL price changes",
     "FPL transfers",
+    "FPL AI",
+    "FPL AI assistant",
   ],
   openGraph: {
     title: TITLE,

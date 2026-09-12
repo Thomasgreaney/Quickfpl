@@ -13,10 +13,23 @@ import PricePredictor from "@/components/PricePredictor";
 
 export const revalidate = 300;
 
+const TITLE = "Transfer Planner & Mini-League Simulator | QuickFPL";
+const DESCRIPTION =
+  "Transfer shortlist, weak links, a 5-gameweek transfer planner, mini-league simulator, price watch and chip-timing analysis.";
+
 export const metadata: Metadata = {
-  title: "Planner — QuickFPL",
-  description:
-    "Transfer shortlist, weak links, a 5-gameweek transfer planner, mini-league simulator, price watch and chip-timing analysis.",
+  title: TITLE,
+  description: DESCRIPTION,
+  openGraph: {
+    title: TITLE,
+    description: DESCRIPTION,
+    type: "website",
+  },
+  twitter: {
+    card: "summary",
+    title: TITLE,
+    description: DESCRIPTION,
+  },
 };
 
 export default async function PlannerPage() {

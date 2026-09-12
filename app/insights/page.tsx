@@ -13,10 +13,23 @@ export const revalidate = 300;
 
 const TOP_N = 15;
 
+const TITLE = "FPL Player Stats, Price Changes & Ownership | QuickFPL";
+const DESCRIPTION =
+  "Every FPL player's price, ownership and movement — risers and fallers, the top 15 most-owned, side-by-side comparisons, and full player search.";
+
 export const metadata: Metadata = {
-  title: "Insights — QuickFPL",
-  description:
-    "Every FPL player's price, ownership and movement — risers and fallers, the top 15 most-owned, side-by-side comparisons, and full player search.",
+  title: TITLE,
+  description: DESCRIPTION,
+  openGraph: {
+    title: TITLE,
+    description: DESCRIPTION,
+    type: "website",
+  },
+  twitter: {
+    card: "summary",
+    title: TITLE,
+    description: DESCRIPTION,
+  },
 };
 
 export default async function InsightsPage() {

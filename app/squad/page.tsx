@@ -9,9 +9,22 @@ import TransferShortlist from "@/components/TransferShortlist";
 
 export const revalidate = 300;
 
+const TITLE = "FPL Squad Builder | QuickFPL";
+const DESCRIPTION = "Build your FPL squad, pick a starting XI and bench, and track which chips you've used.";
+
 export const metadata: Metadata = {
-  title: "Squad — QuickFPL",
-  description: "Build your FPL squad, pick a starting XI and bench, and track which chips you've used.",
+  title: TITLE,
+  description: DESCRIPTION,
+  openGraph: {
+    title: TITLE,
+    description: DESCRIPTION,
+    type: "website",
+  },
+  twitter: {
+    card: "summary",
+    title: TITLE,
+    description: DESCRIPTION,
+  },
 };
 
 export default async function SquadPage() {

@@ -7,9 +7,23 @@ import PriceHistoryExplorer from "@/components/PriceHistoryExplorer";
 
 export const revalidate = 300;
 
+const TITLE = "AI Assistant — Fantasy Premier League AI Tool | QuickFPL";
+const DESCRIPTION =
+  "QuickFPL's AI Assistant answers questions about your Fantasy Premier League squad — who to captain, who to transfer, whether your bench is right — using live FPL data. Plus full player price history.";
+
 export const metadata: Metadata = {
-  title: "AI Assistant — QuickFPL",
-  description: "Ask the AI Assistant anything about your saved squad, and explore full player price history.",
+  title: TITLE,
+  description: DESCRIPTION,
+  openGraph: {
+    title: TITLE,
+    description: DESCRIPTION,
+    type: "website",
+  },
+  twitter: {
+    card: "summary",
+    title: TITLE,
+    description: DESCRIPTION,
+  },
 };
 
 export default async function AssistantPage() {
@@ -20,7 +34,9 @@ export default async function AssistantPage() {
       <header className="mb-8">
         <h1 className="text-3xl font-black tracking-tight sm:text-4xl">AI Assistant</h1>
         <p className="mt-2 max-w-2xl text-black/70 dark:text-white/70">
-          Ask it anything about your saved squad, and dig into any player&apos;s full price history.
+          QuickFPL&apos;s AI Assistant answers questions about your Fantasy Premier League squad —
+          who to captain, who to transfer, whether your bench is right — using live FPL data, not
+          guesswork. Dig into any player&apos;s full price history too.
         </p>
       </header>
 

@@ -1,9 +1,22 @@
 import type { Metadata } from "next";
 import MembershipComparison from "@/components/MembershipComparison";
 
+const TITLE = "Membership Pricing | QuickFPL";
+const DESCRIPTION = "Compare Moyes, Pep and Fergie membership tiers and unlock QuickFPL's premium tools.";
+
 export const metadata: Metadata = {
-  title: "Pricing — QuickFPL",
-  description: "Compare Moyes, Pep and Fergie membership tiers and unlock QuickFPL's premium tools.",
+  title: TITLE,
+  description: DESCRIPTION,
+  openGraph: {
+    title: TITLE,
+    description: DESCRIPTION,
+    type: "website",
+  },
+  twitter: {
+    card: "summary",
+    title: TITLE,
+    description: DESCRIPTION,
+  },
 };
 
 export default function PricingPage() {
