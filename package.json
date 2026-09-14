@@ -8,7 +8,8 @@
     "start": "next start",
     "lint": "eslint",
     "refresh": "tsx scripts/fetch-snapshot.ts",
-    "preview": "tsx scripts/generate-gameweek-preview.ts"
+    "preview": "tsx scripts/generate-gameweek-preview.ts",
+    "wrapup": "tsx scripts/generate-gameweek-wrapup.ts"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.124.0",

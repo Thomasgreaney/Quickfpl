@@ -24,6 +24,7 @@ export interface FplRawElement {
   points_per_game: string;
   transfers_in_event: number;
   transfers_out_event: number;
+  event_points: number; // points scored in the current/most recent gameweek only
 }
 
 export interface FplRawTeam {
@@ -49,9 +50,13 @@ export interface FplRawFixture {
   event: number | null;
   team_h: number;
   team_a: number;
+  team_h_score: number | null;
+  team_a_score: number | null;
   team_h_difficulty: number;
   team_a_difficulty: number;
+  started: boolean | null;
   finished: boolean;
+  minutes: number;
   kickoff_time: string | null;
 }
 
@@ -93,6 +98,7 @@ export interface TeamRef {
 export interface DataSnapshot {
   fetchedAt: string;
   currentEventId: number | null;
+  currentEventName: string | null;
   nextEventId: number | null;
   nextEventName: string | null;
   nextDeadlineTime: string | null;

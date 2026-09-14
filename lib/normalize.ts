@@ -58,6 +58,7 @@ export function buildSnapshot(raw: FplBootstrapStatic): DataSnapshot {
   return {
     fetchedAt: new Date().toISOString(),
     currentEventId: currentEvent?.id ?? null,
+    currentEventName: currentEvent?.name ?? null,
     nextEventId: nextEvent?.id ?? null,
     nextEventName: nextEvent?.name ?? null,
     nextDeadlineTime: nextEvent?.deadline_time ?? null,

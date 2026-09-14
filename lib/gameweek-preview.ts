@@ -24,3 +24,12 @@ export async function readGameweekPreview(): Promise<GameweekPreview | null> {
     return null;
   }
 }
+
+/** Whether a stored preview's deadline is still in the future - once it
+ * isn't, the preview is stale and callers should fall back to the
+ * wrap-up for whatever gameweek is now in progress instead. Kept as a
+ * plain helper (rather than inlined in a component) since components must
+ * stay pure and can't call Date.now() directly in their render body. */
+export function isPreviewCurrent(preview: GameweekPreview | null): boolean {
+  return Boolean(preview && Date.parse(preview.deadlineTime) > Date.now());
+}

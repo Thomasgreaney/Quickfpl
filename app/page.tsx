@@ -1,9 +1,11 @@
 import Link from "next/link";
-import { getLiveSnapshot } from "@/lib/live";
+import { getLiveSnapshot, getEventFixtures } from "@/lib/live";
 import { readHistory, diffLatestTwo } from "@/lib/history";
-import { readGameweekPreview } from "@/lib/gameweek-preview";
+import { readGameweekPreview, isPreviewCurrent } from "@/lib/gameweek-preview";
+import { readGameweekWrapup } from "@/lib/gameweek-wrapup";
 import type { Player } from "@/lib/fpl-types";
 import GameweekPreview from "@/components/GameweekPreview";
+import GameweekWrapup from "@/components/GameweekWrapup";
 import LocalTime from "@/components/LocalTime";
 import DeadlineCountdown from "@/components/DeadlineCountdown";
 
@@ -70,12 +72,26 @@ function QuickLinkCard({
 }
 
 export default async function Home() {
-  const [snapshot, history, gameweekPreview] = await Promise.all([
+  const [snapshot, history, gameweekPreview, gameweekWrapup] = await Promise.all([
     getLiveSnapshot(),
     readHistory(),
     readGameweekPreview(),
+    readGameweekWrapup(),
   ]);
   const { moves } = diffLatestTwo(history);
+
+  // The preview always wins while it's still for an upcoming deadline -
+  // once that deadline passes it's stale, so fall back to a wrap-up for
+  // whichever gameweek is currently in progress. This naturally covers
+  // the whole lifecycle: preview until deadline, wrap-up through the
+  // gameweek, then back to a fresh preview once one's generated for the
+  // next gameweek (its deadline being in the future is what flips it
+  // back), without either ever needing to be explicitly cleared.
+  const showPreview = isPreviewCurrent(gameweekPreview);
+  const wrapupEventId = !showPreview ? snapshot.currentEventId : null;
+  const eventFixtures = wrapupEventId ? await getEventFixtures(wrapupEventId) : [];
+  const wrapupForThisEvent =
+    wrapupEventId && gameweekWrapup?.eventId === wrapupEventId ? gameweekWrapup : null;
 
   const biggestRiser = [...snapshot.players]
     .filter((p) => p.priceChangeEvent > 0)
@@ -107,11 +123,20 @@ export default async function Home() {
         </p>
       </header>
 
-      {gameweekPreview && (
+      {showPreview && gameweekPreview ? (
         <section className="mb-8">
           <GameweekPreview preview={gameweekPreview} />
         </section>
-      )}
+      ) : wrapupEventId && eventFixtures.length > 0 ? (
+        <section className="mb-8">
+          <GameweekWrapup
+            eventName={snapshot.currentEventName ?? `Gameweek ${wrapupEventId}`}
+            fixtures={eventFixtures}
+            teams={snapshot.teams}
+            wrapup={wrapupForThisEvent}
+          />
+        </section>
+      ) : null}
 
       {(biggestRiser || biggestFaller || mostOwned) && (
         <section className="mb-8">

@@ -1,0 +1,54 @@
+name: Generate gameweek wrap-up
+
+on:
+  schedule:
+    # Every 30 minutes - the script itself only actually calls Claude once
+    # every fixture in the current gameweek has finished and no wrap-up
+    # has been generated for it yet, so most runs are a no-op.
+    - cron: "*/30 * * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: gameweek-wrapup
+  cancel-in-progress: false
+
+jobs:
+  wrapup:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Generate wrap-up if the gameweek just finished
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: npm run wrapup
+
+      - name: Commit and push if a new wrap-up was generated
+        run: |
+          if [ ! -f data/gameweek-wrapup.json ]; then
+            echo "No new wrap-up generated."
+            exit 0
+          fi
+          git add data/gameweek-wrapup.json
+          if git diff --cached --quiet -- data/gameweek-wrapup.json; then
+            echo "No new wrap-up generated."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git commit -m "chore: generate gameweek wrap-up"
+          git pull --rebase origin "${GITHUB_REF_NAME}"
+          git push origin "HEAD:${GITHUB_REF_NAME}"
