@@ -83,6 +83,7 @@ export interface Player {
   chanceOfPlayingNextRound: number | null; // FPL's own published percent, when they've set one
   transfersInEvent: number;
   transfersOutEvent: number;
+  eventPoints: number; // points scored in the current/most recent gameweek only
 }
 
 export interface PlayerWithSparkline extends Player {

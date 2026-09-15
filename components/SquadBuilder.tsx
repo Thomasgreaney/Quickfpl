@@ -52,6 +52,7 @@ export default function SquadBuilder({
 }) {
   const [squad, setSquad] = useState<Squad>(emptySquad);
   const [bench, setBench] = useState<Set<number>>(new Set());
+  const [captainId, setCaptainId] = useState<number | null>(null);
   const [loaded, setLoaded] = useState(false);
   const [isDemo, setIsDemo] = useState(false);
   const [view, setView] = useState<"pitch" | "list">("pitch");
@@ -72,7 +73,7 @@ export default function SquadBuilder({
       try {
         const raw = window.localStorage.getItem(SQUAD_STORAGE_KEY);
         if (raw) {
-          const parsed = JSON.parse(raw) as Partial<Squad> & { bench?: number[] };
+          const parsed = JSON.parse(raw) as Partial<Squad> & { bench?: number[]; captainId?: number };
           const merged = emptySquad();
           for (const { position, count } of FORMATION) {
             const saved = parsed[position];
@@ -84,6 +85,7 @@ export default function SquadBuilder({
           if (Array.isArray(parsed.bench)) {
             setBench(new Set(parsed.bench.filter((id): id is number => typeof id === "number")));
           }
+          if (typeof parsed.captainId === "number") setCaptainId(parsed.captainId);
         } else {
           const demo = buildDemoSquad(initialPlayers.current);
           if (demo) {
@@ -92,7 +94,11 @@ export default function SquadBuilder({
             setSquad(demoSquad);
             const demoIds = new Set(FORMATION.flatMap(({ position }) => demo[position]));
             const demoPlayers = initialPlayers.current.filter((p) => demoIds.has(p.id));
-            setBench(new Set(suggestBench(demoPlayers)));
+            const demoBench = new Set(suggestBench(demoPlayers));
+            setBench(demoBench);
+            const demoStarters = demoPlayers.filter((p) => !demoBench.has(p.id));
+            const demoCaptain = [...demoStarters].sort((a, b) => b.form - a.form)[0];
+            if (demoCaptain) setCaptainId(demoCaptain.id);
             setIsDemo(true);
           }
         }
@@ -106,16 +112,20 @@ export default function SquadBuilder({
   useEffect(() => {
     if (!loaded || isDemo) return;
     try {
-      window.localStorage.setItem(SQUAD_STORAGE_KEY, JSON.stringify({ ...squad, bench: [...bench] }));
+      window.localStorage.setItem(
+        SQUAD_STORAGE_KEY,
+        JSON.stringify({ ...squad, bench: [...bench], captainId })
+      );
       window.dispatchEvent(new Event(SQUAD_UPDATED_EVENT));
     } catch {
       // storage unavailable (private browsing etc.) - squad just won't persist
     }
-  }, [squad, bench, loaded, isDemo]);
+  }, [squad, bench, captainId, loaded, isDemo]);
 
   function startOwnSquad() {
     setSquad(emptySquad());
     setBench(new Set());
+    setCaptainId(null);
     setIsDemo(false);
   }
 
@@ -126,6 +136,7 @@ export default function SquadBuilder({
     setIsDemo(false);
     setSquad(emptySquad());
     setBench(new Set());
+    setCaptainId(null);
   }
 
   function importTeam(imported: Record<Position, number[]>, importedBench: number[]) {
@@ -137,6 +148,12 @@ export default function SquadBuilder({
     }
     setSquad(next);
     setBench(new Set(importedBench));
+    setCaptainId(null);
+  }
+
+  function setCaptain(playerId: number) {
+    setIsDemo(false);
+    setCaptainId((prev) => (prev === playerId ? null : playerId));
   }
 
   const byId = useMemo(() => new Map(players.map((p) => [p.id, p])), [players]);
@@ -178,11 +195,16 @@ export default function SquadBuilder({
         next.delete(removedId);
         return next;
       });
+      setCaptainId((prev) => (prev === removedId ? null : prev));
     }
   }
 
   function toggleBench(playerId: number, position: Position) {
     setIsDemo(false);
+    // Tracks whether this call actually just newly benched playerId (as
+    // opposed to un-benching them, or the GKP guard below blocking it) -
+    // only that case should strip the armband.
+    let didBench = false;
     setBench((prev) => {
       if (prev.has(playerId)) {
         const next = new Set(prev);
@@ -198,15 +220,22 @@ export default function SquadBuilder({
       }
       const next = new Set(prev);
       next.add(playerId);
+      didBench = true;
       return next;
     });
+    // The captain must be in the starting XI - benching them clears the
+    // armband rather than leaving a benched captain no score can double.
+    if (didBench) setCaptainId((prev) => (prev === playerId ? null : prev));
   }
 
   function autoPickBench() {
     setIsDemo(false);
     const squadPlayers = [...usedIds].map((id) => byId.get(id)).filter((p): p is Player => Boolean(p));
     const suggested = suggestBench(squadPlayers);
-    if (suggested.length === BENCH_SIZE) setBench(new Set(suggested));
+    if (suggested.length !== BENCH_SIZE) return;
+    setBench(new Set(suggested));
+    // The armband can't survive landing on the auto-picked bench.
+    setCaptainId((prev) => (prev !== null && suggested.includes(prev) ? null : prev));
   }
 
   // Dragging one player onto another (same position only - a midfielder
@@ -216,10 +245,12 @@ export default function SquadBuilder({
   // still the only one of the pair benched after.
   function swapBenchStatus(idA: number, idB: number) {
     setIsDemo(false);
+    let didSwap = false;
     setBench((prev) => {
       const aBenched = prev.has(idA);
       const bBenched = prev.has(idB);
       if (aBenched === bBenched) return prev; // both starting or both benched - nothing to swap
+      didSwap = true;
       const next = new Set(prev);
       if (aBenched) {
         next.delete(idA);
@@ -229,6 +260,13 @@ export default function SquadBuilder({
         next.add(idA);
       }
       return next;
+    });
+    if (!didSwap) return;
+    // Whichever of the pair ends up benched can't keep the armband.
+    setCaptainId((prev) => {
+      if (prev === idA && !bench.has(idA)) return null;
+      if (prev === idB && !bench.has(idB)) return null;
+      return prev;
     });
   }
 
@@ -359,9 +397,11 @@ export default function SquadBuilder({
                           slot={slot}
                           player={player}
                           benched={false}
+                          isCaptain={captainId === player.id}
                           onOpen={() => setActiveSlot(slot)}
                           onRemove={() => clearSlot(slot)}
                           onToggleBench={() => toggleBench(player.id, position)}
+                          onToggleCaptain={() => setCaptain(player.id)}
                         />
                       ))}
                     </div>
@@ -462,6 +502,11 @@ export default function SquadBuilder({
                                     Sub
                                   </span>
                                 )}
+                                {captainId === player.id && (
+                                  <span className="ml-1.5 rounded bg-purple-600 px-1.5 py-0.5 text-[10px] font-bold text-white">
+                                    C
+                                  </span>
+                                )}
                               </span>
                               <span className="whitespace-nowrap text-sm tabular-nums">
                                 {fmtMoney(player.price)}
@@ -474,6 +519,19 @@ export default function SquadBuilder({
                               <FixtureChips fixtures={fixturesByTeam[player.teamId]} />
                             </div>
                           </div>
+                          {!isBenched && (
+                            <button
+                              type="button"
+                              onClick={() => setCaptain(player.id)}
+                              className={`whitespace-nowrap rounded-md border px-2 py-1 text-xs font-medium ${
+                                captainId === player.id
+                                  ? "border-purple-600 bg-purple-600 text-white"
+                                  : "border-black/10 hover:bg-black/[.04] dark:border-white/15 dark:hover:bg-white/[.06]"
+                              }`}
+                            >
+                              {captainId === player.id ? "Captain" : "Make captain"}
+                            </button>
+                          )}
                           <button
                             type="button"
                             onClick={() => toggleBench(player.id, position)}
@@ -526,16 +584,20 @@ function SquadSlot({
   slot,
   player,
   benched,
+  isCaptain = false,
   onOpen,
   onRemove,
   onToggleBench,
+  onToggleCaptain,
 }: {
   slot: Slot;
   player: Player | undefined;
   benched: boolean;
+  isCaptain?: boolean;
   onOpen: () => void;
   onRemove: () => void;
   onToggleBench: () => void;
+  onToggleCaptain?: () => void;
 }) {
   return (
     <div className="relative w-16 sm:w-20">
@@ -561,6 +623,23 @@ function SquadSlot({
               {fmtMoney(player.price)}
             </span>
           </button>
+          {onToggleCaptain && !benched && (
+            <button
+              type="button"
+              onClick={(e) => {
+                e.stopPropagation();
+                onToggleCaptain();
+              }}
+              title={isCaptain ? "Remove captain" : "Make captain"}
+              className={`absolute -left-1 -top-1 flex h-5 w-5 items-center justify-center rounded-full text-[10px] font-bold shadow ${
+                isCaptain
+                  ? "bg-purple-600 text-white"
+                  : "bg-white text-black/40 hover:text-black/70 dark:bg-neutral-800 dark:text-white/40 dark:hover:text-white/70"
+              }`}
+            >
+              C
+            </button>
+          )}
           <button
             type="button"
             onClick={(e) => {
@@ -600,9 +679,11 @@ function DraggableSquadSlot(props: {
   slot: Slot;
   player: Player;
   benched: boolean;
+  isCaptain?: boolean;
   onOpen: () => void;
   onRemove: () => void;
   onToggleBench: () => void;
+  onToggleCaptain?: () => void;
 }) {
   const { slot, player } = props;
   const draggable = useDraggable({ id: player.id, data: { position: slot.position } });

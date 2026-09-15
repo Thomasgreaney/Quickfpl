@@ -43,3 +43,17 @@ export function readBenchPlayerIds(): number[] {
     return [];
   }
 }
+
+/** The saved squad's captain, if one's been picked. */
+export function readCaptainId(): number | null {
+  try {
+    const raw = window.localStorage.getItem(SQUAD_STORAGE_KEY);
+    if (!raw) return null;
+    const parsed: unknown = JSON.parse(raw);
+    if (!parsed || typeof parsed !== "object") return null;
+    const captainId = (parsed as Record<string, unknown>).captainId;
+    return typeof captainId === "number" ? captainId : null;
+  } catch {
+    return null;
+  }
+}

@@ -3,6 +3,7 @@ import { getLiveSnapshot, getLiveFixtures } from "@/lib/live";
 import { buildFixtureRuns } from "@/lib/fixtures";
 import CollapsibleSection from "@/components/CollapsibleSection";
 import SquadBuilder from "@/components/SquadBuilder";
+import SquadGameweekScore from "@/components/SquadGameweekScore";
 import ChipTracker from "@/components/ChipTracker";
 import PremiumGate from "@/components/PremiumGate";
 import TransferShortlist from "@/components/TransferShortlist";
@@ -39,6 +40,12 @@ export default async function SquadPage() {
           Build your squad and track your chips. Both saved on this device only, both free.
         </p>
       </header>
+
+      <SquadGameweekScore
+        players={snapshot.players}
+        eventId={snapshot.currentEventId}
+        eventName={snapshot.currentEventName}
+      />
 
       <CollapsibleSection
         id="my-team"
