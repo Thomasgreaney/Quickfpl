@@ -7,7 +7,7 @@ import PremiumGate from "./PremiumGate";
  * The teaser is free for everyone; the full write-up is a Moyes+ perk. */
 export default function GameweekPreview({ preview }: { preview: GameweekPreviewData }) {
   return (
-    <div className="rounded-lg border border-black/10 bg-white p-4 dark:border-white/15 dark:bg-neutral-900 sm:p-5">
+    <div className="card p-4 sm:p-5">
       <p className="mb-2 text-xs font-bold uppercase tracking-wide text-purple-600 dark:text-purple-400">
         {preview.eventName} preview
       </p>

@@ -9,7 +9,7 @@ function fmtMoney(n: number): string {
 function MoverCard({ player, direction }: { player: Player; direction: "up" | "down" }) {
   const delta = direction === "up" ? player.priceChangeEvent : -player.priceChangeEvent;
   return (
-    <li className="flex gap-3 rounded-lg border border-black/10 bg-white p-3 dark:border-white/15 dark:bg-neutral-900">
+    <li className="flex gap-3 card p-3">
       <PlayerPhoto photoId={player.photoId} name={player.name} size={40} />
       <div className="min-w-0 flex-1">
         <div className="flex items-baseline justify-between gap-2">

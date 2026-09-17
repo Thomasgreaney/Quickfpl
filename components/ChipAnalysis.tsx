@@ -78,7 +78,7 @@ export default function ChipAnalysis({
           {advice.map((a) => (
             <div
               key={a.chip}
-              className="rounded-lg border border-black/10 bg-white p-3 dark:border-white/15 dark:bg-neutral-900"
+              className="card p-3"
             >
               <h4 className="font-semibold">{CHIP_LABELS[a.chip]}</h4>
 

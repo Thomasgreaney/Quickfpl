@@ -57,7 +57,7 @@ export default function ImportTeamForm({
   }
 
   return (
-    <div className="mb-3 rounded-lg border border-purple-600/30 bg-purple-50 px-3 py-2.5 dark:border-purple-400/30 dark:bg-purple-950/30">
+    <div className="mb-3 rounded-xl border border-purple-600/30 bg-purple-50 px-3 py-2.5 dark:border-purple-400/30 dark:bg-purple-950/30">
       <form onSubmit={handleSubmit} className="flex flex-wrap items-center gap-2">
         <p className="mr-1 whitespace-nowrap text-sm font-semibold text-purple-900 dark:text-purple-200">
           Already play FPL?
@@ -74,7 +74,7 @@ export default function ImportTeamForm({
         <button
           type="submit"
           disabled={loading || !teamId.trim()}
-          className="whitespace-nowrap rounded-md bg-purple-600 px-3 py-1.5 text-sm font-semibold text-white disabled:opacity-50"
+          className="btn-primary"
         >
           {loading ? "Importing…" : "Import my team"}
         </button>

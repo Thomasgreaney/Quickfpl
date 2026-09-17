@@ -75,12 +75,12 @@ export default function LeagueSimulator() {
           onChange={(e) => setLeagueId(e.target.value)}
           placeholder="Mini-league ID (from the league's URL)"
           disabled={loading}
-          className="min-w-0 flex-1 rounded-md border border-black/10 bg-white px-3 py-2 text-sm outline-none focus:border-purple-500 disabled:opacity-50 dark:border-white/15 dark:bg-neutral-900"
+          className="min-w-0 flex-1 rounded-md border border-black/10 bg-white px-3 py-2 text-sm outline-none focus:border-purple-500 disabled:opacity-50"
         />
         <button
           type="submit"
           disabled={loading || !leagueId.trim()}
-          className="whitespace-nowrap rounded-md bg-purple-600 px-3 py-2 text-sm font-semibold text-white disabled:opacity-50"
+          className="btn-primary"
         >
           {loading ? "Simulating…" : "Simulate"}
         </button>
@@ -103,7 +103,7 @@ export default function LeagueSimulator() {
             {result.entries.map((entry, i) => (
               <li
                 key={entry.entryId}
-                className="rounded-lg border border-black/10 bg-white p-3 dark:border-white/15 dark:bg-neutral-900"
+                className="card p-3"
               >
                 <div className="flex items-center justify-between gap-2">
                   <div className="min-w-0">

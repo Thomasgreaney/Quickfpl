@@ -43,7 +43,7 @@ export default function PlayerDetailCard({
   }, [player.id]);
 
   return (
-    <div className="flex items-center justify-between gap-3 rounded-lg border border-black/10 bg-white p-3 dark:border-white/15 dark:bg-neutral-900">
+    <div className="flex items-center justify-between gap-3 card p-3">
       <div className="flex min-w-0 items-center gap-3">
         <PlayerPhoto photoId={player.photoId} name={player.name} size={40} />
         <div className="min-w-0">

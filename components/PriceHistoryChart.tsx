@@ -46,7 +46,7 @@ export default function PriceHistoryChart({ series }: { series: PricePoint[] }) 
   const linePoints = coords.map((c) => `${c.x.toFixed(1)},${c.y.toFixed(1)}`).join(" ");
 
   return (
-    <div className="overflow-x-auto rounded-lg border border-black/10 bg-white p-2 dark:border-white/15 dark:bg-neutral-900">
+    <div className="overflow-x-auto card p-2">
       <svg width={width} height={HEIGHT} viewBox={`0 0 ${width} ${HEIGHT}`} className="block">
         <line
           x1={PAD_X}

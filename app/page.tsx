@@ -15,6 +15,12 @@ function fmtMoney(n: number): string {
   return `£${n.toFixed(1)}m`;
 }
 
+const TONE_ICON: Record<"up" | "down" | "neutral", string> = {
+  up: "📈",
+  down: "📉",
+  neutral: "⭐",
+};
+
 function StatCard({
   label,
   player,
@@ -33,13 +39,17 @@ function StatCard({
         ? "text-red-600 dark:text-red-400"
         : "text-purple-600 dark:text-purple-400";
   return (
-    <Link
-      href="/insights"
-      className="block rounded-lg border border-black/10 bg-white p-3 transition hover:border-purple-600/40 dark:border-white/15 dark:bg-neutral-900"
-    >
-      <p className="text-xs font-bold uppercase tracking-wide text-black/50 dark:text-white/50">{label}</p>
-      <p className="mt-1 font-semibold">{player.name}</p>
-      <p className={`mt-0.5 text-sm font-mono ${toneClass}`}>{detail}</p>
+    <Link href="/insights" className="card card-interactive flex items-start gap-3 p-4">
+      <span aria-hidden="true" className="icon-badge">
+        {TONE_ICON[tone]}
+      </span>
+      <span className="min-w-0">
+        <span className="block text-xs font-bold uppercase tracking-wide text-black/50 dark:text-white/50">
+          {label}
+        </span>
+        <span className="mt-0.5 block truncate font-semibold">{player.name}</span>
+        <span className={`mt-0.5 block text-sm font-mono ${toneClass}`}>{detail}</span>
+      </span>
     </Link>
   );
 }
@@ -56,11 +66,8 @@ function QuickLinkCard({
   description: string;
 }) {
   return (
-    <Link
-      href={href}
-      className="flex items-start gap-3 rounded-lg border border-black/10 bg-white p-3 transition hover:border-purple-600/40 dark:border-white/15 dark:bg-neutral-900"
-    >
-      <span aria-hidden="true" className="text-2xl leading-none">
+    <Link href={href} className="card card-interactive flex items-start gap-3 p-4">
+      <span aria-hidden="true" className="icon-badge text-xl">
         {icon}
       </span>
       <span>
@@ -103,24 +110,25 @@ export default async function Home() {
 
   return (
     <main className="mx-auto w-full max-w-6xl flex-1 px-4 py-8 sm:px-6 lg:px-8">
-      {snapshot.nextDeadlineTime && snapshot.nextEventName && (
-        <div className="mb-4">
-          <DeadlineCountdown deadline={snapshot.nextDeadlineTime} eventName={snapshot.nextEventName} />
+      <header className="card mb-8 overflow-hidden">
+        <div className="bg-gradient-to-br from-purple-700 via-purple-600 to-fuchsia-600 px-5 py-7 text-white sm:px-8 sm:py-9">
+          {snapshot.nextDeadlineTime && snapshot.nextEventName && (
+            <div className="mb-4">
+              <DeadlineCountdown deadline={snapshot.nextDeadlineTime} eventName={snapshot.nextEventName} />
+            </div>
+          )}
+          <h1 className="text-3xl font-black tracking-tight sm:text-4xl">
+            Quick<span className="text-fuchsia-200">FPL</span>
+          </h1>
+          <p className="mt-2 max-w-2xl text-white/85">
+            Every FPL player&apos;s price, ownership and this season&apos;s movement, tracked over
+            time. No fluff, just the numbers.
+          </p>
+          <p className="mt-3 text-xs text-white/60">
+            Data pulled straight from the official FPL API · Updated <LocalTime iso={snapshot.fetchedAt} />
+            {moves.length > 0 && ` · ${moves.length} price move${moves.length === 1 ? "" : "s"} since our last check`}
+          </p>
         </div>
-      )}
-
-      <header className="mb-8">
-        <h1 className="text-3xl font-black tracking-tight sm:text-4xl">
-          Quick<span className="text-purple-600">FPL</span>
-        </h1>
-        <p className="mt-2 max-w-2xl text-black/70 dark:text-white/70">
-          Every FPL player&apos;s price, ownership and this season&apos;s movement, tracked over
-          time. No fluff, just the numbers.
-        </p>
-        <p className="mt-3 text-xs text-black/40 dark:text-white/40">
-          Data pulled straight from the official FPL API · Updated <LocalTime iso={snapshot.fetchedAt} />
-          {moves.length > 0 && ` · ${moves.length} price move${moves.length === 1 ? "" : "s"} since our last check`}
-        </p>
       </header>
 
       {showPreview && gameweekPreview ? (

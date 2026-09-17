@@ -18,14 +18,12 @@ export default function CollapsibleSection({
   children: React.ReactNode;
 }) {
   return (
-    <details
-      id={id}
-      className="group mb-6 scroll-mt-16 border-t border-black/10 pt-6 dark:border-white/10"
-      open={defaultOpen}
-    >
-      <summary className="flex cursor-pointer list-none items-center justify-between gap-3 py-1 [&::-webkit-details-marker]:hidden">
-        <h2 className="flex items-center gap-2 text-xl font-bold">
-          <span aria-hidden="true">{icon}</span>
+    <details id={id} className="group card mb-6 scroll-mt-16 p-4 sm:p-5" open={defaultOpen}>
+      <summary className="flex cursor-pointer list-none items-center justify-between gap-3 [&::-webkit-details-marker]:hidden">
+        <h2 className="flex items-center gap-3 text-xl font-bold">
+          <span aria-hidden="true" className="icon-badge">
+            {icon}
+          </span>
           {title}
         </h2>
         <svg
@@ -41,8 +39,8 @@ export default function CollapsibleSection({
           />
         </svg>
       </summary>
-      {description && <p className="mb-3 mt-2 text-sm text-black/60 dark:text-white/60">{description}</p>}
-      <div className={description ? "" : "mt-3"}>{children}</div>
+      {description && <p className="mb-3 mt-3 text-sm text-black/60 dark:text-white/60">{description}</p>}
+      <div className={description ? "" : "mt-4"}>{children}</div>
     </details>
   );
 }

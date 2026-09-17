@@ -116,7 +116,7 @@ export default function TransferPlanner({
         {rows.map(({ player, weeks, roughPatch }) => (
           <li
             key={player.id}
-            className="rounded-lg border border-black/10 bg-white p-3 dark:border-white/15 dark:bg-neutral-900"
+            className="card p-3"
           >
             <div className="flex items-center justify-between gap-3">
               <div className="flex min-w-0 items-center gap-2.5">

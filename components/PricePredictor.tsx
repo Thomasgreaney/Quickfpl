@@ -22,7 +22,7 @@ function reasonFor(direction: "up" | "down"): string {
 function PredictionCard({ entry, direction }: { entry: PricePrediction; direction: "up" | "down" }) {
   const { player, netTransfers } = entry;
   return (
-    <li className="flex gap-3 rounded-lg border border-black/10 bg-white p-3 dark:border-white/15 dark:bg-neutral-900">
+    <li className="flex gap-3 card p-3">
       <PlayerPhoto photoId={player.photoId} name={player.name} size={40} />
       <div className="min-w-0 flex-1">
         <div className="flex items-baseline justify-between gap-2">

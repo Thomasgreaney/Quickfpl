@@ -26,8 +26,8 @@ export default function GameweekScoreboard({
   });
 
   return (
-    <div className="grid gap-1.5 sm:grid-cols-2">
-      {sorted.map((f) => {
+    <div className="overflow-hidden rounded-lg border border-black/[.06] dark:border-white/10 sm:grid sm:grid-cols-2 sm:gap-x-4">
+      {sorted.map((f, i) => {
         const home = teamsById.get(f.team_h);
         const away = teamsById.get(f.team_a);
         const badge = fixtureBadge(f);
@@ -35,7 +35,9 @@ export default function GameweekScoreboard({
         return (
           <div
             key={f.id}
-            className="flex items-center gap-2 rounded-md border border-black/10 bg-black/[.02] px-2.5 py-1.5 text-sm dark:border-white/10 dark:bg-white/[.03]"
+            className={`flex items-center gap-2 px-2.5 py-2 text-sm ${
+              i % 2 === 1 ? "bg-black/[.02] dark:bg-white/[.03]" : ""
+            }`}
           >
             <span className="min-w-0 flex-1 truncate font-medium">{home?.short ?? "?"}</span>
             <span className="flex-shrink-0 font-mono tabular-nums">

@@ -63,7 +63,7 @@ export default function SquadGameweekScore({
   const sorted = [...starters].sort((a, b) => b.eventPoints - a.eventPoints);
 
   return (
-    <div className="mb-8 rounded-lg border border-black/10 bg-white p-4 dark:border-white/15 dark:bg-neutral-900 sm:p-5">
+    <div className="mb-8 card p-4 sm:p-5">
       <div className="mb-3 flex items-baseline justify-between gap-2">
         <p className="text-xs font-bold uppercase tracking-wide text-purple-600 dark:text-purple-400">
           {eventName ?? `Gameweek ${eventId}`} score

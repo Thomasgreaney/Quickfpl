@@ -38,7 +38,7 @@ export default function DeadlineCountdown({
   const remaining = Date.parse(deadline) - now;
 
   return (
-    <div className="inline-flex items-center gap-1.5 rounded-full border border-purple-600/30 bg-purple-50 px-3 py-1.5 text-xs font-semibold text-purple-800 dark:border-purple-400/30 dark:bg-purple-950/40 dark:text-purple-300">
+    <div className="inline-flex items-center gap-1.5 rounded-full border border-white/25 bg-white/15 px-3 py-1.5 text-xs font-semibold text-white backdrop-blur-sm">
       <span aria-hidden="true">⏱</span>
       <span>
         {eventName} deadline: {formatCountdown(remaining)}

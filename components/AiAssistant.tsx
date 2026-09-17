@@ -94,7 +94,7 @@ export default function AiAssistant() {
         </p>
       )}
 
-      <div className="max-h-96 overflow-y-auto rounded-lg border border-black/10 bg-white p-3 dark:border-white/15 dark:bg-neutral-900">
+      <div className="max-h-96 overflow-y-auto card p-3">
         {messages.length === 0 ? (
           <p className="text-sm text-black/40 dark:text-white/40">
             Ask anything about your squad — captaincy, transfers, your bench.
@@ -150,12 +150,12 @@ export default function AiAssistant() {
           onChange={(e) => setInput(e.target.value)}
           placeholder="Ask about your squad..."
           disabled={loading}
-          className="min-w-0 flex-1 rounded-md border border-black/10 bg-white px-3 py-2 text-sm outline-none focus:border-purple-500 disabled:opacity-50 dark:border-white/15 dark:bg-neutral-900"
+          className="min-w-0 flex-1 rounded-md border border-black/10 bg-white px-3 py-2 text-sm outline-none focus:border-purple-500 disabled:opacity-50"
         />
         <button
           type="submit"
           disabled={loading || !input.trim()}
-          className="whitespace-nowrap rounded-md bg-purple-600 px-3 py-2 text-sm font-semibold text-white disabled:opacity-50"
+          className="btn-primary"
         >
           Send
         </button>

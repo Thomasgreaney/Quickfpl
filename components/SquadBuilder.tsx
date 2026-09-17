@@ -303,7 +303,7 @@ export default function SquadBuilder({
       <ImportTeamForm onImported={importTeam} />
 
       {isDemo && (
-        <div className="mb-3 flex flex-wrap items-center justify-between gap-3 rounded-lg border border-purple-600/30 bg-purple-50 px-3 py-2.5 dark:border-purple-400/30 dark:bg-purple-950/30">
+        <div className="mb-3 flex flex-wrap items-center justify-between gap-3 rounded-xl border border-purple-600/30 bg-purple-50 px-3 py-2.5 dark:border-purple-400/30 dark:bg-purple-950/30">
           <p className="text-sm text-purple-900 dark:text-purple-200">
             <span className="font-semibold">This is a demo squad</span> — build your own below, or start from
             scratch.

@@ -64,7 +64,7 @@ export default function PremiumGate({
   const displayTier = requireTier === "fergie" ? "Fergie" : requireTier === "moyes" ? "Moyes+" : tier;
 
   return (
-    <div className="relative min-h-40 overflow-hidden rounded-lg">
+    <div className="relative min-h-40 overflow-hidden rounded-xl">
       <div aria-hidden="true" className="pointer-events-none max-h-56 select-none overflow-hidden blur-sm">
         {children}
       </div>
@@ -74,7 +74,7 @@ export default function PremiumGate({
         {showCta && (
           <a
             href="/pricing"
-            className="rounded-md bg-purple-600 px-3 py-1.5 text-sm font-semibold text-white shadow hover:bg-purple-700"
+            className="btn-primary"
           >
             See what&apos;s included →
           </a>

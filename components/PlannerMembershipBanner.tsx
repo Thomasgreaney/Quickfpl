@@ -31,7 +31,7 @@ export default function PlannerMembershipBanner() {
   if (unlocked !== false) return null;
 
   return (
-    <div className="mb-8 flex flex-wrap items-center justify-between gap-3 rounded-lg border border-purple-600/30 bg-purple-50 p-4 dark:border-purple-400/30 dark:bg-purple-950/30">
+    <div className="mb-8 flex flex-wrap items-center justify-between gap-3 rounded-xl border border-purple-600/30 bg-purple-50 p-4 dark:border-purple-400/30 dark:bg-purple-950/30">
       <div>
         <p className="font-semibold">🔒 These tools are Pep-tier</p>
         <p className="text-sm text-black/60 dark:text-white/60">
@@ -41,7 +41,7 @@ export default function PlannerMembershipBanner() {
       </div>
       <a
         href="/pricing"
-        className="whitespace-nowrap rounded-md bg-purple-600 px-3 py-1.5 text-sm font-semibold text-white shadow hover:bg-purple-700"
+        className="btn-primary"
       >
         See what&apos;s included →
       </a>

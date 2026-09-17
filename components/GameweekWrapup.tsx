@@ -23,7 +23,7 @@ export default function GameweekWrapup({
   wrapup: GameweekWrapupData | null;
 }) {
   return (
-    <div className="rounded-lg border border-black/10 bg-white p-4 dark:border-white/15 dark:bg-neutral-900 sm:p-5">
+    <div className="card p-4 sm:p-5">
       <p className="mb-2 text-xs font-bold uppercase tracking-wide text-purple-600 dark:text-purple-400">
         {eventName} wrap-up
       </p>
