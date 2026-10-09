@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-09T09:15:41.891Z",
+  "fetchedAt": "2026-10-09T12:16:54.130Z",
   "currentEventId": 5,
   "currentEventName": "Gameweek 5",
   "nextEventId": 6,
@@ -19,14 +19,14 @@
       "price": 6.1,
       "priceChangeSeason": 0.1,
       "priceChangeEvent": 0.1,
-      "ownership": 42.7,
+      "ownership": 42.8,
       "form": 7.5,
       "totalPoints": 30,
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 190298,
-      "transfersOutEvent": 69800,
+      "transfersInEvent": 200144,
+      "transfersOutEvent": 71833,
       "eventPoints": 1
     },
     {
@@ -48,8 +48,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 148,
-      "transfersOutEvent": 314,
+      "transfersInEvent": 151,
+      "transfersOutEvent": 317,
       "eventPoints": 0
     },
     {
@@ -71,8 +71,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 63,
-      "transfersOutEvent": 140,
+      "transfersInEvent": 67,
+      "transfersOutEvent": 143,
       "eventPoints": 0
     },
     {
@@ -94,8 +94,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 40371,
-      "transfersOutEvent": 91746,
+      "transfersInEvent": 42258,
+      "transfersOutEvent": 95313,
       "eventPoints": 1
     },
     {
@@ -117,8 +117,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": 100,
-      "transfersInEvent": 21057,
-      "transfersOutEvent": 6267,
+      "transfersInEvent": 22082,
+      "transfersOutEvent": 6443,
       "eventPoints": 0
     },
     {
@@ -140,8 +140,8 @@
       "status": "i",
       "news": "Back injury - Unknown return date",
       "chanceOfPlayingNextRound": 0,
-      "transfersInEvent": 500,
-      "transfersOutEvent": 1318,
+      "transfersInEvent": 508,
+      "transfersOutEvent": 1336,
       "eventPoints": 0
     },
     {
@@ -163,8 +163,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 1502,
-      "transfersOutEvent": 5994,
+      "transfersInEvent": 1579,
+      "transfersOutEvent": 6145,
       "eventPoints": 0
     },
     {
@@ -186,8 +186,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 130043,
-      "transfersOutEvent": 81245,
+      "transfersInEvent": 137395,
+      "transfersOutEvent": 83294,
       "eventPoints": 1
     },
     {
@@ -209,8 +209,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 2044,
-      "transfersOutEvent": 6752,
+      "transfersInEvent": 2117,
+      "transfersOutEvent": 6885,
       "eventPoints": 0
     },
     {
@@ -226,14 +226,14 @@
       "price": 5.5,
       "priceChangeSeason": 0,
       "priceChangeEvent": 0,
-      "ownership": 4.7,
+      "ownership": 4.6,
       "form": 0.5,
       "totalPoints": 21,
       "status": "d",
       "news": "Groin injury - 75% chance of playing",
       "chanceOfPlayingNextRound": 75,
-      "transfersInEvent": 3534,
-      "transfersOutEvent": 90622,
+      "transfersInEvent": 3558,
+      "transfersOutEvent": 94409,
       "eventPoints": 0
     },
     {
@@ -255,8 +255,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": 100,
-      "transfersInEvent": 2415,
-      "transfersOutEvent": 13039,
+      "transfersInEvent": 2597,
+      "transfersOutEvent": 13600,
       "eventPoints": 0
     },
     {
@@ -272,14 +272,14 @@
       "price": 9.6,
       "priceChangeSeason": 0.1,
       "priceChangeEvent": 0.1,
-      "ownership": 15,
+      "ownership": 15.2,
       "form": 5,
       "totalPoints": 32,
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 248481,
-      "transfersOutEvent": 62860,
+      "transfersInEvent": 267738,
+      "transfersOutEvent": 64613,
       "eventPoints": 2
     },
     {
@@ -295,14 +295,14 @@
       "price": 7.4,
       "priceChangeSeason": -0.1,
       "priceChangeEvent": 0,
-      "ownership": 11.2,
+      "ownership": 11.1,
       "form": 3.5,
       "totalPoints": 20,
       "status": "d",
       "news": "Unspecified injury - 75% chance of playing",
       "chanceOfPlayingNextRound": 75,
-      "transfersInEvent": 8399,
-      "transfersOutEvent": 122696,
+      "transfersInEvent": 8481,
+      "transfersOutEvent": 128126,
       "eventPoints": 1
     },
     {
@@ -324,8 +324,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 4677,
-      "transfersOutEvent": 8251,
+      "transfersInEvent": 5018,
+      "transfersOutEvent": 8418,
       "eventPoints": 1
     },
     {
@@ -341,14 +341,14 @@
       "price": 6.8,
       "priceChangeSeason": 0.3,
       "priceChangeEvent": 0,
-      "ownership": 19.9,
+      "ownership": 20,
       "form": 2.5,
       "totalPoints": 29,
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 127027,
-      "transfersOutEvent": 122926,
+      "transfersInEvent": 134413,
+      "transfersOutEvent": 127679,
       "eventPoints": 2
     },
     {
@@ -370,8 +370,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 964,
-      "transfersOutEvent": 1813,
+      "transfersInEvent": 996,
+      "transfersOutEvent": 1832,
       "eventPoints": 0
     },
     {
@@ -393,8 +393,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 1854,
-      "transfersOutEvent": 3394,
+      "transfersInEvent": 1989,
+      "transfersOutEvent": 3445,
       "eventPoints": 1
     },
     {
@@ -417,7 +417,7 @@
       "news": "Has joined Al Hilal permanently",
       "chanceOfPlayingNextRound": 0,
       "transfersInEvent": 0,
-      "transfersOutEvent": 678,
+      "transfersOutEvent": 684,
       "eventPoints": 0
     },
     {
@@ -439,8 +439,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 630,
-      "transfersOutEvent": 4565,
+      "transfersInEvent": 636,
+      "transfersOutEvent": 4662,
       "eventPoints": 1
     },
     {
@@ -463,7 +463,7 @@
       "news": "Unspecified injury - 75% chance of playing",
       "chanceOfPlayingNextRound": 75,
       "transfersInEvent": 496,
-      "transfersOutEvent": 783,
+      "transfersOutEvent": 793,
       "eventPoints": 1
     },
     {
@@ -554,8 +554,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 45305,
-      "transfersOutEvent": 22567,
+      "transfersInEvent": 50043,
+      "transfersOutEvent": 23186,
       "eventPoints": 1
     },
     {
@@ -571,14 +571,14 @@
       "price": 7.6,
       "priceChangeSeason": 0.1,
       "priceChangeEvent": 0,
-      "ownership": 7.7,
+      "ownership": 7.6,
       "form": 1.5,
       "totalPoints": 19,
       "status": "d",
       "news": "Hamstring injury - 75% chance of playing",
       "chanceOfPlayingNextRound": 75,
-      "transfersInEvent": 52385,
-      "transfersOutEvent": 120610,
+      "transfersInEvent": 52585,
+      "transfersOutEvent": 128945,
       "eventPoints": 2
     },
     {
@@ -601,7 +601,7 @@
       "news": "Has joined FC Barcelona permanently",
       "chanceOfPlayingNextRound": 0,
       "transfersInEvent": 0,
-      "transfersOutEvent": 1175,
+      "transfersOutEvent": 1179,
       "eventPoints": 0
     },
     {
@@ -617,14 +617,14 @@
       "price": 4.6,
       "priceChangeSeason": 0.1,
       "priceChangeEvent": 0.1,
-      "ownership": 18.6,
+      "ownership": 18.5,
       "form": 3.5,
       "totalPoints": 12,
       "status": "d",
       "news": "Unspecified injury - 75% chance of playing",
       "chanceOfPlayingNextRound": 75,
-      "transfersInEvent": 108585,
-      "transfersOutEvent": 132779,
+      "transfersInEvent": 110311,
+      "transfersOutEvent": 143865,
       "eventPoints": 1
     },
     {
@@ -646,8 +646,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": 100,
-      "transfersInEvent": 9437,
-      "transfersOutEvent": 9982,
+      "transfersInEvent": 9883,
+      "transfersOutEvent": 10305,
       "eventPoints": 1
     },
     {
@@ -663,14 +663,14 @@
       "price": 6.3,
       "priceChangeSeason": -0.2,
       "priceChangeEvent": -0.1,
-      "ownership": 11.1,
+      "ownership": 10.9,
       "form": 2.5,
       "totalPoints": 16,
       "status": "d",
       "news": "Hamstring injury - 75% chance of playing",
       "chanceOfPlayingNextRound": 75,
-      "transfersInEvent": 12905,
-      "transfersOutEvent": 249878,
+      "transfersInEvent": 12962,
+      "transfersOutEvent": 268418,
       "eventPoints": 2
     },
     {
@@ -692,8 +692,8 @@
       "status": "i",
       "news": "Back injury - Expected back 10 Oct",
       "chanceOfPlayingNextRound": 0,
-      "transfersInEvent": 88,
-      "transfersOutEvent": 1264,
+      "transfersInEvent": 89,
+      "transfersOutEvent": 1299,
       "eventPoints": 0
     },
     {
@@ -716,7 +716,7 @@
       "news": "Has joined Paris Saint-Germain permanently",
       "chanceOfPlayingNextRound": 0,
       "transfersInEvent": 0,
-      "transfersOutEvent": 283,
+      "transfersOutEvent": 288,
       "eventPoints": 0
     },
     {
@@ -738,8 +738,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": 100,
-      "transfersInEvent": 3935,
-      "transfersOutEvent": 34848,
+      "transfersInEvent": 4085,
+      "transfersOutEvent": 36398,
       "eventPoints": -1
     },
     {
@@ -761,8 +761,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 2968,
-      "transfersOutEvent": 2021,
+      "transfersInEvent": 3094,
+      "transfersOutEvent": 2099,
       "eventPoints": 3
     },
     {
@@ -784,8 +784,8 @@
       "status": "i",
       "news": "Hamstring injury - Expected back 10 Oct",
       "chanceOfPlayingNextRound": 0,
-      "transfersInEvent": 65,
-      "transfersOutEvent": 4097,
+      "transfersInEvent": 66,
+      "transfersOutEvent": 4227,
       "eventPoints": 0
     },
     {
@@ -807,8 +807,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 204,
-      "transfersOutEvent": 523,
+      "transfersInEvent": 210,
+      "transfersOutEvent": 534,
       "eventPoints": 0
     },
     {
@@ -831,7 +831,7 @@
       "news": "Ankle injury - Unknown return date",
       "chanceOfPlayingNextRound": 0,
       "transfersInEvent": 64,
-      "transfersOutEvent": 8826,
+      "transfersOutEvent": 9224,
       "eventPoints": 0
     },
     {
@@ -853,8 +853,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 1818,
-      "transfersOutEvent": 1899,
+      "transfersInEvent": 1893,
+      "transfersOutEvent": 1968,
       "eventPoints": 1
     },
     {
@@ -876,8 +876,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 2235,
-      "transfersOutEvent": 7821,
+      "transfersInEvent": 2280,
+      "transfersOutEvent": 8091,
       "eventPoints": 0
     },
     {
@@ -900,7 +900,7 @@
       "news": "Has joined Rangers on loan for the rest of the season",
       "chanceOfPlayingNextRound": 0,
       "transfersInEvent": 0,
-      "transfersOutEvent": 725,
+      "transfersOutEvent": 746,
       "eventPoints": 0
     },
     {
@@ -922,8 +922,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 20050,
-      "transfersOutEvent": 6954,
+      "transfersInEvent": 21121,
+      "transfersOutEvent": 7301,
       "eventPoints": 12
     },
     {
@@ -939,14 +939,14 @@
       "price": 5.4,
       "priceChangeSeason": -0.1,
       "priceChangeEvent": 0,
-      "ownership": 0.1,
+      "ownership": 0,
       "form": 0,
       "totalPoints": 0,
       "status": "u",
       "news": "Has joined Olympiakos permanently",
       "chanceOfPlayingNextRound": 0,
       "transfersInEvent": 0,
-      "transfersOutEvent": 593,
+      "transfersOutEvent": 613,
       "eventPoints": 0
     },
     {
@@ -968,8 +968,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 11063,
-      "transfersOutEvent": 13233,
+      "transfersInEvent": 11608,
+      "transfersOutEvent": 13860,
       "eventPoints": 6
     },
     {
@@ -991,8 +991,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 711,
-      "transfersOutEvent": 2349,
+      "transfersInEvent": 727,
+      "transfersOutEvent": 2432,
       "eventPoints": 1
     },
     {
@@ -1014,8 +1014,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": 100,
-      "transfersInEvent": 1719,
-      "transfersOutEvent": 2118,
+      "transfersInEvent": 1782,
+      "transfersOutEvent": 2213,
       "eventPoints": 6
     },
     {
@@ -1037,8 +1037,8 @@
       "status": "i",
       "news": "Knee injury - Unknown return date",
       "chanceOfPlayingNextRound": 0,
-      "transfersInEvent": 64,
-      "transfersOutEvent": 120,
+      "transfersInEvent": 65,
+      "transfersOutEvent": 123,
       "eventPoints": 0
     },
     {
@@ -1083,8 +1083,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 746,
-      "transfersOutEvent": 4245,
+      "transfersInEvent": 756,
+      "transfersOutEvent": 4376,
       "eventPoints": 0
     },
     {
@@ -1106,8 +1106,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 4018,
-      "transfersOutEvent": 13254,
+      "transfersInEvent": 4120,
+      "transfersOutEvent": 13821,
       "eventPoints": 1
     },
     {
@@ -1130,7 +1130,7 @@
       "news": "Unspecified injury - 75% chance of playing",
       "chanceOfPlayingNextRound": 75,
       "transfersInEvent": 76,
-      "transfersOutEvent": 972,
+      "transfersOutEvent": 996,
       "eventPoints": 0
     },
     {
@@ -1146,14 +1146,14 @@
       "price": 5.9,
       "priceChangeSeason": -0.1,
       "priceChangeEvent": 0,
-      "ownership": 0.5,
+      "ownership": 0.6,
       "form": 7,
       "totalPoints": 14,
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": 100,
-      "transfersInEvent": 41023,
-      "transfersOutEvent": 5471,
+      "transfersInEvent": 43069,
+      "transfersOutEvent": 5724,
       "eventPoints": 13
     },
     {
@@ -1175,8 +1175,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": 100,
-      "transfersInEvent": 613,
-      "transfersOutEvent": 261,
+      "transfersInEvent": 624,
+      "transfersOutEvent": 267,
       "eventPoints": 4
     },
     {
@@ -1199,7 +1199,7 @@
       "news": "Has joined Al Hilal permanently",
       "chanceOfPlayingNextRound": 0,
       "transfersInEvent": 0,
-      "transfersOutEvent": 15559,
+      "transfersOutEvent": 15832,
       "eventPoints": 0
     },
     {
@@ -1221,8 +1221,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": 100,
-      "transfersInEvent": 2372,
-      "transfersOutEvent": 2241,
+      "transfersInEvent": 2461,
+      "transfersOutEvent": 2307,
       "eventPoints": 1
     },
     {
@@ -1244,8 +1244,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 716,
-      "transfersOutEvent": 3295,
+      "transfersInEvent": 736,
+      "transfersOutEvent": 3347,
       "eventPoints": 0
     },
     {
@@ -1267,8 +1267,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 57864,
-      "transfersOutEvent": 12183,
+      "transfersInEvent": 61072,
+      "transfersOutEvent": 12700,
       "eventPoints": 6
     },
     {
@@ -1290,8 +1290,8 @@
       "status": "i",
       "news": "Unspecified injury - Unknown return date",
       "chanceOfPlayingNextRound": 0,
-      "transfersInEvent": 480,
-      "transfersOutEvent": 2438,
+      "transfersInEvent": 505,
+      "transfersOutEvent": 2547,
       "eventPoints": 0
     },
     {
@@ -1313,8 +1313,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 1011,
-      "transfersOutEvent": 474,
+      "transfersInEvent": 1056,
+      "transfersOutEvent": 497,
       "eventPoints": 3
     },
     {
@@ -1336,8 +1336,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 17981,
-      "transfersOutEvent": 9387,
+      "transfersInEvent": 18465,
+      "transfersOutEvent": 9719,
       "eventPoints": 2
     },
     {
@@ -1359,8 +1359,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 390,
-      "transfersOutEvent": 1021,
+      "transfersInEvent": 399,
+      "transfersOutEvent": 1037,
       "eventPoints": 0
     },
     {
@@ -1383,7 +1383,7 @@
       "news": "Has joined Oxford United on loan until January",
       "chanceOfPlayingNextRound": 0,
       "transfersInEvent": 0,
-      "transfersOutEvent": 802,
+      "transfersOutEvent": 809,
       "eventPoints": 0
     },
     {
@@ -1405,8 +1405,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 2044,
-      "transfersOutEvent": 1794,
+      "transfersInEvent": 2103,
+      "transfersOutEvent": 1838,
       "eventPoints": 1
     },
     {
@@ -1428,8 +1428,8 @@
       "status": "i",
       "news": "Knee injury - Expected back 10 Oct",
       "chanceOfPlayingNextRound": 0,
-      "transfersInEvent": 35,
-      "transfersOutEvent": 474,
+      "transfersInEvent": 36,
+      "transfersOutEvent": 486,
       "eventPoints": 0
     },
     {
@@ -1451,8 +1451,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 279,
-      "transfersOutEvent": 243,
+      "transfersInEvent": 290,
+      "transfersOutEvent": 249,
       "eventPoints": 0
     },
     {
@@ -1474,8 +1474,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 1227,
-      "transfersOutEvent": 1465,
+      "transfersInEvent": 1261,
+      "transfersOutEvent": 1499,
       "eventPoints": 1
     },
     {
@@ -1497,8 +1497,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 11016,
-      "transfersOutEvent": 1397,
+      "transfersInEvent": 11448,
+      "transfersOutEvent": 1457,
       "eventPoints": 0
     },
     {
@@ -1520,8 +1520,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 9340,
-      "transfersOutEvent": 17084,
+      "transfersInEvent": 9665,
+      "transfersOutEvent": 17790,
       "eventPoints": 2
     },
     {
@@ -1543,8 +1543,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 11900,
-      "transfersOutEvent": 10251,
+      "transfersInEvent": 12439,
+      "transfersOutEvent": 10674,
       "eventPoints": 0
     },
     {
@@ -1567,7 +1567,7 @@
       "news": "Has joined MK Dons permanently",
       "chanceOfPlayingNextRound": 0,
       "transfersInEvent": 0,
-      "transfersOutEvent": 779,
+      "transfersOutEvent": 816,
       "eventPoints": 0
     },
     {
@@ -1589,8 +1589,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 4651,
-      "transfersOutEvent": 4288,
+      "transfersInEvent": 4828,
+      "transfersOutEvent": 4412,
       "eventPoints": 4
     },
     {
@@ -1612,8 +1612,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 7032,
-      "transfersOutEvent": 17161,
+      "transfersInEvent": 7344,
+      "transfersOutEvent": 17882,
       "eventPoints": 2
     },
     {
@@ -1635,8 +1635,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 578,
-      "transfersOutEvent": 1149,
+      "transfersInEvent": 597,
+      "transfersOutEvent": 1175,
       "eventPoints": 0
     },
     {
@@ -1658,8 +1658,8 @@
       "status": "i",
       "news": "Thigh injury - Unknown return date",
       "chanceOfPlayingNextRound": 0,
-      "transfersInEvent": 45,
-      "transfersOutEvent": 79,
+      "transfersInEvent": 49,
+      "transfersOutEvent": 80,
       "eventPoints": 0
     },
     {
@@ -1681,8 +1681,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 603,
-      "transfersOutEvent": 674,
+      "transfersInEvent": 618,
+      "transfersOutEvent": 699,
       "eventPoints": 2
     },
     {
@@ -1704,7 +1704,7 @@
       "status": "i",
       "news": "Thigh injury - Unknown return date",
       "chanceOfPlayingNextRound": 0,
-      "transfersInEvent": 52,
+      "transfersInEvent": 57,
       "transfersOutEvent": 87,
       "eventPoints": 0
     },
@@ -1727,8 +1727,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": 100,
-      "transfersInEvent": 932,
-      "transfersOutEvent": 1441,
+      "transfersInEvent": 955,
+      "transfersOutEvent": 1476,
       "eventPoints": 0
     },
     {
@@ -1750,8 +1750,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 6431,
-      "transfersOutEvent": 13006,
+      "transfersInEvent": 6744,
+      "transfersOutEvent": 13514,
       "eventPoints": 2
     },
     {
@@ -1767,14 +1767,14 @@
       "price": 6.1,
       "priceChangeSeason": 0.1,
       "priceChangeEvent": 0,
-      "ownership": 6.9,
+      "ownership": 7,
       "form": 5,
       "totalPoints": 31,
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 122154,
-      "transfersOutEvent": 66280,
+      "transfersInEvent": 127198,
+      "transfersOutEvent": 68793,
       "eventPoints": 2
     },
     {
@@ -1790,14 +1790,14 @@
       "price": 6.1,
       "priceChangeSeason": 0.1,
       "priceChangeEvent": 0,
-      "ownership": 5.2,
+      "ownership": 5.1,
       "form": 3,
       "totalPoints": 30,
       "status": "i",
       "news": "Thigh injury - Unknown return date",
       "chanceOfPlayingNextRound": 0,
-      "transfersInEvent": 26600,
-      "transfersOutEvent": 98478,
+      "transfersInEvent": 26625,
+      "transfersOutEvent": 107720,
       "eventPoints": 2
     },
     {
@@ -1819,8 +1819,8 @@
       "status": "i",
       "news": "Unspecified injury - Unknown return date",
       "chanceOfPlayingNextRound": 0,
-      "transfersInEvent": 2334,
-      "transfersOutEvent": 25639,
+      "transfersInEvent": 2337,
+      "transfersOutEvent": 26739,
       "eventPoints": 0
     },
     {
@@ -1842,8 +1842,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 338,
-      "transfersOutEvent": 1458,
+      "transfersInEvent": 344,
+      "transfersOutEvent": 1497,
       "eventPoints": 1
     },
     {
@@ -1865,8 +1865,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 187,
-      "transfersOutEvent": 507,
+      "transfersInEvent": 192,
+      "transfersOutEvent": 521,
       "eventPoints": 1
     },
     {
@@ -1888,8 +1888,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": 100,
-      "transfersInEvent": 1537,
-      "transfersOutEvent": 2094,
+      "transfersInEvent": 1583,
+      "transfersOutEvent": 2139,
       "eventPoints": 4
     },
     {
@@ -1911,8 +1911,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": 100,
-      "transfersInEvent": 244,
-      "transfersOutEvent": 439,
+      "transfersInEvent": 251,
+      "transfersOutEvent": 450,
       "eventPoints": 1
     },
     {
@@ -1934,8 +1934,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": 100,
-      "transfersInEvent": 498,
-      "transfersOutEvent": 331,
+      "transfersInEvent": 529,
+      "transfersOutEvent": 340,
       "eventPoints": 2
     },
     {
@@ -1957,8 +1957,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 38,
-      "transfersOutEvent": 74,
+      "transfersInEvent": 39,
+      "transfersOutEvent": 77,
       "eventPoints": 1
     },
     {
@@ -1980,8 +1980,8 @@
       "status": "i",
       "news": "Calf injury - Unknown return date",
       "chanceOfPlayingNextRound": 0,
-      "transfersInEvent": 33,
-      "transfersOutEvent": 94,
+      "transfersInEvent": 35,
+      "transfersOutEvent": 95,
       "eventPoints": 0
     },
     {
@@ -2003,8 +2003,8 @@
       "status": "i",
       "news": "Foot injury - Expected back 7 Nov",
       "chanceOfPlayingNextRound": 0,
-      "transfersInEvent": 252,
-      "transfersOutEvent": 1072,
+      "transfersInEvent": 257,
+      "transfersOutEvent": 1090,
       "eventPoints": 0
     },
     {
@@ -2020,14 +2020,14 @@
       "price": 6,
       "priceChangeSeason": 0,
       "priceChangeEvent": 0,
-      "ownership": 3.2,
+      "ownership": 3.3,
       "form": 3.5,
       "totalPoints": 18,
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 29057,
-      "transfersOutEvent": 28327,
+      "transfersInEvent": 30604,
+      "transfersOutEvent": 29277,
       "eventPoints": 2
     },
     {
@@ -2050,7 +2050,7 @@
       "news": "Has joined Getafe permanently",
       "chanceOfPlayingNextRound": 0,
       "transfersInEvent": 0,
-      "transfersOutEvent": 63,
+      "transfersOutEvent": 64,
       "eventPoints": 0
     },
     {
@@ -2072,8 +2072,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": 100,
-      "transfersInEvent": 1091,
-      "transfersOutEvent": 888,
+      "transfersInEvent": 1129,
+      "transfersOutEvent": 903,
       "eventPoints": 0
     },
     {
@@ -2095,8 +2095,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 17599,
-      "transfersOutEvent": 8172,
+      "transfersInEvent": 18942,
+      "transfersOutEvent": 8633,
       "eventPoints": 3
     },
     {
@@ -2118,8 +2118,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 182,
-      "transfersOutEvent": 565,
+      "transfersInEvent": 187,
+      "transfersOutEvent": 574,
       "eventPoints": 0
     },
     {
@@ -2141,8 +2141,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 1176,
-      "transfersOutEvent": 1106,
+      "transfersInEvent": 1203,
+      "transfersOutEvent": 1138,
       "eventPoints": 1
     },
     {
@@ -2164,8 +2164,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 224,
-      "transfersOutEvent": 236,
+      "transfersInEvent": 231,
+      "transfersOutEvent": 243,
       "eventPoints": 0
     },
     {
@@ -2187,8 +2187,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 27516,
-      "transfersOutEvent": 20533,
+      "transfersInEvent": 28462,
+      "transfersOutEvent": 21450,
       "eventPoints": 6
     },
     {
@@ -2210,8 +2210,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 391,
-      "transfersOutEvent": 460,
+      "transfersInEvent": 400,
+      "transfersOutEvent": 475,
       "eventPoints": 0
     },
     {
@@ -2233,8 +2233,8 @@
       "status": "i",
       "news": "Calf injury - Unknown return date",
       "chanceOfPlayingNextRound": 0,
-      "transfersInEvent": 143,
-      "transfersOutEvent": 12436,
+      "transfersInEvent": 144,
+      "transfersOutEvent": 12867,
       "eventPoints": 0
     },
     {
@@ -2256,8 +2256,8 @@
       "status": "i",
       "news": "Groin injury - Unknown return date",
       "chanceOfPlayingNextRound": 0,
-      "transfersInEvent": 57,
-      "transfersOutEvent": 460,
+      "transfersInEvent": 59,
+      "transfersOutEvent": 469,
       "eventPoints": 0
     },
     {
@@ -2273,14 +2273,14 @@
       "price": 5.5,
       "priceChangeSeason": 0,
       "priceChangeEvent": 0,
-      "ownership": 1.7,
+      "ownership": 1.6,
       "form": 2,
       "totalPoints": 22,
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 5088,
-      "transfersOutEvent": 15829,
+      "transfersInEvent": 5300,
+      "transfersOutEvent": 16470,
       "eventPoints": 3
     },
     {
@@ -2302,8 +2302,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 18229,
-      "transfersOutEvent": 32643,
+      "transfersInEvent": 19151,
+      "transfersOutEvent": 34204,
       "eventPoints": 7
     },
     {
@@ -2325,8 +2325,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 22615,
-      "transfersOutEvent": 30365,
+      "transfersInEvent": 23870,
+      "transfersOutEvent": 31583,
       "eventPoints": 6
     },
     {
@@ -2348,8 +2348,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 204,
-      "transfersOutEvent": 777,
+      "transfersInEvent": 208,
+      "transfersOutEvent": 807,
       "eventPoints": 0
     },
     {
@@ -2371,8 +2371,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 244,
-      "transfersOutEvent": 343,
+      "transfersInEvent": 256,
+      "transfersOutEvent": 354,
       "eventPoints": 1
     },
     {
@@ -2394,8 +2394,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 76,
-      "transfersOutEvent": 104,
+      "transfersInEvent": 77,
+      "transfersOutEvent": 105,
       "eventPoints": 0
     },
     {
@@ -2411,14 +2411,14 @@
       "price": 4.5,
       "priceChangeSeason": 0,
       "priceChangeEvent": 0,
-      "ownership": 0.4,
+      "ownership": 0.5,
       "form": 8.5,
       "totalPoints": 21,
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 25565,
-      "transfersOutEvent": 4096,
+      "transfersInEvent": 26857,
+      "transfersOutEvent": 4253,
       "eventPoints": 14
     },
     {
@@ -2434,14 +2434,14 @@
       "price": 6.2,
       "priceChangeSeason": 0.2,
       "priceChangeEvent": 0.1,
-      "ownership": 13.1,
+      "ownership": 13.4,
       "form": 12,
       "totalPoints": 39,
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 561758,
-      "transfersOutEvent": 48605,
+      "transfersInEvent": 587693,
+      "transfersOutEvent": 51147,
       "eventPoints": 9
     },
     {
@@ -2457,14 +2457,14 @@
       "price": 6.3,
       "priceChangeSeason": -0.2,
       "priceChangeEvent": 0,
-      "ownership": 0.5,
+      "ownership": 0.4,
       "form": 1,
       "totalPoints": 7,
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 1212,
-      "transfersOutEvent": 4931,
+      "transfersInEvent": 1267,
+      "transfersOutEvent": 5088,
       "eventPoints": 1
     },
     {
@@ -2486,8 +2486,8 @@
       "status": "d",
       "news": "Unspecified injury - 75% chance of playing",
       "chanceOfPlayingNextRound": 75,
-      "transfersInEvent": 1894,
-      "transfersOutEvent": 3959,
+      "transfersInEvent": 1913,
+      "transfersOutEvent": 4224,
       "eventPoints": 3
     },
     {
@@ -2510,7 +2510,7 @@
       "news": "Unspecified injury - Expected back 10 Oct",
       "chanceOfPlayingNextRound": 0,
       "transfersInEvent": 23,
-      "transfersOutEvent": 841,
+      "transfersOutEvent": 860,
       "eventPoints": 0
     },
     {
@@ -2532,8 +2532,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 26471,
-      "transfersOutEvent": 24507,
+      "transfersInEvent": 27345,
+      "transfersOutEvent": 25380,
       "eventPoints": 3
     },
     {
@@ -2578,8 +2578,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": 100,
-      "transfersInEvent": 737,
-      "transfersOutEvent": 218,
+      "transfersInEvent": 752,
+      "transfersOutEvent": 220,
       "eventPoints": 6
     },
     {
@@ -2601,8 +2601,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 1896,
-      "transfersOutEvent": 4859,
+      "transfersInEvent": 1970,
+      "transfersOutEvent": 5136,
       "eventPoints": 3
     },
     {
@@ -2624,8 +2624,8 @@
       "status": "i",
       "news": "Hamstring injury - Expected back 10 Oct",
       "chanceOfPlayingNextRound": 0,
-      "transfersInEvent": 15,
-      "transfersOutEvent": 134,
+      "transfersInEvent": 16,
+      "transfersOutEvent": 139,
       "eventPoints": 0
     },
     {
@@ -2647,8 +2647,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 3345,
-      "transfersOutEvent": 856,
+      "transfersInEvent": 3447,
+      "transfersOutEvent": 882,
       "eventPoints": 10
     },
     {
@@ -2670,8 +2670,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 90037,
-      "transfersOutEvent": 53112,
+      "transfersInEvent": 94203,
+      "transfersOutEvent": 55110,
       "eventPoints": 5
     },
     {
@@ -2693,8 +2693,8 @@
       "status": "i",
       "news": "Unspecified injury - Unknown return date",
       "chanceOfPlayingNextRound": 0,
-      "transfersInEvent": 1091,
-      "transfersOutEvent": 11915,
+      "transfersInEvent": 1109,
+      "transfersOutEvent": 12261,
       "eventPoints": 0
     },
     {
@@ -2716,8 +2716,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 1592,
-      "transfersOutEvent": 3021,
+      "transfersInEvent": 1645,
+      "transfersOutEvent": 3079,
       "eventPoints": 0
     },
     {
@@ -2733,14 +2733,14 @@
       "price": 5.6,
       "priceChangeSeason": 0.1,
       "priceChangeEvent": -0.1,
-      "ownership": 9.5,
+      "ownership": 9.4,
       "form": 2,
       "totalPoints": 22,
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 11035,
-      "transfersOutEvent": 179758,
+      "transfersInEvent": 11408,
+      "transfersOutEvent": 186157,
       "eventPoints": 0
     },
     {
@@ -2762,8 +2762,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 691,
-      "transfersOutEvent": 860,
+      "transfersInEvent": 722,
+      "transfersOutEvent": 886,
       "eventPoints": 1
     },
     {
@@ -2785,8 +2785,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 413,
-      "transfersOutEvent": 307,
+      "transfersInEvent": 417,
+      "transfersOutEvent": 311,
       "eventPoints": 0
     },
     {
@@ -2808,7 +2808,7 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 642,
+      "transfersInEvent": 655,
       "transfersOutEvent": 82,
       "eventPoints": 0
     },
@@ -2825,14 +2825,14 @@
       "price": 4,
       "priceChangeSeason": 0,
       "priceChangeEvent": 0,
-      "ownership": 0,
+      "ownership": 0.1,
       "form": 0,
       "totalPoints": 0,
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 3878,
-      "transfersOutEvent": 766,
+      "transfersInEvent": 3989,
+      "transfersOutEvent": 795,
       "eventPoints": 0
     },
     {
@@ -2854,8 +2854,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 104253,
-      "transfersOutEvent": 112620,
+      "transfersInEvent": 108339,
+      "transfersOutEvent": 118411,
       "eventPoints": 6
     },
     {
@@ -2877,8 +2877,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 10189,
-      "transfersOutEvent": 20740,
+      "transfersInEvent": 10654,
+      "transfersOutEvent": 21654,
       "eventPoints": 0
     },
     {
@@ -2894,14 +2894,14 @@
       "price": 4.4,
       "priceChangeSeason": -0.1,
       "priceChangeEvent": 0,
-      "ownership": 1.6,
+      "ownership": 1.5,
       "form": 5.5,
       "totalPoints": 13,
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": 100,
-      "transfersInEvent": 6236,
-      "transfersOutEvent": 10428,
+      "transfersInEvent": 6520,
+      "transfersOutEvent": 11003,
       "eventPoints": 5
     },
     {
@@ -2923,8 +2923,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 3606,
-      "transfersOutEvent": 1295,
+      "transfersInEvent": 3801,
+      "transfersOutEvent": 1359,
       "eventPoints": 6
     },
     {
@@ -2940,14 +2940,14 @@
       "price": 5,
       "priceChangeSeason": 0.5,
       "priceChangeEvent": 0.1,
-      "ownership": 28.9,
+      "ownership": 29,
       "form": 8.5,
       "totalPoints": 38,
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 421960,
-      "transfersOutEvent": 36986,
+      "transfersInEvent": 441799,
+      "transfersOutEvent": 38575,
       "eventPoints": 6
     },
     {
@@ -2966,11 +2966,11 @@
       "ownership": 1.4,
       "form": 6,
       "totalPoints": 22,
-      "status": "d",
-      "news": "Neck injury - 75% chance of playing",
-      "chanceOfPlayingNextRound": 75,
-      "transfersInEvent": 8130,
-      "transfersOutEvent": 15197,
+      "status": "a",
+      "news": "",
+      "chanceOfPlayingNextRound": 100,
+      "transfersInEvent": 8469,
+      "transfersOutEvent": 15696,
       "eventPoints": 0
     },
     {
@@ -2992,8 +2992,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 144,
-      "transfersOutEvent": 124,
+      "transfersInEvent": 145,
+      "transfersOutEvent": 126,
       "eventPoints": 0
     },
     {
@@ -3016,7 +3016,7 @@
       "news": "Has joined Burnley permanently",
       "chanceOfPlayingNextRound": 0,
       "transfersInEvent": 0,
-      "transfersOutEvent": 375,
+      "transfersOutEvent": 384,
       "eventPoints": 0
     },
     {
@@ -3038,8 +3038,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 231,
-      "transfersOutEvent": 166,
+      "transfersInEvent": 238,
+      "transfersOutEvent": 169,
       "eventPoints": 1
     },
     {
@@ -3061,8 +3061,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 1473,
-      "transfersOutEvent": 545,
+      "transfersInEvent": 1488,
+      "transfersOutEvent": 556,
       "eventPoints": 1
     },
     {
@@ -3084,8 +3084,8 @@
       "status": "i",
       "news": "Hamstring injury - Expected back 10 Oct",
       "chanceOfPlayingNextRound": 0,
-      "transfersInEvent": 164,
-      "transfersOutEvent": 212,
+      "transfersInEvent": 165,
+      "transfersOutEvent": 216,
       "eventPoints": 0
     },
     {
@@ -3107,8 +3107,8 @@
       "status": "i",
       "news": "Leg injury - Expected back 28 Nov",
       "chanceOfPlayingNextRound": 0,
-      "transfersInEvent": 54,
-      "transfersOutEvent": 280,
+      "transfersInEvent": 56,
+      "transfersOutEvent": 287,
       "eventPoints": 0
     },
     {
@@ -3127,11 +3127,11 @@
       "ownership": 0.5,
       "form": 0,
       "totalPoints": 16,
-      "status": "i",
-      "news": "Ankle injury - Expected back 10 Oct",
-      "chanceOfPlayingNextRound": 0,
-      "transfersInEvent": 386,
-      "transfersOutEvent": 8483,
+      "status": "d",
+      "news": "Ankle injury - 50% chance of playing",
+      "chanceOfPlayingNextRound": 50,
+      "transfersInEvent": 414,
+      "transfersOutEvent": 8687,
       "eventPoints": 0
     },
     {
@@ -3147,14 +3147,14 @@
       "price": 5.9,
       "priceChangeSeason": 0.4,
       "priceChangeEvent": 0.2,
-      "ownership": 31.3,
+      "ownership": 31.7,
       "form": 15.5,
       "totalPoints": 47,
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 1032949,
-      "transfersOutEvent": 20617,
+      "transfersInEvent": 1071353,
+      "transfersOutEvent": 21596,
       "eventPoints": 14
     },
     {
@@ -3176,8 +3176,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": 100,
-      "transfersInEvent": 3658,
-      "transfersOutEvent": 5265,
+      "transfersInEvent": 3803,
+      "transfersOutEvent": 5473,
       "eventPoints": 1
     },
     {
@@ -3199,8 +3199,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 510,
-      "transfersOutEvent": 671,
+      "transfersInEvent": 521,
+      "transfersOutEvent": 675,
       "eventPoints": 1
     },
     {
@@ -3216,14 +3216,14 @@
       "price": 5,
       "priceChangeSeason": 0,
       "priceChangeEvent": 0,
-      "ownership": 3.9,
+      "ownership": 3.8,
       "form": 5.5,
       "totalPoints": 24,
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 16884,
-      "transfersOutEvent": 53282,
+      "transfersInEvent": 17563,
+      "transfersOutEvent": 55569,
       "eventPoints": 8
     },
     {
@@ -3268,8 +3268,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": 100,
-      "transfersInEvent": 3470,
-      "transfersOutEvent": 2793,
+      "transfersInEvent": 3638,
+      "transfersOutEvent": 2910,
       "eventPoints": 3
     },
     {
@@ -3292,7 +3292,7 @@
       "news": "Knee injury - Unknown return date",
       "chanceOfPlayingNextRound": 0,
       "transfersInEvent": 37,
-      "transfersOutEvent": 2501,
+      "transfersOutEvent": 2570,
       "eventPoints": 0
     },
     {
@@ -3315,7 +3315,7 @@
       "news": "Has joined Leicester City on loan for the rest of the season",
       "chanceOfPlayingNextRound": 0,
       "transfersInEvent": 0,
-      "transfersOutEvent": 268,
+      "transfersOutEvent": 279,
       "eventPoints": 0
     },
     {
@@ -3360,8 +3360,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 417,
-      "transfersOutEvent": 1683,
+      "transfersInEvent": 431,
+      "transfersOutEvent": 1746,
       "eventPoints": 0
     },
     {
@@ -3383,8 +3383,8 @@
       "status": "i",
       "news": "Unspecified injury - Expected back 10 Oct",
       "chanceOfPlayingNextRound": 0,
-      "transfersInEvent": 29,
-      "transfersOutEvent": 505,
+      "transfersInEvent": 30,
+      "transfersOutEvent": 518,
       "eventPoints": 0
     },
     {
@@ -3406,8 +3406,8 @@
       "status": "i",
       "news": "Knee injury - Unknown return date",
       "chanceOfPlayingNextRound": 0,
-      "transfersInEvent": 47,
-      "transfersOutEvent": 70,
+      "transfersInEvent": 48,
+      "transfersOutEvent": 71,
       "eventPoints": 0
     },
     {
@@ -3423,14 +3423,14 @@
       "price": 5.6,
       "priceChangeSeason": 0.1,
       "priceChangeEvent": 0.1,
-      "ownership": 5.7,
+      "ownership": 5.9,
       "form": 10,
       "totalPoints": 28,
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 461223,
-      "transfersOutEvent": 33511,
+      "transfersInEvent": 484293,
+      "transfersOutEvent": 35177,
       "eventPoints": 10
     },
     {
@@ -3452,8 +3452,8 @@
       "status": "i",
       "news": "Ankle injury - Expected back 10 Oct",
       "chanceOfPlayingNextRound": 0,
-      "transfersInEvent": 174,
-      "transfersOutEvent": 302,
+      "transfersInEvent": 175,
+      "transfersOutEvent": 309,
       "eventPoints": 0
     },
     {
@@ -3475,8 +3475,8 @@
       "status": "d",
       "news": "Hamstring injury - 75% chance of playing",
       "chanceOfPlayingNextRound": 75,
-      "transfersInEvent": 666,
-      "transfersOutEvent": 1336,
+      "transfersInEvent": 669,
+      "transfersOutEvent": 1391,
       "eventPoints": 5
     },
     {
@@ -3492,14 +3492,14 @@
       "price": 5,
       "priceChangeSeason": 0,
       "priceChangeEvent": 0,
-      "ownership": 3.9,
+      "ownership": 4,
       "form": 7,
       "totalPoints": 32,
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 88362,
-      "transfersOutEvent": 22074,
+      "transfersInEvent": 92194,
+      "transfersOutEvent": 23200,
       "eventPoints": 8
     },
     {
@@ -3521,8 +3521,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 3864,
-      "transfersOutEvent": 2719,
+      "transfersInEvent": 3950,
+      "transfersOutEvent": 2772,
       "eventPoints": 0
     },
     {
@@ -3544,7 +3544,7 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 132,
+      "transfersInEvent": 134,
       "transfersOutEvent": 153,
       "eventPoints": 0
     },
@@ -3567,8 +3567,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 34675,
-      "transfersOutEvent": 43493,
+      "transfersInEvent": 35959,
+      "transfersOutEvent": 45003,
       "eventPoints": 1
     },
     {
@@ -3590,8 +3590,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 290,
-      "transfersOutEvent": 284,
+      "transfersInEvent": 295,
+      "transfersOutEvent": 289,
       "eventPoints": 0
     },
     {
@@ -3630,14 +3630,14 @@
       "price": 5.5,
       "priceChangeSeason": 0,
       "priceChangeEvent": 0,
-      "ownership": 0,
+      "ownership": 0.1,
       "form": 6,
       "totalPoints": 12,
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 3805,
-      "transfersOutEvent": 420,
+      "transfersInEvent": 3961,
+      "transfersOutEvent": 435,
       "eventPoints": 8
     },
     {
@@ -3659,7 +3659,7 @@
       "status": "i",
       "news": "Hamstring injury - Expected back 10 Oct",
       "chanceOfPlayingNextRound": 0,
-      "transfersInEvent": 24,
+      "transfersInEvent": 26,
       "transfersOutEvent": 52,
       "eventPoints": 0
     },
@@ -3682,8 +3682,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 369,
-      "transfersOutEvent": 237,
+      "transfersInEvent": 379,
+      "transfersOutEvent": 243,
       "eventPoints": 0
     },
     {
@@ -3705,8 +3705,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 11610,
-      "transfersOutEvent": 27582,
+      "transfersInEvent": 12141,
+      "transfersOutEvent": 28277,
       "eventPoints": 2
     },
     {
@@ -3722,14 +3722,14 @@
       "price": 7.8,
       "priceChangeSeason": 0.3,
       "priceChangeEvent": 0.1,
-      "ownership": 41.4,
+      "ownership": 41.5,
       "form": 5,
       "totalPoints": 29,
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 262192,
-      "transfersOutEvent": 91895,
+      "transfersInEvent": 277808,
+      "transfersOutEvent": 94503,
       "eventPoints": 2
     },
     {
@@ -3751,8 +3751,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": 100,
-      "transfersInEvent": 631,
-      "transfersOutEvent": 204,
+      "transfersInEvent": 643,
+      "transfersOutEvent": 205,
       "eventPoints": 2
     },
     {
@@ -3774,8 +3774,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": 100,
-      "transfersInEvent": 12487,
-      "transfersOutEvent": 12494,
+      "transfersInEvent": 13218,
+      "transfersOutEvent": 12952,
       "eventPoints": 2
     },
     {
@@ -3798,7 +3798,7 @@
       "news": "Has joined Como on loan for the rest of the season",
       "chanceOfPlayingNextRound": 0,
       "transfersInEvent": 0,
-      "transfersOutEvent": 6232,
+      "transfersOutEvent": 6424,
       "eventPoints": 0
     },
     {
@@ -3837,14 +3837,14 @@
       "price": 5.3,
       "priceChangeSeason": -0.2,
       "priceChangeEvent": -0.1,
-      "ownership": 5.6,
+      "ownership": 5.5,
       "form": 0.5,
       "totalPoints": 3,
       "status": "d",
       "news": "Hamstring injury - 75% chance of playing",
       "chanceOfPlayingNextRound": 75,
-      "transfersInEvent": 820,
-      "transfersOutEvent": 99642,
+      "transfersInEvent": 839,
+      "transfersOutEvent": 102950,
       "eventPoints": 0
     },
     {
@@ -3867,7 +3867,7 @@
       "news": "Has joined Como permanently",
       "chanceOfPlayingNextRound": 0,
       "transfersInEvent": 0,
-      "transfersOutEvent": 379,
+      "transfersOutEvent": 387,
       "eventPoints": 0
     },
     {
@@ -3889,8 +3889,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 2097,
-      "transfersOutEvent": 8203,
+      "transfersInEvent": 2172,
+      "transfersOutEvent": 8392,
       "eventPoints": 0
     },
     {
@@ -3912,8 +3912,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": 100,
-      "transfersInEvent": 3827,
-      "transfersOutEvent": 1652,
+      "transfersInEvent": 3993,
+      "transfersOutEvent": 1687,
       "eventPoints": 4
     },
     {
@@ -3958,8 +3958,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 1281,
-      "transfersOutEvent": 9708,
+      "transfersInEvent": 1344,
+      "transfersOutEvent": 10111,
       "eventPoints": 0
     },
     {
@@ -3981,8 +3981,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 1798,
-      "transfersOutEvent": 7027,
+      "transfersInEvent": 1898,
+      "transfersOutEvent": 7283,
       "eventPoints": 1
     },
     {
@@ -4005,7 +4005,7 @@
       "news": "Has joined Real Sociedad on loan for the rest of the season",
       "chanceOfPlayingNextRound": 0,
       "transfersInEvent": 0,
-      "transfersOutEvent": 214,
+      "transfersOutEvent": 219,
       "eventPoints": 0
     },
     {
@@ -4027,8 +4027,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 562,
-      "transfersOutEvent": 2495,
+      "transfersInEvent": 581,
+      "transfersOutEvent": 2565,
       "eventPoints": 0
     },
     {
@@ -4050,8 +4050,8 @@
       "status": "d",
       "news": "Thigh injury - 50% chance of playing",
       "chanceOfPlayingNextRound": 50,
-      "transfersInEvent": 438,
-      "transfersOutEvent": 5682,
+      "transfersInEvent": 460,
+      "transfersOutEvent": 5960,
       "eventPoints": 0
     },
     {
@@ -4067,14 +4067,14 @@
       "price": 9.7,
       "priceChangeSeason": 0.2,
       "priceChangeEvent": 0,
-      "ownership": 24.6,
+      "ownership": 24.4,
       "form": 3.5,
       "totalPoints": 28,
       "status": "d",
       "news": "Muscular injury - 75% chance of playing",
       "chanceOfPlayingNextRound": 75,
-      "transfersInEvent": 63177,
-      "transfersOutEvent": 278095,
+      "transfersInEvent": 64829,
+      "transfersOutEvent": 294289,
       "eventPoints": 2
     },
     {
@@ -4096,8 +4096,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 8631,
-      "transfersOutEvent": 12127,
+      "transfersInEvent": 9122,
+      "transfersOutEvent": 12458,
       "eventPoints": 2
     },
     {
@@ -4119,8 +4119,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 2650,
-      "transfersOutEvent": 5050,
+      "transfersInEvent": 2761,
+      "transfersOutEvent": 5133,
       "eventPoints": 1
     },
     {
@@ -4143,7 +4143,7 @@
       "news": "Ankle injury - 75% chance of playing",
       "chanceOfPlayingNextRound": 75,
       "transfersInEvent": 163,
-      "transfersOutEvent": 315,
+      "transfersOutEvent": 320,
       "eventPoints": 0
     },
     {
@@ -4165,8 +4165,8 @@
       "status": "d",
       "news": "Calf injury - 50% chance of playing",
       "chanceOfPlayingNextRound": 50,
-      "transfersInEvent": 505,
-      "transfersOutEvent": 11645,
+      "transfersInEvent": 511,
+      "transfersOutEvent": 12032,
       "eventPoints": 0
     },
     {
@@ -4188,8 +4188,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 691,
-      "transfersOutEvent": 2996,
+      "transfersInEvent": 721,
+      "transfersOutEvent": 3087,
       "eventPoints": 0
     },
     {
@@ -4212,7 +4212,7 @@
       "news": "Has joined RC Strasbourg on loan for the rest of the season",
       "chanceOfPlayingNextRound": 0,
       "transfersInEvent": 0,
-      "transfersOutEvent": 917,
+      "transfersOutEvent": 940,
       "eventPoints": 0
     },
     {
@@ -4234,8 +4234,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": 100,
-      "transfersInEvent": 87,
-      "transfersOutEvent": 220,
+      "transfersInEvent": 89,
+      "transfersOutEvent": 224,
       "eventPoints": 1
     },
     {
@@ -4251,14 +4251,14 @@
       "price": 7.7,
       "priceChangeSeason": 0.2,
       "priceChangeEvent": -0.1,
-      "ownership": 63.8,
+      "ownership": 63.6,
       "form": 6,
       "totalPoints": 33,
       "status": "d",
       "news": "Knee injury - 75% chance of playing",
       "chanceOfPlayingNextRound": 75,
-      "transfersInEvent": 101473,
-      "transfersOutEvent": 528109,
+      "transfersInEvent": 106586,
+      "transfersOutEvent": 549075,
       "eventPoints": 0
     },
     {
@@ -4281,7 +4281,7 @@
       "news": "Has joined RB Leipzig permanently",
       "chanceOfPlayingNextRound": 0,
       "transfersInEvent": 0,
-      "transfersOutEvent": 1941,
+      "transfersOutEvent": 1998,
       "eventPoints": 0
     },
     {
@@ -4303,8 +4303,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 5573,
-      "transfersOutEvent": 4321,
+      "transfersInEvent": 5694,
+      "transfersOutEvent": 4417,
       "eventPoints": 0
     },
     {
@@ -4326,8 +4326,8 @@
       "status": "i",
       "news": "Hamstring injury - Expected back 10 Oct",
       "chanceOfPlayingNextRound": 0,
-      "transfersInEvent": 133,
-      "transfersOutEvent": 1288,
+      "transfersInEvent": 136,
+      "transfersOutEvent": 1308,
       "eventPoints": 0
     },
     {
@@ -4349,8 +4349,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 12907,
-      "transfersOutEvent": 37867,
+      "transfersInEvent": 13530,
+      "transfersOutEvent": 39042,
       "eventPoints": 3
     },
     {
@@ -4372,8 +4372,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 281,
-      "transfersOutEvent": 369,
+      "transfersInEvent": 287,
+      "transfersOutEvent": 378,
       "eventPoints": 0
     },
     {
@@ -4395,8 +4395,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": 100,
-      "transfersInEvent": 85,
-      "transfersOutEvent": 124,
+      "transfersInEvent": 87,
+      "transfersOutEvent": 126,
       "eventPoints": 0
     },
     {
@@ -4418,8 +4418,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 297,
-      "transfersOutEvent": 568,
+      "transfersInEvent": 303,
+      "transfersOutEvent": 583,
       "eventPoints": 2
     },
     {
@@ -4441,8 +4441,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 678,
-      "transfersOutEvent": 722,
+      "transfersInEvent": 719,
+      "transfersOutEvent": 745,
       "eventPoints": 1
     },
     {
@@ -4464,8 +4464,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 402,
-      "transfersOutEvent": 94,
+      "transfersInEvent": 410,
+      "transfersOutEvent": 95,
       "eventPoints": 1
     },
     {
@@ -4487,8 +4487,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 623,
-      "transfersOutEvent": 347,
+      "transfersInEvent": 642,
+      "transfersOutEvent": 359,
       "eventPoints": 8
     },
     {
@@ -4510,8 +4510,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": 100,
-      "transfersInEvent": 212,
-      "transfersOutEvent": 614,
+      "transfersInEvent": 221,
+      "transfersOutEvent": 639,
       "eventPoints": 3
     },
     {
@@ -4533,8 +4533,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 3598,
-      "transfersOutEvent": 7680,
+      "transfersInEvent": 3735,
+      "transfersOutEvent": 7929,
       "eventPoints": 11
     },
     {
@@ -4557,7 +4557,7 @@
       "news": "Has joined Leyton Orient on loan for the rest of the season",
       "chanceOfPlayingNextRound": 0,
       "transfersInEvent": 0,
-      "transfersOutEvent": 6892,
+      "transfersOutEvent": 7219,
       "eventPoints": 0
     },
     {
@@ -4579,8 +4579,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 293,
-      "transfersOutEvent": 892,
+      "transfersInEvent": 302,
+      "transfersOutEvent": 919,
       "eventPoints": 0
     },
     {
@@ -4602,8 +4602,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 46408,
-      "transfersOutEvent": 46539,
+      "transfersInEvent": 49055,
+      "transfersOutEvent": 48400,
       "eventPoints": 9
     },
     {
@@ -4626,7 +4626,7 @@
       "news": "Has joined Sheffield United on loan for the rest of the season",
       "chanceOfPlayingNextRound": 0,
       "transfersInEvent": 0,
-      "transfersOutEvent": 2572,
+      "transfersOutEvent": 2673,
       "eventPoints": 0
     },
     {
@@ -4642,14 +4642,14 @@
       "price": 4,
       "priceChangeSeason": 0,
       "priceChangeEvent": 0,
-      "ownership": 8.4,
+      "ownership": 8.3,
       "form": 0,
       "totalPoints": 6,
       "status": "d",
       "news": "Hamstring injury - 75% chance of playing",
       "chanceOfPlayingNextRound": 75,
-      "transfersInEvent": 1359,
-      "transfersOutEvent": 109359,
+      "transfersInEvent": 1380,
+      "transfersOutEvent": 114808,
       "eventPoints": 0
     },
     {
@@ -4671,8 +4671,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 11460,
-      "transfersOutEvent": 3030,
+      "transfersInEvent": 12141,
+      "transfersOutEvent": 3178,
       "eventPoints": 15
     },
     {
@@ -4694,8 +4694,8 @@
       "status": "d",
       "news": "Hamstring injury - 50% chance of playing",
       "chanceOfPlayingNextRound": 50,
-      "transfersInEvent": 4199,
-      "transfersOutEvent": 1175,
+      "transfersInEvent": 4235,
+      "transfersOutEvent": 1203,
       "eventPoints": 0
     },
     {
@@ -4717,8 +4717,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 236,
-      "transfersOutEvent": 403,
+      "transfersInEvent": 248,
+      "transfersOutEvent": 418,
       "eventPoints": 0
     },
     {
@@ -4740,8 +4740,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 92,
-      "transfersOutEvent": 191,
+      "transfersInEvent": 95,
+      "transfersOutEvent": 200,
       "eventPoints": 1
     },
     {
@@ -4763,8 +4763,8 @@
       "status": "i",
       "news": "Knee injury - Unknown return date",
       "chanceOfPlayingNextRound": 0,
-      "transfersInEvent": 348,
-      "transfersOutEvent": 777,
+      "transfersInEvent": 376,
+      "transfersOutEvent": 822,
       "eventPoints": 0
     },
     {
@@ -4787,7 +4787,7 @@
       "news": "Has joined Academico de Viseu on loan for the rest of the season",
       "chanceOfPlayingNextRound": 0,
       "transfersInEvent": 0,
-      "transfersOutEvent": 142,
+      "transfersOutEvent": 148,
       "eventPoints": 0
     },
     {
@@ -4809,8 +4809,8 @@
       "status": "i",
       "news": "Calf injury - Unknown return date",
       "chanceOfPlayingNextRound": 0,
-      "transfersInEvent": 56,
-      "transfersOutEvent": 8829,
+      "transfersInEvent": 57,
+      "transfersOutEvent": 9104,
       "eventPoints": 0
     },
     {
@@ -4832,8 +4832,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": 100,
-      "transfersInEvent": 1348,
-      "transfersOutEvent": 1037,
+      "transfersInEvent": 1389,
+      "transfersOutEvent": 1072,
       "eventPoints": 5
     },
     {
@@ -4855,8 +4855,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 246,
-      "transfersOutEvent": 1201,
+      "transfersInEvent": 251,
+      "transfersOutEvent": 1252,
       "eventPoints": 3
     },
     {
@@ -4878,8 +4878,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 142,
-      "transfersOutEvent": 516,
+      "transfersInEvent": 144,
+      "transfersOutEvent": 541,
       "eventPoints": 0
     },
     {
@@ -4901,8 +4901,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": 100,
-      "transfersInEvent": 97,
-      "transfersOutEvent": 443,
+      "transfersInEvent": 99,
+      "transfersOutEvent": 454,
       "eventPoints": 1
     },
     {
@@ -4925,7 +4925,7 @@
       "news": "Unspecified injury - Expected back 12 Oct",
       "chanceOfPlayingNextRound": 0,
       "transfersInEvent": 38,
-      "transfersOutEvent": 126,
+      "transfersOutEvent": 129,
       "eventPoints": 0
     },
     {
@@ -4947,8 +4947,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 48,
-      "transfersOutEvent": 575,
+      "transfersInEvent": 49,
+      "transfersOutEvent": 600,
       "eventPoints": 0
     },
     {
@@ -4970,8 +4970,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 4726,
-      "transfersOutEvent": 3533,
+      "transfersInEvent": 4772,
+      "transfersOutEvent": 3617,
       "eventPoints": 0
     },
     {
@@ -4993,8 +4993,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 38,
-      "transfersOutEvent": 476,
+      "transfersInEvent": 40,
+      "transfersOutEvent": 499,
       "eventPoints": 1
     },
     {
@@ -5017,7 +5017,7 @@
       "news": "Has joined Burton Albion on loan for the rest of the season",
       "chanceOfPlayingNextRound": 0,
       "transfersInEvent": 0,
-      "transfersOutEvent": 974,
+      "transfersOutEvent": 1038,
       "eventPoints": 0
     },
     {
@@ -5040,7 +5040,7 @@
       "news": "Has joined Oxford United on loan for the rest of the season",
       "chanceOfPlayingNextRound": 0,
       "transfersInEvent": 0,
-      "transfersOutEvent": 2807,
+      "transfersOutEvent": 2950,
       "eventPoints": 0
     },
     {
@@ -5063,7 +5063,7 @@
       "news": "Thigh injury - Unknown return date",
       "chanceOfPlayingNextRound": 0,
       "transfersInEvent": 53,
-      "transfersOutEvent": 748,
+      "transfersOutEvent": 762,
       "eventPoints": 0
     },
     {
@@ -5085,8 +5085,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 12539,
-      "transfersOutEvent": 8371,
+      "transfersInEvent": 13142,
+      "transfersOutEvent": 8705,
       "eventPoints": 4
     },
     {
@@ -5108,8 +5108,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 3368,
-      "transfersOutEvent": 7127,
+      "transfersInEvent": 3602,
+      "transfersOutEvent": 7420,
       "eventPoints": 1
     },
     {
@@ -5132,7 +5132,7 @@
       "news": "Has joined Shabab Al-Ahli Dubai permanently",
       "chanceOfPlayingNextRound": 0,
       "transfersInEvent": 0,
-      "transfersOutEvent": 73,
+      "transfersOutEvent": 77,
       "eventPoints": 0
     },
     {
@@ -5155,7 +5155,7 @@
       "news": "Has joined KVC Westerlo on loan for the rest of the season",
       "chanceOfPlayingNextRound": 0,
       "transfersInEvent": 0,
-      "transfersOutEvent": 181,
+      "transfersOutEvent": 184,
       "eventPoints": 0
     },
     {
@@ -5177,8 +5177,8 @@
       "status": "s",
       "news": "Suspended until 19 Oct",
       "chanceOfPlayingNextRound": 0,
-      "transfersInEvent": 99,
-      "transfersOutEvent": 6753,
+      "transfersInEvent": 101,
+      "transfersOutEvent": 7010,
       "eventPoints": 0
     },
     {
@@ -5200,8 +5200,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 388,
-      "transfersOutEvent": 1332,
+      "transfersInEvent": 397,
+      "transfersOutEvent": 1383,
       "eventPoints": 3
     },
     {
@@ -5223,8 +5223,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 60,
-      "transfersOutEvent": 522,
+      "transfersInEvent": 63,
+      "transfersOutEvent": 543,
       "eventPoints": 0
     },
     {
@@ -5246,8 +5246,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 705,
-      "transfersOutEvent": 972,
+      "transfersInEvent": 723,
+      "transfersOutEvent": 999,
       "eventPoints": 0
     },
     {
@@ -5269,8 +5269,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 15909,
-      "transfersOutEvent": 3369,
+      "transfersInEvent": 17215,
+      "transfersOutEvent": 3507,
       "eventPoints": 0
     },
     {
@@ -5315,8 +5315,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 2408,
-      "transfersOutEvent": 1043,
+      "transfersInEvent": 2475,
+      "transfersOutEvent": 1063,
       "eventPoints": 6
     },
     {
@@ -5338,8 +5338,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 128,
-      "transfersOutEvent": 311,
+      "transfersInEvent": 129,
+      "transfersOutEvent": 321,
       "eventPoints": 0
     },
     {
@@ -5362,7 +5362,7 @@
       "news": "Suspended until 25 Oct",
       "chanceOfPlayingNextRound": 0,
       "transfersInEvent": 40,
-      "transfersOutEvent": 1038,
+      "transfersOutEvent": 1089,
       "eventPoints": 0
     },
     {
@@ -5384,8 +5384,8 @@
       "status": "i",
       "news": "Foot injury - Expected back 11 Oct",
       "chanceOfPlayingNextRound": 0,
-      "transfersInEvent": 183,
-      "transfersOutEvent": 14750,
+      "transfersInEvent": 185,
+      "transfersOutEvent": 15178,
       "eventPoints": 0
     },
     {
@@ -5407,8 +5407,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 1089,
-      "transfersOutEvent": 552,
+      "transfersInEvent": 1153,
+      "transfersOutEvent": 578,
       "eventPoints": 6
     },
     {
@@ -5430,8 +5430,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 2562,
-      "transfersOutEvent": 2943,
+      "transfersInEvent": 2678,
+      "transfersOutEvent": 3041,
       "eventPoints": 8
     },
     {
@@ -5453,8 +5453,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 723,
-      "transfersOutEvent": 1191,
+      "transfersInEvent": 772,
+      "transfersOutEvent": 1248,
       "eventPoints": 8
     },
     {
@@ -5476,8 +5476,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 22328,
-      "transfersOutEvent": 24904,
+      "transfersInEvent": 23259,
+      "transfersOutEvent": 26206,
       "eventPoints": 7
     },
     {
@@ -5500,7 +5500,7 @@
       "news": "Has joined FC Cologne on loan for the rest of the season",
       "chanceOfPlayingNextRound": 0,
       "transfersInEvent": 0,
-      "transfersOutEvent": 138,
+      "transfersOutEvent": 142,
       "eventPoints": 0
     },
     {
@@ -5523,7 +5523,7 @@
       "news": "Knee injury - Unknown return date",
       "chanceOfPlayingNextRound": 0,
       "transfersInEvent": 36,
-      "transfersOutEvent": 189,
+      "transfersOutEvent": 191,
       "eventPoints": 0
     },
     {
@@ -5545,8 +5545,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 127,
-      "transfersOutEvent": 412,
+      "transfersInEvent": 134,
+      "transfersOutEvent": 443,
       "eventPoints": 0
     },
     {
@@ -5568,8 +5568,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": 100,
-      "transfersInEvent": 3744,
-      "transfersOutEvent": 2990,
+      "transfersInEvent": 3901,
+      "transfersOutEvent": 3078,
       "eventPoints": 1
     },
     {
@@ -5591,8 +5591,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": 100,
-      "transfersInEvent": 1518,
-      "transfersOutEvent": 5668,
+      "transfersInEvent": 1540,
+      "transfersOutEvent": 5839,
       "eventPoints": 2
     },
     {
@@ -5614,8 +5614,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 916,
-      "transfersOutEvent": 3814,
+      "transfersInEvent": 941,
+      "transfersOutEvent": 4009,
       "eventPoints": 2
     },
     {
@@ -5637,8 +5637,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 11462,
-      "transfersOutEvent": 63822,
+      "transfersInEvent": 11819,
+      "transfersOutEvent": 67191,
       "eventPoints": 0
     },
     {
@@ -5660,8 +5660,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 128,
-      "transfersOutEvent": 490,
+      "transfersInEvent": 135,
+      "transfersOutEvent": 503,
       "eventPoints": 0
     },
     {
@@ -5683,8 +5683,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 4579,
-      "transfersOutEvent": 4253,
+      "transfersInEvent": 4776,
+      "transfersOutEvent": 4420,
       "eventPoints": 3
     },
     {
@@ -5730,7 +5730,7 @@
       "news": "Has joined Millwall on loan for the rest of the season",
       "chanceOfPlayingNextRound": 0,
       "transfersInEvent": 0,
-      "transfersOutEvent": 162,
+      "transfersOutEvent": 171,
       "eventPoints": 0
     },
     {
@@ -5753,7 +5753,7 @@
       "news": "Has joined Alverca on loan for the rest of the season",
       "chanceOfPlayingNextRound": 0,
       "transfersInEvent": 0,
-      "transfersOutEvent": 205,
+      "transfersOutEvent": 211,
       "eventPoints": 0
     },
     {
@@ -5775,8 +5775,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 145,
-      "transfersOutEvent": 372,
+      "transfersInEvent": 155,
+      "transfersOutEvent": 387,
       "eventPoints": 0
     },
     {
@@ -5844,8 +5844,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 213,
-      "transfersOutEvent": 548,
+      "transfersInEvent": 216,
+      "transfersOutEvent": 571,
       "eventPoints": 0
     },
     {
@@ -5867,8 +5867,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 8638,
-      "transfersOutEvent": 5562,
+      "transfersInEvent": 9165,
+      "transfersOutEvent": 5802,
       "eventPoints": 2
     },
     {
@@ -5890,8 +5890,8 @@
       "status": "i",
       "news": "Hamstring injury - Expected back 11 Oct",
       "chanceOfPlayingNextRound": 0,
-      "transfersInEvent": 282,
-      "transfersOutEvent": 11411,
+      "transfersInEvent": 287,
+      "transfersOutEvent": 11728,
       "eventPoints": 0
     },
     {
@@ -5913,8 +5913,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": 100,
-      "transfersInEvent": 1749,
-      "transfersOutEvent": 4439,
+      "transfersInEvent": 1820,
+      "transfersOutEvent": 4589,
       "eventPoints": 1
     },
     {
@@ -5959,8 +5959,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 118,
-      "transfersOutEvent": 644,
+      "transfersInEvent": 121,
+      "transfersOutEvent": 672,
       "eventPoints": 0
     },
     {
@@ -5982,8 +5982,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 1537,
-      "transfersOutEvent": 3837,
+      "transfersInEvent": 1587,
+      "transfersOutEvent": 3944,
       "eventPoints": 0
     },
     {
@@ -6005,8 +6005,8 @@
       "status": "d",
       "news": "Calf injury - 75% chance of playing",
       "chanceOfPlayingNextRound": 75,
-      "transfersInEvent": 156,
-      "transfersOutEvent": 1792,
+      "transfersInEvent": 157,
+      "transfersOutEvent": 1884,
       "eventPoints": 1
     },
     {
@@ -6028,8 +6028,8 @@
       "status": "d",
       "news": "Hamstring injury - 75% chance of playing",
       "chanceOfPlayingNextRound": 75,
-      "transfersInEvent": 2373,
-      "transfersOutEvent": 2576,
+      "transfersInEvent": 2390,
+      "transfersOutEvent": 2752,
       "eventPoints": 6
     },
     {
@@ -6051,8 +6051,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 43,
-      "transfersOutEvent": 110,
+      "transfersInEvent": 46,
+      "transfersOutEvent": 114,
       "eventPoints": 0
     },
     {
@@ -6074,8 +6074,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 175,
-      "transfersOutEvent": 137,
+      "transfersInEvent": 178,
+      "transfersOutEvent": 141,
       "eventPoints": 0
     },
     {
@@ -6097,8 +6097,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 772,
-      "transfersOutEvent": 3838,
+      "transfersInEvent": 814,
+      "transfersOutEvent": 3967,
       "eventPoints": 0
     },
     {
@@ -6120,8 +6120,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 610,
-      "transfersOutEvent": 401,
+      "transfersInEvent": 628,
+      "transfersOutEvent": 407,
       "eventPoints": 3
     },
     {
@@ -6143,8 +6143,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 37,
-      "transfersOutEvent": 91,
+      "transfersInEvent": 38,
+      "transfersOutEvent": 92,
       "eventPoints": 0
     },
     {
@@ -6167,7 +6167,7 @@
       "news": "Groin injury - Unknown return date",
       "chanceOfPlayingNextRound": 0,
       "transfersInEvent": 78,
-      "transfersOutEvent": 458,
+      "transfersOutEvent": 470,
       "eventPoints": 0
     },
     {
@@ -6189,8 +6189,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 582,
-      "transfersOutEvent": 1018,
+      "transfersInEvent": 604,
+      "transfersOutEvent": 1060,
       "eventPoints": 3
     },
     {
@@ -6212,8 +6212,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 38236,
-      "transfersOutEvent": 23578,
+      "transfersInEvent": 39375,
+      "transfersOutEvent": 24560,
       "eventPoints": 8
     },
     {
@@ -6235,8 +6235,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 322,
-      "transfersOutEvent": 330,
+      "transfersInEvent": 333,
+      "transfersOutEvent": 335,
       "eventPoints": 0
     },
     {
@@ -6258,8 +6258,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 147,
-      "transfersOutEvent": 207,
+      "transfersInEvent": 148,
+      "transfersOutEvent": 211,
       "eventPoints": 0
     },
     {
@@ -6275,14 +6275,14 @@
       "price": 6.2,
       "priceChangeSeason": 0.2,
       "priceChangeEvent": 0.1,
-      "ownership": 17.4,
+      "ownership": 17.6,
       "form": 11,
       "totalPoints": 43,
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 314739,
-      "transfersOutEvent": 37818,
+      "transfersInEvent": 326408,
+      "transfersOutEvent": 39746,
       "eventPoints": 14
     },
     {
@@ -6298,14 +6298,14 @@
       "price": 5.5,
       "priceChangeSeason": 0,
       "priceChangeEvent": 0,
-      "ownership": 2.5,
+      "ownership": 2.6,
       "form": 7,
       "totalPoints": 27,
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 32219,
-      "transfersOutEvent": 11278,
+      "transfersInEvent": 33884,
+      "transfersOutEvent": 11782,
       "eventPoints": 8
     },
     {
@@ -6327,8 +6327,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 624,
-      "transfersOutEvent": 5120,
+      "transfersInEvent": 659,
+      "transfersOutEvent": 5339,
       "eventPoints": 0
     },
     {
@@ -6350,8 +6350,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 483,
-      "transfersOutEvent": 1545,
+      "transfersInEvent": 506,
+      "transfersOutEvent": 1601,
       "eventPoints": 1
     },
     {
@@ -6367,14 +6367,14 @@
       "price": 4.6,
       "priceChangeSeason": 0.1,
       "priceChangeEvent": 0.1,
-      "ownership": 4,
+      "ownership": 3.9,
       "form": 8,
       "totalPoints": 27,
       "status": "d",
       "news": "Leg injury - 75% chance of playing",
       "chanceOfPlayingNextRound": 75,
-      "transfersInEvent": 43549,
-      "transfersOutEvent": 45492,
+      "transfersInEvent": 43848,
+      "transfersOutEvent": 48554,
       "eventPoints": 5
     },
     {
@@ -6397,7 +6397,7 @@
       "news": "Has joined Torino permanently",
       "chanceOfPlayingNextRound": 0,
       "transfersInEvent": 0,
-      "transfersOutEvent": 165,
+      "transfersOutEvent": 171,
       "eventPoints": 0
     },
     {
@@ -6420,7 +6420,7 @@
       "news": "Has joined Malaga on loan for the rest of the season",
       "chanceOfPlayingNextRound": 0,
       "transfersInEvent": 0,
-      "transfersOutEvent": 762,
+      "transfersOutEvent": 795,
       "eventPoints": 0
     },
     {
@@ -6442,8 +6442,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 42094,
-      "transfersOutEvent": 68411,
+      "transfersInEvent": 43155,
+      "transfersOutEvent": 71067,
       "eventPoints": 3
     },
     {
@@ -6465,8 +6465,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": 100,
-      "transfersInEvent": 5539,
-      "transfersOutEvent": 3955,
+      "transfersInEvent": 5775,
+      "transfersOutEvent": 4094,
       "eventPoints": 3
     },
     {
@@ -6488,8 +6488,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": 100,
-      "transfersInEvent": 2821,
-      "transfersOutEvent": 2788,
+      "transfersInEvent": 2932,
+      "transfersOutEvent": 2885,
       "eventPoints": 3
     },
     {
@@ -6505,14 +6505,14 @@
       "price": 5.5,
       "priceChangeSeason": 0,
       "priceChangeEvent": 0,
-      "ownership": 0.9,
+      "ownership": 0.8,
       "form": 2,
       "totalPoints": 19,
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 3215,
-      "transfersOutEvent": 15022,
+      "transfersInEvent": 3309,
+      "transfersOutEvent": 15715,
       "eventPoints": 1
     },
     {
@@ -6534,8 +6534,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 201,
-      "transfersOutEvent": 519,
+      "transfersInEvent": 203,
+      "transfersOutEvent": 545,
       "eventPoints": 0
     },
     {
@@ -6557,8 +6557,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": 100,
-      "transfersInEvent": 1123,
-      "transfersOutEvent": 4108,
+      "transfersInEvent": 1152,
+      "transfersOutEvent": 4223,
       "eventPoints": 2
     },
     {
@@ -6580,8 +6580,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 151,
-      "transfersOutEvent": 211,
+      "transfersInEvent": 156,
+      "transfersOutEvent": 220,
       "eventPoints": 1
     },
     {
@@ -6604,7 +6604,7 @@
       "news": "Unspecified injury - Expected back 11 Oct",
       "chanceOfPlayingNextRound": 0,
       "transfersInEvent": 8,
-      "transfersOutEvent": 766,
+      "transfersOutEvent": 786,
       "eventPoints": 0
     },
     {
@@ -6626,8 +6626,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": 100,
-      "transfersInEvent": 245,
-      "transfersOutEvent": 1428,
+      "transfersInEvent": 254,
+      "transfersOutEvent": 1475,
       "eventPoints": 1
     },
     {
@@ -6650,7 +6650,7 @@
       "news": "Has joined Fiorentina permanently",
       "chanceOfPlayingNextRound": 0,
       "transfersInEvent": 0,
-      "transfersOutEvent": 9382,
+      "transfersOutEvent": 9707,
       "eventPoints": 0
     },
     {
@@ -6672,8 +6672,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 124150,
-      "transfersOutEvent": 61708,
+      "transfersInEvent": 130138,
+      "transfersOutEvent": 64626,
       "eventPoints": 6
     },
     {
@@ -6695,8 +6695,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 26309,
-      "transfersOutEvent": 7219,
+      "transfersInEvent": 27261,
+      "transfersOutEvent": 7489,
       "eventPoints": 8
     },
     {
@@ -6718,8 +6718,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 269,
-      "transfersOutEvent": 1154,
+      "transfersInEvent": 276,
+      "transfersOutEvent": 1168,
       "eventPoints": 0
     },
     {
@@ -6741,8 +6741,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 67296,
-      "transfersOutEvent": 19682,
+      "transfersInEvent": 71183,
+      "transfersOutEvent": 20565,
       "eventPoints": 3
     },
     {
@@ -6764,8 +6764,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 3678,
-      "transfersOutEvent": 3645,
+      "transfersInEvent": 3862,
+      "transfersOutEvent": 3777,
       "eventPoints": 0
     },
     {
@@ -6788,7 +6788,7 @@
       "news": "Has joined York City on loan for the rest of the season",
       "chanceOfPlayingNextRound": 0,
       "transfersInEvent": 0,
-      "transfersOutEvent": 802,
+      "transfersOutEvent": 833,
       "eventPoints": 0
     },
     {
@@ -6810,8 +6810,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": 100,
-      "transfersInEvent": 4181,
-      "transfersOutEvent": 1515,
+      "transfersInEvent": 4427,
+      "transfersOutEvent": 1557,
       "eventPoints": 1
     },
     {
@@ -6830,11 +6830,11 @@
       "ownership": 1.6,
       "form": 4,
       "totalPoints": 12,
-      "status": "a",
-      "news": "",
-      "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 30395,
-      "transfersOutEvent": 10960,
+      "status": "d",
+      "news": "Ankle injury - 75% chance of playing",
+      "chanceOfPlayingNextRound": 75,
+      "transfersInEvent": 32267,
+      "transfersOutEvent": 11990,
       "eventPoints": 2
     },
     {
@@ -6856,8 +6856,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 82,
-      "transfersOutEvent": 138,
+      "transfersInEvent": 84,
+      "transfersOutEvent": 143,
       "eventPoints": 0
     },
     {
@@ -6879,8 +6879,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": 100,
-      "transfersInEvent": 116,
-      "transfersOutEvent": 1225,
+      "transfersInEvent": 123,
+      "transfersOutEvent": 1254,
       "eventPoints": 0
     },
     {
@@ -6902,8 +6902,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 13044,
-      "transfersOutEvent": 3256,
+      "transfersInEvent": 14253,
+      "transfersOutEvent": 3412,
       "eventPoints": 6
     },
     {
@@ -6925,8 +6925,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 24687,
-      "transfersOutEvent": 7565,
+      "transfersInEvent": 26452,
+      "transfersOutEvent": 7884,
       "eventPoints": 1
     },
     {
@@ -6948,8 +6948,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 6866,
-      "transfersOutEvent": 4703,
+      "transfersInEvent": 7412,
+      "transfersOutEvent": 4902,
       "eventPoints": 5
     },
     {
@@ -6971,8 +6971,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 453,
-      "transfersOutEvent": 1629,
+      "transfersInEvent": 468,
+      "transfersOutEvent": 1680,
       "eventPoints": 0
     },
     {
@@ -6994,8 +6994,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 275,
-      "transfersOutEvent": 369,
+      "transfersInEvent": 298,
+      "transfersOutEvent": 387,
       "eventPoints": 1
     },
     {
@@ -7017,8 +7017,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 4228,
-      "transfersOutEvent": 2497,
+      "transfersInEvent": 4476,
+      "transfersOutEvent": 2591,
       "eventPoints": 3
     },
     {
@@ -7040,8 +7040,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 996,
-      "transfersOutEvent": 1825,
+      "transfersInEvent": 1044,
+      "transfersOutEvent": 1900,
       "eventPoints": 3
     },
     {
@@ -7061,9 +7061,9 @@
       "form": 0,
       "totalPoints": 0,
       "status": "i",
-      "news": "Knee injury - Expected back 10 Oct",
+      "news": "Knee injury - Expected back 17 Oct",
       "chanceOfPlayingNextRound": 0,
-      "transfersInEvent": 18,
+      "transfersInEvent": 19,
       "transfersOutEvent": 22,
       "eventPoints": 0
     },
@@ -7080,14 +7080,14 @@
       "price": 5.6,
       "priceChangeSeason": 0.1,
       "priceChangeEvent": 0.1,
-      "ownership": 3.4,
+      "ownership": 3.5,
       "form": 2.5,
       "totalPoints": 24,
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 179938,
-      "transfersOutEvent": 30795,
+      "transfersInEvent": 191082,
+      "transfersOutEvent": 32335,
       "eventPoints": 2
     },
     {
@@ -7109,8 +7109,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": 100,
-      "transfersInEvent": 484,
-      "transfersOutEvent": 1669,
+      "transfersInEvent": 503,
+      "transfersOutEvent": 1724,
       "eventPoints": 0
     },
     {
@@ -7132,8 +7132,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 3411,
-      "transfersOutEvent": 9151,
+      "transfersInEvent": 3467,
+      "transfersOutEvent": 9509,
       "eventPoints": 0
     },
     {
@@ -7155,8 +7155,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 2642,
-      "transfersOutEvent": 3497,
+      "transfersInEvent": 2770,
+      "transfersOutEvent": 3623,
       "eventPoints": 0
     },
     {
@@ -7178,8 +7178,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 14887,
-      "transfersOutEvent": 45669,
+      "transfersInEvent": 15409,
+      "transfersOutEvent": 47644,
       "eventPoints": 0
     },
     {
@@ -7195,14 +7195,14 @@
       "price": 6,
       "priceChangeSeason": 0,
       "priceChangeEvent": 0,
-      "ownership": 4.8,
+      "ownership": 5,
       "form": 2,
       "totalPoints": 14,
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 167082,
-      "transfersOutEvent": 47042,
+      "transfersInEvent": 186106,
+      "transfersOutEvent": 48624,
       "eventPoints": 2
     },
     {
@@ -7224,8 +7224,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 943,
-      "transfersOutEvent": 1253,
+      "transfersInEvent": 982,
+      "transfersOutEvent": 1298,
       "eventPoints": 1
     },
     {
@@ -7247,8 +7247,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 1653,
-      "transfersOutEvent": 701,
+      "transfersInEvent": 1800,
+      "transfersOutEvent": 741,
       "eventPoints": 4
     },
     {
@@ -7271,7 +7271,7 @@
       "news": "has joined  Real Salt Lake on loan for the rest of the seaon.",
       "chanceOfPlayingNextRound": 0,
       "transfersInEvent": 0,
-      "transfersOutEvent": 566,
+      "transfersOutEvent": 569,
       "eventPoints": 0
     },
     {
@@ -7293,8 +7293,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 2156,
-      "transfersOutEvent": 2860,
+      "transfersInEvent": 2325,
+      "transfersOutEvent": 2925,
       "eventPoints": 0
     },
     {
@@ -7316,8 +7316,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 123,
-      "transfersOutEvent": 87,
+      "transfersInEvent": 128,
+      "transfersOutEvent": 91,
       "eventPoints": 1
     },
     {
@@ -7362,8 +7362,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 23756,
-      "transfersOutEvent": 4451,
+      "transfersInEvent": 26434,
+      "transfersOutEvent": 4795,
       "eventPoints": 4
     },
     {
@@ -7385,8 +7385,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": 100,
-      "transfersInEvent": 92,
-      "transfersOutEvent": 164,
+      "transfersInEvent": 94,
+      "transfersOutEvent": 167,
       "eventPoints": 1
     },
     {
@@ -7408,8 +7408,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 4335,
-      "transfersOutEvent": 5186,
+      "transfersInEvent": 4534,
+      "transfersOutEvent": 5390,
       "eventPoints": 0
     },
     {
@@ -7432,7 +7432,7 @@
       "news": "Arm injury - Unknown return date",
       "chanceOfPlayingNextRound": 0,
       "transfersInEvent": 79,
-      "transfersOutEvent": 406,
+      "transfersOutEvent": 426,
       "eventPoints": 0
     },
     {
@@ -7455,7 +7455,7 @@
       "news": "Has joined Grimsby Town on loan for the rest of the season",
       "chanceOfPlayingNextRound": 0,
       "transfersInEvent": 0,
-      "transfersOutEvent": 35,
+      "transfersOutEvent": 37,
       "eventPoints": 0
     },
     {
@@ -7478,7 +7478,7 @@
       "news": "Has joined Colchester United on loan for the rest of the season",
       "chanceOfPlayingNextRound": 0,
       "transfersInEvent": 0,
-      "transfersOutEvent": 150,
+      "transfersOutEvent": 155,
       "eventPoints": 0
     },
     {
@@ -7500,8 +7500,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 50213,
-      "transfersOutEvent": 40765,
+      "transfersInEvent": 53611,
+      "transfersOutEvent": 42204,
       "eventPoints": 1
     },
     {
@@ -7523,8 +7523,8 @@
       "status": "i",
       "news": "Groin injury - Unknown return date",
       "chanceOfPlayingNextRound": 0,
-      "transfersInEvent": 1300,
-      "transfersOutEvent": 2364,
+      "transfersInEvent": 1314,
+      "transfersOutEvent": 2417,
       "eventPoints": 0
     },
     {
@@ -7546,8 +7546,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": 100,
-      "transfersInEvent": 61105,
-      "transfersOutEvent": 76747,
+      "transfersInEvent": 63972,
+      "transfersOutEvent": 79006,
       "eventPoints": 1
     },
     {
@@ -7569,8 +7569,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": 100,
-      "transfersInEvent": 2742,
-      "transfersOutEvent": 2837,
+      "transfersInEvent": 2835,
+      "transfersOutEvent": 2944,
       "eventPoints": 1
     },
     {
@@ -7593,7 +7593,7 @@
       "news": "Has joined Genoa permanently",
       "chanceOfPlayingNextRound": 0,
       "transfersInEvent": 0,
-      "transfersOutEvent": 308,
+      "transfersOutEvent": 310,
       "eventPoints": 0
     },
     {
@@ -7615,8 +7615,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 28719,
-      "transfersOutEvent": 18646,
+      "transfersInEvent": 29706,
+      "transfersOutEvent": 19226,
       "eventPoints": 0
     },
     {
@@ -7639,7 +7639,7 @@
       "news": "Has joined Newport County on loan until January",
       "chanceOfPlayingNextRound": 0,
       "transfersInEvent": 0,
-      "transfersOutEvent": 44,
+      "transfersOutEvent": 48,
       "eventPoints": 0
     },
     {
@@ -7661,8 +7661,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 505,
-      "transfersOutEvent": 579,
+      "transfersInEvent": 517,
+      "transfersOutEvent": 591,
       "eventPoints": 0
     },
     {
@@ -7684,8 +7684,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": 100,
-      "transfersInEvent": 248,
-      "transfersOutEvent": 534,
+      "transfersInEvent": 259,
+      "transfersOutEvent": 558,
       "eventPoints": 0
     },
     {
@@ -7707,8 +7707,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 112316,
-      "transfersOutEvent": 37483,
+      "transfersInEvent": 117971,
+      "transfersOutEvent": 38917,
       "eventPoints": 4
     },
     {
@@ -7731,7 +7731,7 @@
       "news": "Has joined Birmingham on loan for the rest of the season",
       "chanceOfPlayingNextRound": 0,
       "transfersInEvent": 0,
-      "transfersOutEvent": 381,
+      "transfersOutEvent": 391,
       "eventPoints": 0
     },
     {
@@ -7753,8 +7753,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 771,
-      "transfersOutEvent": 2641,
+      "transfersInEvent": 792,
+      "transfersOutEvent": 2723,
       "eventPoints": 0
     },
     {
@@ -7776,8 +7776,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": 100,
-      "transfersInEvent": 6578,
-      "transfersOutEvent": 5830,
+      "transfersInEvent": 6784,
+      "transfersOutEvent": 6059,
       "eventPoints": 0
     },
     {
@@ -7799,8 +7799,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 21624,
-      "transfersOutEvent": 51994,
+      "transfersInEvent": 22442,
+      "transfersOutEvent": 54027,
       "eventPoints": 2
     },
     {
@@ -7823,7 +7823,7 @@
       "news": "Knee injury - Unknown return date",
       "chanceOfPlayingNextRound": 0,
       "transfersInEvent": 34,
-      "transfersOutEvent": 78,
+      "transfersOutEvent": 82,
       "eventPoints": 0
     },
     {
@@ -7845,8 +7845,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 92,
-      "transfersOutEvent": 170,
+      "transfersInEvent": 95,
+      "transfersOutEvent": 177,
       "eventPoints": 0
     },
     {
@@ -7891,8 +7891,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": 100,
-      "transfersInEvent": 181,
-      "transfersOutEvent": 610,
+      "transfersInEvent": 183,
+      "transfersOutEvent": 625,
       "eventPoints": 0
     },
     {
@@ -7914,8 +7914,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 12067,
-      "transfersOutEvent": 23504,
+      "transfersInEvent": 12662,
+      "transfersOutEvent": 24267,
       "eventPoints": 1
     },
     {
@@ -7938,7 +7938,7 @@
       "news": "Has joined Omonoia FC permanently",
       "chanceOfPlayingNextRound": 0,
       "transfersInEvent": 0,
-      "transfersOutEvent": 334,
+      "transfersOutEvent": 342,
       "eventPoints": 0
     },
     {
@@ -7960,8 +7960,8 @@
       "status": "i",
       "news": "Thigh injury - Unknown return date",
       "chanceOfPlayingNextRound": 0,
-      "transfersInEvent": 75,
-      "transfersOutEvent": 171,
+      "transfersInEvent": 77,
+      "transfersOutEvent": 173,
       "eventPoints": 0
     },
     {
@@ -7984,7 +7984,7 @@
       "news": "Has joined Konyaspor permanently",
       "chanceOfPlayingNextRound": 0,
       "transfersInEvent": 0,
-      "transfersOutEvent": 1784,
+      "transfersOutEvent": 1844,
       "eventPoints": 0
     },
     {
@@ -8007,7 +8007,7 @@
       "news": "Has joined Sheffield Wednesday on loan for the rest of the season",
       "chanceOfPlayingNextRound": 0,
       "transfersInEvent": 0,
-      "transfersOutEvent": 274,
+      "transfersOutEvent": 284,
       "eventPoints": 0
     },
     {
@@ -8029,8 +8029,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": 100,
-      "transfersInEvent": 118,
-      "transfersOutEvent": 138,
+      "transfersInEvent": 119,
+      "transfersOutEvent": 142,
       "eventPoints": 1
     },
     {
@@ -8053,7 +8053,7 @@
       "news": "Ankle injury - 75% chance of playing",
       "chanceOfPlayingNextRound": 75,
       "transfersInEvent": 146,
-      "transfersOutEvent": 13492,
+      "transfersOutEvent": 14045,
       "eventPoints": 0
     },
     {
@@ -8076,7 +8076,7 @@
       "news": "Calf injury - Expected back 11 Oct",
       "chanceOfPlayingNextRound": 0,
       "transfersInEvent": 25,
-      "transfersOutEvent": 225,
+      "transfersOutEvent": 231,
       "eventPoints": 0
     },
     {
@@ -8098,8 +8098,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 161714,
-      "transfersOutEvent": 35540,
+      "transfersInEvent": 166786,
+      "transfersOutEvent": 37126,
       "eventPoints": 6
     },
     {
@@ -8121,8 +8121,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 87,
-      "transfersOutEvent": 421,
+      "transfersInEvent": 91,
+      "transfersOutEvent": 436,
       "eventPoints": 0
     },
     {
@@ -8144,8 +8144,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 179,
-      "transfersOutEvent": 614,
+      "transfersInEvent": 184,
+      "transfersOutEvent": 632,
       "eventPoints": 0
     },
     {
@@ -8167,8 +8167,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 1292,
-      "transfersOutEvent": 2228,
+      "transfersInEvent": 1331,
+      "transfersOutEvent": 2304,
       "eventPoints": 1
     },
     {
@@ -8190,8 +8190,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": 100,
-      "transfersInEvent": 10715,
-      "transfersOutEvent": 38957,
+      "transfersInEvent": 11301,
+      "transfersOutEvent": 39687,
       "eventPoints": 0
     },
     {
@@ -8213,8 +8213,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 39,
-      "transfersOutEvent": 134,
+      "transfersInEvent": 42,
+      "transfersOutEvent": 139,
       "eventPoints": 1
     },
     {
@@ -8236,8 +8236,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 440,
-      "transfersOutEvent": 188,
+      "transfersInEvent": 450,
+      "transfersOutEvent": 194,
       "eventPoints": 6
     },
     {
@@ -8260,7 +8260,7 @@
       "news": "Back injury - Unknown return date",
       "chanceOfPlayingNextRound": 0,
       "transfersInEvent": 89,
-      "transfersOutEvent": 515,
+      "transfersOutEvent": 528,
       "eventPoints": 0
     },
     {
@@ -8282,8 +8282,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 2320,
-      "transfersOutEvent": 1433,
+      "transfersInEvent": 2379,
+      "transfersOutEvent": 1469,
       "eventPoints": 1
     },
     {
@@ -8305,8 +8305,8 @@
       "status": "d",
       "news": "Hamstring injury - 75% chance of playing",
       "chanceOfPlayingNextRound": 75,
-      "transfersInEvent": 475,
-      "transfersOutEvent": 3071,
+      "transfersInEvent": 482,
+      "transfersOutEvent": 3126,
       "eventPoints": 0
     },
     {
@@ -8328,8 +8328,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 627,
-      "transfersOutEvent": 415,
+      "transfersInEvent": 642,
+      "transfersOutEvent": 423,
       "eventPoints": 2
     },
     {
@@ -8351,8 +8351,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 109,
-      "transfersOutEvent": 105,
+      "transfersInEvent": 114,
+      "transfersOutEvent": 109,
       "eventPoints": 0
     },
     {
@@ -8374,8 +8374,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 10759,
-      "transfersOutEvent": 81961,
+      "transfersInEvent": 11284,
+      "transfersOutEvent": 86290,
       "eventPoints": 4
     },
     {
@@ -8397,8 +8397,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 321,
-      "transfersOutEvent": 760,
+      "transfersInEvent": 332,
+      "transfersOutEvent": 788,
       "eventPoints": 2
     },
     {
@@ -8420,8 +8420,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 2740,
-      "transfersOutEvent": 1539,
+      "transfersInEvent": 2907,
+      "transfersOutEvent": 1602,
       "eventPoints": 2
     },
     {
@@ -8443,8 +8443,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 7059,
-      "transfersOutEvent": 17290,
+      "transfersInEvent": 7521,
+      "transfersOutEvent": 18035,
       "eventPoints": 0
     },
     {
@@ -8466,8 +8466,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 2349,
-      "transfersOutEvent": 1872,
+      "transfersInEvent": 2459,
+      "transfersOutEvent": 1948,
       "eventPoints": 0
     },
     {
@@ -8489,8 +8489,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 5764,
-      "transfersOutEvent": 5610,
+      "transfersInEvent": 5904,
+      "transfersOutEvent": 5755,
       "eventPoints": 0
     },
     {
@@ -8512,8 +8512,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 3116,
-      "transfersOutEvent": 20274,
+      "transfersInEvent": 3269,
+      "transfersOutEvent": 21152,
       "eventPoints": 2
     },
     {
@@ -8535,8 +8535,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 85083,
-      "transfersOutEvent": 40452,
+      "transfersInEvent": 90121,
+      "transfersOutEvent": 41898,
       "eventPoints": 2
     },
     {
@@ -8558,8 +8558,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 2829,
-      "transfersOutEvent": 5519,
+      "transfersInEvent": 3481,
+      "transfersOutEvent": 5879,
       "eventPoints": 0
     },
     {
@@ -8582,7 +8582,7 @@
       "news": "Has joined Stoke City on loan for the rest of the season",
       "chanceOfPlayingNextRound": 0,
       "transfersInEvent": 0,
-      "transfersOutEvent": 496,
+      "transfersOutEvent": 514,
       "eventPoints": 0
     },
     {
@@ -8604,8 +8604,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 7659,
-      "transfersOutEvent": 3956,
+      "transfersInEvent": 7755,
+      "transfersOutEvent": 4068,
       "eventPoints": 0
     },
     {
@@ -8627,8 +8627,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 118,
-      "transfersOutEvent": 859,
+      "transfersInEvent": 121,
+      "transfersOutEvent": 883,
       "eventPoints": 0
     },
     {
@@ -8650,7 +8650,7 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": 100,
-      "transfersInEvent": 19,
+      "transfersInEvent": 20,
       "transfersOutEvent": 23,
       "eventPoints": 0
     },
@@ -8696,8 +8696,8 @@
       "status": "i",
       "news": "Knee injury - Unknown return date",
       "chanceOfPlayingNextRound": 0,
-      "transfersInEvent": 430,
-      "transfersOutEvent": 363,
+      "transfersInEvent": 433,
+      "transfersOutEvent": 374,
       "eventPoints": 0
     },
     {
@@ -8719,8 +8719,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 305,
-      "transfersOutEvent": 1273,
+      "transfersInEvent": 326,
+      "transfersOutEvent": 1317,
       "eventPoints": 2
     },
     {
@@ -8766,7 +8766,7 @@
       "news": "Suspended until 17 Oct",
       "chanceOfPlayingNextRound": 0,
       "transfersInEvent": 75,
-      "transfersOutEvent": 3324,
+      "transfersOutEvent": 3429,
       "eventPoints": -1
     },
     {
@@ -8788,8 +8788,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": 100,
-      "transfersInEvent": 58839,
-      "transfersOutEvent": 29756,
+      "transfersInEvent": 62307,
+      "transfersOutEvent": 30592,
       "eventPoints": 2
     },
     {
@@ -8812,7 +8812,7 @@
       "news": "Has joined Stoke City permanently",
       "chanceOfPlayingNextRound": 0,
       "transfersInEvent": 0,
-      "transfersOutEvent": 664,
+      "transfersOutEvent": 687,
       "eventPoints": 0
     },
     {
@@ -8834,8 +8834,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": 100,
-      "transfersInEvent": 46,
-      "transfersOutEvent": 211,
+      "transfersInEvent": 47,
+      "transfersOutEvent": 216,
       "eventPoints": 1
     },
     {
@@ -8858,7 +8858,7 @@
       "news": "Has joined Derby County on loan for the rest of the season",
       "chanceOfPlayingNextRound": 0,
       "transfersInEvent": 0,
-      "transfersOutEvent": 20,
+      "transfersOutEvent": 21,
       "eventPoints": 0
     },
     {
@@ -8874,14 +8874,14 @@
       "price": 5,
       "priceChangeSeason": 0,
       "priceChangeEvent": 0,
-      "ownership": 1.2,
+      "ownership": 1.1,
       "form": 0.5,
       "totalPoints": 7,
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 6125,
-      "transfersOutEvent": 12222,
+      "transfersInEvent": 6277,
+      "transfersOutEvent": 12620,
       "eventPoints": 1
     },
     {
@@ -8903,8 +8903,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 26128,
-      "transfersOutEvent": 35876,
+      "transfersInEvent": 27101,
+      "transfersOutEvent": 37105,
       "eventPoints": 0
     },
     {
@@ -8927,7 +8927,7 @@
       "news": "Has joined Sheffield Wednesday on loan for the rest of the season",
       "chanceOfPlayingNextRound": 0,
       "transfersInEvent": 0,
-      "transfersOutEvent": 486,
+      "transfersOutEvent": 495,
       "eventPoints": 0
     },
     {
@@ -8949,8 +8949,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 2335,
-      "transfersOutEvent": 8854,
+      "transfersInEvent": 2435,
+      "transfersOutEvent": 9199,
       "eventPoints": 0
     },
     {
@@ -8973,7 +8973,7 @@
       "news": "",
       "chanceOfPlayingNextRound": null,
       "transfersInEvent": 92,
-      "transfersOutEvent": 196,
+      "transfersOutEvent": 204,
       "eventPoints": 0
     },
     {
@@ -8996,7 +8996,7 @@
       "news": "Has joined Valencia on loan for the rest of the season",
       "chanceOfPlayingNextRound": 0,
       "transfersInEvent": 0,
-      "transfersOutEvent": 117,
+      "transfersOutEvent": 123,
       "eventPoints": 0
     },
     {
@@ -9018,8 +9018,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 191,
-      "transfersOutEvent": 2068,
+      "transfersInEvent": 195,
+      "transfersOutEvent": 2166,
       "eventPoints": 1
     },
     {
@@ -9041,8 +9041,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 1122,
-      "transfersOutEvent": 3638,
+      "transfersInEvent": 1154,
+      "transfersOutEvent": 3748,
       "eventPoints": 0
     },
     {
@@ -9064,8 +9064,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": 100,
-      "transfersInEvent": 142,
-      "transfersOutEvent": 497,
+      "transfersInEvent": 150,
+      "transfersOutEvent": 516,
       "eventPoints": 1
     },
     {
@@ -9087,8 +9087,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": 100,
-      "transfersInEvent": 4271,
-      "transfersOutEvent": 8342,
+      "transfersInEvent": 4541,
+      "transfersOutEvent": 8657,
       "eventPoints": 2
     },
     {
@@ -9110,8 +9110,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 970,
-      "transfersOutEvent": 2752,
+      "transfersInEvent": 1004,
+      "transfersOutEvent": 2845,
       "eventPoints": 2
     },
     {
@@ -9134,7 +9134,7 @@
       "news": "Has joined Huddersfield Town on loan for the rest of the season",
       "chanceOfPlayingNextRound": 0,
       "transfersInEvent": 0,
-      "transfersOutEvent": 274,
+      "transfersOutEvent": 276,
       "eventPoints": 0
     },
     {
@@ -9156,8 +9156,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 731,
-      "transfersOutEvent": 1075,
+      "transfersInEvent": 750,
+      "transfersOutEvent": 1106,
       "eventPoints": 2
     },
     {
@@ -9179,8 +9179,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 1444,
-      "transfersOutEvent": 1317,
+      "transfersInEvent": 1511,
+      "transfersOutEvent": 1361,
       "eventPoints": 0
     },
     {
@@ -9202,8 +9202,8 @@
       "status": "d",
       "news": "Thigh injury - 75% chance of playing",
       "chanceOfPlayingNextRound": 75,
-      "transfersInEvent": 95,
-      "transfersOutEvent": 52674,
+      "transfersInEvent": 97,
+      "transfersOutEvent": 54190,
       "eventPoints": 0
     },
     {
@@ -9226,7 +9226,7 @@
       "news": "Has joined Torino on loan for the rest of the season",
       "chanceOfPlayingNextRound": 0,
       "transfersInEvent": 0,
-      "transfersOutEvent": 1719,
+      "transfersOutEvent": 1771,
       "eventPoints": 0
     },
     {
@@ -9248,8 +9248,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 1026,
-      "transfersOutEvent": 6908,
+      "transfersInEvent": 1049,
+      "transfersOutEvent": 7089,
       "eventPoints": 0
     },
     {
@@ -9271,8 +9271,8 @@
       "status": "i",
       "news": "Hamstring injury - Expected back 21 Nov",
       "chanceOfPlayingNextRound": 0,
-      "transfersInEvent": 63,
-      "transfersOutEvent": 12400,
+      "transfersInEvent": 65,
+      "transfersOutEvent": 13013,
       "eventPoints": 0
     },
     {
@@ -9294,8 +9294,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 176987,
-      "transfersOutEvent": 40568,
+      "transfersInEvent": 183861,
+      "transfersOutEvent": 42392,
       "eventPoints": 5
     },
     {
@@ -9317,8 +9317,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": 100,
-      "transfersInEvent": 1057,
-      "transfersOutEvent": 521,
+      "transfersInEvent": 1121,
+      "transfersOutEvent": 546,
       "eventPoints": 6
     },
     {
@@ -9340,8 +9340,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 7861,
-      "transfersOutEvent": 8981,
+      "transfersInEvent": 8349,
+      "transfersOutEvent": 9399,
       "eventPoints": 8
     },
     {
@@ -9364,7 +9364,7 @@
       "news": "Has joined Hamburg SV on loan for the rest of the season",
       "chanceOfPlayingNextRound": 0,
       "transfersInEvent": 0,
-      "transfersOutEvent": 6,
+      "transfersOutEvent": 7,
       "eventPoints": 0
     },
     {
@@ -9386,8 +9386,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 51825,
-      "transfersOutEvent": 37195,
+      "transfersInEvent": 54941,
+      "transfersOutEvent": 38958,
       "eventPoints": 6
     },
     {
@@ -9409,8 +9409,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 6885,
-      "transfersOutEvent": 25678,
+      "transfersInEvent": 7156,
+      "transfersOutEvent": 26627,
       "eventPoints": 5
     },
     {
@@ -9432,8 +9432,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 2793,
-      "transfersOutEvent": 5124,
+      "transfersInEvent": 2902,
+      "transfersOutEvent": 5413,
       "eventPoints": 3
     },
     {
@@ -9455,8 +9455,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 281,
-      "transfersOutEvent": 4501,
+      "transfersInEvent": 291,
+      "transfersOutEvent": 4693,
       "eventPoints": 1
     },
     {
@@ -9478,8 +9478,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 2687,
-      "transfersOutEvent": 7322,
+      "transfersInEvent": 2817,
+      "transfersOutEvent": 7682,
       "eventPoints": 5
     },
     {
@@ -9501,8 +9501,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 213,
-      "transfersOutEvent": 842,
+      "transfersInEvent": 226,
+      "transfersOutEvent": 865,
       "eventPoints": 0
     },
     {
@@ -9525,7 +9525,7 @@
       "news": "Has joined ACF Fiorentina on loan for the rest of the season",
       "chanceOfPlayingNextRound": 0,
       "transfersInEvent": 0,
-      "transfersOutEvent": 74,
+      "transfersOutEvent": 76,
       "eventPoints": 0
     },
     {
@@ -9571,7 +9571,7 @@
       "news": "Back injury - Expected back 18 Oct",
       "chanceOfPlayingNextRound": 0,
       "transfersInEvent": 247,
-      "transfersOutEvent": 860,
+      "transfersOutEvent": 938,
       "eventPoints": 1
     },
     {
@@ -9593,8 +9593,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": 100,
-      "transfersInEvent": 57,
-      "transfersOutEvent": 25,
+      "transfersInEvent": 58,
+      "transfersOutEvent": 26,
       "eventPoints": 0
     },
     {
@@ -9616,8 +9616,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 3014,
-      "transfersOutEvent": 3162,
+      "transfersInEvent": 3109,
+      "transfersOutEvent": 3272,
       "eventPoints": 2
     },
     {
@@ -9633,14 +9633,14 @@
       "price": 6,
       "priceChangeSeason": 0,
       "priceChangeEvent": 0,
-      "ownership": 24.3,
+      "ownership": 24.2,
       "form": 6,
       "totalPoints": 22,
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 130617,
-      "transfersOutEvent": 248969,
+      "transfersInEvent": 135081,
+      "transfersOutEvent": 262953,
       "eventPoints": 2
     },
     {
@@ -9662,8 +9662,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 2632,
-      "transfersOutEvent": 4735,
+      "transfersInEvent": 2722,
+      "transfersOutEvent": 4894,
       "eventPoints": 1
     },
     {
@@ -9686,7 +9686,7 @@
       "news": "Has joined West Ham United on loan for the rest of the season",
       "chanceOfPlayingNextRound": 0,
       "transfersInEvent": 0,
-      "transfersOutEvent": 544,
+      "transfersOutEvent": 569,
       "eventPoints": 0
     },
     {
@@ -9708,8 +9708,8 @@
       "status": "i",
       "news": "Knee injury - Unknown return date",
       "chanceOfPlayingNextRound": 0,
-      "transfersInEvent": 436,
-      "transfersOutEvent": 616,
+      "transfersInEvent": 457,
+      "transfersOutEvent": 637,
       "eventPoints": 0
     },
     {
@@ -9731,8 +9731,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 32457,
-      "transfersOutEvent": 21937,
+      "transfersInEvent": 33510,
+      "transfersOutEvent": 22779,
       "eventPoints": 10
     },
     {
@@ -9754,8 +9754,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 386,
-      "transfersOutEvent": 342,
+      "transfersInEvent": 410,
+      "transfersOutEvent": 353,
       "eventPoints": 6
     },
     {
@@ -9777,8 +9777,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 296,
-      "transfersOutEvent": 604,
+      "transfersInEvent": 304,
+      "transfersOutEvent": 609,
       "eventPoints": 0
     },
     {
@@ -9800,8 +9800,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 399,
-      "transfersOutEvent": 1050,
+      "transfersInEvent": 414,
+      "transfersOutEvent": 1077,
       "eventPoints": 0
     },
     {
@@ -9823,8 +9823,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 1082,
-      "transfersOutEvent": 938,
+      "transfersInEvent": 1126,
+      "transfersOutEvent": 958,
       "eventPoints": 0
     },
     {
@@ -9846,8 +9846,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 3994,
-      "transfersOutEvent": 3284,
+      "transfersInEvent": 4115,
+      "transfersOutEvent": 3342,
       "eventPoints": 0
     },
     {
@@ -9869,7 +9869,7 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 122,
+      "transfersInEvent": 124,
       "transfersOutEvent": 96,
       "eventPoints": 0
     },
@@ -9892,8 +9892,8 @@
       "status": "d",
       "news": "Ankle injury - 75% chance of playing",
       "chanceOfPlayingNextRound": 75,
-      "transfersInEvent": 129,
-      "transfersOutEvent": 226,
+      "transfersInEvent": 131,
+      "transfersOutEvent": 237,
       "eventPoints": 1
     },
     {
@@ -9915,8 +9915,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 19305,
-      "transfersOutEvent": 16426,
+      "transfersInEvent": 19896,
+      "transfersOutEvent": 17078,
       "eventPoints": 8
     },
     {
@@ -9938,8 +9938,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 312,
-      "transfersOutEvent": 730,
+      "transfersInEvent": 316,
+      "transfersOutEvent": 734,
       "eventPoints": 0
     },
     {
@@ -9961,8 +9961,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 1066,
-      "transfersOutEvent": 3036,
+      "transfersInEvent": 1104,
+      "transfersOutEvent": 3135,
       "eventPoints": 0
     },
     {
@@ -9985,7 +9985,7 @@
       "news": "Has joined TSV Hartberg on loan for the rest of the season",
       "chanceOfPlayingNextRound": 0,
       "transfersInEvent": 0,
-      "transfersOutEvent": 86,
+      "transfersOutEvent": 89,
       "eventPoints": 0
     },
     {
@@ -10007,8 +10007,8 @@
       "status": "i",
       "news": "Knee injury - Unknown return date",
       "chanceOfPlayingNextRound": 0,
-      "transfersInEvent": 260,
-      "transfersOutEvent": 198,
+      "transfersInEvent": 267,
+      "transfersOutEvent": 200,
       "eventPoints": 0
     },
     {
@@ -10030,8 +10030,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 383,
-      "transfersOutEvent": 564,
+      "transfersInEvent": 399,
+      "transfersOutEvent": 573,
       "eventPoints": 0
     },
     {
@@ -10053,8 +10053,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 32926,
-      "transfersOutEvent": 60097,
+      "transfersInEvent": 34139,
+      "transfersOutEvent": 62615,
       "eventPoints": 8
     },
     {
@@ -10076,8 +10076,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 2019,
-      "transfersOutEvent": 15995,
+      "transfersInEvent": 2054,
+      "transfersOutEvent": 16478,
       "eventPoints": 0
     },
     {
@@ -10099,8 +10099,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 3411,
-      "transfersOutEvent": 14791,
+      "transfersInEvent": 3503,
+      "transfersOutEvent": 15543,
       "eventPoints": 6
     },
     {
@@ -10122,7 +10122,7 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": 100,
-      "transfersInEvent": 410,
+      "transfersInEvent": 417,
       "transfersOutEvent": 139,
       "eventPoints": 0
     },
@@ -10145,8 +10145,8 @@
       "status": "i",
       "news": "Knee injury - Unknown return date",
       "chanceOfPlayingNextRound": 0,
-      "transfersInEvent": 73,
-      "transfersOutEvent": 100,
+      "transfersInEvent": 74,
+      "transfersOutEvent": 101,
       "eventPoints": 0
     },
     {
@@ -10168,8 +10168,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 343,
-      "transfersOutEvent": 695,
+      "transfersInEvent": 351,
+      "transfersOutEvent": 712,
       "eventPoints": 0
     },
     {
@@ -10191,8 +10191,8 @@
       "status": "d",
       "news": "Hamstring injury - 75% chance of playing",
       "chanceOfPlayingNextRound": 75,
-      "transfersInEvent": 42340,
-      "transfersOutEvent": 27565,
+      "transfersInEvent": 43215,
+      "transfersOutEvent": 29328,
       "eventPoints": 6
     },
     {
@@ -10214,8 +10214,8 @@
       "status": "i",
       "news": "Knee injury - Unknown return date",
       "chanceOfPlayingNextRound": 0,
-      "transfersInEvent": 81,
-      "transfersOutEvent": 238,
+      "transfersInEvent": 82,
+      "transfersOutEvent": 246,
       "eventPoints": 0
     },
     {
@@ -10237,8 +10237,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 128,
-      "transfersOutEvent": 462,
+      "transfersInEvent": 130,
+      "transfersOutEvent": 467,
       "eventPoints": 0
     },
     {
@@ -10261,7 +10261,7 @@
       "news": "Has joined St Mirren on loan for the rest of the season",
       "chanceOfPlayingNextRound": 0,
       "transfersInEvent": 0,
-      "transfersOutEvent": 624,
+      "transfersOutEvent": 640,
       "eventPoints": 0
     },
     {
@@ -10283,8 +10283,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 8164,
-      "transfersOutEvent": 56485,
+      "transfersInEvent": 8740,
+      "transfersOutEvent": 58915,
       "eventPoints": 6
     },
     {
@@ -10300,14 +10300,14 @@
       "price": 7.2,
       "priceChangeSeason": 0.2,
       "priceChangeEvent": 0,
-      "ownership": 11.6,
+      "ownership": 11.5,
       "form": 2,
       "totalPoints": 32,
       "status": "d",
       "news": "Ankle injury - 75% chance of playing",
       "chanceOfPlayingNextRound": 75,
-      "transfersInEvent": 54435,
-      "transfersOutEvent": 164158,
+      "transfersInEvent": 54809,
+      "transfersOutEvent": 174721,
       "eventPoints": 3
     },
     {
@@ -10323,14 +10323,14 @@
       "price": 6.9,
       "priceChangeSeason": -0.1,
       "priceChangeEvent": -0.1,
-      "ownership": 31.9,
+      "ownership": 31.8,
       "form": 2.5,
       "totalPoints": 20,
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 50364,
-      "transfersOutEvent": 305271,
+      "transfersInEvent": 52090,
+      "transfersOutEvent": 320343,
       "eventPoints": 2
     },
     {
@@ -10346,14 +10346,14 @@
       "price": 5.7,
       "priceChangeSeason": -0.3,
       "priceChangeEvent": -0.1,
-      "ownership": 0.5,
+      "ownership": 0.4,
       "form": 0.5,
       "totalPoints": 4,
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 1057,
-      "transfersOutEvent": 5278,
+      "transfersInEvent": 1087,
+      "transfersOutEvent": 5451,
       "eventPoints": 0
     },
     {
@@ -10376,7 +10376,7 @@
       "news": "Back injury - Unknown return date",
       "chanceOfPlayingNextRound": 0,
       "transfersInEvent": 20,
-      "transfersOutEvent": 293,
+      "transfersOutEvent": 298,
       "eventPoints": 0
     },
     {
@@ -10398,8 +10398,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 1606,
-      "transfersOutEvent": 10964,
+      "transfersInEvent": 1640,
+      "transfersOutEvent": 11210,
       "eventPoints": 1
     },
     {
@@ -10421,8 +10421,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 4902,
-      "transfersOutEvent": 8862,
+      "transfersInEvent": 5029,
+      "transfersOutEvent": 9170,
       "eventPoints": 5
     },
     {
@@ -10445,7 +10445,7 @@
       "news": "Has joined Internazionale permanently",
       "chanceOfPlayingNextRound": 0,
       "transfersInEvent": 0,
-      "transfersOutEvent": 82,
+      "transfersOutEvent": 84,
       "eventPoints": 0
     },
     {
@@ -10467,8 +10467,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": 100,
-      "transfersInEvent": 185,
-      "transfersOutEvent": 502,
+      "transfersInEvent": 187,
+      "transfersOutEvent": 508,
       "eventPoints": 0
     },
     {
@@ -10490,8 +10490,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 112,
-      "transfersOutEvent": 364,
+      "transfersInEvent": 116,
+      "transfersOutEvent": 374,
       "eventPoints": 1
     },
     {
@@ -10536,8 +10536,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 2146,
-      "transfersOutEvent": 14445,
+      "transfersInEvent": 2224,
+      "transfersOutEvent": 14876,
       "eventPoints": 1
     },
     {
@@ -10559,8 +10559,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 1172,
-      "transfersOutEvent": 1818,
+      "transfersInEvent": 1176,
+      "transfersOutEvent": 1857,
       "eventPoints": 0
     },
     {
@@ -10576,14 +10576,14 @@
       "price": 9.1,
       "priceChangeSeason": 0.1,
       "priceChangeEvent": 0,
-      "ownership": 21.4,
+      "ownership": 21.2,
       "form": 5,
       "totalPoints": 33,
       "status": "d",
       "news": "Thigh injury - 75% chance of playing",
       "chanceOfPlayingNextRound": 75,
-      "transfersInEvent": 129322,
-      "transfersOutEvent": 178674,
+      "transfersInEvent": 130736,
+      "transfersOutEvent": 193399,
       "eventPoints": 8
     },
     {
@@ -10605,8 +10605,8 @@
       "status": "i",
       "news": "Achilles injury - Unknown return date",
       "chanceOfPlayingNextRound": 0,
-      "transfersInEvent": 493,
-      "transfersOutEvent": 989,
+      "transfersInEvent": 499,
+      "transfersOutEvent": 1007,
       "eventPoints": 0
     },
     {
@@ -10628,8 +10628,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 237,
-      "transfersOutEvent": 241,
+      "transfersInEvent": 248,
+      "transfersOutEvent": 246,
       "eventPoints": 1
     },
     {
@@ -10651,8 +10651,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": 100,
-      "transfersInEvent": 4402,
-      "transfersOutEvent": 2950,
+      "transfersInEvent": 4536,
+      "transfersOutEvent": 3020,
       "eventPoints": 0
     },
     {
@@ -10675,7 +10675,7 @@
       "news": "Has joined Valencia on loan for the rest of the season",
       "chanceOfPlayingNextRound": 0,
       "transfersInEvent": 0,
-      "transfersOutEvent": 275,
+      "transfersOutEvent": 277,
       "eventPoints": 0
     },
     {
@@ -10697,8 +10697,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 24117,
-      "transfersOutEvent": 13678,
+      "transfersInEvent": 25192,
+      "transfersOutEvent": 14082,
       "eventPoints": 7
     },
     {
@@ -10720,8 +10720,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 19873,
-      "transfersOutEvent": 24509,
+      "transfersInEvent": 21173,
+      "transfersOutEvent": 25244,
       "eventPoints": 3
     },
     {
@@ -10743,8 +10743,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 41010,
-      "transfersOutEvent": 20592,
+      "transfersInEvent": 42329,
+      "transfersOutEvent": 21253,
       "eventPoints": 7
     },
     {
@@ -10760,14 +10760,14 @@
       "price": 5.8,
       "priceChangeSeason": -0.2,
       "priceChangeEvent": -0.1,
-      "ownership": 6.5,
+      "ownership": 6.4,
       "form": 3,
       "totalPoints": 22,
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 9992,
-      "transfersOutEvent": 92551,
+      "transfersInEvent": 10440,
+      "transfersOutEvent": 96683,
       "eventPoints": 5
     },
     {
@@ -10789,8 +10789,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 13410,
-      "transfersOutEvent": 41003,
+      "transfersInEvent": 13704,
+      "transfersOutEvent": 42520,
       "eventPoints": 2
     },
     {
@@ -10812,8 +10812,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 76,
-      "transfersOutEvent": 108,
+      "transfersInEvent": 78,
+      "transfersOutEvent": 111,
       "eventPoints": 0
     },
     {
@@ -10829,14 +10829,14 @@
       "price": 6.3,
       "priceChangeSeason": -0.2,
       "priceChangeEvent": -0.1,
-      "ownership": 10.5,
+      "ownership": 10.4,
       "form": 1,
       "totalPoints": 6,
       "status": "d",
       "news": "Unspecified injury - 75% chance of playing",
       "chanceOfPlayingNextRound": 75,
-      "transfersInEvent": 5560,
-      "transfersOutEvent": 112491,
+      "transfersInEvent": 5581,
+      "transfersOutEvent": 118946,
       "eventPoints": 1
     },
     {
@@ -10858,8 +10858,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 31117,
-      "transfersOutEvent": 71366,
+      "transfersInEvent": 32069,
+      "transfersOutEvent": 74165,
       "eventPoints": 4
     },
     {
@@ -10881,8 +10881,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": 100,
-      "transfersInEvent": 2280,
-      "transfersOutEvent": 3830,
+      "transfersInEvent": 2341,
+      "transfersOutEvent": 3934,
       "eventPoints": 1
     },
     {
@@ -10904,8 +10904,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 6025,
-      "transfersOutEvent": 11720,
+      "transfersInEvent": 6186,
+      "transfersOutEvent": 12056,
       "eventPoints": 1
     },
     {
@@ -10927,8 +10927,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 199202,
-      "transfersOutEvent": 86528,
+      "transfersInEvent": 206524,
+      "transfersOutEvent": 90602,
       "eventPoints": 4
     },
     {
@@ -10950,8 +10950,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 647,
-      "transfersOutEvent": 2696,
+      "transfersInEvent": 657,
+      "transfersOutEvent": 2760,
       "eventPoints": 0
     },
     {
@@ -10973,8 +10973,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 1749,
-      "transfersOutEvent": 10870,
+      "transfersInEvent": 1769,
+      "transfersOutEvent": 11122,
       "eventPoints": 0
     },
     {
@@ -11019,8 +11019,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 414,
-      "transfersOutEvent": 1485,
+      "transfersInEvent": 424,
+      "transfersOutEvent": 1515,
       "eventPoints": 0
     },
     {
@@ -11042,8 +11042,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 91,
-      "transfersOutEvent": 181,
+      "transfersInEvent": 92,
+      "transfersOutEvent": 184,
       "eventPoints": 0
     },
     {
@@ -11059,14 +11059,14 @@
       "price": 8.4,
       "priceChangeSeason": -0.1,
       "priceChangeEvent": 0,
-      "ownership": 14.6,
+      "ownership": 14.5,
       "form": 10,
       "totalPoints": 33,
       "status": "d",
       "news": "Ankle injury - 75% chance of playing",
       "chanceOfPlayingNextRound": 75,
-      "transfersInEvent": 135875,
-      "transfersOutEvent": 138005,
+      "transfersInEvent": 136951,
+      "transfersOutEvent": 147571,
       "eventPoints": 17
     },
     {
@@ -11088,8 +11088,8 @@
       "status": "s",
       "news": "Suspended until 17 Oct",
       "chanceOfPlayingNextRound": 0,
-      "transfersInEvent": 256,
-      "transfersOutEvent": 36819,
+      "transfersInEvent": 261,
+      "transfersOutEvent": 38092,
       "eventPoints": 0
     },
     {
@@ -11111,8 +11111,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 182216,
-      "transfersOutEvent": 132041,
+      "transfersInEvent": 190489,
+      "transfersOutEvent": 138193,
       "eventPoints": 8
     },
     {
@@ -11134,8 +11134,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": 100,
-      "transfersInEvent": 6696,
-      "transfersOutEvent": 2738,
+      "transfersInEvent": 6983,
+      "transfersOutEvent": 2820,
       "eventPoints": 1
     },
     {
@@ -11181,7 +11181,7 @@
       "news": "Has joined Al Qadsiah permanently",
       "chanceOfPlayingNextRound": 0,
       "transfersInEvent": 0,
-      "transfersOutEvent": 117,
+      "transfersOutEvent": 118,
       "eventPoints": 0
     },
     {
@@ -11203,8 +11203,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 139,
-      "transfersOutEvent": 549,
+      "transfersInEvent": 142,
+      "transfersOutEvent": 558,
       "eventPoints": 0
     },
     {
@@ -11227,7 +11227,7 @@
       "news": "Has joined Benfica on loan for the rest of the season",
       "chanceOfPlayingNextRound": 0,
       "transfersInEvent": 0,
-      "transfersOutEvent": 62,
+      "transfersOutEvent": 63,
       "eventPoints": 0
     },
     {
@@ -11273,7 +11273,7 @@
       "news": "has joined West Ham on loan for the rest of the seaon.",
       "chanceOfPlayingNextRound": 0,
       "transfersInEvent": 0,
-      "transfersOutEvent": 764,
+      "transfersOutEvent": 780,
       "eventPoints": 0
     },
     {
@@ -11296,7 +11296,7 @@
       "news": "Has joined Swansea City on loan for the rest of the season",
       "chanceOfPlayingNextRound": 0,
       "transfersInEvent": 0,
-      "transfersOutEvent": 63,
+      "transfersOutEvent": 64,
       "eventPoints": 0
     },
     {
@@ -11318,8 +11318,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 111883,
-      "transfersOutEvent": 34565,
+      "transfersInEvent": 116703,
+      "transfersOutEvent": 36078,
       "eventPoints": 6
     },
     {
@@ -11341,8 +11341,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": 100,
-      "transfersInEvent": 10708,
-      "transfersOutEvent": 36541,
+      "transfersInEvent": 11010,
+      "transfersOutEvent": 37797,
       "eventPoints": 2
     },
     {
@@ -11365,7 +11365,7 @@
       "news": "",
       "chanceOfPlayingNextRound": null,
       "transfersInEvent": 89,
-      "transfersOutEvent": 121,
+      "transfersOutEvent": 122,
       "eventPoints": 0
     },
     {
@@ -11387,8 +11387,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 981,
-      "transfersOutEvent": 2453,
+      "transfersInEvent": 995,
+      "transfersOutEvent": 2494,
       "eventPoints": 0
     },
     {
@@ -11410,8 +11410,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 355,
-      "transfersOutEvent": 1284,
+      "transfersInEvent": 391,
+      "transfersOutEvent": 1307,
       "eventPoints": 0
     },
     {
@@ -11433,8 +11433,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 680,
-      "transfersOutEvent": 1831,
+      "transfersInEvent": 701,
+      "transfersOutEvent": 1850,
       "eventPoints": 0
     },
     {
@@ -11456,8 +11456,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 258,
-      "transfersOutEvent": 196,
+      "transfersInEvent": 263,
+      "transfersOutEvent": 201,
       "eventPoints": 0
     },
     {
@@ -11479,8 +11479,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 284,
-      "transfersOutEvent": 549,
+      "transfersInEvent": 287,
+      "transfersOutEvent": 554,
       "eventPoints": 0
     },
     {
@@ -11502,8 +11502,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": 100,
-      "transfersInEvent": 4205,
-      "transfersOutEvent": 13421,
+      "transfersInEvent": 4345,
+      "transfersOutEvent": 13781,
       "eventPoints": 4
     },
     {
@@ -11525,8 +11525,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": 100,
-      "transfersInEvent": 2277,
-      "transfersOutEvent": 986,
+      "transfersInEvent": 2416,
+      "transfersOutEvent": 1007,
       "eventPoints": 0
     },
     {
@@ -11542,14 +11542,14 @@
       "price": 4.8,
       "priceChangeSeason": -0.2,
       "priceChangeEvent": 0,
-      "ownership": 0.6,
+      "ownership": 0.5,
       "form": 0,
       "totalPoints": 4,
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 1192,
-      "transfersOutEvent": 6374,
+      "transfersInEvent": 1210,
+      "transfersOutEvent": 6549,
       "eventPoints": 0
     },
     {
@@ -11571,8 +11571,8 @@
       "status": "d",
       "news": "Unspecified injury - 75% chance of playing",
       "chanceOfPlayingNextRound": 75,
-      "transfersInEvent": 71,
-      "transfersOutEvent": 279,
+      "transfersInEvent": 72,
+      "transfersOutEvent": 284,
       "eventPoints": 0
     },
     {
@@ -11594,8 +11594,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 9641,
-      "transfersOutEvent": 68683,
+      "transfersInEvent": 10024,
+      "transfersOutEvent": 71846,
       "eventPoints": 4
     },
     {
@@ -11618,7 +11618,7 @@
       "news": "Has joined Celta Vigo on loan for the rest of the season",
       "chanceOfPlayingNextRound": 0,
       "transfersInEvent": 0,
-      "transfersOutEvent": 58,
+      "transfersOutEvent": 59,
       "eventPoints": 0
     },
     {
@@ -11640,8 +11640,8 @@
       "status": "i",
       "news": "Hamstring injury - Unknown return date",
       "chanceOfPlayingNextRound": 0,
-      "transfersInEvent": 276,
-      "transfersOutEvent": 378,
+      "transfersInEvent": 281,
+      "transfersOutEvent": 391,
       "eventPoints": 0
     },
     {
@@ -11663,8 +11663,8 @@
       "status": "d",
       "news": "Hamstring injury - 75% chance of playing",
       "chanceOfPlayingNextRound": 75,
-      "transfersInEvent": 1062,
-      "transfersOutEvent": 6252,
+      "transfersInEvent": 1065,
+      "transfersOutEvent": 6523,
       "eventPoints": 4
     },
     {
@@ -11687,7 +11687,7 @@
       "news": "Back injury - Unknown return date",
       "chanceOfPlayingNextRound": 0,
       "transfersInEvent": 100,
-      "transfersOutEvent": 160,
+      "transfersOutEvent": 163,
       "eventPoints": 0
     },
     {
@@ -11709,8 +11709,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 2252,
-      "transfersOutEvent": 10273,
+      "transfersInEvent": 2376,
+      "transfersOutEvent": 10720,
       "eventPoints": 2
     },
     {
@@ -11732,8 +11732,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 7234,
-      "transfersOutEvent": 99768,
+      "transfersInEvent": 7624,
+      "transfersOutEvent": 104053,
       "eventPoints": 2
     },
     {
@@ -11755,8 +11755,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": 100,
-      "transfersInEvent": 4759,
-      "transfersOutEvent": 7866,
+      "transfersInEvent": 4911,
+      "transfersOutEvent": 8034,
       "eventPoints": 0
     },
     {
@@ -11778,8 +11778,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 673,
-      "transfersOutEvent": 2608,
+      "transfersInEvent": 700,
+      "transfersOutEvent": 2651,
       "eventPoints": 0
     },
     {
@@ -11801,8 +11801,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 332,
-      "transfersOutEvent": 1855,
+      "transfersInEvent": 338,
+      "transfersOutEvent": 1914,
       "eventPoints": 0
     },
     {
@@ -11824,8 +11824,8 @@
       "status": "d",
       "news": "Back injury - 75% chance of playing",
       "chanceOfPlayingNextRound": 75,
-      "transfersInEvent": 620,
-      "transfersOutEvent": 4219,
+      "transfersInEvent": 621,
+      "transfersOutEvent": 4402,
       "eventPoints": 0
     },
     {
@@ -11841,14 +11841,14 @@
       "price": 4.3,
       "priceChangeSeason": -0.2,
       "priceChangeEvent": -0.1,
-      "ownership": 7.5,
+      "ownership": 7.4,
       "form": 1,
       "totalPoints": 9,
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": 100,
-      "transfersInEvent": 6672,
-      "transfersOutEvent": 100442,
+      "transfersInEvent": 7083,
+      "transfersOutEvent": 104527,
       "eventPoints": 2
     },
     {
@@ -11870,8 +11870,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 524,
-      "transfersOutEvent": 1003,
+      "transfersInEvent": 544,
+      "transfersOutEvent": 1050,
       "eventPoints": 0
     },
     {
@@ -11894,7 +11894,7 @@
       "news": "Has joined Lausanne-Sport permanently",
       "chanceOfPlayingNextRound": 0,
       "transfersInEvent": 0,
-      "transfersOutEvent": 64,
+      "transfersOutEvent": 65,
       "eventPoints": 0
     },
     {
@@ -11916,8 +11916,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 73748,
-      "transfersOutEvent": 259693,
+      "transfersInEvent": 77764,
+      "transfersOutEvent": 269523,
       "eventPoints": 2
     },
     {
@@ -11933,14 +11933,14 @@
       "price": 7.9,
       "priceChangeSeason": -0.1,
       "priceChangeEvent": 0,
-      "ownership": 20.4,
+      "ownership": 20.3,
       "form": 2,
       "totalPoints": 25,
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 66754,
-      "transfersOutEvent": 179328,
+      "transfersInEvent": 71594,
+      "transfersOutEvent": 186811,
       "eventPoints": 2
     },
     {
@@ -11962,8 +11962,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 36946,
-      "transfersOutEvent": 29576,
+      "transfersInEvent": 39172,
+      "transfersOutEvent": 30639,
       "eventPoints": 10
     },
     {
@@ -11985,8 +11985,8 @@
       "status": "d",
       "news": "Unspecified injury - 75% chance of playing",
       "chanceOfPlayingNextRound": 75,
-      "transfersInEvent": 4611,
-      "transfersOutEvent": 23836,
+      "transfersInEvent": 4672,
+      "transfersOutEvent": 24600,
       "eventPoints": 2
     },
     {
@@ -12008,8 +12008,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": 100,
-      "transfersInEvent": 226,
-      "transfersOutEvent": 236,
+      "transfersInEvent": 231,
+      "transfersOutEvent": 241,
       "eventPoints": 1
     },
     {
@@ -12031,8 +12031,8 @@
       "status": "i",
       "news": "Unspecified injury - Unknown return date",
       "chanceOfPlayingNextRound": 0,
-      "transfersInEvent": 182,
-      "transfersOutEvent": 2403,
+      "transfersInEvent": 192,
+      "transfersOutEvent": 2476,
       "eventPoints": 0
     },
     {
@@ -12054,8 +12054,8 @@
       "status": "d",
       "news": "Unspecified injury - 75% chance of playing",
       "chanceOfPlayingNextRound": 75,
-      "transfersInEvent": 8649,
-      "transfersOutEvent": 20654,
+      "transfersInEvent": 8744,
+      "transfersOutEvent": 21334,
       "eventPoints": 4
     },
     {
@@ -12101,7 +12101,7 @@
       "news": "",
       "chanceOfPlayingNextRound": null,
       "transfersInEvent": 53,
-      "transfersOutEvent": 72,
+      "transfersOutEvent": 75,
       "eventPoints": 0
     },
     {
@@ -12123,8 +12123,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 448,
-      "transfersOutEvent": 441,
+      "transfersInEvent": 455,
+      "transfersOutEvent": 451,
       "eventPoints": 0
     },
     {
@@ -12147,7 +12147,7 @@
       "news": "Has joined West Brom permanently",
       "chanceOfPlayingNextRound": 0,
       "transfersInEvent": 0,
-      "transfersOutEvent": 51,
+      "transfersOutEvent": 53,
       "eventPoints": 0
     },
     {
@@ -12169,8 +12169,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 630,
-      "transfersOutEvent": 1110,
+      "transfersInEvent": 646,
+      "transfersOutEvent": 1137,
       "eventPoints": 0
     },
     {
@@ -12192,8 +12192,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 2806,
-      "transfersOutEvent": 2575,
+      "transfersInEvent": 2822,
+      "transfersOutEvent": 2627,
       "eventPoints": 0
     },
     {
@@ -12215,8 +12215,8 @@
       "status": "d",
       "news": "Shin injury - 75% chance of playing",
       "chanceOfPlayingNextRound": 75,
-      "transfersInEvent": 7032,
-      "transfersOutEvent": 30467,
+      "transfersInEvent": 7078,
+      "transfersOutEvent": 31277,
       "eventPoints": 0
     },
     {
@@ -12238,8 +12238,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 2632,
-      "transfersOutEvent": 3792,
+      "transfersInEvent": 2715,
+      "transfersOutEvent": 3873,
       "eventPoints": 1
     },
     {
@@ -12262,7 +12262,7 @@
       "news": "Has joined Willem II on loan for the rest of the season",
       "chanceOfPlayingNextRound": 0,
       "transfersInEvent": 0,
-      "transfersOutEvent": 13385,
+      "transfersOutEvent": 13664,
       "eventPoints": 0
     },
     {
@@ -12284,8 +12284,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": 100,
-      "transfersInEvent": 945,
-      "transfersOutEvent": 2087,
+      "transfersInEvent": 979,
+      "transfersOutEvent": 2118,
       "eventPoints": 0
     },
     {
@@ -12307,8 +12307,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 1167,
-      "transfersOutEvent": 3891,
+      "transfersInEvent": 1201,
+      "transfersOutEvent": 3972,
       "eventPoints": 0
     },
     {
@@ -12330,8 +12330,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 57,
-      "transfersOutEvent": 112,
+      "transfersInEvent": 59,
+      "transfersOutEvent": 114,
       "eventPoints": 0
     },
     {
@@ -12353,8 +12353,8 @@
       "status": "i",
       "news": "Hamstring injury - Unknown return date",
       "chanceOfPlayingNextRound": 0,
-      "transfersInEvent": 25,
-      "transfersOutEvent": 167,
+      "transfersInEvent": 26,
+      "transfersOutEvent": 173,
       "eventPoints": 0
     },
     {
@@ -12376,8 +12376,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 13942,
-      "transfersOutEvent": 14595,
+      "transfersInEvent": 14676,
+      "transfersOutEvent": 15189,
       "eventPoints": 4
     },
     {
@@ -12399,8 +12399,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": 100,
-      "transfersInEvent": 899,
-      "transfersOutEvent": 1136,
+      "transfersInEvent": 955,
+      "transfersOutEvent": 1165,
       "eventPoints": 1
     },
     {
@@ -12422,8 +12422,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 7240,
-      "transfersOutEvent": 4319,
+      "transfersInEvent": 7571,
+      "transfersOutEvent": 4459,
       "eventPoints": 4
     },
     {
@@ -12445,8 +12445,8 @@
       "status": "i",
       "news": "Ankle injury - Expected back 12 Oct",
       "chanceOfPlayingNextRound": 0,
-      "transfersInEvent": 142,
-      "transfersOutEvent": 7482,
+      "transfersInEvent": 145,
+      "transfersOutEvent": 7683,
       "eventPoints": 0
     },
     {
@@ -12462,14 +12462,14 @@
       "price": 5.3,
       "priceChangeSeason": 0.3,
       "priceChangeEvent": 0.1,
-      "ownership": 18.5,
+      "ownership": 18.7,
       "form": 6.5,
       "totalPoints": 31,
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 366451,
-      "transfersOutEvent": 35062,
+      "transfersInEvent": 386688,
+      "transfersOutEvent": 36518,
       "eventPoints": 13
     },
     {
@@ -12491,8 +12491,8 @@
       "status": "d",
       "news": "Unspecified injury - 50% chance of playing",
       "chanceOfPlayingNextRound": 50,
-      "transfersInEvent": 510,
-      "transfersOutEvent": 2095,
+      "transfersInEvent": 513,
+      "transfersOutEvent": 2233,
       "eventPoints": 0
     },
     {
@@ -12515,7 +12515,7 @@
       "news": "Has joined FC Kaiserslautern on loan for the rest of the season",
       "chanceOfPlayingNextRound": 0,
       "transfersInEvent": 0,
-      "transfersOutEvent": 379,
+      "transfersOutEvent": 391,
       "eventPoints": 0
     },
     {
@@ -12531,14 +12531,14 @@
       "price": 6.1,
       "priceChangeSeason": 0.1,
       "priceChangeEvent": 0.1,
-      "ownership": 6.4,
+      "ownership": 6.6,
       "form": 5.5,
       "totalPoints": 28,
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 245855,
-      "transfersOutEvent": 41418,
+      "transfersInEvent": 260263,
+      "transfersOutEvent": 43136,
       "eventPoints": 9
     },
     {
@@ -12560,8 +12560,8 @@
       "status": "i",
       "news": "Unspecified injury - Unknown return date",
       "chanceOfPlayingNextRound": 0,
-      "transfersInEvent": 391,
-      "transfersOutEvent": 207096,
+      "transfersInEvent": 403,
+      "transfersOutEvent": 213434,
       "eventPoints": 0
     },
     {
@@ -12583,8 +12583,8 @@
       "status": "i",
       "news": "Thigh injury - Unknown return date",
       "chanceOfPlayingNextRound": 0,
-      "transfersInEvent": 91,
-      "transfersOutEvent": 5979,
+      "transfersInEvent": 92,
+      "transfersOutEvent": 6192,
       "eventPoints": 0
     },
     {
@@ -12606,8 +12606,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 1286,
-      "transfersOutEvent": 1084,
+      "transfersInEvent": 1320,
+      "transfersOutEvent": 1121,
       "eventPoints": 1
     },
     {
@@ -12629,8 +12629,8 @@
       "status": "d",
       "news": "Unspecified injury - 75% chance of playing",
       "chanceOfPlayingNextRound": 75,
-      "transfersInEvent": 30,
-      "transfersOutEvent": 104,
+      "transfersInEvent": 31,
+      "transfersOutEvent": 109,
       "eventPoints": 0
     },
     {
@@ -12652,8 +12652,8 @@
       "status": "d",
       "news": "Unspecified injury - 75% chance of playing",
       "chanceOfPlayingNextRound": 75,
-      "transfersInEvent": 505,
-      "transfersOutEvent": 898,
+      "transfersInEvent": 506,
+      "transfersOutEvent": 950,
       "eventPoints": 4
     },
     {
@@ -12675,8 +12675,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 13677,
-      "transfersOutEvent": 4202,
+      "transfersInEvent": 14250,
+      "transfersOutEvent": 4392,
       "eventPoints": 10
     },
     {
@@ -12698,8 +12698,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 461,
-      "transfersOutEvent": 1141,
+      "transfersInEvent": 476,
+      "transfersOutEvent": 1200,
       "eventPoints": 1
     },
     {
@@ -12721,8 +12721,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 350,
-      "transfersOutEvent": 536,
+      "transfersInEvent": 371,
+      "transfersOutEvent": 560,
       "eventPoints": 3
     },
     {
@@ -12745,7 +12745,7 @@
       "news": "Has joined Juventus on loan for the rest of the season",
       "chanceOfPlayingNextRound": 0,
       "transfersInEvent": 0,
-      "transfersOutEvent": 4439,
+      "transfersOutEvent": 4528,
       "eventPoints": 0
     },
     {
@@ -12761,14 +12761,14 @@
       "price": 6.2,
       "priceChangeSeason": 0.2,
       "priceChangeEvent": 0,
-      "ownership": 18.8,
+      "ownership": 18.9,
       "form": 1,
       "totalPoints": 15,
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 143203,
-      "transfersOutEvent": 183628,
+      "transfersInEvent": 152185,
+      "transfersOutEvent": 189719,
       "eventPoints": 0
     },
     {
@@ -12790,8 +12790,8 @@
       "status": "d",
       "news": "Foot injury - 50% chance of playing",
       "chanceOfPlayingNextRound": 50,
-      "transfersInEvent": 173,
-      "transfersOutEvent": 3080,
+      "transfersInEvent": 188,
+      "transfersOutEvent": 3153,
       "eventPoints": 0
     },
     {
@@ -12814,7 +12814,7 @@
       "news": "Has joined Wolves on loan for the rest of the season",
       "chanceOfPlayingNextRound": 0,
       "transfersInEvent": 0,
-      "transfersOutEvent": 4858,
+      "transfersOutEvent": 5002,
       "eventPoints": 0
     },
     {
@@ -12836,8 +12836,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 152,
-      "transfersOutEvent": 640,
+      "transfersInEvent": 156,
+      "transfersOutEvent": 658,
       "eventPoints": 1
     },
     {
@@ -12859,8 +12859,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 10067,
-      "transfersOutEvent": 7551,
+      "transfersInEvent": 10471,
+      "transfersOutEvent": 7845,
       "eventPoints": 3
     },
     {
@@ -12876,14 +12876,14 @@
       "price": 4.5,
       "priceChangeSeason": 0,
       "priceChangeEvent": 0,
-      "ownership": 1.7,
+      "ownership": 1.6,
       "form": 0,
       "totalPoints": 13,
       "status": "d",
       "news": "Unspecified injury - 50% chance of playing",
       "chanceOfPlayingNextRound": 50,
-      "transfersInEvent": 361,
-      "transfersOutEvent": 52034,
+      "transfersInEvent": 381,
+      "transfersOutEvent": 53899,
       "eventPoints": 0
     },
     {
@@ -12906,7 +12906,7 @@
       "news": "has joined Arouca on loan for the rest of the seaon.",
       "chanceOfPlayingNextRound": 0,
       "transfersInEvent": 0,
-      "transfersOutEvent": 2115,
+      "transfersOutEvent": 2151,
       "eventPoints": 0
     },
     {
@@ -12928,8 +12928,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 3152,
-      "transfersOutEvent": 1933,
+      "transfersInEvent": 3301,
+      "transfersOutEvent": 2006,
       "eventPoints": 2
     },
     {
@@ -12951,8 +12951,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 1733,
-      "transfersOutEvent": 777,
+      "transfersInEvent": 1778,
+      "transfersOutEvent": 797,
       "eventPoints": 0
     },
     {
@@ -12974,8 +12974,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 492,
-      "transfersOutEvent": 79,
+      "transfersInEvent": 499,
+      "transfersOutEvent": 80,
       "eventPoints": 0
     },
     {
@@ -12997,8 +12997,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 12650,
-      "transfersOutEvent": 2211,
+      "transfersInEvent": 12990,
+      "transfersOutEvent": 2276,
       "eventPoints": 0
     },
     {
@@ -13020,8 +13020,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 192,
-      "transfersOutEvent": 37,
+      "transfersInEvent": 198,
+      "transfersOutEvent": 38,
       "eventPoints": 0
     },
     {
@@ -13043,7 +13043,7 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 275,
+      "transfersInEvent": 280,
       "transfersOutEvent": 43,
       "eventPoints": 0
     },
@@ -13060,14 +13060,14 @@
       "price": 5.6,
       "priceChangeSeason": 0.1,
       "priceChangeEvent": 0.1,
-      "ownership": 2.7,
+      "ownership": 2.6,
       "form": 3,
       "totalPoints": 9,
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 30554,
-      "transfersOutEvent": 39821,
+      "transfersInEvent": 31355,
+      "transfersOutEvent": 41638,
       "eventPoints": 1
     },
     {
@@ -13089,8 +13089,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 10701,
-      "transfersOutEvent": 40817,
+      "transfersInEvent": 11125,
+      "transfersOutEvent": 42525,
       "eventPoints": 2
     },
     {
@@ -13112,8 +13112,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 2834,
-      "transfersOutEvent": 8954,
+      "transfersInEvent": 2938,
+      "transfersOutEvent": 9392,
       "eventPoints": 2
     },
     {
@@ -13135,8 +13135,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 77,
-      "transfersOutEvent": 191,
+      "transfersInEvent": 81,
+      "transfersOutEvent": 195,
       "eventPoints": 0
     },
     {
@@ -13158,8 +13158,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 16293,
-      "transfersOutEvent": 67410,
+      "transfersInEvent": 16958,
+      "transfersOutEvent": 70605,
       "eventPoints": 2
     },
     {
@@ -13182,7 +13182,7 @@
       "news": "Has joined West Ham on loan for the rest of the season",
       "chanceOfPlayingNextRound": 0,
       "transfersInEvent": 0,
-      "transfersOutEvent": 152,
+      "transfersOutEvent": 155,
       "eventPoints": 0
     },
     {
@@ -13204,8 +13204,8 @@
       "status": "i",
       "news": "Hamstring injury - Expected back 11 Oct",
       "chanceOfPlayingNextRound": 0,
-      "transfersInEvent": 94,
-      "transfersOutEvent": 15805,
+      "transfersInEvent": 96,
+      "transfersOutEvent": 16313,
       "eventPoints": 0
     },
     {
@@ -13227,8 +13227,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": 100,
-      "transfersInEvent": 13339,
-      "transfersOutEvent": 11421,
+      "transfersInEvent": 14213,
+      "transfersOutEvent": 11850,
       "eventPoints": 4
     },
     {
@@ -13250,8 +13250,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 1516,
-      "transfersOutEvent": 27815,
+      "transfersInEvent": 1594,
+      "transfersOutEvent": 29066,
       "eventPoints": 0
     },
     {
@@ -13273,8 +13273,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": 100,
-      "transfersInEvent": 387,
-      "transfersOutEvent": 841,
+      "transfersInEvent": 410,
+      "transfersOutEvent": 864,
       "eventPoints": 1
     },
     {
@@ -13297,7 +13297,7 @@
       "news": "Knee injury - Unknown return date",
       "chanceOfPlayingNextRound": 0,
       "transfersInEvent": 23,
-      "transfersOutEvent": 26,
+      "transfersOutEvent": 27,
       "eventPoints": 0
     },
     {
@@ -13319,8 +13319,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 371,
-      "transfersOutEvent": 957,
+      "transfersInEvent": 384,
+      "transfersOutEvent": 986,
       "eventPoints": 0
     },
     {
@@ -13343,7 +13343,7 @@
       "news": "Has joined Southampton on loan for the rest of the season",
       "chanceOfPlayingNextRound": 0,
       "transfersInEvent": 0,
-      "transfersOutEvent": 1118,
+      "transfersOutEvent": 1162,
       "eventPoints": 0
     },
     {
@@ -13365,8 +13365,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 72,
-      "transfersOutEvent": 151,
+      "transfersInEvent": 76,
+      "transfersOutEvent": 153,
       "eventPoints": 1
     },
     {
@@ -13389,7 +13389,7 @@
       "news": "Has joined Charlton Athletic on loan for the rest of the season",
       "chanceOfPlayingNextRound": 0,
       "transfersInEvent": 0,
-      "transfersOutEvent": 719,
+      "transfersOutEvent": 745,
       "eventPoints": 0
     },
     {
@@ -13405,14 +13405,14 @@
       "price": 8,
       "priceChangeSeason": 0,
       "priceChangeEvent": 0,
-      "ownership": 15.7,
+      "ownership": 15.8,
       "form": 5,
       "totalPoints": 28,
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": 100,
-      "transfersInEvent": 106802,
-      "transfersOutEvent": 122609,
+      "transfersInEvent": 113095,
+      "transfersOutEvent": 127815,
       "eventPoints": 2
     },
     {
@@ -13434,8 +13434,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": 100,
-      "transfersInEvent": 391,
-      "transfersOutEvent": 1442,
+      "transfersInEvent": 401,
+      "transfersOutEvent": 1476,
       "eventPoints": 0
     },
     {
@@ -13457,8 +13457,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 1184,
-      "transfersOutEvent": 10904,
+      "transfersInEvent": 1239,
+      "transfersOutEvent": 11392,
       "eventPoints": 1
     },
     {
@@ -13481,7 +13481,7 @@
       "news": "Has joined AC Milan on loan for the rest of the season",
       "chanceOfPlayingNextRound": 0,
       "transfersInEvent": 0,
-      "transfersOutEvent": 478,
+      "transfersOutEvent": 486,
       "eventPoints": 0
     },
     {
@@ -13526,8 +13526,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 490,
-      "transfersOutEvent": 1216,
+      "transfersInEvent": 510,
+      "transfersOutEvent": 1250,
       "eventPoints": 2
     },
     {
@@ -13549,8 +13549,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 74,
-      "transfersOutEvent": 372,
+      "transfersInEvent": 76,
+      "transfersOutEvent": 386,
       "eventPoints": 0
     },
     {
@@ -13572,8 +13572,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": 100,
-      "transfersInEvent": 497,
-      "transfersOutEvent": 4536,
+      "transfersInEvent": 532,
+      "transfersOutEvent": 4799,
       "eventPoints": 1
     },
     {
@@ -13595,8 +13595,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": 100,
-      "transfersInEvent": 858,
-      "transfersOutEvent": 9449,
+      "transfersInEvent": 955,
+      "transfersOutEvent": 9720,
       "eventPoints": 0
     },
     {
@@ -13618,8 +13618,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 2853,
-      "transfersOutEvent": 8054,
+      "transfersInEvent": 2974,
+      "transfersOutEvent": 8256,
       "eventPoints": 1
     },
     {
@@ -13641,8 +13641,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 11621,
-      "transfersOutEvent": 31941,
+      "transfersInEvent": 12241,
+      "transfersOutEvent": 33337,
       "eventPoints": 1
     },
     {
@@ -13664,8 +13664,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 285,
-      "transfersOutEvent": 506,
+      "transfersInEvent": 289,
+      "transfersOutEvent": 514,
       "eventPoints": 0
     },
     {
@@ -13687,8 +13687,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 281,
-      "transfersOutEvent": 1083,
+      "transfersInEvent": 289,
+      "transfersOutEvent": 1119,
       "eventPoints": 2
     },
     {
@@ -13710,8 +13710,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 1985,
-      "transfersOutEvent": 2854,
+      "transfersInEvent": 2033,
+      "transfersOutEvent": 2927,
       "eventPoints": 2
     },
     {
@@ -13733,8 +13733,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 161,
-      "transfersOutEvent": 290,
+      "transfersInEvent": 163,
+      "transfersOutEvent": 295,
       "eventPoints": 0
     },
     {
@@ -13756,8 +13756,8 @@
       "status": "d",
       "news": "Foot injury - 75% chance of playing",
       "chanceOfPlayingNextRound": 75,
-      "transfersInEvent": 24896,
-      "transfersOutEvent": 63765,
+      "transfersInEvent": 25723,
+      "transfersOutEvent": 68627,
       "eventPoints": 6
     },
     {
@@ -13779,8 +13779,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 139,
-      "transfersOutEvent": 694,
+      "transfersInEvent": 145,
+      "transfersOutEvent": 712,
       "eventPoints": 0
     },
     {
@@ -13802,8 +13802,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 18748,
-      "transfersOutEvent": 28409,
+      "transfersInEvent": 19748,
+      "transfersOutEvent": 29304,
       "eventPoints": 2
     },
     {
@@ -13825,8 +13825,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": 100,
-      "transfersInEvent": 4447,
-      "transfersOutEvent": 9752,
+      "transfersInEvent": 4622,
+      "transfersOutEvent": 10115,
       "eventPoints": 2
     },
     {
@@ -13848,8 +13848,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": 100,
-      "transfersInEvent": 3172,
-      "transfersOutEvent": 20140,
+      "transfersInEvent": 3276,
+      "transfersOutEvent": 20935,
       "eventPoints": 2
     },
     {
@@ -13872,7 +13872,7 @@
       "news": "Has joined Juventus on loan for the rest of the season",
       "chanceOfPlayingNextRound": 0,
       "transfersInEvent": 0,
-      "transfersOutEvent": 890,
+      "transfersOutEvent": 913,
       "eventPoints": 0
     },
     {
@@ -13894,8 +13894,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 2707,
-      "transfersOutEvent": 2880,
+      "transfersInEvent": 2806,
+      "transfersOutEvent": 2978,
       "eventPoints": 0
     },
     {
@@ -13911,14 +13911,14 @@
       "price": 4.5,
       "priceChangeSeason": 0,
       "priceChangeEvent": 0,
-      "ownership": 16.8,
+      "ownership": 16.7,
       "form": 4.5,
       "totalPoints": 18,
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 27513,
-      "transfersOutEvent": 161956,
+      "transfersInEvent": 28638,
+      "transfersOutEvent": 170131,
       "eventPoints": 2
     },
     {
@@ -13940,8 +13940,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 44465,
-      "transfersOutEvent": 69271,
+      "transfersInEvent": 47189,
+      "transfersOutEvent": 72253,
       "eventPoints": 0
     },
     {
@@ -13957,14 +13957,14 @@
       "price": 5.8,
       "priceChangeSeason": -0.2,
       "priceChangeEvent": 0,
-      "ownership": 3.5,
+      "ownership": 3.4,
       "form": 0,
       "totalPoints": 3,
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 1620,
-      "transfersOutEvent": 27422,
+      "transfersInEvent": 1656,
+      "transfersOutEvent": 28298,
       "eventPoints": 0
     },
     {
@@ -13980,14 +13980,14 @@
       "price": 5.4,
       "priceChangeSeason": -0.1,
       "priceChangeEvent": 0,
-      "ownership": 7.3,
+      "ownership": 7.2,
       "form": 0.5,
       "totalPoints": 9,
       "status": "d",
       "news": "Hamstring injury - 75% chance of playing",
       "chanceOfPlayingNextRound": 75,
-      "transfersInEvent": 1892,
-      "transfersOutEvent": 104255,
+      "transfersInEvent": 1910,
+      "transfersOutEvent": 109318,
       "eventPoints": 1
     },
     {
@@ -14010,7 +14010,7 @@
       "news": "Has joined Atletico Madrid permanently",
       "chanceOfPlayingNextRound": 0,
       "transfersInEvent": 0,
-      "transfersOutEvent": 339,
+      "transfersOutEvent": 347,
       "eventPoints": 0
     },
     {
@@ -14032,8 +14032,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 9368,
-      "transfersOutEvent": 19846,
+      "transfersInEvent": 9784,
+      "transfersOutEvent": 20937,
       "eventPoints": 4
     },
     {
@@ -14055,8 +14055,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": 100,
-      "transfersInEvent": 9322,
-      "transfersOutEvent": 26607,
+      "transfersInEvent": 9770,
+      "transfersOutEvent": 27498,
       "eventPoints": 1
     },
     {
@@ -14079,7 +14079,7 @@
       "news": "Has joined Internazionale permanently",
       "chanceOfPlayingNextRound": 0,
       "transfersInEvent": 0,
-      "transfersOutEvent": 1433,
+      "transfersOutEvent": 1460,
       "eventPoints": 0
     },
     {
@@ -14101,8 +14101,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": 100,
-      "transfersInEvent": 453,
-      "transfersOutEvent": 2072,
+      "transfersInEvent": 462,
+      "transfersOutEvent": 2139,
       "eventPoints": 0
     },
     {
@@ -14125,7 +14125,7 @@
       "news": "Has joined Middlesbrough permanently",
       "chanceOfPlayingNextRound": 0,
       "transfersInEvent": 0,
-      "transfersOutEvent": 64,
+      "transfersOutEvent": 65,
       "eventPoints": 0
     },
     {
@@ -14147,8 +14147,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 9786,
-      "transfersOutEvent": 5482,
+      "transfersInEvent": 10069,
+      "transfersOutEvent": 5671,
       "eventPoints": 0
     },
     {
@@ -14170,8 +14170,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 162,
-      "transfersOutEvent": 316,
+      "transfersInEvent": 164,
+      "transfersOutEvent": 325,
       "eventPoints": 0
     },
     {
@@ -14193,8 +14193,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 201,
-      "transfersOutEvent": 421,
+      "transfersInEvent": 207,
+      "transfersOutEvent": 433,
       "eventPoints": 0
     },
     {
@@ -14217,7 +14217,7 @@
       "news": "Has joined FC Porto on loan for the rest of the season",
       "chanceOfPlayingNextRound": 0,
       "transfersInEvent": 0,
-      "transfersOutEvent": 1170,
+      "transfersOutEvent": 1228,
       "eventPoints": 0
     },
     {
@@ -14239,8 +14239,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": 100,
-      "transfersInEvent": 3373,
-      "transfersOutEvent": 1658,
+      "transfersInEvent": 3529,
+      "transfersOutEvent": 1729,
       "eventPoints": 4
     },
     {
@@ -14285,8 +14285,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 281,
-      "transfersOutEvent": 2615,
+      "transfersInEvent": 288,
+      "transfersOutEvent": 2714,
       "eventPoints": 0
     },
     {
@@ -14308,8 +14308,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": 100,
-      "transfersInEvent": 1080,
-      "transfersOutEvent": 2586,
+      "transfersInEvent": 1115,
+      "transfersOutEvent": 2653,
       "eventPoints": 1
     },
     {
@@ -14331,8 +14331,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 565,
-      "transfersOutEvent": 1157,
+      "transfersInEvent": 579,
+      "transfersOutEvent": 1207,
       "eventPoints": 4
     },
     {
@@ -14355,7 +14355,7 @@
       "news": "Knee injury - Unknown return date",
       "chanceOfPlayingNextRound": 0,
       "transfersInEvent": 41,
-      "transfersOutEvent": 19,
+      "transfersOutEvent": 20,
       "eventPoints": 0
     },
     {
@@ -14378,7 +14378,7 @@
       "news": "Has joined Juventus on loan for the rest of the season",
       "chanceOfPlayingNextRound": 0,
       "transfersInEvent": 0,
-      "transfersOutEvent": 865,
+      "transfersOutEvent": 890,
       "eventPoints": 0
     },
     {
@@ -14400,8 +14400,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 998,
-      "transfersOutEvent": 950,
+      "transfersInEvent": 1025,
+      "transfersOutEvent": 996,
       "eventPoints": 6
     },
     {
@@ -14423,8 +14423,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 135,
-      "transfersOutEvent": 789,
+      "transfersInEvent": 139,
+      "transfersOutEvent": 814,
       "eventPoints": 1
     },
     {
@@ -14446,7 +14446,7 @@
       "status": "i",
       "news": "Knee injury - Unknown return date",
       "chanceOfPlayingNextRound": 0,
-      "transfersInEvent": 138,
+      "transfersInEvent": 142,
       "transfersOutEvent": 98,
       "eventPoints": 0
     },
@@ -14469,8 +14469,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 594,
-      "transfersOutEvent": 1531,
+      "transfersInEvent": 610,
+      "transfersOutEvent": 1573,
       "eventPoints": 2
     },
     {
@@ -14493,7 +14493,7 @@
       "news": "Has joined FC Köln on loan for the rest of the season",
       "chanceOfPlayingNextRound": 0,
       "transfersInEvent": 0,
-      "transfersOutEvent": 728,
+      "transfersOutEvent": 757,
       "eventPoints": 0
     },
     {
@@ -14515,8 +14515,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 6479,
-      "transfersOutEvent": 8973,
+      "transfersInEvent": 6506,
+      "transfersOutEvent": 9144,
       "eventPoints": 0
     },
     {
@@ -14538,8 +14538,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 646,
-      "transfersOutEvent": 8740,
+      "transfersInEvent": 672,
+      "transfersOutEvent": 9018,
       "eventPoints": 1
     },
     {
@@ -14561,8 +14561,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 2878,
-      "transfersOutEvent": 7556,
+      "transfersInEvent": 3010,
+      "transfersOutEvent": 7789,
       "eventPoints": 2
     },
     {
@@ -14585,7 +14585,7 @@
       "news": "not included in squad.",
       "chanceOfPlayingNextRound": 0,
       "transfersInEvent": 0,
-      "transfersOutEvent": 7328,
+      "transfersOutEvent": 7528,
       "eventPoints": 0
     },
     {
@@ -14608,7 +14608,7 @@
       "news": "Has joined Leyton Orient permanently",
       "chanceOfPlayingNextRound": 0,
       "transfersInEvent": 0,
-      "transfersOutEvent": 10093,
+      "transfersOutEvent": 10388,
       "eventPoints": 0
     },
     {
@@ -14630,8 +14630,8 @@
       "status": "i",
       "news": "Ankle injury - Unknown return date",
       "chanceOfPlayingNextRound": 0,
-      "transfersInEvent": 31,
-      "transfersOutEvent": 675,
+      "transfersInEvent": 32,
+      "transfersOutEvent": 695,
       "eventPoints": 0
     },
     {
@@ -14653,8 +14653,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 210,
-      "transfersOutEvent": 867,
+      "transfersInEvent": 216,
+      "transfersOutEvent": 883,
       "eventPoints": 0
     },
     {
@@ -14676,8 +14676,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 1543,
-      "transfersOutEvent": 1022,
+      "transfersInEvent": 1600,
+      "transfersOutEvent": 1040,
       "eventPoints": 0
     },
     {
@@ -14699,8 +14699,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 2700,
-      "transfersOutEvent": 16774,
+      "transfersInEvent": 2780,
+      "transfersOutEvent": 17610,
       "eventPoints": 0
     },
     {
@@ -14723,7 +14723,7 @@
       "news": "Has joined Wrexham permanently",
       "chanceOfPlayingNextRound": 0,
       "transfersInEvent": 0,
-      "transfersOutEvent": 456,
+      "transfersOutEvent": 475,
       "eventPoints": 0
     },
     {
@@ -14745,8 +14745,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 182,
-      "transfersOutEvent": 329,
+      "transfersInEvent": 188,
+      "transfersOutEvent": 336,
       "eventPoints": 0
     },
     {
@@ -14768,8 +14768,8 @@
       "status": "i",
       "news": "Hamstring injury - Unknown return date",
       "chanceOfPlayingNextRound": 0,
-      "transfersInEvent": 3751,
-      "transfersOutEvent": 33803,
+      "transfersInEvent": 3755,
+      "transfersOutEvent": 37150,
       "eventPoints": 2
     },
     {
@@ -14791,8 +14791,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": 100,
-      "transfersInEvent": 6933,
-      "transfersOutEvent": 11875,
+      "transfersInEvent": 7171,
+      "transfersOutEvent": 12332,
       "eventPoints": 0
     },
     {
@@ -14814,8 +14814,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 1603,
-      "transfersOutEvent": 42309,
+      "transfersInEvent": 1669,
+      "transfersOutEvent": 44473,
       "eventPoints": 1
     },
     {
@@ -14837,8 +14837,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": 100,
-      "transfersInEvent": 343,
-      "transfersOutEvent": 1441,
+      "transfersInEvent": 361,
+      "transfersOutEvent": 1494,
       "eventPoints": 0
     },
     {
@@ -14860,8 +14860,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": 100,
-      "transfersInEvent": 339,
-      "transfersOutEvent": 2022,
+      "transfersInEvent": 359,
+      "transfersOutEvent": 2109,
       "eventPoints": 0
     },
     {
@@ -14907,7 +14907,7 @@
       "news": "Has joined KV Mechelen on loan for the rest of the season",
       "chanceOfPlayingNextRound": 0,
       "transfersInEvent": 0,
-      "transfersOutEvent": 207,
+      "transfersOutEvent": 213,
       "eventPoints": 0
     },
     {
@@ -14929,8 +14929,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 22800,
-      "transfersOutEvent": 16740,
+      "transfersInEvent": 23478,
+      "transfersOutEvent": 17531,
       "eventPoints": 0
     },
     {
@@ -14953,7 +14953,7 @@
       "news": "Has joined Konyaspor permanently",
       "chanceOfPlayingNextRound": 0,
       "transfersInEvent": 0,
-      "transfersOutEvent": 789,
+      "transfersOutEvent": 809,
       "eventPoints": 0
     },
     {
@@ -14975,8 +14975,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": 100,
-      "transfersInEvent": 2392,
-      "transfersOutEvent": 1365,
+      "transfersInEvent": 2497,
+      "transfersOutEvent": 1415,
       "eventPoints": 3
     },
     {
@@ -14998,8 +14998,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 15941,
-      "transfersOutEvent": 35021,
+      "transfersInEvent": 16500,
+      "transfersOutEvent": 36776,
       "eventPoints": 5
     },
     {
@@ -15022,7 +15022,7 @@
       "news": "Hamstring injury - Expected back 18 Oct",
       "chanceOfPlayingNextRound": 0,
       "transfersInEvent": 22,
-      "transfersOutEvent": 293,
+      "transfersOutEvent": 300,
       "eventPoints": 0
     },
     {
@@ -15044,8 +15044,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 8315,
-      "transfersOutEvent": 31040,
+      "transfersInEvent": 8576,
+      "transfersOutEvent": 32269,
       "eventPoints": 2
     },
     {
@@ -15067,8 +15067,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 526,
-      "transfersOutEvent": 1854,
+      "transfersInEvent": 544,
+      "transfersOutEvent": 1941,
       "eventPoints": 2
     },
     {
@@ -15091,7 +15091,7 @@
       "news": "Has joined Ajax on loan for the rest of the season",
       "chanceOfPlayingNextRound": 0,
       "transfersInEvent": 0,
-      "transfersOutEvent": 248,
+      "transfersOutEvent": 261,
       "eventPoints": 0
     },
     {
@@ -15113,8 +15113,8 @@
       "status": "i",
       "news": "Knee injury - Unknown return date",
       "chanceOfPlayingNextRound": 0,
-      "transfersInEvent": 11,
-      "transfersOutEvent": 62,
+      "transfersInEvent": 12,
+      "transfersOutEvent": 64,
       "eventPoints": 0
     },
     {
@@ -15136,8 +15136,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 46,
-      "transfersOutEvent": 303,
+      "transfersInEvent": 47,
+      "transfersOutEvent": 314,
       "eventPoints": 0
     },
     {
@@ -15159,8 +15159,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 138,
-      "transfersOutEvent": 717,
+      "transfersInEvent": 142,
+      "transfersOutEvent": 731,
       "eventPoints": 0
     },
     {
@@ -15182,8 +15182,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 55,
-      "transfersOutEvent": 60,
+      "transfersInEvent": 57,
+      "transfersOutEvent": 61,
       "eventPoints": 0
     },
     {
@@ -15205,8 +15205,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 704,
-      "transfersOutEvent": 1010,
+      "transfersInEvent": 723,
+      "transfersOutEvent": 1031,
       "eventPoints": 4
     },
     {
@@ -15222,14 +15222,14 @@
       "price": 5.7,
       "priceChangeSeason": -0.3,
       "priceChangeEvent": -0.1,
-      "ownership": 6.6,
+      "ownership": 6.5,
       "form": 9,
       "totalPoints": 24,
       "status": "i",
       "news": "Hamstring injury - Expected back 25 Oct",
       "chanceOfPlayingNextRound": 0,
-      "transfersInEvent": 203312,
-      "transfersOutEvent": 88250,
+      "transfersInEvent": 203461,
+      "transfersOutEvent": 95717,
       "eventPoints": 17
     },
     {
@@ -15251,8 +15251,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 6327,
-      "transfersOutEvent": 14566,
+      "transfersInEvent": 6863,
+      "transfersOutEvent": 14952,
       "eventPoints": 1
     },
     {
@@ -15274,8 +15274,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": 100,
-      "transfersInEvent": 146,
-      "transfersOutEvent": 82,
+      "transfersInEvent": 148,
+      "transfersOutEvent": 84,
       "eventPoints": -1
     },
     {
@@ -15297,8 +15297,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 708,
-      "transfersOutEvent": 1889,
+      "transfersInEvent": 727,
+      "transfersOutEvent": 1935,
       "eventPoints": 0
     },
     {
@@ -15320,8 +15320,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 411,
-      "transfersOutEvent": 375,
+      "transfersInEvent": 423,
+      "transfersOutEvent": 383,
       "eventPoints": 1
     },
     {
@@ -15343,8 +15343,8 @@
       "status": "a",
       "news": "",
       "chanceOfPlayingNextRound": null,
-      "transfersInEvent": 11758,
-      "transfersOutEvent": 8901,
+      "transfersInEvent": 12167,
+      "transfersOutEvent": 9093,
       "eventPoints": 0
     }
   ],
