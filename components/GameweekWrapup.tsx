@@ -2,15 +2,13 @@ import type { FplRawFixture, TeamRef } from "@/lib/fpl-types";
 import type { GameweekWrapup as GameweekWrapupData } from "@/lib/gameweek-wrapup";
 import GameweekScoreboard from "./GameweekScoreboard";
 import HighlightedParagraphs from "./HighlightedParagraphs";
-import PremiumGate from "./PremiumGate";
 
 /** Replaces the gameweek preview once its deadline passes. The scoreboard
  * is always real, live fixture data; the AI recap underneath it only
  * appears once scripts/generate-gameweek-wrapup.ts has written one for
  * this exact gameweek (it only runs once every match has finished), so
  * there's a gap between the deadline and the recap landing where the
- * scoreboard stands alone. The teaser is free for everyone; the full
- * write-up is a Moyes+ perk, matching the preview. */
+ * scoreboard stands alone. Free for everyone. */
 export default function GameweekWrapup({
   eventName,
   fixtures,
@@ -35,11 +33,9 @@ export default function GameweekWrapup({
       {wrapup ? (
         <>
           <HighlightedParagraphs text={wrapup.teaser} />
-          <PremiumGate requireTier="moyes" tier="Moyes">
-            <div className="mt-1">
-              <HighlightedParagraphs text={wrapup.fullWriteup} />
-            </div>
-          </PremiumGate>
+          <div className="mt-1">
+            <HighlightedParagraphs text={wrapup.fullWriteup} />
+          </div>
         </>
       ) : (
         <p className="text-sm text-black/50 dark:text-white/50">

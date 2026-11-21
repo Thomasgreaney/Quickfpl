@@ -1,7 +1,6 @@
 import { NextResponse } from "next/server";
 import Anthropic from "@anthropic-ai/sdk";
-import { redis } from "@/lib/redis";
-import { memberKey, tierUnlocksTopTier, type MembershipRecord } from "@/lib/membership";
+import { checkRateLimit, getClientIp } from "@/lib/rate-limit";
 import { getLiveSnapshot, getLiveFixtures } from "@/lib/live";
 import { buildFixtureRuns } from "@/lib/fixtures";
 import { buildAssistantContext } from "@/lib/assistant-context";
@@ -12,6 +11,7 @@ const MAX_QUESTION_LENGTH = 500;
 const MAX_SQUAD_IDS = 15;
 const MAX_HISTORY_TURNS = 3; // user+assistant pairs kept for conversational context
 const MAX_OUTPUT_TOKENS = 300;
+const MAX_QUESTIONS_PER_IP_PER_DAY = 30;
 
 const SYSTEM_PROMPT = `You are the QuickFPL AI Assistant, a Fantasy Premier League advisor. Match QuickFPL's tone: blunt, no fluff, straight to the point - like the rest of the site's copy.
 
@@ -35,7 +35,6 @@ interface ChatTurn {
 }
 
 interface AssistantRequestBody {
-  email?: string;
   question?: string;
   squadPlayerIds?: number[];
   benchPlayerIds?: number[];
@@ -50,20 +49,22 @@ export async function POST(req: Request) {
     return NextResponse.json({ error: "Invalid request body" }, { status: 400 });
   }
 
-  const email = body.email?.trim();
   const question = body.question?.trim();
-  if (!email || !question) {
-    return NextResponse.json({ error: "email and question are required" }, { status: 400 });
+  if (!question) {
+    return NextResponse.json({ error: "question is required" }, { status: 400 });
   }
   if (question.length > MAX_QUESTION_LENGTH) {
     return NextResponse.json({ error: "Question's too long." }, { status: 400 });
   }
 
-  // Server-side membership check - this costs real money per call, so the
-  // client-side gate alone isn't enough to protect it.
-  const record = await redis.get<MembershipRecord>(memberKey(email));
-  if (!record?.active || !tierUnlocksTopTier(record.levelName)) {
-    return NextResponse.json({ error: "Fergie membership required" }, { status: 403 });
+  // Free for everyone, but this costs real money per call - a per-IP daily
+  // cap stops one anonymous visitor or script running up an unbounded bill.
+  const allowed = await checkRateLimit("assistant", getClientIp(req), MAX_QUESTIONS_PER_IP_PER_DAY);
+  if (!allowed) {
+    return NextResponse.json(
+      { error: "That's the limit of questions for today from this connection - try again tomorrow." },
+      { status: 429 }
+    );
   }
 
   const squadPlayerIds = Array.isArray(body.squadPlayerIds) ? body.squadPlayerIds.slice(0, MAX_SQUAD_IDS) : [];

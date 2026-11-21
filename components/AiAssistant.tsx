@@ -3,7 +3,6 @@
 import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { SQUAD_UPDATED_EVENT, readSquadPlayerIds, readBenchPlayerIds } from "@/lib/squad-storage";
-import { MEMBER_EMAIL_STORAGE_KEY } from "@/lib/member-storage";
 
 interface ChatTurn {
   role: "user" | "assistant";
@@ -15,7 +14,6 @@ const SUGGESTED_QUESTIONS = ["Who should I captain?", "Who should I transfer out
 export default function AiAssistant() {
   const [squadIds, setSquadIds] = useState<number[]>([]);
   const [benchIds, setBenchIds] = useState<number[]>([]);
-  const [email, setEmail] = useState<string | null>(null);
   const [messages, setMessages] = useState<ChatTurn[]>([]);
   const [input, setInput] = useState("");
   const [loading, setLoading] = useState(false);
@@ -27,14 +25,7 @@ export default function AiAssistant() {
       setSquadIds(readSquadPlayerIds());
       setBenchIds(readBenchPlayerIds());
     }
-    Promise.resolve().then(() => {
-      reload();
-      try {
-        setEmail(window.localStorage.getItem(MEMBER_EMAIL_STORAGE_KEY));
-      } catch {
-        setEmail(null);
-      }
-    });
+    Promise.resolve().then(reload);
     window.addEventListener(SQUAD_UPDATED_EVENT, reload);
     return () => window.removeEventListener(SQUAD_UPDATED_EVENT, reload);
   }, []);
@@ -45,7 +36,7 @@ export default function AiAssistant() {
 
   async function ask(question: string) {
     const trimmed = question.trim();
-    if (!trimmed || loading || !email) return;
+    if (!trimmed || loading) return;
 
     const nextMessages: ChatTurn[] = [...messages, { role: "user", content: trimmed }];
     setMessages(nextMessages);
@@ -58,7 +49,6 @@ export default function AiAssistant() {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
-          email,
           question: trimmed,
           squadPlayerIds: squadIds,
           benchPlayerIds: benchIds,
@@ -79,8 +69,6 @@ export default function AiAssistant() {
       setLoading(false);
     }
   }
-
-  if (!email) return null;
 
   return (
     <div>

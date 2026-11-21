@@ -1,6 +1,5 @@
 import { NextResponse } from "next/server";
-import { redis } from "@/lib/redis";
-import { memberKey, tierUnlocksPremium, type MembershipRecord } from "@/lib/membership";
+import { checkRateLimit, getClientIp } from "@/lib/rate-limit";
 import { fetchFplJson } from "@/lib/fpl-fetch";
 import { getLiveSnapshot } from "@/lib/live";
 import { simulateLeague, type LeagueEntry } from "@/lib/league-simulator";
@@ -10,9 +9,9 @@ const STANDINGS_URL = (leagueId: number) =>
   `https://fantasy.premierleague.com/api/leagues-classic/${leagueId}/standings/`;
 
 const MAX_ENTRIES = 20;
+const MAX_SIMULATIONS_PER_IP_PER_DAY = 20;
 
 interface SimulatorRequestBody {
-  email?: string;
   leagueId?: number;
 }
 
@@ -24,17 +23,20 @@ export async function POST(req: Request) {
     return NextResponse.json({ error: "Invalid request body" }, { status: 400 });
   }
 
-  const email = body.email?.trim();
   const leagueId = body.leagueId;
-  if (!email || !Number.isInteger(leagueId) || leagueId! <= 0 || leagueId! > 99_999_999) {
-    return NextResponse.json({ error: "email and a valid leagueId are required" }, { status: 400 });
+  if (!Number.isInteger(leagueId) || leagueId! <= 0 || leagueId! > 99_999_999) {
+    return NextResponse.json({ error: "a valid leagueId is required" }, { status: 400 });
   }
 
-  // Server-side membership check - this hits the shared FPL API on the
-  // user's behalf, so it stays gated to stop it being hammered anonymously.
-  const record = await redis.get<MembershipRecord>(memberKey(email));
-  if (!record?.active || !tierUnlocksPremium(record.levelName)) {
-    return NextResponse.json({ error: "Pep or Fergie membership required" }, { status: 403 });
+  // Free for everyone, but this hits a third-party API (FPL's) on the
+  // visitor's behalf - a per-IP daily cap stops it being hammered
+  // anonymously and getting our server rate-limited or blocked by FPL.
+  const allowed = await checkRateLimit("league-sim", getClientIp(req), MAX_SIMULATIONS_PER_IP_PER_DAY);
+  if (!allowed) {
+    return NextResponse.json(
+      { error: "That's the limit of simulations for today from this connection - try again tomorrow." },
+      { status: 429 }
+    );
   }
 
   try {

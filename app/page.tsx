@@ -8,6 +8,7 @@ import GameweekPreview from "@/components/GameweekPreview";
 import GameweekWrapup from "@/components/GameweekWrapup";
 import LocalTime from "@/components/LocalTime";
 import DeadlineCountdown from "@/components/DeadlineCountdown";
+import AdSlot from "@/components/AdSlot";
 
 export const revalidate = 300;
 
@@ -188,6 +189,8 @@ export default async function Home() {
           <QuickLinkCard href="/assistant" icon="🤖" label="AI Assistant" description="Ask about your squad" />
         </div>
       </section>
+
+      <AdSlot adSlotId="home-mid" />
 
       <footer className="mt-4 border-t border-black/10 py-6 text-xs text-black/40 dark:border-white/10 dark:text-white/40">
         Not affiliated with the Premier League or Fantasy Premier League. Prices update automatically —

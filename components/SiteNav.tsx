@@ -37,7 +37,7 @@ function CloseIcon() {
   );
 }
 
-/** Site-wide navigation: a brand bar (logo + hamburger + Buy Me a Coffee)
+/** Site-wide navigation: a brand bar (logo + hamburger + go-ad-free link)
  * on every viewport, a horizontal pill nav on desktop, a fixed bottom tab
  * bar on mobile, and a slide-out side drawer (behind the hamburger) that
  * carries the same links plus Pricing, which doesn't fit in either the
@@ -88,14 +88,13 @@ export default function SiteNav() {
               ))}
             </nav>
 
-            <a
-              href="https://www.buymeacoffee.com/Quickfpl"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-1.5 whitespace-nowrap rounded-md bg-[#FFDD00] px-3 py-1.5 text-sm font-semibold text-black shadow-sm hover:brightness-95"
+            <Link
+              href="/pricing"
+              className="inline-flex items-center gap-1.5 whitespace-nowrap rounded-md bg-purple-600 px-3 py-1.5 text-sm font-semibold text-white shadow-sm hover:bg-purple-700"
             >
-              ☕ <span className="hidden sm:inline">Buy me a coffee</span>
-            </a>
+              <span className="hidden sm:inline">Go ad-free</span>
+              <span className="sm:hidden">🚫</span>
+            </Link>
 
             <button
               type="button"

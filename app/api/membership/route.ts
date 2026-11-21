@@ -1,7 +1,9 @@
 import { NextResponse } from "next/server";
 import { redis } from "@/lib/redis";
-import { memberKey, tierUnlocksPremium, type MembershipRecord } from "@/lib/membership";
+import { memberKey, type MembershipRecord } from "@/lib/membership";
 
+/** Everything on the site is free now - this only answers "is this email
+ * currently paying to go ad-free", for AdSlot and the /pricing unlock form. */
 export async function GET(req: Request) {
   const email = new URL(req.url).searchParams.get("email");
   if (!email) {
@@ -9,7 +11,7 @@ export async function GET(req: Request) {
   }
 
   const record = await redis.get<MembershipRecord>(memberKey(email));
-  const unlocked = Boolean(record?.active) && tierUnlocksPremium(record?.levelName);
+  const adFree = Boolean(record?.active);
 
-  return NextResponse.json({ unlocked, levelName: record?.levelName ?? null });
+  return NextResponse.json({ adFree, levelName: record?.levelName ?? null });
 }

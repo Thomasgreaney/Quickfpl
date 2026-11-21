@@ -9,8 +9,9 @@ import { CHIPS_USED_UPDATED_EVENT, readUsedChips } from "@/lib/chip-tracker-stor
 
 const ALL_CHIPS: ChipType[] = ["wildcard", "freehit", "benchboost", "triplecaptain"];
 
-/** Pep-tier chip-timing analysis. Reads which chips are left from the free
- * tracker on /squad (ChipTracker) rather than owning that state itself. */
+/** Chip-timing analysis, free for everyone. Reads which chips are left from
+ * the free tracker on /squad (ChipTracker) rather than owning that state
+ * itself. */
 export default function ChipAnalysis({
   players,
   fixtures,

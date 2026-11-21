@@ -1,7 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
-import { MEMBER_EMAIL_STORAGE_KEY } from "@/lib/member-storage";
+import { useState } from "react";
 import type { SimulatedEntry } from "@/lib/league-simulator";
 
 interface SimulatorResponse {
@@ -17,26 +16,15 @@ function pct(n: number): string {
 }
 
 export default function LeagueSimulator() {
-  const [email, setEmail] = useState<string | null>(null);
   const [leagueId, setLeagueId] = useState("");
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [result, setResult] = useState<SimulatorResponse | null>(null);
 
-  useEffect(() => {
-    Promise.resolve().then(() => {
-      try {
-        setEmail(window.localStorage.getItem(MEMBER_EMAIL_STORAGE_KEY));
-      } catch {
-        setEmail(null);
-      }
-    });
-  }, []);
-
   async function runSimulation(e: React.FormEvent) {
     e.preventDefault();
     const id = Number(leagueId.trim());
-    if (!email || !Number.isInteger(id) || id <= 0) {
+    if (!Number.isInteger(id) || id <= 0) {
       setError("Enter a valid league ID - the number in your league's URL on the FPL site.");
       return;
     }
@@ -48,7 +36,7 @@ export default function LeagueSimulator() {
       const res = await fetch("/api/league-simulator", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ email, leagueId: id }),
+        body: JSON.stringify({ leagueId: id }),
       });
       const data: SimulatorResponse & { error?: string } = await res.json();
       if (!res.ok) {
@@ -62,8 +50,6 @@ export default function LeagueSimulator() {
       setLoading(false);
     }
   }
-
-  if (!email) return null;
 
   return (
     <div>

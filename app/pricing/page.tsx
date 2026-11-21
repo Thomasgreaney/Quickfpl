@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
-import MembershipComparison from "@/components/MembershipComparison";
+import GoAdFree from "@/components/GoAdFree";
 
-const TITLE = "Membership Pricing | QuickFPL";
-const DESCRIPTION = "Compare Moyes, Pep and Fergie membership tiers and unlock QuickFPL's premium tools.";
+const TITLE = "Pricing | QuickFPL";
+const DESCRIPTION = "Every QuickFPL tool is free. Pay once to remove ads site-wide.";
 
 export const metadata: Metadata = {
   title: TITLE,
@@ -20,23 +20,23 @@ export const metadata: Metadata = {
 };
 
 const STEPS = [
-  { icon: "☕", title: "Pick a tier", body: "Moyes, Pep or Fergie, on Buy Me a Coffee - a one-off platform, not us billing you directly." },
-  { icon: "✉️", title: "Use the same email", body: "Enter it below and we check it against your Buy Me a Coffee membership, live." },
-  { icon: "🔓", title: "Unlock instantly", body: "Every gated tool on the site checks that email from then on - no separate login to remember." },
+  { icon: "💰", title: "Pay once", body: "One plain price, on Buy Me a Coffee - a one-off platform, not us billing you directly." },
+  { icon: "✉️", title: "Use the same email", body: "Enter it below and we check it against your payment, live." },
+  { icon: "🔓", title: "Ad-free instantly", body: "Every ad slot on the site checks that email from then on - no separate login to remember." },
 ];
 
 const FAQS = [
   {
-    q: "Can I cancel anytime?",
-    a: "Yes - memberships are managed entirely through Buy Me a Coffee, so you cancel there whenever you like. No lock-in, no contact required.",
+    q: "What do I actually get for paying?",
+    a: "Nothing functional - every tool on QuickFPL is free for everyone already. Paying just removes the ads.",
   },
   {
-    q: "What happens if I upgrade or downgrade?",
-    a: "Whichever tier is active on Buy Me a Coffee for your email is what unlocks here - change it there and it's reflected next time you unlock.",
+    q: "Can I cancel anytime?",
+    a: "Yes - payment is managed entirely through Buy Me a Coffee, so you cancel there whenever you like. No lock-in, no contact required.",
   },
   {
     q: "Do I need an account?",
-    a: "No password, no signup form - just the email your Buy Me a Coffee membership is under. That's the whole mechanism.",
+    a: "No password, no signup form - just the email your payment is under. That's the whole mechanism.",
   },
 ];
 
@@ -46,11 +46,11 @@ export default function PricingPage() {
       <header className="mb-6">
         <h1 className="text-3xl font-black tracking-tight sm:text-4xl">Pricing</h1>
         <p className="mt-2 max-w-2xl text-black/70 dark:text-white/70">
-          Three tiers, no contracts. Pay through Buy Me a Coffee, unlock with the same email.
+          Every tool on QuickFPL is free, ads pay for the rest. One price removes them.
         </p>
       </header>
 
-      <MembershipComparison />
+      <GoAdFree />
 
       <section className="mt-8">
         <h2 className="mb-4 text-sm font-bold uppercase tracking-wide text-black/50 dark:text-white/50">

@@ -84,7 +84,7 @@ function ChangeLog({ series }: { series: PricePoint[] }) {
   );
 }
 
-/** Fergie-exclusive: pick any player and see their full recorded price
+/** Free for everyone: pick any player and see their full recorded price
  * history - every snapshot, every change, not just a glance sparkline. */
 export default function PriceHistoryExplorer({ players }: { players: Player[] }) {
   const [selected, setSelected] = useState<Player | null>(null);

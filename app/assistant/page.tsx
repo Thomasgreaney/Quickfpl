@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import { getLiveSnapshot } from "@/lib/live";
 import CollapsibleSection from "@/components/CollapsibleSection";
-import PremiumGate from "@/components/PremiumGate";
 import AiAssistant from "@/components/AiAssistant";
 import PriceHistoryExplorer from "@/components/PriceHistoryExplorer";
+import AdSlot from "@/components/AdSlot";
 
 export const revalidate = 300;
 
@@ -47,10 +47,10 @@ export default async function AssistantPage() {
         defaultOpen
         description="Ask it anything about your saved squad — grounded in real price, form and fixture data, not a canned answer."
       >
-        <PremiumGate requireTier="fergie">
-          <AiAssistant />
-        </PremiumGate>
+        <AiAssistant />
       </CollapsibleSection>
+
+      <AdSlot adSlotId="assistant-mid" />
 
       <CollapsibleSection
         id="price-history"
@@ -59,9 +59,7 @@ export default async function AssistantPage() {
         defaultOpen
         description="Every snapshot we've recorded for any player, not just a glance sparkline — the full chart, every price change dated, and the season total."
       >
-        <PremiumGate requireTier="fergie">
-          <PriceHistoryExplorer players={snapshot.players} />
-        </PremiumGate>
+        <PriceHistoryExplorer players={snapshot.players} />
       </CollapsibleSection>
     </main>
   );

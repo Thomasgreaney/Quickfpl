@@ -5,8 +5,8 @@ import CollapsibleSection from "@/components/CollapsibleSection";
 import SquadBuilder from "@/components/SquadBuilder";
 import SquadGameweekScore from "@/components/SquadGameweekScore";
 import ChipTracker from "@/components/ChipTracker";
-import PremiumGate from "@/components/PremiumGate";
 import TransferShortlist from "@/components/TransferShortlist";
+import AdSlot from "@/components/AdSlot";
 
 export const revalidate = 300;
 
@@ -57,15 +57,15 @@ export default async function SquadPage() {
         <SquadBuilder players={snapshot.players} fixturesByTeam={fixturesByTeam} />
       </CollapsibleSection>
 
+      <AdSlot adSlotId="squad-mid" />
+
       <CollapsibleSection
         id="ai-transfer-recommendations"
         icon="🤖"
         title="AI transfer recommendations"
         description="Who's worth bringing in this week, and why — ranked by form and fixtures, with a direct sell/buy call against your saved squad."
       >
-        <PremiumGate>
-          <TransferShortlist players={snapshot.players} fixturesByTeam={fixturesByTeam} />
-        </PremiumGate>
+        <TransferShortlist players={snapshot.players} fixturesByTeam={fixturesByTeam} />
       </CollapsibleSection>
 
       <CollapsibleSection

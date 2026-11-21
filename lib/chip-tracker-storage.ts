@@ -1,9 +1,9 @@
 import type { ChipType } from "./chips";
 
-// The chip tracker (free, on /squad) and the chip analysis (Pep-tier, on
-// /planner) are now separate pages, so "which chips are left" has to be
-// shared via localStorage instead of local component state - same pattern
-// as SQUAD_STORAGE_KEY/SQUAD_UPDATED_EVENT in squad-storage.ts.
+// The chip tracker (on /squad) and the chip analysis (on /planner) are
+// separate pages, so "which chips are left" has to be shared via
+// localStorage instead of local component state - same pattern as
+// SQUAD_STORAGE_KEY/SQUAD_UPDATED_EVENT in squad-storage.ts.
 export const CHIPS_USED_STORAGE_KEY = "quickfpl-chips-used";
 export const CHIPS_USED_UPDATED_EVENT = "quickfpl-chips-used-updated";
 

@@ -8,6 +8,7 @@ import RisersFallers from "@/components/RisersFallers";
 import TopPlayers from "@/components/TopPlayers";
 import PlayerComparison from "@/components/PlayerComparison";
 import PlayerLookup from "@/components/PlayerLookup";
+import AdSlot from "@/components/AdSlot";
 
 export const revalidate = 300;
 
@@ -77,6 +78,8 @@ export default async function InsightsPage() {
       >
         <TopPlayers players={top15} />
       </CollapsibleSection>
+
+      <AdSlot adSlotId="insights-mid" />
 
       <CollapsibleSection
         id="compare"
